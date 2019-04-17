@@ -1,0 +1,1081 @@
+fileFormatVersion: 2
+guid: 2992a38d9364bac419cd6fc96053fb78
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BeamPiece01
+    100002: BeamPiece01 1
+    100004: BeamPiece01 2
+    100006: BeamPiece01 3
+    100008: BeamPiece01 4
+    100010: BeamPiece02
+    100012: BeamPiece02 1
+    100014: BeamPiece02 2
+    100016: BeamPiece02 3
+    100018: BeamPiece02 4
+    100020: BeamPiece03
+    100022: BeamPiece03 1
+    100024: BeamPiece03 2
+    100026: BeamPiece03 3
+    100028: BeamPiece03 4
+    100030: BrokenBeam_01
+    100032: BrokenBeam_02
+    100034: BrokenBeam_03
+    100036: BrokenBeam_04
+    100038: BrokenBeam_05
+    100040: BrokenDoor
+    100042: BrokenDoorFrame
+    100044: BrokenHouse
+    100046: BrokenRoof_01
+    100048: BrokenRoof_02
+    100050: BrokenRoofBeam_01
+    100052: BrokenRoofBeam_01 1
+    100054: BrokenRoofBeam_02
+    100056: BrokenRoofBeam_02 1
+    100058: BrokenSideRock01
+    100060: BrokenSideRock01 1
+    100062: BrokenSideRock01 2
+    100064: BrokenSideRock01 3
+    100066: BrokenSideRock02
+    100068: BrokenSideRock02 1
+    100070: BrokenSideRock02 2
+    100072: BrokenSideRock02 3
+    100074: BrokenSideRock03
+    100076: BrokenSideRock03 1
+    100078: BrokenSideRock03 2
+    100080: BrokenSideRock03 3
+    100082: BrokenSideRock04
+    100084: BrokenSideRock04 1
+    100086: BrokenSideRock04 2
+    100088: BrokenSideRock04 3
+    100090: BrokenSideRock05
+    100092: BrokenSideRock05 1
+    100094: BrokenSideRock05 2
+    100096: BrokenSideRock05 3
+    100098: BrokenSideRocks_01
+    100100: BrokenSideRocks_02
+    100102: BrokenSideRocks_03
+    100104: BrokenSideRocks_04
+    100106: BrokenTopWall_01
+    100108: BrokenTopWall_02
+    100110: BrokenWall_01
+    100112: BrokenWall_02
+    100114: BrokenWall_03
+    100116: BrokenWall_04
+    100118: BrokenWindow_01
+    100120: DoorFrame_01
+    100122: DoorFrame_02
+    100124: DoorFrame_03
+    100126: DoorFrame_04
+    100128: DoorPlank_01
+    100130: DoorPlank_02
+    100132: DoorPlank_03
+    100134: DoorPlank_04
+    100136: FramePiece_01
+    100138: FramePiece_02
+    100140: FramePiece_03
+    100142: FramePiece_04
+    100144: FramePiece_05
+    100146: FramePiece_06
+    100148: //RootNode
+    100150: InactHouseLOD_02
+    100152: IntactBeam_01
+    100154: IntactBeam_02
+    100156: IntactBeam_03
+    100158: IntactBeam_04
+    100160: IntactBeam_05
+    100162: IntactDoor
+    100164: IntactHouse
+    100166: IntactHouseLOD_01
+    100168: IntactRoof_01
+    100170: IntactRoof_02
+    100172: IntactSideRocks_01
+    100174: IntactSideRocks_02
+    100176: IntactSideRocks_03
+    100178: IntactSideRocks_04
+    100180: IntactTopWall_01
+    100182: IntactTopWall_02
+    100184: IntactWall_01
+    100186: IntactWall_02
+    100188: IntactWall_03
+    100190: IntactWall_04
+    100192: IntactWindow_01
+    100194: LOD_0
+    100196: LOD_1
+    100198: polySurface106
+    100200: polySurface106 1
+    100202: polySurface106 2
+    100204: polySurface108
+    100206: polySurface108 1
+    100208: polySurface108 2
+    100210: polySurface110
+    100212: polySurface110 1
+    100214: polySurface110 2
+    100216: polySurface112
+    100218: polySurface112 1
+    100220: polySurface112 2
+    100222: polySurface115
+    100224: polySurface115 1
+    100226: polySurface115 2
+    100228: polySurface117
+    100230: polySurface117 1
+    100232: polySurface117 2
+    100234: polySurface119
+    100236: polySurface119 1
+    100238: polySurface119 2
+    100240: polySurface121
+    100242: polySurface121 1
+    100244: polySurface121 2
+    100246: polySurface123
+    100248: polySurface123 1
+    100250: polySurface123 2
+    100252: polySurface125
+    100254: polySurface125 1
+    100256: polySurface125 2
+    100258: polySurface127
+    100260: polySurface127 1
+    100262: polySurface127 2
+    100264: polySurface129
+    100266: polySurface129 1
+    100268: polySurface129 2
+    100270: polySurface133
+    100272: polySurface133 1
+    100274: polySurface133 2
+    100276: polySurface135
+    100278: polySurface135 1
+    100280: polySurface135 2
+    100282: polySurface136
+    100284: polySurface136 1
+    100286: polySurface136 2
+    100288: polySurface138
+    100290: polySurface138 1
+    100292: polySurface138 2
+    100294: RoofPiece_01
+    100296: RoofPiece_01 1
+    100298: RoofPiece_02
+    100300: RoofPiece_02 1
+    100302: RoofPiece_03
+    100304: RoofPiece_03 1
+    100306: RoofPiece_04
+    100308: RoofPiece_04 1
+    100310: RoofPiece_05
+    100312: RoofPiece_05 1
+    100314: RoofPiece_06
+    100316: RoofPiece_06 1
+    100318: RoofPiece_07
+    100320: RoofPiece_07 1
+    100322: RoofPiece_08
+    100324: RoofPiece_08 1
+    100326: RoofPiece_09
+    100328: RoofPiece_09 1
+    100330: RoofPiece_10
+    100332: RoofPiece_10 1
+    100334: RoofPiece_11
+    100336: RoofPiece_11 1
+    100338: RoofPiece_12
+    100340: RoofPiece_12 1
+    100342: WallPiece01
+    100344: WallPiece01 1
+    100346: WallPiece01 2
+    100348: WallPiece010
+    100350: WallPiece011
+    100352: WallPiece012
+    100354: WallPiece013
+    100356: WallPiece014
+    100358: WallPiece015
+    100360: WallPiece016
+    100362: WallPiece017
+    100364: WallPiece018
+    100366: WallPiece019
+    100368: WallPiece02
+    100370: WallPiece02 1
+    100372: WallPiece020
+    100374: WallPiece021
+    100376: WallPiece022
+    100378: WallPiece03
+    100380: WallPiece03 1
+    100382: WallPiece04
+    100384: WallPiece04 1
+    100386: WallPiece05
+    100388: WallPiece05 1
+    100390: WallPiece06
+    100392: WallPiece06 1
+    100394: WallPiece07
+    100396: WallPiece07 1
+    100398: WallPiece08
+    100400: WallPiece09
+    100402: WindowPiece_01
+    100404: WindowPiece_02
+    100406: WindowPiece_03
+    400000: BeamPiece01
+    400002: BeamPiece01 1
+    400004: BeamPiece01 2
+    400006: BeamPiece01 3
+    400008: BeamPiece01 4
+    400010: BeamPiece02
+    400012: BeamPiece02 1
+    400014: BeamPiece02 2
+    400016: BeamPiece02 3
+    400018: BeamPiece02 4
+    400020: BeamPiece03
+    400022: BeamPiece03 1
+    400024: BeamPiece03 2
+    400026: BeamPiece03 3
+    400028: BeamPiece03 4
+    400030: BrokenBeam_01
+    400032: BrokenBeam_02
+    400034: BrokenBeam_03
+    400036: BrokenBeam_04
+    400038: BrokenBeam_05
+    400040: BrokenDoor
+    400042: BrokenDoorFrame
+    400044: BrokenHouse
+    400046: BrokenRoof_01
+    400048: BrokenRoof_02
+    400050: BrokenRoofBeam_01
+    400052: BrokenRoofBeam_01 1
+    400054: BrokenRoofBeam_02
+    400056: BrokenRoofBeam_02 1
+    400058: BrokenSideRock01
+    400060: BrokenSideRock01 1
+    400062: BrokenSideRock01 2
+    400064: BrokenSideRock01 3
+    400066: BrokenSideRock02
+    400068: BrokenSideRock02 1
+    400070: BrokenSideRock02 2
+    400072: BrokenSideRock02 3
+    400074: BrokenSideRock03
+    400076: BrokenSideRock03 1
+    400078: BrokenSideRock03 2
+    400080: BrokenSideRock03 3
+    400082: BrokenSideRock04
+    400084: BrokenSideRock04 1
+    400086: BrokenSideRock04 2
+    400088: BrokenSideRock04 3
+    400090: BrokenSideRock05
+    400092: BrokenSideRock05 1
+    400094: BrokenSideRock05 2
+    400096: BrokenSideRock05 3
+    400098: BrokenSideRocks_01
+    400100: BrokenSideRocks_02
+    400102: BrokenSideRocks_03
+    400104: BrokenSideRocks_04
+    400106: BrokenTopWall_01
+    400108: BrokenTopWall_02
+    400110: BrokenWall_01
+    400112: BrokenWall_02
+    400114: BrokenWall_03
+    400116: BrokenWall_04
+    400118: BrokenWindow_01
+    400120: DoorFrame_01
+    400122: DoorFrame_02
+    400124: DoorFrame_03
+    400126: DoorFrame_04
+    400128: DoorPlank_01
+    400130: DoorPlank_02
+    400132: DoorPlank_03
+    400134: DoorPlank_04
+    400136: FramePiece_01
+    400138: FramePiece_02
+    400140: FramePiece_03
+    400142: FramePiece_04
+    400144: FramePiece_05
+    400146: FramePiece_06
+    400148: //RootNode
+    400150: InactHouseLOD_02
+    400152: IntactBeam_01
+    400154: IntactBeam_02
+    400156: IntactBeam_03
+    400158: IntactBeam_04
+    400160: IntactBeam_05
+    400162: IntactDoor
+    400164: IntactHouse
+    400166: IntactHouseLOD_01
+    400168: IntactRoof_01
+    400170: IntactRoof_02
+    400172: IntactSideRocks_01
+    400174: IntactSideRocks_02
+    400176: IntactSideRocks_03
+    400178: IntactSideRocks_04
+    400180: IntactTopWall_01
+    400182: IntactTopWall_02
+    400184: IntactWall_01
+    400186: IntactWall_02
+    400188: IntactWall_03
+    400190: IntactWall_04
+    400192: IntactWindow_01
+    400194: LOD_0
+    400196: LOD_1
+    400198: polySurface106
+    400200: polySurface106 1
+    400202: polySurface106 2
+    400204: polySurface108
+    400206: polySurface108 1
+    400208: polySurface108 2
+    400210: polySurface110
+    400212: polySurface110 1
+    400214: polySurface110 2
+    400216: polySurface112
+    400218: polySurface112 1
+    400220: polySurface112 2
+    400222: polySurface115
+    400224: polySurface115 1
+    400226: polySurface115 2
+    400228: polySurface117
+    400230: polySurface117 1
+    400232: polySurface117 2
+    400234: polySurface119
+    400236: polySurface119 1
+    400238: polySurface119 2
+    400240: polySurface121
+    400242: polySurface121 1
+    400244: polySurface121 2
+    400246: polySurface123
+    400248: polySurface123 1
+    400250: polySurface123 2
+    400252: polySurface125
+    400254: polySurface125 1
+    400256: polySurface125 2
+    400258: polySurface127
+    400260: polySurface127 1
+    400262: polySurface127 2
+    400264: polySurface129
+    400266: polySurface129 1
+    400268: polySurface129 2
+    400270: polySurface133
+    400272: polySurface133 1
+    400274: polySurface133 2
+    400276: polySurface135
+    400278: polySurface135 1
+    400280: polySurface135 2
+    400282: polySurface136
+    400284: polySurface136 1
+    400286: polySurface136 2
+    400288: polySurface138
+    400290: polySurface138 1
+    400292: polySurface138 2
+    400294: RoofPiece_01
+    400296: RoofPiece_01 1
+    400298: RoofPiece_02
+    400300: RoofPiece_02 1
+    400302: RoofPiece_03
+    400304: RoofPiece_03 1
+    400306: RoofPiece_04
+    400308: RoofPiece_04 1
+    400310: RoofPiece_05
+    400312: RoofPiece_05 1
+    400314: RoofPiece_06
+    400316: RoofPiece_06 1
+    400318: RoofPiece_07
+    400320: RoofPiece_07 1
+    400322: RoofPiece_08
+    400324: RoofPiece_08 1
+    400326: RoofPiece_09
+    400328: RoofPiece_09 1
+    400330: RoofPiece_10
+    400332: RoofPiece_10 1
+    400334: RoofPiece_11
+    400336: RoofPiece_11 1
+    400338: RoofPiece_12
+    400340: RoofPiece_12 1
+    400342: WallPiece01
+    400344: WallPiece01 1
+    400346: WallPiece01 2
+    400348: WallPiece010
+    400350: WallPiece011
+    400352: WallPiece012
+    400354: WallPiece013
+    400356: WallPiece014
+    400358: WallPiece015
+    400360: WallPiece016
+    400362: WallPiece017
+    400364: WallPiece018
+    400366: WallPiece019
+    400368: WallPiece02
+    400370: WallPiece02 1
+    400372: WallPiece020
+    400374: WallPiece021
+    400376: WallPiece022
+    400378: WallPiece03
+    400380: WallPiece03 1
+    400382: WallPiece04
+    400384: WallPiece04 1
+    400386: WallPiece05
+    400388: WallPiece05 1
+    400390: WallPiece06
+    400392: WallPiece06 1
+    400394: WallPiece07
+    400396: WallPiece07 1
+    400398: WallPiece08
+    400400: WallPiece09
+    400402: WindowPiece_01
+    400404: WindowPiece_02
+    400406: WindowPiece_03
+    2100000: Beams
+    2100002: Iron
+    2100004: Wood
+    2100006: WallsInside
+    2100008: Roof
+    2100010: SideRocks
+    2100012: WallsOutside
+    2100014: Glass
+    2300000: BeamPiece01
+    2300002: BeamPiece01 1
+    2300004: BeamPiece01 2
+    2300006: BeamPiece01 3
+    2300008: BeamPiece01 4
+    2300010: BeamPiece02
+    2300012: BeamPiece02 1
+    2300014: BeamPiece02 2
+    2300016: BeamPiece02 3
+    2300018: BeamPiece02 4
+    2300020: BeamPiece03
+    2300022: BeamPiece03 1
+    2300024: BeamPiece03 2
+    2300026: BeamPiece03 3
+    2300028: BeamPiece03 4
+    2300030: BrokenRoofBeam_01
+    2300032: BrokenRoofBeam_01 1
+    2300034: BrokenRoofBeam_02
+    2300036: BrokenRoofBeam_02 1
+    2300038: BrokenSideRock01
+    2300040: BrokenSideRock01 1
+    2300042: BrokenSideRock01 2
+    2300044: BrokenSideRock01 3
+    2300046: BrokenSideRock02
+    2300048: BrokenSideRock02 1
+    2300050: BrokenSideRock02 2
+    2300052: BrokenSideRock02 3
+    2300054: BrokenSideRock03
+    2300056: BrokenSideRock03 1
+    2300058: BrokenSideRock03 2
+    2300060: BrokenSideRock03 3
+    2300062: BrokenSideRock04
+    2300064: BrokenSideRock04 1
+    2300066: BrokenSideRock04 2
+    2300068: BrokenSideRock04 3
+    2300070: BrokenSideRock05
+    2300072: BrokenSideRock05 1
+    2300074: BrokenSideRock05 2
+    2300076: BrokenSideRock05 3
+    2300078: DoorFrame_01
+    2300080: DoorFrame_02
+    2300082: DoorFrame_03
+    2300084: DoorFrame_04
+    2300086: DoorPlank_01
+    2300088: DoorPlank_02
+    2300090: DoorPlank_03
+    2300092: DoorPlank_04
+    2300094: FramePiece_01
+    2300096: FramePiece_02
+    2300098: FramePiece_03
+    2300100: FramePiece_04
+    2300102: FramePiece_05
+    2300104: FramePiece_06
+    2300106: InactHouseLOD_02
+    2300108: IntactBeam_01
+    2300110: IntactBeam_02
+    2300112: IntactBeam_03
+    2300114: IntactBeam_04
+    2300116: IntactBeam_05
+    2300118: IntactDoor
+    2300120: IntactRoof_01
+    2300122: IntactRoof_02
+    2300124: IntactSideRocks_01
+    2300126: IntactSideRocks_02
+    2300128: IntactSideRocks_03
+    2300130: IntactSideRocks_04
+    2300132: IntactTopWall_01
+    2300134: IntactTopWall_02
+    2300136: IntactWall_01
+    2300138: IntactWall_02
+    2300140: IntactWall_03
+    2300142: IntactWall_04
+    2300144: IntactWindow_01
+    2300146: polySurface106
+    2300148: polySurface106 1
+    2300150: polySurface106 2
+    2300152: polySurface108
+    2300154: polySurface108 1
+    2300156: polySurface108 2
+    2300158: polySurface110
+    2300160: polySurface110 1
+    2300162: polySurface110 2
+    2300164: polySurface112
+    2300166: polySurface112 1
+    2300168: polySurface112 2
+    2300170: polySurface115
+    2300172: polySurface115 1
+    2300174: polySurface115 2
+    2300176: polySurface117
+    2300178: polySurface117 1
+    2300180: polySurface117 2
+    2300182: polySurface119
+    2300184: polySurface119 1
+    2300186: polySurface119 2
+    2300188: polySurface121
+    2300190: polySurface121 1
+    2300192: polySurface121 2
+    2300194: polySurface123
+    2300196: polySurface123 1
+    2300198: polySurface123 2
+    2300200: polySurface125
+    2300202: polySurface125 1
+    2300204: polySurface125 2
+    2300206: polySurface127
+    2300208: polySurface127 1
+    2300210: polySurface127 2
+    2300212: polySurface129
+    2300214: polySurface129 1
+    2300216: polySurface129 2
+    2300218: polySurface133
+    2300220: polySurface133 1
+    2300222: polySurface133 2
+    2300224: polySurface135
+    2300226: polySurface135 1
+    2300228: polySurface135 2
+    2300230: polySurface136
+    2300232: polySurface136 1
+    2300234: polySurface136 2
+    2300236: polySurface138
+    2300238: polySurface138 1
+    2300240: polySurface138 2
+    2300242: RoofPiece_01
+    2300244: RoofPiece_01 1
+    2300246: RoofPiece_02
+    2300248: RoofPiece_02 1
+    2300250: RoofPiece_03
+    2300252: RoofPiece_03 1
+    2300254: RoofPiece_04
+    2300256: RoofPiece_04 1
+    2300258: RoofPiece_05
+    2300260: RoofPiece_05 1
+    2300262: RoofPiece_06
+    2300264: RoofPiece_06 1
+    2300266: RoofPiece_07
+    2300268: RoofPiece_07 1
+    2300270: RoofPiece_08
+    2300272: RoofPiece_08 1
+    2300274: RoofPiece_09
+    2300276: RoofPiece_09 1
+    2300278: RoofPiece_10
+    2300280: RoofPiece_10 1
+    2300282: RoofPiece_11
+    2300284: RoofPiece_11 1
+    2300286: RoofPiece_12
+    2300288: RoofPiece_12 1
+    2300290: WallPiece01
+    2300292: WallPiece01 1
+    2300294: WallPiece01 2
+    2300296: WallPiece010
+    2300298: WallPiece011
+    2300300: WallPiece012
+    2300302: WallPiece013
+    2300304: WallPiece014
+    2300306: WallPiece015
+    2300308: WallPiece016
+    2300310: WallPiece017
+    2300312: WallPiece018
+    2300314: WallPiece019
+    2300316: WallPiece02
+    2300318: WallPiece02 1
+    2300320: WallPiece020
+    2300322: WallPiece021
+    2300324: WallPiece022
+    2300326: WallPiece03
+    2300328: WallPiece03 1
+    2300330: WallPiece04
+    2300332: WallPiece04 1
+    2300334: WallPiece05
+    2300336: WallPiece05 1
+    2300338: WallPiece06
+    2300340: WallPiece06 1
+    2300342: WallPiece07
+    2300344: WallPiece07 1
+    2300346: WallPiece08
+    2300348: WallPiece09
+    2300350: WindowPiece_01
+    2300352: WindowPiece_02
+    2300354: WindowPiece_03
+    3300000: BeamPiece01
+    3300002: BeamPiece01 1
+    3300004: BeamPiece01 2
+    3300006: BeamPiece01 3
+    3300008: BeamPiece01 4
+    3300010: BeamPiece02
+    3300012: BeamPiece02 1
+    3300014: BeamPiece02 2
+    3300016: BeamPiece02 3
+    3300018: BeamPiece02 4
+    3300020: BeamPiece03
+    3300022: BeamPiece03 1
+    3300024: BeamPiece03 2
+    3300026: BeamPiece03 3
+    3300028: BeamPiece03 4
+    3300030: BrokenRoofBeam_01
+    3300032: BrokenRoofBeam_01 1
+    3300034: BrokenRoofBeam_02
+    3300036: BrokenRoofBeam_02 1
+    3300038: BrokenSideRock01
+    3300040: BrokenSideRock01 1
+    3300042: BrokenSideRock01 2
+    3300044: BrokenSideRock01 3
+    3300046: BrokenSideRock02
+    3300048: BrokenSideRock02 1
+    3300050: BrokenSideRock02 2
+    3300052: BrokenSideRock02 3
+    3300054: BrokenSideRock03
+    3300056: BrokenSideRock03 1
+    3300058: BrokenSideRock03 2
+    3300060: BrokenSideRock03 3
+    3300062: BrokenSideRock04
+    3300064: BrokenSideRock04 1
+    3300066: BrokenSideRock04 2
+    3300068: BrokenSideRock04 3
+    3300070: BrokenSideRock05
+    3300072: BrokenSideRock05 1
+    3300074: BrokenSideRock05 2
+    3300076: BrokenSideRock05 3
+    3300078: DoorFrame_01
+    3300080: DoorFrame_02
+    3300082: DoorFrame_03
+    3300084: DoorFrame_04
+    3300086: DoorPlank_01
+    3300088: DoorPlank_02
+    3300090: DoorPlank_03
+    3300092: DoorPlank_04
+    3300094: FramePiece_01
+    3300096: FramePiece_02
+    3300098: FramePiece_03
+    3300100: FramePiece_04
+    3300102: FramePiece_05
+    3300104: FramePiece_06
+    3300106: InactHouseLOD_02
+    3300108: IntactBeam_01
+    3300110: IntactBeam_02
+    3300112: IntactBeam_03
+    3300114: IntactBeam_04
+    3300116: IntactBeam_05
+    3300118: IntactDoor
+    3300120: IntactRoof_01
+    3300122: IntactRoof_02
+    3300124: IntactSideRocks_01
+    3300126: IntactSideRocks_02
+    3300128: IntactSideRocks_03
+    3300130: IntactSideRocks_04
+    3300132: IntactTopWall_01
+    3300134: IntactTopWall_02
+    3300136: IntactWall_01
+    3300138: IntactWall_02
+    3300140: IntactWall_03
+    3300142: IntactWall_04
+    3300144: IntactWindow_01
+    3300146: polySurface106
+    3300148: polySurface106 1
+    3300150: polySurface106 2
+    3300152: polySurface108
+    3300154: polySurface108 1
+    3300156: polySurface108 2
+    3300158: polySurface110
+    3300160: polySurface110 1
+    3300162: polySurface110 2
+    3300164: polySurface112
+    3300166: polySurface112 1
+    3300168: polySurface112 2
+    3300170: polySurface115
+    3300172: polySurface115 1
+    3300174: polySurface115 2
+    3300176: polySurface117
+    3300178: polySurface117 1
+    3300180: polySurface117 2
+    3300182: polySurface119
+    3300184: polySurface119 1
+    3300186: polySurface119 2
+    3300188: polySurface121
+    3300190: polySurface121 1
+    3300192: polySurface121 2
+    3300194: polySurface123
+    3300196: polySurface123 1
+    3300198: polySurface123 2
+    3300200: polySurface125
+    3300202: polySurface125 1
+    3300204: polySurface125 2
+    3300206: polySurface127
+    3300208: polySurface127 1
+    3300210: polySurface127 2
+    3300212: polySurface129
+    3300214: polySurface129 1
+    3300216: polySurface129 2
+    3300218: polySurface133
+    3300220: polySurface133 1
+    3300222: polySurface133 2
+    3300224: polySurface135
+    3300226: polySurface135 1
+    3300228: polySurface135 2
+    3300230: polySurface136
+    3300232: polySurface136 1
+    3300234: polySurface136 2
+    3300236: polySurface138
+    3300238: polySurface138 1
+    3300240: polySurface138 2
+    3300242: RoofPiece_01
+    3300244: RoofPiece_01 1
+    3300246: RoofPiece_02
+    3300248: RoofPiece_02 1
+    3300250: RoofPiece_03
+    3300252: RoofPiece_03 1
+    3300254: RoofPiece_04
+    3300256: RoofPiece_04 1
+    3300258: RoofPiece_05
+    3300260: RoofPiece_05 1
+    3300262: RoofPiece_06
+    3300264: RoofPiece_06 1
+    3300266: RoofPiece_07
+    3300268: RoofPiece_07 1
+    3300270: RoofPiece_08
+    3300272: RoofPiece_08 1
+    3300274: RoofPiece_09
+    3300276: RoofPiece_09 1
+    3300278: RoofPiece_10
+    3300280: RoofPiece_10 1
+    3300282: RoofPiece_11
+    3300284: RoofPiece_11 1
+    3300286: RoofPiece_12
+    3300288: RoofPiece_12 1
+    3300290: WallPiece01
+    3300292: WallPiece01 1
+    3300294: WallPiece01 2
+    3300296: WallPiece010
+    3300298: WallPiece011
+    3300300: WallPiece012
+    3300302: WallPiece013
+    3300304: WallPiece014
+    3300306: WallPiece015
+    3300308: WallPiece016
+    3300310: WallPiece017
+    3300312: WallPiece018
+    3300314: WallPiece019
+    3300316: WallPiece02
+    3300318: WallPiece02 1
+    3300320: WallPiece020
+    3300322: WallPiece021
+    3300324: WallPiece022
+    3300326: WallPiece03
+    3300328: WallPiece03 1
+    3300330: WallPiece04
+    3300332: WallPiece04 1
+    3300334: WallPiece05
+    3300336: WallPiece05 1
+    3300338: WallPiece06
+    3300340: WallPiece06 1
+    3300342: WallPiece07
+    3300344: WallPiece07 1
+    3300346: WallPiece08
+    3300348: WallPiece09
+    3300350: WindowPiece_01
+    3300352: WindowPiece_02
+    3300354: WindowPiece_03
+    4300000: IntactBeam_01
+    4300002: IntactBeam_02
+    4300004: IntactBeam_03
+    4300006: IntactBeam_04
+    4300008: IntactBeam_05
+    4300010: IntactDoor
+    4300012: IntactRoof_01
+    4300014: IntactRoof_02
+    4300016: IntactSideRocks_01
+    4300018: IntactSideRocks_02
+    4300020: IntactSideRocks_03
+    4300022: IntactSideRocks_04
+    4300024: IntactTopWall_01
+    4300026: IntactTopWall_02
+    4300028: IntactWall_01
+    4300030: IntactWall_02
+    4300032: IntactWall_03
+    4300034: IntactWall_04
+    4300036: IntactWindow_01
+    4300038: InactHouseLOD_02
+    4300040: WindowPiece_03
+    4300042: WindowPiece_02
+    4300044: WindowPiece_01
+    4300046: FramePiece_06
+    4300048: FramePiece_05
+    4300050: FramePiece_04
+    4300052: FramePiece_03
+    4300054: FramePiece_02
+    4300056: FramePiece_01
+    4300058: WallPiece01
+    4300060: WallPiece08
+    4300062: WallPiece09
+    4300064: WallPiece010
+    4300066: WallPiece011
+    4300068: WallPiece012
+    4300070: WallPiece013
+    4300072: WallPiece014
+    4300074: WallPiece015
+    4300076: WallPiece016
+    4300078: WallPiece017
+    4300080: WallPiece018
+    4300082: WallPiece019
+    4300084: WallPiece020
+    4300086: WallPiece022
+    4300088: WallPiece021
+    4300090: polySurface117
+    4300092: polySurface112
+    4300094: polySurface110
+    4300096: polySurface108
+    4300098: polySurface106
+    4300100: polySurface115
+    4300102: polySurface135
+    4300104: polySurface138
+    4300106: polySurface133
+    4300108: polySurface136
+    4300110: polySurface129
+    4300112: polySurface127
+    4300114: polySurface125
+    4300116: polySurface123
+    4300118: polySurface121
+    4300120: polySurface119
+    4300122: polySurface117
+    4300124: polySurface112
+    4300126: polySurface110
+    4300128: polySurface108
+    4300130: polySurface106
+    4300132: polySurface115
+    4300134: polySurface135
+    4300136: polySurface138
+    4300138: polySurface133
+    4300140: polySurface136
+    4300142: polySurface129
+    4300144: polySurface127
+    4300146: polySurface125
+    4300148: polySurface123
+    4300150: polySurface121
+    4300152: polySurface119
+    4300154: polySurface117
+    4300156: polySurface112
+    4300158: polySurface110
+    4300160: polySurface108
+    4300162: polySurface106
+    4300164: polySurface115
+    4300166: polySurface135
+    4300168: polySurface138
+    4300170: polySurface133
+    4300172: polySurface136
+    4300174: polySurface129
+    4300176: polySurface127
+    4300178: polySurface125
+    4300180: polySurface123
+    4300182: polySurface121
+    4300184: polySurface119
+    4300186: WallPiece01
+    4300188: WallPiece02
+    4300190: WallPiece03
+    4300192: WallPiece04
+    4300194: WallPiece05
+    4300196: WallPiece06
+    4300198: WallPiece07
+    4300200: WallPiece01
+    4300202: WallPiece02
+    4300204: WallPiece03
+    4300206: WallPiece04
+    4300208: WallPiece05
+    4300210: WallPiece06
+    4300212: WallPiece07
+    4300214: BrokenSideRock01
+    4300216: BrokenSideRock02
+    4300218: BrokenSideRock03
+    4300220: BrokenSideRock04
+    4300222: BrokenSideRock05
+    4300224: BrokenSideRock01
+    4300226: BrokenSideRock02
+    4300228: BrokenSideRock03
+    4300230: BrokenSideRock04
+    4300232: BrokenSideRock05
+    4300234: BrokenSideRock01
+    4300236: BrokenSideRock02
+    4300238: BrokenSideRock03
+    4300240: BrokenSideRock04
+    4300242: BrokenSideRock05
+    4300244: BrokenSideRock01
+    4300246: BrokenSideRock02
+    4300248: BrokenSideRock03
+    4300250: BrokenSideRock04
+    4300252: BrokenSideRock05
+    4300254: RoofPiece_12
+    4300256: RoofPiece_11
+    4300258: RoofPiece_10
+    4300260: RoofPiece_09
+    4300262: RoofPiece_08
+    4300264: RoofPiece_07
+    4300266: RoofPiece_06
+    4300268: RoofPiece_05
+    4300270: RoofPiece_04
+    4300272: RoofPiece_03
+    4300274: RoofPiece_02
+    4300276: RoofPiece_01
+    4300278: BrokenRoofBeam_01
+    4300280: BrokenRoofBeam_02
+    4300282: RoofPiece_12
+    4300284: RoofPiece_11
+    4300286: RoofPiece_10
+    4300288: RoofPiece_09
+    4300290: RoofPiece_08
+    4300292: RoofPiece_07
+    4300294: RoofPiece_06
+    4300296: RoofPiece_05
+    4300298: RoofPiece_04
+    4300300: RoofPiece_03
+    4300302: RoofPiece_02
+    4300304: RoofPiece_01
+    4300306: BrokenRoofBeam_01
+    4300308: BrokenRoofBeam_02
+    4300310: DoorPlank_01
+    4300312: DoorPlank_04
+    4300314: DoorPlank_02
+    4300316: DoorPlank_03
+    4300318: DoorFrame_01
+    4300320: DoorFrame_02
+    4300322: DoorFrame_03
+    4300324: DoorFrame_04
+    4300326: BeamPiece01
+    4300328: BeamPiece02
+    4300330: BeamPiece03
+    4300332: BeamPiece01
+    4300334: BeamPiece02
+    4300336: BeamPiece03
+    4300338: BeamPiece01
+    4300340: BeamPiece02
+    4300342: BeamPiece03
+    4300344: BeamPiece01
+    4300346: BeamPiece02
+    4300348: BeamPiece03
+    4300350: BeamPiece01
+    4300352: BeamPiece02
+    4300354: BeamPiece03
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beams
+    second: {fileID: 2100000, guid: 9de848b3a989f714d9f0ff329292c53d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 3de314945aec7fc4db6533d34f2ad111, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Iron
+    second: {fileID: 2100000, guid: b73c2945887a81942a91f7c7c79966c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof
+    second: {fileID: 2100000, guid: 4d5d175a6359c32479faa288a29a3150, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SideRocks
+    second: {fileID: 2100000, guid: f1b437d04b8f87646b5be495f94cb53e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallsInside
+    second: {fileID: 2100000, guid: 9de848b3a989f714d9f0ff329292c53d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallsOutside
+    second: {fileID: 2100000, guid: d0d333cca0aea6043b140ce135820450, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: 9de848b3a989f714d9f0ff329292c53d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
