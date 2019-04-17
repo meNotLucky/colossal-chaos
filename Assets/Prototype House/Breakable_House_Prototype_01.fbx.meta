@@ -1,0 +1,691 @@
+fileFormatVersion: 2
+guid: 2cf7cacfeae253f4c81d289f35518f74
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BrokenComponents
+    100004: BrokenPillar
+    100006: BrokenPillar1
+    100008: BrokenPillar2
+    100010: BrokenPillar3
+    100012: BrokenPillar4
+    100014: BrokenPillar5
+    100016: BrokenPillar6
+    100018: BrokenPillar7
+    100020: BrokenRoof_01
+    100022: BrokenRoof_02
+    100024: BrokenWall
+    100026: BrokenWall1
+    100028: BrokenWall2
+    100030: BrokenWall3
+    100032: Floor
+    100034: IntactComponents
+    100036: Pillarpiece_01
+    100038: Pillarpiece_01 1
+    100040: Pillarpiece_01 2
+    100042: Pillarpiece_01 3
+    100044: Pillarpiece_01 4
+    100046: Pillarpiece_01 5
+    100048: Pillarpiece_01 6
+    100050: Pillarpiece_01 7
+    100052: Pillarpiece_02
+    100054: Pillarpiece_02 1
+    100056: Pillarpiece_02 2
+    100058: Pillarpiece_02 3
+    100060: Pillarpiece_02 4
+    100062: Pillarpiece_02 5
+    100064: Pillarpiece_02 6
+    100066: Pillarpiece_02 7
+    100068: Pillarpiece_03
+    100070: Pillarpiece_03 1
+    100072: Pillarpiece_03 2
+    100074: Pillarpiece_03 3
+    100076: Pillarpiece_03 4
+    100078: Pillarpiece_03 5
+    100080: Pillarpiece_03 6
+    100082: Pillarpiece_03 7
+    100084: Pillarpiece_04
+    100086: Pillarpiece_04 1
+    100088: Pillarpiece_04 2
+    100090: Pillarpiece_04 3
+    100092: Pillarpiece_04 4
+    100094: Pillarpiece_04 5
+    100096: Pillarpiece_04 6
+    100098: Pillarpiece_04 7
+    100100: StaticPillar
+    100102: StaticPillar1
+    100104: StaticPillar2
+    100106: StaticPillar3
+    100108: StaticPillar4
+    100110: StaticPillar5
+    100112: StaticPillar6
+    100114: StaticPillar7
+    100116: StaticRoof_01
+    100118: StaticRoof_02
+    100120: StaticWall_S
+    100122: StaticWall_S1
+    100124: StaticWall_S2
+    100126: StaticWall_S3
+    100128: WallPiece_01
+    100130: WallPiece_01 1
+    100132: WallPiece_01 2
+    100134: WallPiece_01 3
+    100136: WallPiece_01 4
+    100138: WallPiece_01 5
+    100140: WallPiece_010
+    100142: WallPiece_010 1
+    100144: WallPiece_010 2
+    100146: WallPiece_010 3
+    100148: WallPiece_010 4
+    100150: WallPiece_010 5
+    100152: WallPiece_011
+    100154: WallPiece_011 1
+    100156: WallPiece_011 2
+    100158: WallPiece_011 3
+    100160: WallPiece_011 4
+    100162: WallPiece_011 5
+    100164: WallPiece_02
+    100166: WallPiece_02 1
+    100168: WallPiece_02 2
+    100170: WallPiece_02 3
+    100172: WallPiece_02 4
+    100174: WallPiece_02 5
+    100176: WallPiece_03
+    100178: WallPiece_03 1
+    100180: WallPiece_03 2
+    100182: WallPiece_03 3
+    100184: WallPiece_03 4
+    100186: WallPiece_03 5
+    100188: WallPiece_04
+    100190: WallPiece_04 1
+    100192: WallPiece_04 2
+    100194: WallPiece_04 3
+    100196: WallPiece_04 4
+    100198: WallPiece_04 5
+    100200: WallPiece_05
+    100202: WallPiece_05 1
+    100204: WallPiece_05 2
+    100206: WallPiece_05 3
+    100208: WallPiece_05 4
+    100210: WallPiece_05 5
+    100212: WallPiece_06
+    100214: WallPiece_06 1
+    100216: WallPiece_06 2
+    100218: WallPiece_06 3
+    100220: WallPiece_06 4
+    100222: WallPiece_06 5
+    100224: WallPiece_07
+    100226: WallPiece_07 1
+    100228: WallPiece_07 2
+    100230: WallPiece_07 3
+    100232: WallPiece_07 4
+    100234: WallPiece_07 5
+    100236: WallPiece_08
+    100238: WallPiece_08 1
+    100240: WallPiece_08 2
+    100242: WallPiece_08 3
+    100244: WallPiece_08 4
+    100246: WallPiece_08 5
+    100248: WallPiece_09
+    100250: WallPiece_09 1
+    100252: WallPiece_09 2
+    100254: WallPiece_09 3
+    100256: WallPiece_09 4
+    100258: WallPiece_09 5
+    400000: //RootNode
+    400002: BrokenComponents
+    400004: BrokenPillar
+    400006: BrokenPillar1
+    400008: BrokenPillar2
+    400010: BrokenPillar3
+    400012: BrokenPillar4
+    400014: BrokenPillar5
+    400016: BrokenPillar6
+    400018: BrokenPillar7
+    400020: BrokenRoof_01
+    400022: BrokenRoof_02
+    400024: BrokenWall
+    400026: BrokenWall1
+    400028: BrokenWall2
+    400030: BrokenWall3
+    400032: Floor
+    400034: IntactComponents
+    400036: Pillarpiece_01
+    400038: Pillarpiece_01 1
+    400040: Pillarpiece_01 2
+    400042: Pillarpiece_01 3
+    400044: Pillarpiece_01 4
+    400046: Pillarpiece_01 5
+    400048: Pillarpiece_01 6
+    400050: Pillarpiece_01 7
+    400052: Pillarpiece_02
+    400054: Pillarpiece_02 1
+    400056: Pillarpiece_02 2
+    400058: Pillarpiece_02 3
+    400060: Pillarpiece_02 4
+    400062: Pillarpiece_02 5
+    400064: Pillarpiece_02 6
+    400066: Pillarpiece_02 7
+    400068: Pillarpiece_03
+    400070: Pillarpiece_03 1
+    400072: Pillarpiece_03 2
+    400074: Pillarpiece_03 3
+    400076: Pillarpiece_03 4
+    400078: Pillarpiece_03 5
+    400080: Pillarpiece_03 6
+    400082: Pillarpiece_03 7
+    400084: Pillarpiece_04
+    400086: Pillarpiece_04 1
+    400088: Pillarpiece_04 2
+    400090: Pillarpiece_04 3
+    400092: Pillarpiece_04 4
+    400094: Pillarpiece_04 5
+    400096: Pillarpiece_04 6
+    400098: Pillarpiece_04 7
+    400100: StaticPillar
+    400102: StaticPillar1
+    400104: StaticPillar2
+    400106: StaticPillar3
+    400108: StaticPillar4
+    400110: StaticPillar5
+    400112: StaticPillar6
+    400114: StaticPillar7
+    400116: StaticRoof_01
+    400118: StaticRoof_02
+    400120: StaticWall_S
+    400122: StaticWall_S1
+    400124: StaticWall_S2
+    400126: StaticWall_S3
+    400128: WallPiece_01
+    400130: WallPiece_01 1
+    400132: WallPiece_01 2
+    400134: WallPiece_01 3
+    400136: WallPiece_01 4
+    400138: WallPiece_01 5
+    400140: WallPiece_010
+    400142: WallPiece_010 1
+    400144: WallPiece_010 2
+    400146: WallPiece_010 3
+    400148: WallPiece_010 4
+    400150: WallPiece_010 5
+    400152: WallPiece_011
+    400154: WallPiece_011 1
+    400156: WallPiece_011 2
+    400158: WallPiece_011 3
+    400160: WallPiece_011 4
+    400162: WallPiece_011 5
+    400164: WallPiece_02
+    400166: WallPiece_02 1
+    400168: WallPiece_02 2
+    400170: WallPiece_02 3
+    400172: WallPiece_02 4
+    400174: WallPiece_02 5
+    400176: WallPiece_03
+    400178: WallPiece_03 1
+    400180: WallPiece_03 2
+    400182: WallPiece_03 3
+    400184: WallPiece_03 4
+    400186: WallPiece_03 5
+    400188: WallPiece_04
+    400190: WallPiece_04 1
+    400192: WallPiece_04 2
+    400194: WallPiece_04 3
+    400196: WallPiece_04 4
+    400198: WallPiece_04 5
+    400200: WallPiece_05
+    400202: WallPiece_05 1
+    400204: WallPiece_05 2
+    400206: WallPiece_05 3
+    400208: WallPiece_05 4
+    400210: WallPiece_05 5
+    400212: WallPiece_06
+    400214: WallPiece_06 1
+    400216: WallPiece_06 2
+    400218: WallPiece_06 3
+    400220: WallPiece_06 4
+    400222: WallPiece_06 5
+    400224: WallPiece_07
+    400226: WallPiece_07 1
+    400228: WallPiece_07 2
+    400230: WallPiece_07 3
+    400232: WallPiece_07 4
+    400234: WallPiece_07 5
+    400236: WallPiece_08
+    400238: WallPiece_08 1
+    400240: WallPiece_08 2
+    400242: WallPiece_08 3
+    400244: WallPiece_08 4
+    400246: WallPiece_08 5
+    400248: WallPiece_09
+    400250: WallPiece_09 1
+    400252: WallPiece_09 2
+    400254: WallPiece_09 3
+    400256: WallPiece_09 4
+    400258: WallPiece_09 5
+    2100000: lambert1
+    2300000: Floor
+    2300002: Pillarpiece_01
+    2300004: Pillarpiece_01 1
+    2300006: Pillarpiece_01 2
+    2300008: Pillarpiece_01 3
+    2300010: Pillarpiece_01 4
+    2300012: Pillarpiece_01 5
+    2300014: Pillarpiece_01 6
+    2300016: Pillarpiece_01 7
+    2300018: Pillarpiece_02
+    2300020: Pillarpiece_02 1
+    2300022: Pillarpiece_02 2
+    2300024: Pillarpiece_02 3
+    2300026: Pillarpiece_02 4
+    2300028: Pillarpiece_02 5
+    2300030: Pillarpiece_02 6
+    2300032: Pillarpiece_02 7
+    2300034: Pillarpiece_03
+    2300036: Pillarpiece_03 1
+    2300038: Pillarpiece_03 2
+    2300040: Pillarpiece_03 3
+    2300042: Pillarpiece_03 4
+    2300044: Pillarpiece_03 5
+    2300046: Pillarpiece_03 6
+    2300048: Pillarpiece_03 7
+    2300050: Pillarpiece_04
+    2300052: Pillarpiece_04 1
+    2300054: Pillarpiece_04 2
+    2300056: Pillarpiece_04 3
+    2300058: Pillarpiece_04 4
+    2300060: Pillarpiece_04 5
+    2300062: Pillarpiece_04 6
+    2300064: Pillarpiece_04 7
+    2300066: StaticPillar
+    2300068: StaticPillar1
+    2300070: StaticPillar2
+    2300072: StaticPillar3
+    2300074: StaticPillar4
+    2300076: StaticPillar5
+    2300078: StaticPillar6
+    2300080: StaticPillar7
+    2300082: StaticRoof_01
+    2300084: StaticRoof_02
+    2300086: StaticWall_S
+    2300088: StaticWall_S1
+    2300090: StaticWall_S2
+    2300092: StaticWall_S3
+    2300094: WallPiece_01
+    2300096: WallPiece_01 1
+    2300098: WallPiece_01 2
+    2300100: WallPiece_01 3
+    2300102: WallPiece_01 4
+    2300104: WallPiece_01 5
+    2300106: WallPiece_010
+    2300108: WallPiece_010 1
+    2300110: WallPiece_010 2
+    2300112: WallPiece_010 3
+    2300114: WallPiece_010 4
+    2300116: WallPiece_010 5
+    2300118: WallPiece_011
+    2300120: WallPiece_011 1
+    2300122: WallPiece_011 2
+    2300124: WallPiece_011 3
+    2300126: WallPiece_011 4
+    2300128: WallPiece_011 5
+    2300130: WallPiece_02
+    2300132: WallPiece_02 1
+    2300134: WallPiece_02 2
+    2300136: WallPiece_02 3
+    2300138: WallPiece_02 4
+    2300140: WallPiece_02 5
+    2300142: WallPiece_03
+    2300144: WallPiece_03 1
+    2300146: WallPiece_03 2
+    2300148: WallPiece_03 3
+    2300150: WallPiece_03 4
+    2300152: WallPiece_03 5
+    2300154: WallPiece_04
+    2300156: WallPiece_04 1
+    2300158: WallPiece_04 2
+    2300160: WallPiece_04 3
+    2300162: WallPiece_04 4
+    2300164: WallPiece_04 5
+    2300166: WallPiece_05
+    2300168: WallPiece_05 1
+    2300170: WallPiece_05 2
+    2300172: WallPiece_05 3
+    2300174: WallPiece_05 4
+    2300176: WallPiece_05 5
+    2300178: WallPiece_06
+    2300180: WallPiece_06 1
+    2300182: WallPiece_06 2
+    2300184: WallPiece_06 3
+    2300186: WallPiece_06 4
+    2300188: WallPiece_06 5
+    2300190: WallPiece_07
+    2300192: WallPiece_07 1
+    2300194: WallPiece_07 2
+    2300196: WallPiece_07 3
+    2300198: WallPiece_07 4
+    2300200: WallPiece_07 5
+    2300202: WallPiece_08
+    2300204: WallPiece_08 1
+    2300206: WallPiece_08 2
+    2300208: WallPiece_08 3
+    2300210: WallPiece_08 4
+    2300212: WallPiece_08 5
+    2300214: WallPiece_09
+    2300216: WallPiece_09 1
+    2300218: WallPiece_09 2
+    2300220: WallPiece_09 3
+    2300222: WallPiece_09 4
+    2300224: WallPiece_09 5
+    3300000: Floor
+    3300002: Pillarpiece_01
+    3300004: Pillarpiece_01 1
+    3300006: Pillarpiece_01 2
+    3300008: Pillarpiece_01 3
+    3300010: Pillarpiece_01 4
+    3300012: Pillarpiece_01 5
+    3300014: Pillarpiece_01 6
+    3300016: Pillarpiece_01 7
+    3300018: Pillarpiece_02
+    3300020: Pillarpiece_02 1
+    3300022: Pillarpiece_02 2
+    3300024: Pillarpiece_02 3
+    3300026: Pillarpiece_02 4
+    3300028: Pillarpiece_02 5
+    3300030: Pillarpiece_02 6
+    3300032: Pillarpiece_02 7
+    3300034: Pillarpiece_03
+    3300036: Pillarpiece_03 1
+    3300038: Pillarpiece_03 2
+    3300040: Pillarpiece_03 3
+    3300042: Pillarpiece_03 4
+    3300044: Pillarpiece_03 5
+    3300046: Pillarpiece_03 6
+    3300048: Pillarpiece_03 7
+    3300050: Pillarpiece_04
+    3300052: Pillarpiece_04 1
+    3300054: Pillarpiece_04 2
+    3300056: Pillarpiece_04 3
+    3300058: Pillarpiece_04 4
+    3300060: Pillarpiece_04 5
+    3300062: Pillarpiece_04 6
+    3300064: Pillarpiece_04 7
+    3300066: StaticPillar
+    3300068: StaticPillar1
+    3300070: StaticPillar2
+    3300072: StaticPillar3
+    3300074: StaticPillar4
+    3300076: StaticPillar5
+    3300078: StaticPillar6
+    3300080: StaticPillar7
+    3300082: StaticRoof_01
+    3300084: StaticRoof_02
+    3300086: StaticWall_S
+    3300088: StaticWall_S1
+    3300090: StaticWall_S2
+    3300092: StaticWall_S3
+    3300094: WallPiece_01
+    3300096: WallPiece_01 1
+    3300098: WallPiece_01 2
+    3300100: WallPiece_01 3
+    3300102: WallPiece_01 4
+    3300104: WallPiece_01 5
+    3300106: WallPiece_010
+    3300108: WallPiece_010 1
+    3300110: WallPiece_010 2
+    3300112: WallPiece_010 3
+    3300114: WallPiece_010 4
+    3300116: WallPiece_010 5
+    3300118: WallPiece_011
+    3300120: WallPiece_011 1
+    3300122: WallPiece_011 2
+    3300124: WallPiece_011 3
+    3300126: WallPiece_011 4
+    3300128: WallPiece_011 5
+    3300130: WallPiece_02
+    3300132: WallPiece_02 1
+    3300134: WallPiece_02 2
+    3300136: WallPiece_02 3
+    3300138: WallPiece_02 4
+    3300140: WallPiece_02 5
+    3300142: WallPiece_03
+    3300144: WallPiece_03 1
+    3300146: WallPiece_03 2
+    3300148: WallPiece_03 3
+    3300150: WallPiece_03 4
+    3300152: WallPiece_03 5
+    3300154: WallPiece_04
+    3300156: WallPiece_04 1
+    3300158: WallPiece_04 2
+    3300160: WallPiece_04 3
+    3300162: WallPiece_04 4
+    3300164: WallPiece_04 5
+    3300166: WallPiece_05
+    3300168: WallPiece_05 1
+    3300170: WallPiece_05 2
+    3300172: WallPiece_05 3
+    3300174: WallPiece_05 4
+    3300176: WallPiece_05 5
+    3300178: WallPiece_06
+    3300180: WallPiece_06 1
+    3300182: WallPiece_06 2
+    3300184: WallPiece_06 3
+    3300186: WallPiece_06 4
+    3300188: WallPiece_06 5
+    3300190: WallPiece_07
+    3300192: WallPiece_07 1
+    3300194: WallPiece_07 2
+    3300196: WallPiece_07 3
+    3300198: WallPiece_07 4
+    3300200: WallPiece_07 5
+    3300202: WallPiece_08
+    3300204: WallPiece_08 1
+    3300206: WallPiece_08 2
+    3300208: WallPiece_08 3
+    3300210: WallPiece_08 4
+    3300212: WallPiece_08 5
+    3300214: WallPiece_09
+    3300216: WallPiece_09 1
+    3300218: WallPiece_09 2
+    3300220: WallPiece_09 3
+    3300222: WallPiece_09 4
+    3300224: WallPiece_09 5
+    4300000: Pillarpiece_01
+    4300002: Pillarpiece_02
+    4300004: Pillarpiece_03
+    4300006: Pillarpiece_04
+    4300008: Pillarpiece_01
+    4300010: Pillarpiece_02
+    4300012: Pillarpiece_03
+    4300014: Pillarpiece_04
+    4300016: Pillarpiece_01
+    4300018: Pillarpiece_02
+    4300020: Pillarpiece_03
+    4300022: Pillarpiece_04
+    4300024: Pillarpiece_01
+    4300026: Pillarpiece_02
+    4300028: Pillarpiece_03
+    4300030: Pillarpiece_04
+    4300032: WallPiece_01
+    4300034: WallPiece_02
+    4300036: WallPiece_03
+    4300038: WallPiece_04
+    4300040: WallPiece_05
+    4300042: WallPiece_06
+    4300044: WallPiece_07
+    4300046: WallPiece_08
+    4300048: WallPiece_09
+    4300050: WallPiece_010
+    4300052: WallPiece_011
+    4300054: WallPiece_01
+    4300056: WallPiece_02
+    4300058: WallPiece_03
+    4300060: WallPiece_04
+    4300062: WallPiece_05
+    4300064: WallPiece_06
+    4300066: WallPiece_07
+    4300068: WallPiece_08
+    4300070: WallPiece_09
+    4300072: WallPiece_010
+    4300074: WallPiece_011
+    4300076: Pillarpiece_01
+    4300078: Pillarpiece_02
+    4300080: Pillarpiece_03
+    4300082: Pillarpiece_04
+    4300084: Pillarpiece_01
+    4300086: Pillarpiece_02
+    4300088: Pillarpiece_03
+    4300090: Pillarpiece_04
+    4300092: Pillarpiece_01
+    4300094: Pillarpiece_02
+    4300096: Pillarpiece_03
+    4300098: Pillarpiece_04
+    4300100: Pillarpiece_01
+    4300102: Pillarpiece_02
+    4300104: Pillarpiece_03
+    4300106: Pillarpiece_04
+    4300108: WallPiece_01
+    4300110: WallPiece_02
+    4300112: WallPiece_03
+    4300114: WallPiece_04
+    4300116: WallPiece_05
+    4300118: WallPiece_06
+    4300120: WallPiece_07
+    4300122: WallPiece_08
+    4300124: WallPiece_09
+    4300126: WallPiece_010
+    4300128: WallPiece_011
+    4300130: WallPiece_01
+    4300132: WallPiece_02
+    4300134: WallPiece_03
+    4300136: WallPiece_04
+    4300138: WallPiece_05
+    4300140: WallPiece_06
+    4300142: WallPiece_07
+    4300144: WallPiece_08
+    4300146: WallPiece_09
+    4300148: WallPiece_010
+    4300150: WallPiece_011
+    4300152: WallPiece_01
+    4300154: WallPiece_02
+    4300156: WallPiece_03
+    4300158: WallPiece_04
+    4300160: WallPiece_05
+    4300162: WallPiece_06
+    4300164: WallPiece_07
+    4300166: WallPiece_08
+    4300168: WallPiece_09
+    4300170: WallPiece_010
+    4300172: WallPiece_011
+    4300174: WallPiece_01
+    4300176: WallPiece_02
+    4300178: WallPiece_03
+    4300180: WallPiece_04
+    4300182: WallPiece_05
+    4300184: WallPiece_06
+    4300186: WallPiece_07
+    4300188: WallPiece_08
+    4300190: WallPiece_09
+    4300192: WallPiece_010
+    4300194: WallPiece_011
+    4300196: StaticPillar7
+    4300198: StaticPillar6
+    4300200: StaticPillar5
+    4300202: StaticPillar4
+    4300204: StaticRoof_02
+    4300206: StaticRoof_01
+    4300208: StaticPillar3
+    4300210: StaticPillar2
+    4300212: StaticPillar1
+    4300214: StaticPillar
+    4300216: StaticWall_S3
+    4300218: StaticWall_S2
+    4300220: StaticWall_S1
+    4300222: StaticWall_S
+    4300224: Floor
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
