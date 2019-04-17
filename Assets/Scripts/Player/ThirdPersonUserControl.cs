@@ -18,7 +18,7 @@ public class ThirdPersonUserControl : MonoBehaviour
         else
         {
             Debug.LogWarning(
-                "Warning: no main camera found. Third person character needs a Camera tagged \"MainCamera\", for -relative controls.", gameObject);
+                "Warning: no main camera found. Third person character needs a Camera tagged \"MainCamera\", for camera-relative controls.", gameObject);
         }
 
         // get the third person character ( this should never be null due to require component )
