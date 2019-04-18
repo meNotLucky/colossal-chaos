@@ -19685,11 +19685,16 @@ PrefabInstance:
         type: 3}
       propertyPath: closestTarget
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 690096193}
     - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: giantTurnForce
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: giantTurnSpeed
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}

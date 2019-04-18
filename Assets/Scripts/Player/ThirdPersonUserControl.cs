@@ -11,12 +11,11 @@ public class ThirdPersonUserControl : MonoBehaviour
     private Vector3 hover;
 
     [Header("Giant AI Data")]
-    public float giantTurnForce;
+    public float giantTurnSpeed;
     public GameObject[] targets;
     public GameObject closestTarget;
-    public float targetAngle;
+    private Quaternion lookRotation;
 
-    [SerializeField]
     float h;
     float v;
     
@@ -45,15 +44,6 @@ public class ThirdPersonUserControl : MonoBehaviour
         h = Input.GetAxisRaw("Horizontal");
         v = 1;//Input.GetAxisRaw("Vertical");
 
-        // TARGETTING SYSTEM [WIP]
-        // if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)){
-        //     if(targetAngle > 5)
-        //         h = 1;
-        //     if(targetAngle < -5)
-        //         h = -1;
-        //     if(targetAngle <= 5 && targetAngle >= -5)
-        //         h = 0;
-        // }
     }
 
     private void FixedUpdate()
@@ -62,13 +52,21 @@ public class ThirdPersonUserControl : MonoBehaviour
 
         // Get camera angle to selected target
         if(closestTarget != null){
-            Vector3 targetDir = closestTarget.transform.position - transform.position;
-            targetAngle = Vector3.SignedAngle(targetDir, transform.forward, Vector3.forward);
+            Vector3 targetDir = (closestTarget.transform.position - transform.position).normalized;
+            lookRotation = Quaternion.LookRotation(targetDir);
         }
 
         // calculate move direction to pass to character
         if (m_Cam != null){
-            m_Move = (v * m_CamForward) + (h * m_Cam.right);
+            if(!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)){
+                
+                transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * giantTurnSpeed);
+                transform.rotation = Quaternion.Euler(new Vector3(0f, transform.rotation.eulerAngles.y, 0f));
+
+                m_Move = (v * m_CamForward) + (h * m_Cam.right);
+            } else {
+                m_Move = (v * m_CamForward) + (h * m_Cam.right);
+            }
         }
         else{
             // we use world-relative directions in the case of no main camera
