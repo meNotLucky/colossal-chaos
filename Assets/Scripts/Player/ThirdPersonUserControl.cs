@@ -9,7 +9,16 @@ public class ThirdPersonUserControl : MonoBehaviour
     private Vector3 m_Move; // the world-relative desired move direction, calculated from the camera and user input.
     private bool m_Jump;
     private Vector3 hover;
-    public float force,horizontalSpeed,verticalSpeed;
+
+    [Header("Giant AI Data")]
+    public float giantTurnForce;
+    public GameObject[] targets;
+    public GameObject closestTarget;
+    public float targetAngle;
+
+    [SerializeField]
+    float h;
+    float v;
     
     
     private void Start()
@@ -27,42 +36,43 @@ public class ThirdPersonUserControl : MonoBehaviour
         m_Character = GetComponent<ThirdPersonCharacter>();
     }
 
-
     private void Update()
     {
         if (!m_Jump)
             m_Jump = Input.GetButtonDown("Jump");
+
+        // read inputs
+        h = Input.GetAxisRaw("Horizontal");
+        v = 1;//Input.GetAxisRaw("Vertical");
+
+        // TARGETTING SYSTEM [WIP]
+        // if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)){
+        //     if(targetAngle > 5)
+        //         h = 1;
+        //     if(targetAngle < -5)
+        //         h = -1;
+        //     if(targetAngle <= 5 && targetAngle >= -5)
+        //         h = 0;
+        // }
     }
 
     private void FixedUpdate()
     {
-        // read inputs
-        float h = Input.GetAxisRaw("Horizontal");
-        float v = 1;//Input.GetAxisRaw("Vertical");
         Vector3 m_CamForward = Vector3.Scale(m_Cam.forward, new Vector3(1, 0, 1)).normalized;
-        hover.z = horizontalSpeed;
-        hover.x = Mathf.Sin(Time.realtimeSinceStartup*verticalSpeed) * force;
-        //m_Move = new Vector3(h, 0, v);
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
-        {
 
-            m_Move = new Vector3(h, 0, 1);
+        // Get camera angle to selected target
+        if(closestTarget != null){
+            Vector3 targetDir = closestTarget.transform.position - transform.position;
+            targetAngle = Vector3.SignedAngle(targetDir, transform.forward, Vector3.forward);
         }
-        else
-        {
-            m_Move = hover;
-        }
+
         // calculate move direction to pass to character
-        if (m_Cam != null)
-        {
-            // calculate camera relative direction to move:
-            
-            //m_Move = (v * m_CamForward) + (h * m_Cam.right);
+        if (m_Cam != null){
+            m_Move = (v * m_CamForward) + (h * m_Cam.right);
         }
-        else
-        {
+        else{
             // we use world-relative directions in the case of no main camera
-            m_Move = v * Vector3.forward + h * Vector3.right;
+            m_Move = (v * Vector3.forward) + (h * Vector3.right);
         }
 
         // pass all parameters to the character control script
