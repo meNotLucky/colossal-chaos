@@ -84,21 +84,21 @@ Material:
     - _MKEditorShowDissolveBehavior: 0
     - _MKEditorShowLightBehavior: 0
     - _MKEditorShowMainBehavior: 1
-    - _MKEditorShowOutlineBehavior: 0
+    - _MKEditorShowOutlineBehavior: 1
     - _MKEditorShowReflectionBehavior: 0
     - _MKEditorShowRenderBehavior: 0
-    - _MKEditorShowRimBehavior: 0
+    - _MKEditorShowRimBehavior: 1
     - _MKEditorShowShadowBehavior: 0
     - _MKEditorShowSketchBehavior: 0
     - _MKEditorShowSpecularBehavior: 0
     - _MKEditorShowTranslucentBehavior: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineSize: 0.02
+    - _OutlineSize: 0.08
     - _Parallax: 0.02
-    - _RimIntensity: 0.5
-    - _RimSize: 1.5
-    - _RimSmoothness: 0.5
+    - _RimIntensity: 0
+    - _RimSize: 1.56
+    - _RimSmoothness: 0.57
     - _ShadowIntensity: 1
     - _Shininess: 0.41313845
     - _SmoothnessTextureChannel: 0
@@ -109,8 +109,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0.99999994}
+    - _Color: {r: 0.3584906, g: 0.3133853, b: 0.24519403, a: 1}
+    - _EmissionColor: {r: 0.46226418, g: 0.15157852, b: 0.06759523, a: 0.99999994}
     - _EmissionColorUI: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColorWithMapUI: {r: 1, g: 1, b: 1, a: 1}
     - _HighlightColor: {r: 1, g: 1, b: 1, a: 1}

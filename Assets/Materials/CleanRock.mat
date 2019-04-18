@@ -69,10 +69,10 @@ Material:
     - _MKEditorShowDissolveBehavior: 0
     - _MKEditorShowLightBehavior: 0
     - _MKEditorShowMainBehavior: 1
-    - _MKEditorShowOutlineBehavior: 0
+    - _MKEditorShowOutlineBehavior: 1
     - _MKEditorShowReflectionBehavior: 0
     - _MKEditorShowRenderBehavior: 0
-    - _MKEditorShowRimBehavior: 0
+    - _MKEditorShowRimBehavior: 1
     - _MKEditorShowShadowBehavior: 0
     - _MKEditorShowSketchBehavior: 0
     - _MKEditorShowSpecularBehavior: 0
@@ -80,11 +80,11 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineSize: 0.02
+    - _OutlineSize: 0.03
     - _Parallax: 0.02
-    - _RimIntensity: 0.5
-    - _RimSize: 1.5
-    - _RimSmoothness: 0.5
+    - _RimIntensity: 0
+    - _RimSize: 0.64
+    - _RimSmoothness: 0.416
     - _ShadowIntensity: 1
     - _Shininess: 0.275
     - _SmoothnessTextureChannel: 0
