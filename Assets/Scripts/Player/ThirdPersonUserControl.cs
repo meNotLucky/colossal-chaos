@@ -8,7 +8,9 @@ public class ThirdPersonUserControl : MonoBehaviour
     private Transform m_Cam; // A reference to the main camera in the scenes transform
     private Vector3 m_Move; // the world-relative desired move direction, calculated from the camera and user input.
     private bool m_Jump;
-
+    private Vector3 hover;
+    public float force,horizontalSpeed,verticalSpeed;
+    
     
     private void Start()
     {
@@ -37,13 +39,25 @@ public class ThirdPersonUserControl : MonoBehaviour
         // read inputs
         float h = Input.GetAxisRaw("Horizontal");
         float v = 1;//Input.GetAxisRaw("Vertical");
+        Vector3 m_CamForward = Vector3.Scale(m_Cam.forward, new Vector3(1, 0, 1)).normalized;
+        hover.z = horizontalSpeed;
+        hover.x = Mathf.Sin(Time.realtimeSinceStartup*verticalSpeed) * force;
+        //m_Move = new Vector3(h, 0, v);
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        {
 
+            m_Move = new Vector3(h, 0, 1);
+        }
+        else
+        {
+            m_Move = hover;
+        }
         // calculate move direction to pass to character
         if (m_Cam != null)
         {
             // calculate camera relative direction to move:
-            Vector3 m_CamForward = Vector3.Scale(m_Cam.forward, new Vector3(1, 0, 1)).normalized;
-            m_Move = (v * m_CamForward) + (h * m_Cam.right);
+            
+            //m_Move = (v * m_CamForward) + (h * m_Cam.right);
         }
         else
         {
