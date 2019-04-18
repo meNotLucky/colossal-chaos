@@ -8,6 +8,8 @@ public class GravityTriggerController : MonoBehaviour
         public bool collisionTriggered = false;
         bool componentsDeleted = true;
         int updateCount = 0;
+        float timeToDestroy = 5;
+        float timer;
 
     private void Start() {
         // Quick fix for Unity planar bug: [Physics.PhysX] QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
@@ -23,6 +25,13 @@ public class GravityTriggerController : MonoBehaviour
 
     private void FixedUpdate() {
 
+        if(componentsDeleted){
+            timer += Time.deltaTime;
+            if(timer >= timeToDestroy){
+                Destroy(gameObject);
+            }
+        }
+
         if(collisionTriggered){
             if(updateCount < 5)
                 updateCount++;
@@ -32,7 +41,6 @@ public class GravityTriggerController : MonoBehaviour
 
                         Destroy(GetComponent<Rigidbody>());
                         Destroy(GetComponent<MeshCollider>());
-                        Destroy(GetComponent<GravityTriggerController>());
                         componentsDeleted = true;
 
                         //Destroy(gameObject); //<- Alternative performance saver
