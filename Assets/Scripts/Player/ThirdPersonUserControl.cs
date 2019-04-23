@@ -10,6 +10,10 @@ public class ThirdPersonUserControl : MonoBehaviour
     private Vector3 move; // the world-relative desired move direction, calculated from the camera and user input.
     private bool jump;
 
+    [Header("Player Input Data")]
+    [Range(0.0001f, 0.001f)]
+    public float mouseInputSensitivity;
+
     [Header("Giant AI Data")]
     public float giantTurnSpeed;
     public List<GameObject> targets = new List<GameObject>();
@@ -22,6 +26,8 @@ public class ThirdPersonUserControl : MonoBehaviour
     
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+
         // get the transform of the main camera
         if (Camera.main != null)
             cam = Camera.main.transform;
@@ -34,12 +40,15 @@ public class ThirdPersonUserControl : MonoBehaviour
 
     private void Update()
     {
+        if(Input.GetAxisRaw("Mouse X") != 0)
+            Cursor.lockState = CursorLockMode.None;
+
         if (!jump)
             jump = Input.GetButtonDown("Jump");
 
         // read inputs
-        h = Input.GetAxis("Horizontal");
-        v = 1;//Input.GetAxisRaw("Vertical");
+        h = - (Input.mousePosition.x - (Screen.width / 2)) * mouseInputSensitivity;
+        v = 1; //Input.GetAxisRaw("Vertical");
 
     }
 
