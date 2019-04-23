@@ -1,7 +1,8 @@
-using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof (ThirdPersonCharacter))]
+[RequireComponent(typeof(ThirdPersonCharacter))]
 public class ThirdPersonUserControl : MonoBehaviour
 {
     private ThirdPersonCharacter character; // A reference to the ThirdPersonCharacter on the object
@@ -11,7 +12,7 @@ public class ThirdPersonUserControl : MonoBehaviour
 
     [Header("Giant AI Data")]
     public float giantTurnSpeed;
-    public GameObject[] targets;
+    public List<GameObject> targets = new List<GameObject>();
     public GameObject closestTarget;
     private Quaternion lookRotation;
 
@@ -25,10 +26,7 @@ public class ThirdPersonUserControl : MonoBehaviour
         if (Camera.main != null)
             cam = Camera.main.transform;
         else
-        {
-            Debug.LogWarning(
-                "Warning: no main camera found. Third person character needs a Camera tagged \"MainCamera\", for camera-relative controls.", gameObject);
-        }
+            Debug.LogWarning("Warning: no main camera found. Third person character needs a Camera tagged \"MainCamera\", for camera-relative controls.", gameObject);
 
         // get the third person character ( this should never be null due to require component )
         character = GetComponent<ThirdPersonCharacter>();
@@ -40,7 +38,7 @@ public class ThirdPersonUserControl : MonoBehaviour
             jump = Input.GetButtonDown("Jump");
 
         // read inputs
-        h = Input.GetAxisRaw("Horizontal");
+        h = Input.GetAxis("Horizontal");
         v = 1;//Input.GetAxisRaw("Vertical");
 
     }

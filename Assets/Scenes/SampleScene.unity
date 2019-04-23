@@ -19636,31 +19636,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1073664698202199001, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 1073664698202199001, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4.6908684
-      objectReference: {fileID: 0}
-    - target: {fileID: 1073664698202199001, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 4.6908684
-      objectReference: {fileID: 0}
-    - target: {fileID: 1073664698202199001, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 4.6908684
-      objectReference: {fileID: 0}
-    - target: {fileID: 1073664698202199001, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 15.2
-      objectReference: {fileID: 0}
     - target: {fileID: 1073664699203377487, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: m_BackGroundColor.r
@@ -19683,23 +19658,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
-      propertyPath: targets.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: closestTarget
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
       propertyPath: giantTurnForce
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: giantTurnSpeed
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
@@ -19711,25 +19671,20 @@ PrefabInstance:
       propertyPath: targets.Array.data[1]
       value: 
       objectReference: {fileID: 690096193}
-    - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
+    - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
-      propertyPath: m_AnimSpeedMultiplier
-      value: 0.625
-      objectReference: {fileID: 0}
-    - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_MoveSpeedMultiplier
-      value: 0.625
+      propertyPath: giantTurnSpeed
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: m_MovingTurnSpeed
-      value: 80
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: m_StationaryTurnSpeed
-      value: 80
+      value: 160
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4018235627c8ff443ae4285db06911d6, type: 3}
