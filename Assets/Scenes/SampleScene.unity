@@ -19766,6 +19766,11 @@ PrefabInstance:
       propertyPath: giantTurnSpeed
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: mouseInputSensitivity
+      value: 0.000463
+      objectReference: {fileID: 0}
     - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: m_MovingTurnSpeed
