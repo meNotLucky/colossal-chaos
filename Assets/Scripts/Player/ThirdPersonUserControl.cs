@@ -58,11 +58,11 @@ public class ThirdPersonUserControl : MonoBehaviour
         // calculate move direction to pass to character
         if (cam != null){
             if(!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)){
-                
-                transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * giantTurnSpeed);
-                transform.rotation = Quaternion.Euler(new Vector3(0f, transform.rotation.eulerAngles.y, 0f));
-
-                move = (v * camForward) + (h * cam.right);
+                if(closestTarget != null){
+                    transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * giantTurnSpeed);
+                    transform.rotation = Quaternion.Euler(new Vector3(0f, transform.rotation.eulerAngles.y, 0f));
+                    move = (v * camForward) + (h * cam.right);
+                }
             } else {
                 move = (v * camForward) + (h * cam.right);
             }
@@ -78,14 +78,22 @@ public class ThirdPersonUserControl : MonoBehaviour
     }
 
     private void UpdateTarget() {
-        closestTarget = targets[0];
-        foreach(var target in targets){
+        if(targets.Count > 0){
+            closestTarget = targets[0];
             float currentTargetDist = Vector3.Distance(closestTarget.transform.position, transform.position);
-            float targetDist = Vector3.Distance(target.transform.position, transform.position);
 
-            if(targetDist < currentTargetDist){
-                closestTarget = target;
+            foreach(var target in targets){
+                float targetDist = Vector3.Distance(target.transform.position, transform.position);
+                if(targetDist < currentTargetDist){
+                    closestTarget = target;
+                }
             }
+
+            if(currentTargetDist < 15){
+                targets.Remove(closestTarget);
+            }
+        } else {
+            closestTarget = null;
         }
     }
 }
