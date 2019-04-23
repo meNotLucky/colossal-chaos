@@ -4,11 +4,10 @@ using UnityEngine;
 [RequireComponent(typeof (ThirdPersonCharacter))]
 public class ThirdPersonUserControl : MonoBehaviour
 {
-    private ThirdPersonCharacter m_Character; // A reference to the ThirdPersonCharacter on the object
-    private Transform m_Cam; // A reference to the main camera in the scenes transform
-    private Vector3 m_Move; // the world-relative desired move direction, calculated from the camera and user input.
-    private bool m_Jump;
-    private Vector3 hover;
+    private ThirdPersonCharacter character; // A reference to the ThirdPersonCharacter on the object
+    private Transform cam; // A reference to the main camera in the scenes transform
+    private Vector3 move; // the world-relative desired move direction, calculated from the camera and user input.
+    private bool jump;
 
     [Header("Giant AI Data")]
     public float giantTurnSpeed;
@@ -16,15 +15,15 @@ public class ThirdPersonUserControl : MonoBehaviour
     public GameObject closestTarget;
     private Quaternion lookRotation;
 
-    float h;
-    float v;
+    private float h;
+    private float v;
     
     
     private void Start()
     {
         // get the transform of the main camera
         if (Camera.main != null)
-            m_Cam = Camera.main.transform;
+            cam = Camera.main.transform;
         else
         {
             Debug.LogWarning(
@@ -32,13 +31,13 @@ public class ThirdPersonUserControl : MonoBehaviour
         }
 
         // get the third person character ( this should never be null due to require component )
-        m_Character = GetComponent<ThirdPersonCharacter>();
+        character = GetComponent<ThirdPersonCharacter>();
     }
 
     private void Update()
     {
-        if (!m_Jump)
-            m_Jump = Input.GetButtonDown("Jump");
+        if (!jump)
+            jump = Input.GetButtonDown("Jump");
 
         // read inputs
         h = Input.GetAxisRaw("Horizontal");
@@ -48,7 +47,9 @@ public class ThirdPersonUserControl : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector3 m_CamForward = Vector3.Scale(m_Cam.forward, new Vector3(1, 0, 1)).normalized;
+        Vector3 camForward = Vector3.Scale(cam.forward, new Vector3(1, 0, 1)).normalized;
+
+        UpdateTarget();
 
         // Get camera angle to selected target
         if(closestTarget != null){
@@ -57,24 +58,36 @@ public class ThirdPersonUserControl : MonoBehaviour
         }
 
         // calculate move direction to pass to character
-        if (m_Cam != null){
+        if (cam != null){
             if(!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)){
                 
                 transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * giantTurnSpeed);
                 transform.rotation = Quaternion.Euler(new Vector3(0f, transform.rotation.eulerAngles.y, 0f));
 
-                m_Move = (v * m_CamForward) + (h * m_Cam.right);
+                move = (v * camForward) + (h * cam.right);
             } else {
-                m_Move = (v * m_CamForward) + (h * m_Cam.right);
+                move = (v * camForward) + (h * cam.right);
             }
         }
         else{
             // we use world-relative directions in the case of no main camera
-            m_Move = (v * Vector3.forward) + (h * Vector3.right);
+            move = (v * Vector3.forward) + (h * Vector3.right);
         }
 
         // pass all parameters to the character control script
-        m_Character.Move(m_Move, m_Jump);
-        m_Jump = false;
+        character.Move(move, jump);
+        jump = false;
+    }
+
+    private void UpdateTarget() {
+        closestTarget = targets[0];
+        foreach(var target in targets){
+            float currentTargetDist = Vector3.Distance(closestTarget.transform.position, transform.position);
+            float targetDist = Vector3.Distance(target.transform.position, transform.position);
+
+            if(targetDist < currentTargetDist){
+                closestTarget = target;
+            }
+        }
     }
 }

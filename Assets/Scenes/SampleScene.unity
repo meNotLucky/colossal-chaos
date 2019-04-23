@@ -1371,7 +1371,7 @@ Transform:
   m_LocalScale: {x: 187.53958, y: 35.108032, z: 9.583491}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &111685613 stripped
 Transform:
@@ -1615,10 +1615,10 @@ Transform:
   m_GameObject: {fileID: 132283879}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 47.8, y: -12.2, z: 77.3}
-  m_LocalScale: {x: 242.40714, y: 12.581173, z: 242.40714}
+  m_LocalScale: {x: 242.40714, y: 0.47374356, z: 242.40714}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &137577106
 PrefabInstance:
@@ -2066,7 +2066,7 @@ Transform:
   m_LocalScale: {x: 187.53958, y: 35.108032, z: 9.583491}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &202332754 stripped
 Transform:
@@ -4546,7 +4546,7 @@ Transform:
   - {fileID: 1576291291}
   - {fileID: 1265412173}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &533806802
 PrefabInstance:
@@ -10962,7 +10962,7 @@ Transform:
   m_LocalScale: {x: 187.53958, y: 35.108032, z: 9.583491}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1308049493
 PrefabInstance:
@@ -16307,7 +16307,7 @@ Transform:
   - {fileID: 433001377}
   - {fileID: 1702171730}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1829673239
 GameObject:
@@ -16398,7 +16398,7 @@ Transform:
   m_LocalScale: {x: 187.53958, y: 35.108032, z: 9.583491}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &1837172639 stripped
 Transform:
@@ -19683,9 +19683,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
+      propertyPath: targets.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
       propertyPath: closestTarget
       value: 
-      objectReference: {fileID: 690096193}
+      objectReference: {fileID: 0}
     - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: giantTurnForce
@@ -19696,6 +19701,16 @@ PrefabInstance:
       propertyPath: giantTurnSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: targets.Array.data[0]
+      value: 
+      objectReference: {fileID: 1340545695}
+    - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: targets.Array.data[1]
+      value: 
+      objectReference: {fileID: 690096193}
     - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: m_AnimSpeedMultiplier
