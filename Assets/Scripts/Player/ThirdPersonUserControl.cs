@@ -11,8 +11,8 @@ public class ThirdPersonUserControl : MonoBehaviour
     private bool jump;
 
     [Header("Player Input Data")]
-    [Range(0.0001f, 0.001f)]
     public float mouseInputSensitivity;
+    public float sensitivityModifier;
 
     [Header("Giant AI Data")]
     public float giantTurnSpeed;
@@ -47,7 +47,7 @@ public class ThirdPersonUserControl : MonoBehaviour
             jump = Input.GetButtonDown("Jump");
 
         // read inputs
-        h = - (Input.mousePosition.x - (Screen.width / 2)) * mouseInputSensitivity;
+        h = - (Input.mousePosition.x - (Screen.width / 2)) * (mouseInputSensitivity / sensitivityModifier);
         v = 1; //Input.GetAxisRaw("Vertical");
 
     }
