@@ -18,7 +18,7 @@ public class SliderScript : MonoBehaviour
     void Update()
     {
         DestructionMeter.value = GameObject.FindGameObjectsWithTag("house").Length; 
-        Debug.Log(DestructionMeter.value );    
+        //Debug.Log(DestructionMeter.value );    
         if(DestructionMeter.value<=minimumHouseAmount)
         {
             Time.timeScale=0f;

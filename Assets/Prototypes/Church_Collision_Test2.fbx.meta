@@ -1,0 +1,527 @@
+fileFormatVersion: 2
+guid: e2ff95dce55c4794a9ceb7d0f89952ef
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Broken_Piece_14
+    100002: Broken_Piece_15
+    100004: Broken_Piece_16
+    100006: BrokenPillar_02
+    100008: BrokenSmallPillar_01
+    100010: //RootNode
+    100012: Intact_Piece_17
+    100014: Intact_Piece_18
+    100016: Intact_Piece_19
+    100018: Piece
+    100020: Piece 1
+    100022: Piece 2
+    100024: Piece 3
+    100026: Piece01
+    100028: Piece01 1
+    100030: Piece01 2
+    100032: Piece01 3
+    100034: Piece02
+    100036: Piece02 1
+    100038: Piece02 2
+    100040: Piece03
+    100042: Piece04
+    100044: Piece1
+    100046: Piece1 1
+    100048: Piece1 2
+    100050: Piece10
+    100052: Piece10 1
+    100054: Piece10 2
+    100056: Piece11
+    100058: Piece11 1
+    100060: Piece11 2
+    100062: Piece12
+    100064: Piece12 1
+    100066: Piece12 2
+    100068: Piece2
+    100070: Piece2 1
+    100072: Piece2 2
+    100074: Piece21
+    100076: Piece22
+    100078: Piece23
+    100080: Piece24
+    100082: Piece25
+    100084: Piece26
+    100086: Piece3
+    100088: Piece3 1
+    100090: Piece3 2
+    100092: Piece31
+    100094: Piece32
+    100096: Piece33
+    100098: Piece34
+    100100: Piece35
+    100102: Piece36
+    100104: Piece37
+    100106: Piece38
+    100108: Piece39
+    100110: Piece4
+    100112: Piece4 1
+    100114: Piece4 2
+    100116: Piece40
+    100118: Piece41
+    100120: Piece42
+    100122: Piece5
+    100124: Piece5 1
+    100126: Piece5 2
+    100128: Piece6
+    100130: Piece6 1
+    100132: Piece6 2
+    100134: Piece6 3
+    100136: Piece7
+    100138: Piece7 1
+    100140: Piece7 2
+    100142: Piece7 3
+    100144: Piece8
+    100146: Piece8 1
+    100148: Piece8 2
+    100150: Piece9
+    100152: Piece9 1
+    100154: Piece9 2
+    100156: polySurface24
+    100158: polySurface27
+    100160: polySurface28
+    100162: polySurface29
+    100164: polySurface30
+    100166: polySurface31
+    100168: polySurface50
+    100170: polySurface52
+    100172: polySurface54
+    100174: polySurface55
+    100176: polySurface61
+    100178: polySurface62
+    400000: Broken_Piece_14
+    400002: Broken_Piece_15
+    400004: Broken_Piece_16
+    400006: BrokenPillar_02
+    400008: BrokenSmallPillar_01
+    400010: //RootNode
+    400012: Intact_Piece_17
+    400014: Intact_Piece_18
+    400016: Intact_Piece_19
+    400018: Piece
+    400020: Piece 1
+    400022: Piece 2
+    400024: Piece 3
+    400026: Piece01
+    400028: Piece01 1
+    400030: Piece01 2
+    400032: Piece01 3
+    400034: Piece02
+    400036: Piece02 1
+    400038: Piece02 2
+    400040: Piece03
+    400042: Piece04
+    400044: Piece1
+    400046: Piece1 1
+    400048: Piece1 2
+    400050: Piece10
+    400052: Piece10 1
+    400054: Piece10 2
+    400056: Piece11
+    400058: Piece11 1
+    400060: Piece11 2
+    400062: Piece12
+    400064: Piece12 1
+    400066: Piece12 2
+    400068: Piece2
+    400070: Piece2 1
+    400072: Piece2 2
+    400074: Piece21
+    400076: Piece22
+    400078: Piece23
+    400080: Piece24
+    400082: Piece25
+    400084: Piece26
+    400086: Piece3
+    400088: Piece3 1
+    400090: Piece3 2
+    400092: Piece31
+    400094: Piece32
+    400096: Piece33
+    400098: Piece34
+    400100: Piece35
+    400102: Piece36
+    400104: Piece37
+    400106: Piece38
+    400108: Piece39
+    400110: Piece4
+    400112: Piece4 1
+    400114: Piece4 2
+    400116: Piece40
+    400118: Piece41
+    400120: Piece42
+    400122: Piece5
+    400124: Piece5 1
+    400126: Piece5 2
+    400128: Piece6
+    400130: Piece6 1
+    400132: Piece6 2
+    400134: Piece6 3
+    400136: Piece7
+    400138: Piece7 1
+    400140: Piece7 2
+    400142: Piece7 3
+    400144: Piece8
+    400146: Piece8 1
+    400148: Piece8 2
+    400150: Piece9
+    400152: Piece9 1
+    400154: Piece9 2
+    400156: polySurface24
+    400158: polySurface27
+    400160: polySurface28
+    400162: polySurface29
+    400164: polySurface30
+    400166: polySurface31
+    400168: polySurface50
+    400170: polySurface52
+    400172: polySurface54
+    400174: polySurface55
+    400176: polySurface61
+    400178: polySurface62
+    2100000: WallsInside
+    2100002: Wall
+    2100004: Roof
+    2100006: Pylon
+    2300000: Intact_Piece_17
+    2300002: Intact_Piece_18
+    2300004: Intact_Piece_19
+    2300006: Piece
+    2300008: Piece 1
+    2300010: Piece 2
+    2300012: Piece 3
+    2300014: Piece01
+    2300016: Piece01 1
+    2300018: Piece01 2
+    2300020: Piece01 3
+    2300022: Piece02
+    2300024: Piece02 1
+    2300026: Piece02 2
+    2300028: Piece03
+    2300030: Piece04
+    2300032: Piece1
+    2300034: Piece1 1
+    2300036: Piece1 2
+    2300038: Piece10
+    2300040: Piece10 1
+    2300042: Piece10 2
+    2300044: Piece11
+    2300046: Piece11 1
+    2300048: Piece11 2
+    2300050: Piece12
+    2300052: Piece12 1
+    2300054: Piece12 2
+    2300056: Piece2
+    2300058: Piece2 1
+    2300060: Piece2 2
+    2300062: Piece21
+    2300064: Piece22
+    2300066: Piece23
+    2300068: Piece24
+    2300070: Piece25
+    2300072: Piece26
+    2300074: Piece3
+    2300076: Piece3 1
+    2300078: Piece3 2
+    2300080: Piece31
+    2300082: Piece32
+    2300084: Piece33
+    2300086: Piece34
+    2300088: Piece35
+    2300090: Piece36
+    2300092: Piece37
+    2300094: Piece38
+    2300096: Piece39
+    2300098: Piece4
+    2300100: Piece4 1
+    2300102: Piece4 2
+    2300104: Piece40
+    2300106: Piece41
+    2300108: Piece42
+    2300110: Piece5
+    2300112: Piece5 1
+    2300114: Piece5 2
+    2300116: Piece6
+    2300118: Piece6 1
+    2300120: Piece6 2
+    2300122: Piece6 3
+    2300124: Piece7
+    2300126: Piece7 1
+    2300128: Piece7 2
+    2300130: Piece7 3
+    2300132: Piece8
+    2300134: Piece8 1
+    2300136: Piece8 2
+    2300138: Piece9
+    2300140: Piece9 1
+    2300142: Piece9 2
+    2300144: polySurface24
+    2300146: polySurface27
+    2300148: polySurface28
+    2300150: polySurface29
+    2300152: polySurface30
+    2300154: polySurface31
+    2300156: polySurface50
+    2300158: polySurface52
+    2300160: polySurface54
+    2300162: polySurface55
+    2300164: polySurface61
+    2300166: polySurface62
+    3300000: Intact_Piece_17
+    3300002: Intact_Piece_18
+    3300004: Intact_Piece_19
+    3300006: Piece
+    3300008: Piece 1
+    3300010: Piece 2
+    3300012: Piece 3
+    3300014: Piece01
+    3300016: Piece01 1
+    3300018: Piece01 2
+    3300020: Piece01 3
+    3300022: Piece02
+    3300024: Piece02 1
+    3300026: Piece02 2
+    3300028: Piece03
+    3300030: Piece04
+    3300032: Piece1
+    3300034: Piece1 1
+    3300036: Piece1 2
+    3300038: Piece10
+    3300040: Piece10 1
+    3300042: Piece10 2
+    3300044: Piece11
+    3300046: Piece11 1
+    3300048: Piece11 2
+    3300050: Piece12
+    3300052: Piece12 1
+    3300054: Piece12 2
+    3300056: Piece2
+    3300058: Piece2 1
+    3300060: Piece2 2
+    3300062: Piece21
+    3300064: Piece22
+    3300066: Piece23
+    3300068: Piece24
+    3300070: Piece25
+    3300072: Piece26
+    3300074: Piece3
+    3300076: Piece3 1
+    3300078: Piece3 2
+    3300080: Piece31
+    3300082: Piece32
+    3300084: Piece33
+    3300086: Piece34
+    3300088: Piece35
+    3300090: Piece36
+    3300092: Piece37
+    3300094: Piece38
+    3300096: Piece39
+    3300098: Piece4
+    3300100: Piece4 1
+    3300102: Piece4 2
+    3300104: Piece40
+    3300106: Piece41
+    3300108: Piece42
+    3300110: Piece5
+    3300112: Piece5 1
+    3300114: Piece5 2
+    3300116: Piece6
+    3300118: Piece6 1
+    3300120: Piece6 2
+    3300122: Piece6 3
+    3300124: Piece7
+    3300126: Piece7 1
+    3300128: Piece7 2
+    3300130: Piece7 3
+    3300132: Piece8
+    3300134: Piece8 1
+    3300136: Piece8 2
+    3300138: Piece9
+    3300140: Piece9 1
+    3300142: Piece9 2
+    3300144: polySurface24
+    3300146: polySurface27
+    3300148: polySurface28
+    3300150: polySurface29
+    3300152: polySurface30
+    3300154: polySurface31
+    3300156: polySurface50
+    3300158: polySurface52
+    3300160: polySurface54
+    3300162: polySurface55
+    3300164: polySurface61
+    3300166: polySurface62
+    4300000: Piece21
+    4300002: Piece22
+    4300004: Piece23
+    4300006: Piece24
+    4300008: Piece25
+    4300010: Piece26
+    4300012: polySurface50
+    4300014: Piece03
+    4300016: Piece04
+    4300018: Piece01
+    4300020: Piece
+    4300022: Piece2
+    4300024: Piece3
+    4300026: Piece4
+    4300028: Piece1
+    4300030: Piece5
+    4300032: Piece6
+    4300034: Piece7
+    4300036: Piece31
+    4300038: Piece32
+    4300040: Piece33
+    4300042: Piece34
+    4300044: Piece35
+    4300046: Piece36
+    4300048: Piece37
+    4300050: polySurface24
+    4300052: polySurface27
+    4300054: Piece9
+    4300056: Piece38
+    4300058: Piece11
+    4300060: Piece12
+    4300062: Piece8
+    4300064: Piece10
+    4300066: polySurface52
+    4300068: Piece01
+    4300070: Piece02
+    4300072: Piece
+    4300074: Piece6
+    4300076: Piece7
+    4300078: Piece
+    4300080: Piece2
+    4300082: Piece4
+    4300084: Piece3
+    4300086: Piece1
+    4300088: Piece5
+    4300090: polySurface28
+    4300092: polySurface29
+    4300094: Piece9
+    4300096: Piece39
+    4300098: Piece11
+    4300100: Piece12
+    4300102: Piece10
+    4300104: Piece8
+    4300106: polySurface62
+    4300108: polySurface54
+    4300110: Piece40
+    4300112: Piece7
+    4300114: Piece6
+    4300116: Piece01
+    4300118: Piece02
+    4300120: Piece
+    4300122: Piece2
+    4300124: Piece4
+    4300126: Piece3
+    4300128: Piece1
+    4300130: Piece5
+    4300132: Piece41
+    4300134: Piece7
+    4300136: Piece6
+    4300138: polySurface30
+    4300140: polySurface31
+    4300142: Piece9
+    4300144: Piece42
+    4300146: Piece12
+    4300148: Piece11
+    4300150: Piece10
+    4300152: Piece8
+    4300154: Piece01
+    4300156: Piece02
+    4300158: polySurface61
+    4300160: polySurface55
+    4300162: Intact_Piece_17
+    4300164: Intact_Piece_18
+    4300166: Intact_Piece_19
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
