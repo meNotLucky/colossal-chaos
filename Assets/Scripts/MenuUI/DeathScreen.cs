@@ -12,9 +12,9 @@ public class DeathScreen : MonoBehaviour
     {
         if(gameOver==false)
         {
-        gameOver=true;
-        deathMenuScreen.SetActive(true);
-        Time.timeScale=0f;
+            gameOver=true;
+            deathMenuScreen.SetActive(true);
+            Time.timeScale=0f;
         }
     }
     public void ExitToMainMenu()

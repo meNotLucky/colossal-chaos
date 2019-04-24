@@ -66,12 +66,10 @@ public class ThirdPersonUserControl : MonoBehaviour
 
         // calculate move direction to pass to character
         if (cam != null){
-            if(!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)){
-                if(closestTarget != null){
-                    transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * giantTurnSpeed);
-                    transform.rotation = Quaternion.Euler(new Vector3(0f, transform.rotation.eulerAngles.y, 0f));
-                    move = (v * camForward) + (h * cam.right);
-                }
+            if(closestTarget != null){
+                transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * giantTurnSpeed);
+                transform.rotation = Quaternion.Euler(new Vector3(0f, transform.rotation.eulerAngles.y, 0f));
+                move = (v * camForward) + (h * cam.right);
             } else {
                 move = (v * camForward) + (h * cam.right);
             }

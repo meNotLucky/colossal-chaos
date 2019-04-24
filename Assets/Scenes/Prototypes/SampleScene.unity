@@ -20719,6 +20719,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
+      propertyPath: targets.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
       propertyPath: giantTurnForce
       value: 0
       objectReference: {fileID: 0}
@@ -20726,12 +20731,12 @@ PrefabInstance:
         type: 3}
       propertyPath: targets.Array.data[0]
       value: 
-      objectReference: {fileID: 1340545695}
+      objectReference: {fileID: 0}
     - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: targets.Array.data[1]
       value: 
-      objectReference: {fileID: 690096193}
+      objectReference: {fileID: 0}
     - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: m_MovingTurnSpeed

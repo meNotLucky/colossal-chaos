@@ -6,6 +6,7 @@ public class GravityTriggerController : MonoBehaviour
 {
         List<GameObject> connectedPieces = new List<GameObject>();
         public bool collisionTriggered = false;
+        public bool triggerChainReaction = false;
         bool componentsDeleted = true;
         int updateCount = 0;
         float timeToDestroy = 5;
@@ -20,19 +21,20 @@ public class GravityTriggerController : MonoBehaviour
         mesh.vertices = verts;
         GetComponent<MeshCollider>().convex = true;
         verts[0] = v;
-        mesh.vertices = verts;   
+        mesh.vertices = verts;
     }
 
     private void FixedUpdate() {
 
-        if(componentsDeleted){
-            timer += Time.deltaTime;
-            if(timer >= timeToDestroy){
-                Destroy(gameObject);
-            }
-        }
-
         if(collisionTriggered){
+            
+            if(componentsDeleted){
+                timer += Time.deltaTime;
+                if(timer >= timeToDestroy){
+                    Destroy(gameObject);
+                }
+            
+            }
             if(updateCount < 5)
                 updateCount++;
             else {
@@ -63,6 +65,16 @@ public class GravityTriggerController : MonoBehaviour
         if(collisionTriggered){
             if(other.gameObject.tag == "floor")
                 componentsDeleted = false;
+        }
+    }
+
+    private void OnCollisionExit(Collision other) {
+        if(triggerChainReaction){
+            if(GetComponent<Rigidbody>().isKinematic == true)
+                GetComponent<Rigidbody>().isKinematic = false;
+            collisionTriggered = true;
+            if(other.gameObject.GetComponent<GravityTriggerController>() != null)
+                other.gameObject.GetComponent<GravityTriggerController>().triggerChainReaction = true;
         }
     }
 

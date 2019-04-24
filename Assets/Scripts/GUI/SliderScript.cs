@@ -21,8 +21,7 @@ public class SliderScript : MonoBehaviour
         //Debug.Log(DestructionMeter.value );    
         if(DestructionMeter.value<=minimumHouseAmount)
         {
-            Time.timeScale=0f;
-            FindObjectOfType<DeathScreen>().Invoke("EndGame", 1f);
+            FindObjectOfType<DeathScreen>().EndGame();
         }  
     }
 }

@@ -26,11 +26,8 @@ public class StructureCollapse : MonoBehaviour
         }
 
         if(supportsDestroyed >= mininumSupports){
-            foreach(var rigidbody in GetComponentsInChildren<Rigidbody>()){
-                rigidbody.isKinematic = false;
-            }
             foreach(var controller in GetComponentsInChildren<GravityTriggerController>()){
-                controller.collisionTriggered = true;
+                controller.triggerChainReaction = true;
             }
             
             Destroy(this);
