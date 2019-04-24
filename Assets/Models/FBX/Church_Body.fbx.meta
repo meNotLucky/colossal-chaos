@@ -2558,7 +2558,37 @@ ModelImporter:
     4300980: WindowPiece04
     4300982: WindowPiece05
     4300984: WindowPiece03
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 3de314945aec7fc4db6533d34f2ad111, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pylon
+    second: {fileID: 2100000, guid: a3bfafa8992e799459c6df3cafe86ebc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof
+    second: {fileID: 2100000, guid: 9fab63611e9ab9d49bd24cf28edd5e07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
+    second: {fileID: 2100000, guid: 4ce4773441f808b4c960a0cccb8e8fbf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallsInside
+    second: {fileID: 2100000, guid: 0eeab949291576641813d8bfe7507aa4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: b5e26dc046c818d4d81cc717e9c112d3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
