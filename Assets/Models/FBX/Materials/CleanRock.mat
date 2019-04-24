@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WoodTilePlanks
-  m_Shader: {fileID: 4800000, guid: 9c6ece3d5ef8bb84db19471daaf6c788, type: 3}
+  m_Name: CleanRock
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 6a28d0a8d25ac9f47b8139115b4345dd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6c3651a2bfe10fc4c91b38f978404da5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -40,11 +40,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 925e3b1fe85fe7d468b53c5d36d15a2c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 378233b5a4e5bcc40980b63435d60ce3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 5fdc6d38ace9e52418592bc1ad10e9ab, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2317cfb0ac3b374458db507c004ffdb6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -64,10 +64,10 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _LightSmoothness: 0
-    - _LightThreshold: 0.115
+    - _LightThreshold: 0.3
     - _MKEditorShowDetailBehavior: 0
     - _MKEditorShowDissolveBehavior: 0
-    - _MKEditorShowLightBehavior: 1
+    - _MKEditorShowLightBehavior: 0
     - _MKEditorShowMainBehavior: 1
     - _MKEditorShowOutlineBehavior: 1
     - _MKEditorShowReflectionBehavior: 0
@@ -75,21 +75,21 @@ Material:
     - _MKEditorShowRimBehavior: 1
     - _MKEditorShowShadowBehavior: 0
     - _MKEditorShowSketchBehavior: 0
-    - _MKEditorShowSpecularBehavior: 1
+    - _MKEditorShowSpecularBehavior: 0
     - _MKEditorShowTranslucentBehavior: 0
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineSize: 0.04
+    - _OutlineSize: 0.03
     - _Parallax: 0.02
-    - _RimIntensity: 0.145
-    - _RimSize: 0.65
-    - _RimSmoothness: 0.508
+    - _RimIntensity: 0
+    - _RimSize: 0.64
+    - _RimSmoothness: 0.416
     - _ShadowIntensity: 1
-    - _Shininess: 1
+    - _Shininess: 0.275
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _SpecularIntensity: 0
+    - _SpecularIntensity: 0.5
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1

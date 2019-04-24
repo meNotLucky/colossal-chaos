@@ -27,7 +27,6 @@ public class GravityTriggerController : MonoBehaviour
     private void FixedUpdate() {
 
         if(collisionTriggered){
-            
             if(componentsDeleted){
                 timer += Time.deltaTime;
                 if(timer >= timeToDestroy){
