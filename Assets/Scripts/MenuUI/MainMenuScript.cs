@@ -18,6 +18,7 @@ public class MainMenuScript : MonoBehaviour
 
   void Update()
   {
+    //the red color is a test for the PlayButton.
     Vector3 mousePos=Input.mousePosition;
     if(mousePos.x>Screen.width/2)
     {
@@ -36,7 +37,7 @@ public class MainMenuScript : MonoBehaviour
 
       if(PlaySlider.value>=1)
       {
-        //Debug.Log("START");
+        PlayGame();
       }
         if(mouseHeldTimer>timeToChange)
         {
