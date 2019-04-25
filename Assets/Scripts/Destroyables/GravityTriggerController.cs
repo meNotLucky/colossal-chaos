@@ -16,14 +16,14 @@ public class GravityTriggerController : MonoBehaviour
     private void Start() {
 
         // Quick fix for Unity planar bug: [Physics.PhysX] QuickHullConvexHullLib::findSimplex: Simplex input points appers to be coplanar.
-        Mesh mesh = GetComponent<MeshCollider>().sharedMesh;
-        Vector3[] verts = mesh.vertices;
-        Vector3 v = verts[0];
-        verts[0] += Vector3.one * 0.00001f;
-        mesh.vertices = verts;
-        GetComponent<MeshCollider>().convex = true;
-        verts[0] = v;
-        mesh.vertices = verts;
+        // Mesh mesh = GetComponent<MeshCollider>().sharedMesh;
+        // Vector3[] verts = mesh.vertices;
+        // Vector3 v = verts[0];
+        // verts[0] += Vector3.one * 0.00001f;
+        // mesh.vertices = verts;
+        // GetComponent<MeshCollider>().convex = true;
+        // verts[0] = v;
+        // mesh.vertices = verts;
 
         timeToDestroy = GlobalSettings.debrieLifeDuration;
     }
@@ -96,5 +96,4 @@ public class GravityTriggerController : MonoBehaviour
     private bool RigidbodyCheck(){
         return GetComponent<Rigidbody>() != null ? true : false;
     }
-
 }
