@@ -5,13 +5,15 @@ using UnityEngine;
 public class Settings : MonoBehaviour
 {
     [Header("Gameplay Settings")]
-    public float minimumHouseAmount;
+    public float maxDestroyedHouses;
 
     [Header("Performance Settings")]
     public float debrieLifeDuration;
 
+    
+
     private void Update(){
-        GlobalSettings.minimumHouseAmount = minimumHouseAmount;
+        GlobalSettings.maxDestroyedHouses = maxDestroyedHouses;
         GlobalSettings.debrieLifeDuration = debrieLifeDuration;
     }
 }
