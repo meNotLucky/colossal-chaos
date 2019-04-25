@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e20667b663b5664cb7419bb78fc51e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brokenHouse: {fileID: 3813319389808079137, guid: b44339466a9945c41a4877078eb6fa1d,
+  brokenMesh: {fileID: 3813319389808079137, guid: b44339466a9945c41a4877078eb6fa1d,
     type: 3}
   dustPiles:
   - {fileID: 5505795248402555729, guid: 5fe37d74c5e153b49b66fa2f06ae74ec, type: 3}
