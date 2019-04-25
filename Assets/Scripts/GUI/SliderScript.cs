@@ -1,25 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 using UnityEngine.UI;
 
 public class SliderScript : MonoBehaviour
 {
-    public float minimumHouseAmount;
-    public Slider DestructionMeter;
-    
     void Start()
     {
-        DestructionMeter.maxValue = GameObject.FindGameObjectsWithTag("house").Length;
-        DestructionMeter.minValue = minimumHouseAmount;  
+        GetComponent<Slider>().maxValue = GameObject.FindGameObjectsWithTag("house").Length;
+        GetComponent<Slider>().minValue = GlobalSettings.minimumHouseAmount;
     }
 
     
     void Update()
     {
-        DestructionMeter.value = GameObject.FindGameObjectsWithTag("house").Length; 
+        GetComponent<Slider>().value = GameObject.FindGameObjectsWithTag("house").Length; 
         //Debug.Log(DestructionMeter.value );    
-        if(DestructionMeter.value<=minimumHouseAmount)
+        if(GetComponent<Slider>().value <= GlobalSettings.minimumHouseAmount)
         {
             FindObjectOfType<DeathScreen>().EndGame();
         }  
