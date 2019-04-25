@@ -6245,7 +6245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c516e1c846def0148894f3cf96c0555d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumHouseAmount: 0
+  maxDestroyedHouses: 100
   debrieLifeDuration: 5
 --- !u!4 &745501022
 Transform:
