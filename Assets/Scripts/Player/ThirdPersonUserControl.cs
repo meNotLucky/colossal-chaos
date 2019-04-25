@@ -16,6 +16,10 @@ public class ThirdPersonUserControl : MonoBehaviour
 
     [Header("Giant AI Data")]
     public float giantTurnSpeed;
+    public float struggleModifier;
+    public float struggleIntensityMax;
+    public float struggleIntensityMin;
+    private bool sensModified = true;
     public List<GameObject> targets = new List<GameObject>();
     public GameObject closestTarget;
     private Quaternion lookRotation;
@@ -58,6 +62,13 @@ public class ThirdPersonUserControl : MonoBehaviour
 
         UpdateTarget();
 
+        if(sensModified){
+            sensModified = false;
+            struggleModifier *= -1;
+            float rand = Random.Range(struggleIntensityMin, struggleIntensityMax);
+            StartCoroutine(ModifySensitivity(mouseInputSensitivity, mouseInputSensitivity + struggleModifier, rand));
+        }
+
         // Get camera angle to selected target
         if(closestTarget != null){
             Vector3 targetDir = (closestTarget.transform.position - transform.position).normalized;
@@ -97,10 +108,23 @@ public class ThirdPersonUserControl : MonoBehaviour
             }
 
             if(currentTargetDist < 15){
-                targets.Remove(closestTarget);
+                //targets.Remove(closestTarget);
             }
         } else {
             closestTarget = null;
         }
+    }
+
+    IEnumerator ModifySensitivity(float startValue, float endValue, float duration)
+    {
+        float elapsed = 0.0f;
+        while (elapsed < duration)
+        {
+            mouseInputSensitivity = Mathf.Lerp(startValue, endValue, elapsed / duration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        mouseInputSensitivity = mouseInputSensitivity + struggleModifier;
+        sensModified = true;
     }
 }

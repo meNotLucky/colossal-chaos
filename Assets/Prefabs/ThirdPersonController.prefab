@@ -642,6 +642,9 @@ MonoBehaviour:
   mouseInputSensitivity: 2.1
   sensitivityModifier: 1000
   giantTurnSpeed: 0.6
+  struggleModifier: 1
+  struggleIntensityMax: 2
+  struggleIntensityMin: 0.5
   targets:
   - {fileID: 0}
   - {fileID: 0}
