@@ -107,8 +107,8 @@ public class ThirdPersonUserControl : MonoBehaviour
                 }
             }
 
-            if(currentTargetDist < 15){
-                //targets.Remove(closestTarget);
+            if(currentTargetDist <= 5){
+                targets.Remove(closestTarget);
             }
         } else {
             closestTarget = null;
