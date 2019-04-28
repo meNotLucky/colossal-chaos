@@ -7,6 +7,7 @@ public class ThirdPersonCharacter : MonoBehaviour
 {
 	[SerializeField] float m_MovingTurnSpeed = 360;
 	[SerializeField] float m_StationaryTurnSpeed = 180;
+	[SerializeField] float m_TurnSpeedMultiplier;
 	[SerializeField] float m_JumpPower = 12f;
 	[Range(1f, 4f)][SerializeField] float m_GravityMultiplier = 2f;
 	[SerializeField] float m_RunCycleLegOffset = 0.2f; //specific to the character in sample assets, will need to be modified to work with others
@@ -126,7 +127,7 @@ public class ThirdPersonCharacter : MonoBehaviour
 	{
 		// help the character turn faster (this is in addition to root rotation in the animation)
 		float turnSpeed = Mathf.Lerp(m_StationaryTurnSpeed, m_MovingTurnSpeed, m_ForwardAmount);
-		transform.Rotate(0, m_TurnAmount * turnSpeed * Time.deltaTime, 0);
+		transform.Rotate(0, m_TurnAmount * (turnSpeed * m_TurnSpeedMultiplier) * Time.deltaTime, 0);
 	}
 
 
