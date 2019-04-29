@@ -139,8 +139,6 @@ public class ThirdPersonCharacter : MonoBehaviour
 			playerStopped = false;
 			StartCoroutine(MoveSpeedInterpolator(m_ForwardAmount, 1, stopDuration / 2));
 		}
-
-		Debug.Log(m_ForwardAmount);
 	}
 
 	void HandleGroundedMovement(bool jump, bool stop)
