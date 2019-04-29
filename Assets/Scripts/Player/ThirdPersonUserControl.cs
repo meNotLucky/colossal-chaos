@@ -99,8 +99,7 @@ public class ThirdPersonUserControl : MonoBehaviour
 
         // pass all parameters to the character control script
         character.Move(move, jump, stop);
-        jump = false;
-        stop = false;
+        jump = false; stop = false;
     }
 
     private void UpdateTarget() {

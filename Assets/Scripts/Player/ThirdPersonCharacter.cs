@@ -24,7 +24,6 @@ public class ThirdPersonCharacter : MonoBehaviour
 	float stopCooldownTimer;
 	[SerializeField] float stopDuration;
 	float stopDurationTimer;
-	private float m_CurrentMoveSpeedMult;
 
 	Rigidbody m_Rigidbody;
 	Animator m_Animator;
@@ -46,7 +45,6 @@ public class ThirdPersonCharacter : MonoBehaviour
 
 		m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 		m_OrigGroundCheckDistance = m_GroundCheckDistance;
-		m_CurrentMoveSpeedMult = m_MoveSpeedMultiplier;
 	}
 
 	public void Move(Vector3 move, bool jump, bool stop)
@@ -59,7 +57,8 @@ public class ThirdPersonCharacter : MonoBehaviour
 		CheckGroundStatus();
 		move = Vector3.ProjectOnPlane(move, m_GroundNormal);
 		m_TurnAmount = Mathf.Atan2(move.x, move.z);
-		m_ForwardAmount = move.z;
+		if(stopCooldownTimer <= 0)
+			m_ForwardAmount = move.z;
 
 		ApplyExtraTurnRotation();
 
@@ -130,10 +129,10 @@ public class ThirdPersonCharacter : MonoBehaviour
 
 		if(stopDurationTimer > 0){
 			stopDurationTimer -= Time.deltaTime;
-			StartCoroutine(MoveSpeedInterpolator(m_MoveSpeedMultiplier, 0, stopDuration / 2));
+			StartCoroutine(MoveSpeedInterpolator(m_ForwardAmount, 0, stopDuration / 2));
 		} else {
 			stopDurationTimer = 0;
-			m_MoveSpeedMultiplier = m_CurrentMoveSpeedMult;
+			m_ForwardAmount = 1;
 		}
 	}
 
@@ -199,10 +198,10 @@ public class ThirdPersonCharacter : MonoBehaviour
         float elapsed = 0.0f;
         while (elapsed < duration)
         {
-            m_MoveSpeedMultiplier = Mathf.Lerp(startValue, endValue, elapsed / duration);
+            m_ForwardAmount = Mathf.Lerp(startValue, endValue, elapsed / duration);
             elapsed += Time.deltaTime;
             yield return null;
         }
-        m_MoveSpeedMultiplier = endValue;
+        m_ForwardAmount = endValue;
     }
 }

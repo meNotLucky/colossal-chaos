@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 5439634309430214980}
   - component: {fileID: 5439634309431017832}
   - component: {fileID: 5439634309431985064}
+  - component: {fileID: 1408325855728078469}
+  - component: {fileID: 6514017849283682714}
   m_Layer: 0
-  m_Name: Intact
+  m_Name: Intacthouse_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,3 +84,34 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1408325855728078469
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5439634309429992804}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300448, guid: 3c1a1f81cf0f8534594c4cb018c28518, type: 3}
+--- !u!114 &6514017849283682714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5439634309429992804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e20667b663b5664cb7419bb78fc51e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brokenMesh: {fileID: 5885198938244272337, guid: cab3d274311aa1943a6b54a16914c787,
+    type: 3}
+  dustPiles:
+  - {fileID: 100004, guid: a64eb102c5b4918408c0c3d2e2cbc722, type: 3}
+  - {fileID: 100008, guid: b9ea7396160e629499120d2617b7a961, type: 3}

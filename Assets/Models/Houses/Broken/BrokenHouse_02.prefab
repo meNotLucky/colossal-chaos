@@ -14318,7 +14318,7 @@ MonoBehaviour:
   - {fileID: 4040291917813627999}
   - {fileID: 5964020237431802445}
   - {fileID: 6502093938951041007}
-  mininumSupports: 2
+  mininumSupports: 3
 --- !u!1 &3435385701147744317
 GameObject:
   m_ObjectHideFlags: 0
