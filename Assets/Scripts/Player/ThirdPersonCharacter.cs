@@ -24,6 +24,7 @@ public class ThirdPersonCharacter : MonoBehaviour
 	float stopCooldownTimer;
 	[SerializeField] float stopDuration;
 	float stopDurationTimer;
+	bool playerStopped = false;
 
 	Rigidbody m_Rigidbody;
 	Animator m_Animator;
@@ -129,11 +130,17 @@ public class ThirdPersonCharacter : MonoBehaviour
 
 		if(stopDurationTimer > 0){
 			stopDurationTimer -= Time.deltaTime;
-			StartCoroutine(MoveSpeedInterpolator(m_ForwardAmount, 0, stopDuration / 2));
-		} else {
+			if(!playerStopped){
+				playerStopped = true;
+				StartCoroutine(MoveSpeedInterpolator(m_ForwardAmount, 0, stopDuration / 2));
+			}
+		} else if(stopDurationTimer < 0) {
 			stopDurationTimer = 0;
-			m_ForwardAmount = 1;
+			playerStopped = false;
+			StartCoroutine(MoveSpeedInterpolator(m_ForwardAmount, 1, stopDuration / 2));
 		}
+
+		Debug.Log(m_ForwardAmount);
 	}
 
 	void HandleGroundedMovement(bool jump, bool stop)

@@ -3256,6 +3256,11 @@ PrefabInstance:
       propertyPath: m_StationaryTurnSpeed
       value: 160
       objectReference: {fileID: 0}
+    - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: stopDuration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1073664699203377486, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: m_LocalPosition.y
