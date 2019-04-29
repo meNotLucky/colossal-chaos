@@ -618,7 +618,7 @@ Transform:
   m_GameObject: {fileID: 1073664698202482269}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 15.2, y: 0.31, z: -10.26}
-  m_LocalScale: {x: 11.57668, y: 11.57668, z: 11.57668}
+  m_LocalScale: {x: 8.219442, y: 8.219442, z: 8.219442}
   m_Children:
   - {fileID: 1073664698202260725}
   - {fileID: 1073664698202308199}
@@ -639,13 +639,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseInputSensitivity: 2.1
+  mouseInputSensitivity: 0.7
   sensitivityModifier: 1000
-  giantTurnSpeed: 0.6
-  struggleModifier: 1
+  giantTurnSpeed: 0.7
+  struggleModifier: 0.2
   struggleIntensityMax: 2
   struggleIntensityMin: 0.5
   targets:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   closestTarget: {fileID: 0}
@@ -663,12 +664,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MovingTurnSpeed: 160
   m_StationaryTurnSpeed: 160
+  m_TurnSpeedMultiplier: 10
   m_JumpPower: 10
   m_GravityMultiplier: 2
   m_RunCycleLegOffset: 0.2
   m_MoveSpeedMultiplier: 0.625
   m_AnimSpeedMultiplier: 0.625
   m_GroundCheckDistance: 0.3
+  stopCooldown: 10
+  stopDuration: 2
 --- !u!95 &1073664698209797403
 Animator:
   serializedVersion: 3

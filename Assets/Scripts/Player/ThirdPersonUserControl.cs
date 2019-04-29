@@ -9,6 +9,7 @@ public class ThirdPersonUserControl : MonoBehaviour
     private Transform cam; // A reference to the main camera in the scenes transform
     private Vector3 move; // the world-relative desired move direction, calculated from the camera and user input.
     private bool jump;
+    private bool stop;
 
     [Header("Player Input Data")]
     public float mouseInputSensitivity;
@@ -25,11 +26,12 @@ public class ThirdPersonUserControl : MonoBehaviour
     private Quaternion lookRotation;
 
     private float h;
-    private float v;
+    private float v = 1;
     
     
     private void Start()
     {
+        // Center mouse
         Cursor.lockState = CursorLockMode.Locked;
 
         // get the transform of the main camera
@@ -44,15 +46,18 @@ public class ThirdPersonUserControl : MonoBehaviour
 
     private void Update()
     {
+        // Release mouse when moved
         if(Input.GetAxisRaw("Mouse X") != 0)
             Cursor.lockState = CursorLockMode.None;
 
-        if (!jump)
+        // Read inputs
+        if(!jump)
             jump = Input.GetButtonDown("Jump");
 
-        // read inputs
+        if(!stop)
+            stop = Input.GetButtonDown("Stop");
+
         h = - (Input.mousePosition.x - (Screen.width / 2)) * (mouseInputSensitivity / sensitivityModifier);
-        v = 1; //Input.GetAxisRaw("Vertical");
 
     }
 
@@ -60,13 +65,15 @@ public class ThirdPersonUserControl : MonoBehaviour
     {
         Vector3 camForward = Vector3.Scale(cam.forward, new Vector3(1, 0, 1)).normalized;
 
+        // Targettting system
         UpdateTarget();
 
+        // Struggle Simulation
         if(sensModified){
             sensModified = false;
             struggleModifier *= -1;
             float rand = Random.Range(struggleIntensityMin, struggleIntensityMax);
-            StartCoroutine(ModifySensitivity(mouseInputSensitivity, mouseInputSensitivity + struggleModifier, rand));
+            StartCoroutine(SensitivityInterpolator(mouseInputSensitivity, mouseInputSensitivity + struggleModifier, rand));
         }
 
         // Get camera angle to selected target
@@ -91,8 +98,9 @@ public class ThirdPersonUserControl : MonoBehaviour
         }
 
         // pass all parameters to the character control script
-        character.Move(move, jump);
+        character.Move(move, jump, stop);
         jump = false;
+        stop = false;
     }
 
     private void UpdateTarget() {
@@ -115,7 +123,7 @@ public class ThirdPersonUserControl : MonoBehaviour
         }
     }
 
-    IEnumerator ModifySensitivity(float startValue, float endValue, float duration)
+    IEnumerator SensitivityInterpolator(float startValue, float endValue, float duration)
     {
         float elapsed = 0.0f;
         while (elapsed < duration)

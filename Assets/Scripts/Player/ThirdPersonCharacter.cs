@@ -1,10 +1,13 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(MeshCollider))]
 [RequireComponent(typeof(Animator))]
 public class ThirdPersonCharacter : MonoBehaviour
 {
+	[Header("Giant Properties")]
 	[SerializeField] float m_MovingTurnSpeed = 360;
 	[SerializeField] float m_StationaryTurnSpeed = 180;
 	[SerializeField] float m_TurnSpeedMultiplier;
@@ -14,6 +17,14 @@ public class ThirdPersonCharacter : MonoBehaviour
 	[SerializeField] float m_MoveSpeedMultiplier = 1f;
 	[SerializeField] float m_AnimSpeedMultiplier = 1f;
 	[SerializeField] float m_GroundCheckDistance = 0.1f;
+
+	[Header("Ability Properties")]
+	// Stopping
+	[SerializeField] float stopCooldown;
+	float stopCooldownTimer;
+	[SerializeField] float stopDuration;
+	float stopDurationTimer;
+	private float m_CurrentMoveSpeedMult;
 
 	Rigidbody m_Rigidbody;
 	Animator m_Animator;
@@ -35,10 +46,10 @@ public class ThirdPersonCharacter : MonoBehaviour
 
 		m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 		m_OrigGroundCheckDistance = m_GroundCheckDistance;
+		m_CurrentMoveSpeedMult = m_MoveSpeedMultiplier;
 	}
 
-
-	public void Move(Vector3 move, bool jump)
+	public void Move(Vector3 move, bool jump, bool stop)
 	{
 		// convert the world relative moveInput vector into a local-relative
 		// turn amount and forward amount required to head in the desired
@@ -53,15 +64,17 @@ public class ThirdPersonCharacter : MonoBehaviour
 		ApplyExtraTurnRotation();
 
 		// control and velocity handling is different when grounded and airborne:
-		if (m_IsGrounded)
-			HandleGroundedMovement(jump);
-		else
+		if (m_IsGrounded){
+			HandleGroundedMovement(jump, stop);
+			HandleStopping();
+		}
+		else {
 			HandleAirborneMovement();
+		}
 
 		// send input and other state parameters to the animator
 		UpdateAnimator(move);
 	}
-
 
 	void UpdateAnimator(Vector3 move)
 	{
@@ -99,7 +112,6 @@ public class ThirdPersonCharacter : MonoBehaviour
 		}
 	}
 
-
 	void HandleAirborneMovement()
 	{
 		// apply extra gravity from multiplier:
@@ -109,17 +121,37 @@ public class ThirdPersonCharacter : MonoBehaviour
 		m_GroundCheckDistance = m_Rigidbody.velocity.y < 0 ? m_OrigGroundCheckDistance : 0.01f;
 	}
 
-
-	void HandleGroundedMovement(bool jump)
+	void HandleStopping()
 	{
-		// check whether conditions are right to allow a jump:
+		if(stopCooldownTimer > 0)
+			stopCooldownTimer -= Time.deltaTime;
+		else
+			stopCooldownTimer = 0;
+
+		if(stopDurationTimer > 0){
+			stopDurationTimer -= Time.deltaTime;
+			StartCoroutine(MoveSpeedInterpolator(m_MoveSpeedMultiplier, 0, stopDuration / 2));
+		} else {
+			stopDurationTimer = 0;
+			m_MoveSpeedMultiplier = m_CurrentMoveSpeedMult;
+		}
+	}
+
+	void HandleGroundedMovement(bool jump, bool stop)
+	{
+		// Check jump conditions
 		if (jump && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Grounded"))
 		{
-			// jump!
 			m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, m_JumpPower, m_Rigidbody.velocity.z);
 			m_IsGrounded = false;
 			m_Animator.applyRootMotion = false;
 			m_GroundCheckDistance = 0.1f;
+		}
+
+		// Check stop conditions
+		if(stop && stopCooldownTimer <= 0){
+			stopCooldownTimer = stopCooldown;
+			stopDurationTimer = stopDuration;
 		}
 	}
 
@@ -129,7 +161,6 @@ public class ThirdPersonCharacter : MonoBehaviour
 		float turnSpeed = Mathf.Lerp(m_StationaryTurnSpeed, m_MovingTurnSpeed, m_ForwardAmount);
 		transform.Rotate(0, m_TurnAmount * (turnSpeed * m_TurnSpeedMultiplier) * Time.deltaTime, 0);
 	}
-
 
 	public void OnAnimatorMove()
 	{
@@ -145,13 +176,10 @@ public class ThirdPersonCharacter : MonoBehaviour
 		}
 	}
 
-
 	void CheckGroundStatus()
 	{
 		RaycastHit hitInfo;
 
-		// 0.1f is a small offset to start the ray from inside the character
-		// it is also good to note that the transform position in the sample assets is at the base of the character
 		if (Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, out hitInfo, m_GroundCheckDistance))
 		{
 			m_GroundNormal = hitInfo.normal;
@@ -165,4 +193,16 @@ public class ThirdPersonCharacter : MonoBehaviour
 			m_Animator.applyRootMotion = false;
 		}
 	}
+
+	IEnumerator MoveSpeedInterpolator(float startValue, float endValue, float duration)
+    {
+        float elapsed = 0.0f;
+        while (elapsed < duration)
+        {
+            m_MoveSpeedMultiplier = Mathf.Lerp(startValue, endValue, elapsed / duration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        m_MoveSpeedMultiplier = endValue;
+    }
 }
