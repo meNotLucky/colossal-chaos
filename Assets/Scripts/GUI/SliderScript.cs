@@ -26,5 +26,7 @@ public class SliderScript : MonoBehaviour
         {
             FindObjectOfType<DeathScreen>().EndGame();
         }  
+        
     }
+    
 }

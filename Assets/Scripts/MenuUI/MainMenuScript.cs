@@ -16,11 +16,22 @@ public class MainMenuScript : MonoBehaviour
   public float timer=0.1f;
   public float colortimer;
 
+void Start()
+{
+  Cursor.lockState = CursorLockMode.Locked;
+  Time.timeScale=1f;
+}
   void Update()
   {
+    
+    if(Input.GetAxisRaw("Mouse X")!=0)
+  {
+    Cursor.lockState=CursorLockMode.None;
+  }
+
     //the red color is a test for the PlayButton.
     Vector3 mousePos=Input.mousePosition;
-    if(mousePos.x>Screen.width/2)
+    if(mousePos.x>Screen.width/2+Screen.width/8)
     {
          mouseHeldTimer +=Time.deltaTime;
         //myButton.Select();
@@ -57,9 +68,7 @@ public class MainMenuScript : MonoBehaviour
       {
         PlaySlider.value-=timer/60;
       }
-      quitButton.Select();
-      
-      
+
       mouseHeldTimer=0f;
 
     }
