@@ -24,7 +24,8 @@ public class SliderScript : MonoBehaviour
 
         if(destroyedHouses >= GlobalSettings.maxDestroyedHouses)
         {
-            FindObjectOfType<DeathScreen>().EndGame();
+            if(FindObjectOfType<DeathScreen>() != null)
+                FindObjectOfType<DeathScreen>().EndGame();
         }  
         
     }

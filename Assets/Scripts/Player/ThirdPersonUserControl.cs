@@ -106,18 +106,13 @@ public class ThirdPersonUserControl : MonoBehaviour
         if(targets.Count > 0){
             closestTarget = targets[0];
             float currentTargetDist = Vector3.Distance(closestTarget.transform.position, transform.position);
+            Debug.Log(currentTargetDist);
 
             foreach(var target in targets){
-                if(target != null){
-                    float targetDist = Vector3.Distance(target.transform.position, transform.position);
-                    if(targetDist < currentTargetDist){
-                        closestTarget = target;
-                    }
+                float targetDist = Vector3.Distance(target.transform.position, transform.position);
+                if(targetDist < currentTargetDist){
+                    closestTarget = target;
                 }
-            }
-
-            if(currentTargetDist <= 5){
-                targets.Remove(closestTarget);
             }
         } else {
             closestTarget = null;
