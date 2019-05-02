@@ -2323,7 +2323,7 @@ GameObject:
   - component: {fileID: 262776529}
   - component: {fileID: 262776528}
   - component: {fileID: 262776527}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Terrain (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3661,7 +3661,7 @@ Transform:
   - {fileID: 1344516675}
   - {fileID: 1904073364}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &415179821
 PrefabInstance:
@@ -4332,7 +4332,7 @@ PrefabInstance:
     - target: {fileID: 1073664698202482269, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: m_Name
-      value: ThirdPersonController
+      value: Giant
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698202482269, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
@@ -4411,11 +4411,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
-      propertyPath: targets.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
       propertyPath: targets.Array.data[0]
       value: 
       objectReference: {fileID: 1245497868}
@@ -4441,28 +4436,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
-      propertyPath: giantTurnSpeed
-      value: 1
+      propertyPath: mouseInputSensitivity
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: struggleModifier
       value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: mouseInputSensitivity
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_MoveSpeedMultiplier
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_AnimSpeedMultiplier
-      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698209797403, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
@@ -4473,37 +4453,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_WarningMessage
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5514847908921630431, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.13235609
-      objectReference: {fileID: 0}
-    - target: {fileID: 5514847908921630431, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_Height
-      value: 1.3432312
-      objectReference: {fileID: 0}
-    - target: {fileID: 5514847908921630431, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.042193294
-      objectReference: {fileID: 0}
-    - target: {fileID: 5514847908921630431, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_Center.z
-      value: -0.034541827
-      objectReference: {fileID: 0}
-    - target: {fileID: 5514847908921630431, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: 7dee28e8456c5e44fa6f6b68af247109,
-        type: 2}
-    - target: {fileID: 5514847908921630431, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.6749335
       objectReference: {fileID: 0}
     - target: {fileID: 1073664699203377486, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
@@ -4564,6 +4513,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RelativeForce.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707903814057258828, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: m_Name
+      value: Collider_main
+      objectReference: {fileID: 0}
+    - target: {fileID: 802943526975037523, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 802943526975037523, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 2113284698431229647, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.5074698
+      objectReference: {fileID: 0}
+    - target: {fileID: 2113284698431229647, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 3.0290874e-14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2113284698431229647, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.8359469
+      objectReference: {fileID: 0}
+    - target: {fileID: 2113284698431229647, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.021506088
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4018235627c8ff443ae4285db06911d6, type: 3}
@@ -15808,7 +15792,7 @@ Transform:
   - {fileID: 1698259050}
   - {fileID: 994846255}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1592015933 stripped
 Transform:
