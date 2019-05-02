@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 86faa4bd0645df04786705f15026c99b
+guid: 5f9261578a17919469f9c57f5cbcc87a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -17,52 +17,36 @@ ModelImporter:
     100022: mixamorig:LeftHandIndex2
     100024: mixamorig:LeftHandIndex3
     100026: mixamorig:LeftHandIndex4
-    100028: mixamorig:LeftHandMiddle1
-    100030: mixamorig:LeftHandMiddle2
-    100032: mixamorig:LeftHandMiddle3
-    100034: mixamorig:LeftHandMiddle4
-    100036: mixamorig:LeftHandThumb1
-    100038: mixamorig:LeftHandThumb2
-    100040: mixamorig:LeftHandThumb3
-    100042: mixamorig:LeftHandThumb4
-    100044: mixamorig:LeftLeg
-    100046: mixamorig:LeftShoulder
-    100048: mixamorig:LeftToe_End
-    100050: mixamorig:LeftToeBase
-    100052: mixamorig:LeftUpLeg
-    100054: mixamorig:Neck
-    100056: mixamorig:RightArm
-    100058: mixamorig:RightFoot
-    100060: mixamorig:RightForeArm
-    100062: mixamorig:RightHand
-    100064: mixamorig:RightHandIndex1
-    100066: mixamorig:RightHandIndex2
-    100068: mixamorig:RightHandIndex3
-    100070: mixamorig:RightHandIndex4
-    100072: mixamorig:RightHandMiddle1
-    100074: mixamorig:RightHandMiddle2
-    100076: mixamorig:RightHandMiddle3
-    100078: mixamorig:RightHandMiddle4
-    100080: mixamorig:RightHandThumb1
-    100082: mixamorig:RightHandThumb2
-    100084: mixamorig:RightHandThumb3
-    100086: mixamorig:RightHandThumb4
-    100088: mixamorig:RightLeg
-    100090: mixamorig:RightShoulder
-    100092: mixamorig:RightToe_End
-    100094: mixamorig:RightToeBase
-    100096: mixamorig:RightUpLeg
-    100098: mixamorig:Spine
-    100100: mixamorig:Spine1
-    100102: mixamorig:Spine2
-    100104: skinCluster1Set
-    100106: skinCluster2Set
-    100108: skinCluster3Set
-    100110: skinCluster4Set
-    100112: skinCluster5Set
-    100114: skinCluster6Set
-    100116: skinCluster7Set
-    100118: skinCluster8Set
+    100028: mixamorig:LeftLeg
+    100030: mixamorig:LeftShoulder
+    100032: mixamorig:LeftToe_End
+    100034: mixamorig:LeftToeBase
+    100036: mixamorig:LeftUpLeg
+    100038: mixamorig:Neck
+    100040: mixamorig:RightArm
+    100042: mixamorig:RightFoot
+    100044: mixamorig:RightForeArm
+    100046: mixamorig:RightHand
+    100048: mixamorig:RightHandIndex1
+    100050: mixamorig:RightHandIndex2
+    100052: mixamorig:RightHandIndex3
+    100054: mixamorig:RightHandIndex4
+    100056: mixamorig:RightLeg
+    100058: mixamorig:RightShoulder
+    100060: mixamorig:RightToe_End
+    100062: mixamorig:RightToeBase
+    100064: mixamorig:RightUpLeg
+    100066: mixamorig:Spine
+    100068: mixamorig:Spine1
+    100070: mixamorig:Spine2
+    100072: skinCluster1Set
+    100074: skinCluster2Set
+    100076: skinCluster3Set
+    100078: skinCluster4Set
+    100080: skinCluster5Set
+    100082: skinCluster6Set
+    100084: skinCluster7Set
+    100086: skinCluster8Set
     400000: ClothBottom_Low
     400002: Giant
     400004: //RootNode
@@ -77,53 +61,40 @@ ModelImporter:
     400022: mixamorig:LeftHandIndex2
     400024: mixamorig:LeftHandIndex3
     400026: mixamorig:LeftHandIndex4
-    400028: mixamorig:LeftHandMiddle1
-    400030: mixamorig:LeftHandMiddle2
-    400032: mixamorig:LeftHandMiddle3
-    400034: mixamorig:LeftHandMiddle4
-    400036: mixamorig:LeftHandThumb1
-    400038: mixamorig:LeftHandThumb2
-    400040: mixamorig:LeftHandThumb3
-    400042: mixamorig:LeftHandThumb4
-    400044: mixamorig:LeftLeg
-    400046: mixamorig:LeftShoulder
-    400048: mixamorig:LeftToe_End
-    400050: mixamorig:LeftToeBase
-    400052: mixamorig:LeftUpLeg
-    400054: mixamorig:Neck
-    400056: mixamorig:RightArm
-    400058: mixamorig:RightFoot
-    400060: mixamorig:RightForeArm
-    400062: mixamorig:RightHand
-    400064: mixamorig:RightHandIndex1
-    400066: mixamorig:RightHandIndex2
-    400068: mixamorig:RightHandIndex3
-    400070: mixamorig:RightHandIndex4
-    400072: mixamorig:RightHandMiddle1
-    400074: mixamorig:RightHandMiddle2
-    400076: mixamorig:RightHandMiddle3
-    400078: mixamorig:RightHandMiddle4
-    400080: mixamorig:RightHandThumb1
-    400082: mixamorig:RightHandThumb2
-    400084: mixamorig:RightHandThumb3
-    400086: mixamorig:RightHandThumb4
-    400088: mixamorig:RightLeg
-    400090: mixamorig:RightShoulder
-    400092: mixamorig:RightToe_End
-    400094: mixamorig:RightToeBase
-    400096: mixamorig:RightUpLeg
-    400098: mixamorig:Spine
-    400100: mixamorig:Spine1
-    400102: mixamorig:Spine2
-    400104: skinCluster1Set
-    400106: skinCluster2Set
-    400108: skinCluster3Set
-    400110: skinCluster4Set
-    400112: skinCluster5Set
-    400114: skinCluster6Set
-    400116: skinCluster7Set
-    400118: skinCluster8Set
-    2100000: No Name
+    400028: mixamorig:LeftLeg
+    400030: mixamorig:LeftShoulder
+    400032: mixamorig:LeftToe_End
+    400034: mixamorig:LeftToeBase
+    400036: mixamorig:LeftUpLeg
+    400038: mixamorig:Neck
+    400040: mixamorig:RightArm
+    400042: mixamorig:RightFoot
+    400044: mixamorig:RightForeArm
+    400046: mixamorig:RightHand
+    400048: mixamorig:RightHandIndex1
+    400050: mixamorig:RightHandIndex2
+    400052: mixamorig:RightHandIndex3
+    400054: mixamorig:RightHandIndex4
+    400056: mixamorig:RightLeg
+    400058: mixamorig:RightShoulder
+    400060: mixamorig:RightToe_End
+    400062: mixamorig:RightToeBase
+    400064: mixamorig:RightUpLeg
+    400066: mixamorig:Spine
+    400068: mixamorig:Spine1
+    400070: mixamorig:Spine2
+    400072: skinCluster1Set
+    400074: skinCluster2Set
+    400076: skinCluster3Set
+    400078: skinCluster4Set
+    400080: skinCluster5Set
+    400082: skinCluster6Set
+    400084: skinCluster7Set
+    400086: skinCluster8Set
+    2100000: lambert4SGmat
+    2100002: lambert5SGmat
+    2100004: lambert3SGmat
+    2100006: lambert2SGmat
     2300000: skinCluster1Set
     2300002: skinCluster2Set
     2300004: skinCluster3Set
@@ -182,35 +153,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: mixamo.com
-      takeName: mixamo.com
-      firstFrame: 0
-      lastFrame: 111
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -235,7 +178,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 0
-    previousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 0.01
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
