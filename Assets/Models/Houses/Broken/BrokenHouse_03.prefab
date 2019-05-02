@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7765901751084286381}
   m_Layer: 0
   m_Name: pCube72
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 2945084431665711}
   m_Layer: 0
   m_Name: pCube74
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 3508509634021666379}
   m_Layer: 0
   m_Name: pCube78
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 1379473025567150032}
   m_Layer: 0
   m_Name: pCube79
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -516,7 +516,7 @@ GameObject:
   - component: {fileID: 557467399645360273}
   m_Layer: 0
   m_Name: pCube50
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -641,7 +641,7 @@ GameObject:
   - component: {fileID: 5896062745483097125}
   m_Layer: 0
   m_Name: pCube69
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -766,7 +766,7 @@ GameObject:
   - component: {fileID: 7970537430939816106}
   m_Layer: 0
   m_Name: pCube70
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -891,7 +891,7 @@ GameObject:
   - component: {fileID: 1813546405660279748}
   m_Layer: 0
   m_Name: pCube71
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1016,7 +1016,7 @@ GameObject:
   - component: {fileID: 3877525410441218619}
   m_Layer: 0
   m_Name: pCube46
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1141,7 +1141,7 @@ GameObject:
   - component: {fileID: 1774522093681532556}
   m_Layer: 0
   m_Name: pCube47
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1266,7 +1266,7 @@ GameObject:
   - component: {fileID: 8617994774546509772}
   m_Layer: 0
   m_Name: pCube48
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1391,7 +1391,7 @@ GameObject:
   - component: {fileID: 5138011015027153808}
   m_Layer: 0
   m_Name: pCube49
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1516,7 +1516,7 @@ GameObject:
   - component: {fileID: 7209554313829471526}
   m_Layer: 0
   m_Name: pCube42
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1641,7 +1641,7 @@ GameObject:
   - component: {fileID: 4056914586610111519}
   m_Layer: 0
   m_Name: pCube43
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1766,7 +1766,7 @@ GameObject:
   - component: {fileID: 9053976671868275879}
   m_Layer: 0
   m_Name: pCube44
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1891,7 +1891,7 @@ GameObject:
   - component: {fileID: 8290679447013282965}
   m_Layer: 0
   m_Name: pCube45
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2016,7 +2016,7 @@ GameObject:
   - component: {fileID: 1697567628117131083}
   m_Layer: 0
   m_Name: pCube37
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2141,7 +2141,7 @@ GameObject:
   - component: {fileID: 2280734799883283949}
   m_Layer: 0
   m_Name: pCube38
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2266,7 +2266,7 @@ GameObject:
   - component: {fileID: 1567968948066618215}
   m_Layer: 0
   m_Name: pCube39
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2391,7 +2391,7 @@ GameObject:
   - component: {fileID: 4698438791085813153}
   m_Layer: 0
   m_Name: pCube41
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2516,7 +2516,7 @@ GameObject:
   - component: {fileID: 1539814607525182202}
   m_Layer: 0
   m_Name: pCube32
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2641,7 +2641,7 @@ GameObject:
   - component: {fileID: 2100423177291837111}
   m_Layer: 0
   m_Name: pCube33
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2766,7 +2766,7 @@ GameObject:
   - component: {fileID: 3597257724655539002}
   m_Layer: 0
   m_Name: pCube34
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2891,7 +2891,7 @@ GameObject:
   - component: {fileID: 5119209293375439994}
   m_Layer: 0
   m_Name: pCube35
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3016,7 +3016,7 @@ GameObject:
   - component: {fileID: 7063251483679288196}
   m_Layer: 0
   m_Name: pCube27
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3141,7 +3141,7 @@ GameObject:
   - component: {fileID: 2020900720158738733}
   m_Layer: 0
   m_Name: pCube28
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3266,7 +3266,7 @@ GameObject:
   - component: {fileID: 2342138788793292046}
   m_Layer: 0
   m_Name: pCube29
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3391,7 +3391,7 @@ GameObject:
   - component: {fileID: 8721550743190892508}
   m_Layer: 0
   m_Name: pCube30
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3516,7 +3516,7 @@ GameObject:
   - component: {fileID: 6605219858362534273}
   m_Layer: 0
   m_Name: pCube23
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3641,7 +3641,7 @@ GameObject:
   - component: {fileID: 296342274022929752}
   m_Layer: 0
   m_Name: pCube24
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3766,7 +3766,7 @@ GameObject:
   - component: {fileID: 8039132049597784691}
   m_Layer: 0
   m_Name: pCube25
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3891,7 +3891,7 @@ GameObject:
   - component: {fileID: 7226133487535747195}
   m_Layer: 0
   m_Name: pCube26
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4016,7 +4016,7 @@ GameObject:
   - component: {fileID: 3445761925244835500}
   m_Layer: 0
   m_Name: pCube19
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4141,7 +4141,7 @@ GameObject:
   - component: {fileID: 852798356965427681}
   m_Layer: 0
   m_Name: pCube20
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4266,7 +4266,7 @@ GameObject:
   - component: {fileID: 8824764814365694083}
   m_Layer: 0
   m_Name: pCube21
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4391,7 +4391,7 @@ GameObject:
   - component: {fileID: 8407415997333471803}
   m_Layer: 0
   m_Name: pCube22
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4516,7 +4516,7 @@ GameObject:
   - component: {fileID: 7484340582977416993}
   m_Layer: 0
   m_Name: pCube101
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4641,7 +4641,7 @@ GameObject:
   - component: {fileID: 4816364137902156278}
   m_Layer: 0
   m_Name: pCube103
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4766,7 +4766,7 @@ GameObject:
   - component: {fileID: 262416270621284316}
   m_Layer: 0
   m_Name: pCube104
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4891,7 +4891,7 @@ GameObject:
   - component: {fileID: 2224625312334978137}
   m_Layer: 0
   m_Name: pCube18
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5277,7 +5277,7 @@ GameObject:
   - component: {fileID: 7387360497560473004}
   m_Layer: 0
   m_Name: pCube100
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5538,7 +5538,7 @@ GameObject:
   - component: {fileID: 5756938703576987092}
   m_Layer: 0
   m_Name: polySurface15
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5663,7 +5663,7 @@ GameObject:
   - component: {fileID: 5484225633531398858}
   m_Layer: 0
   m_Name: polySurface150
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5789,7 +5789,7 @@ GameObject:
   - component: {fileID: 1033610792612368660}
   m_Layer: 0
   m_Name: polySurface151
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5915,7 +5915,7 @@ GameObject:
   - component: {fileID: 3617021256860540029}
   m_Layer: 0
   m_Name: polySurface152
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6041,7 +6041,7 @@ GameObject:
   - component: {fileID: 1864782859416216500}
   m_Layer: 0
   m_Name: polySurface146
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6166,7 +6166,7 @@ GameObject:
   - component: {fileID: 4925109576617352446}
   m_Layer: 0
   m_Name: polySurface147
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6291,7 +6291,7 @@ GameObject:
   - component: {fileID: 6595371679808278366}
   m_Layer: 0
   m_Name: polySurface148
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6417,7 +6417,7 @@ GameObject:
   - component: {fileID: 5835983813603259286}
   m_Layer: 0
   m_Name: polySurface149
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6543,7 +6543,7 @@ GameObject:
   - component: {fileID: 2502457996601575525}
   m_Layer: 0
   m_Name: polySurface142
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6669,7 +6669,7 @@ GameObject:
   - component: {fileID: 3727278699422479870}
   m_Layer: 0
   m_Name: polySurface143
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6795,7 +6795,7 @@ GameObject:
   - component: {fileID: 6889008101373165864}
   m_Layer: 0
   m_Name: polySurface144
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6920,7 +6920,7 @@ GameObject:
   - component: {fileID: 2145667334576258129}
   m_Layer: 0
   m_Name: polySurface145
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7046,7 +7046,7 @@ GameObject:
   - component: {fileID: 4280073482484562971}
   m_Layer: 0
   m_Name: polySurface139
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7172,7 +7172,7 @@ GameObject:
   - component: {fileID: 2345898463205441735}
   m_Layer: 0
   m_Name: polySurface14
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7297,7 +7297,7 @@ GameObject:
   - component: {fileID: 7921404859241655677}
   m_Layer: 0
   m_Name: polySurface140
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7423,7 +7423,7 @@ GameObject:
   - component: {fileID: 1285303968327845987}
   m_Layer: 0
   m_Name: polySurface141
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7549,7 +7549,7 @@ GameObject:
   - component: {fileID: 6824686637490310564}
   m_Layer: 0
   m_Name: polySurface135
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7674,7 +7674,7 @@ GameObject:
   - component: {fileID: 2443529128304069806}
   m_Layer: 0
   m_Name: polySurface136
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7800,7 +7800,7 @@ GameObject:
   - component: {fileID: 6159014700132702746}
   m_Layer: 0
   m_Name: polySurface137
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7926,7 +7926,7 @@ GameObject:
   - component: {fileID: 1123183407266390843}
   m_Layer: 0
   m_Name: polySurface138
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8052,7 +8052,7 @@ GameObject:
   - component: {fileID: 5668657221798209895}
   m_Layer: 0
   m_Name: polySurface130
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8177,7 +8177,7 @@ GameObject:
   - component: {fileID: 3110665161859486883}
   m_Layer: 0
   m_Name: polySurface131
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8302,7 +8302,7 @@ GameObject:
   - component: {fileID: 4972464204348740367}
   m_Layer: 0
   m_Name: polySurface132
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8427,7 +8427,7 @@ GameObject:
   - component: {fileID: 5709580473275097144}
   m_Layer: 0
   m_Name: polySurface134
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8553,7 +8553,7 @@ GameObject:
   - component: {fileID: 393540563275938719}
   m_Layer: 0
   m_Name: polySurface127
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8678,7 +8678,7 @@ GameObject:
   - component: {fileID: 6052742386989147753}
   m_Layer: 0
   m_Name: polySurface128
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8803,7 +8803,7 @@ GameObject:
   - component: {fileID: 7037439132417857075}
   m_Layer: 0
   m_Name: polySurface129
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8928,7 +8928,7 @@ GameObject:
   - component: {fileID: 4838513365417801138}
   m_Layer: 0
   m_Name: polySurface13
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9053,7 +9053,7 @@ GameObject:
   - component: {fileID: 1744139242267935188}
   m_Layer: 0
   m_Name: polySurface123
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9178,7 +9178,7 @@ GameObject:
   - component: {fileID: 281966001354563796}
   m_Layer: 0
   m_Name: polySurface124
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9303,7 +9303,7 @@ GameObject:
   - component: {fileID: 3323076259094624758}
   m_Layer: 0
   m_Name: polySurface125
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9428,7 +9428,7 @@ GameObject:
   - component: {fileID: 2201548207847654443}
   m_Layer: 0
   m_Name: polySurface126
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9553,7 +9553,7 @@ GameObject:
   - component: {fileID: 6794133075685199879}
   m_Layer: 0
   m_Name: polySurface12
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9678,7 +9678,7 @@ GameObject:
   - component: {fileID: 5524156936291074027}
   m_Layer: 0
   m_Name: polySurface120
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9803,7 +9803,7 @@ GameObject:
   - component: {fileID: 1758574757676586546}
   m_Layer: 0
   m_Name: polySurface121
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9928,7 +9928,7 @@ GameObject:
   - component: {fileID: 4547321207921670244}
   m_Layer: 0
   m_Name: polySurface122
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10053,7 +10053,7 @@ GameObject:
   - component: {fileID: 3809206502494628703}
   m_Layer: 0
   m_Name: polySurface116
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10178,7 +10178,7 @@ GameObject:
   - component: {fileID: 5532133301416881964}
   m_Layer: 0
   m_Name: polySurface117
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10303,7 +10303,7 @@ GameObject:
   - component: {fileID: 407326321742387417}
   m_Layer: 0
   m_Name: polySurface118
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10428,7 +10428,7 @@ GameObject:
   - component: {fileID: 6307881898175294072}
   m_Layer: 0
   m_Name: polySurface119
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10553,7 +10553,7 @@ GameObject:
   - component: {fileID: 9086310134898075786}
   m_Layer: 0
   m_Name: polySurface112
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10678,7 +10678,7 @@ GameObject:
   - component: {fileID: 7629467390423502787}
   m_Layer: 0
   m_Name: polySurface113
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10803,7 +10803,7 @@ GameObject:
   - component: {fileID: 704391932931710193}
   m_Layer: 0
   m_Name: polySurface114
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10928,7 +10928,7 @@ GameObject:
   - component: {fileID: 4758317935085457382}
   m_Layer: 0
   m_Name: polySurface115
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11053,7 +11053,7 @@ GameObject:
   - component: {fileID: 8586097947768056561}
   m_Layer: 0
   m_Name: polySurface109
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11178,7 +11178,7 @@ GameObject:
   - component: {fileID: 5098682073079983765}
   m_Layer: 0
   m_Name: polySurface11
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11303,7 +11303,7 @@ GameObject:
   - component: {fileID: 366236424098294398}
   m_Layer: 0
   m_Name: polySurface110
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11428,7 +11428,7 @@ GameObject:
   - component: {fileID: 1354414594540471087}
   m_Layer: 0
   m_Name: polySurface111
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11553,7 +11553,7 @@ GameObject:
   - component: {fileID: 4180556866958896860}
   m_Layer: 0
   m_Name: polySurface105
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11678,7 +11678,7 @@ GameObject:
   - component: {fileID: 3220035462202391836}
   m_Layer: 0
   m_Name: polySurface106
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11803,7 +11803,7 @@ GameObject:
   - component: {fileID: 6356164137524131087}
   m_Layer: 0
   m_Name: polySurface107
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11928,7 +11928,7 @@ GameObject:
   - component: {fileID: 2100911142257533480}
   m_Layer: 0
   m_Name: polySurface108
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12053,7 +12053,7 @@ GameObject:
   - component: {fileID: 5805016651802137672}
   m_Layer: 0
   m_Name: polySurface101
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12178,7 +12178,7 @@ GameObject:
   - component: {fileID: 6860921931570878565}
   m_Layer: 0
   m_Name: polySurface102
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12303,7 +12303,7 @@ GameObject:
   - component: {fileID: 5666781012629239878}
   m_Layer: 0
   m_Name: polySurface103
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12428,7 +12428,7 @@ GameObject:
   - component: {fileID: 8452816806918714853}
   m_Layer: 0
   m_Name: polySurface104
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12553,7 +12553,7 @@ GameObject:
   - component: {fileID: 4801559348537602130}
   m_Layer: 0
   m_Name: pCube98
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12678,7 +12678,7 @@ GameObject:
   - component: {fileID: 1013237622158352229}
   m_Layer: 0
   m_Name: polySurface1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12803,7 +12803,7 @@ GameObject:
   - component: {fileID: 801992551539551969}
   m_Layer: 0
   m_Name: polySurface10
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12928,7 +12928,7 @@ GameObject:
   - component: {fileID: 7568437813416694946}
   m_Layer: 0
   m_Name: polySurface100
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13053,7 +13053,7 @@ GameObject:
   - component: {fileID: 4344879913187281039}
   m_Layer: 0
   m_Name: pCube81
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13178,7 +13178,7 @@ GameObject:
   - component: {fileID: 1886886270788686600}
   m_Layer: 0
   m_Name: pCube82
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13303,7 +13303,7 @@ GameObject:
   - component: {fileID: 3535719308637111591}
   m_Layer: 0
   m_Name: pCube85
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13428,7 +13428,7 @@ GameObject:
   - component: {fileID: 2708975377577155487}
   m_Layer: 0
   m_Name: pCube97
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13553,7 +13553,7 @@ GameObject:
   - component: {fileID: 6138251828391863679}
   m_Layer: 0
   m_Name: polySurface46
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13678,7 +13678,7 @@ GameObject:
   - component: {fileID: 994097746886535066}
   m_Layer: 0
   m_Name: polySurface47
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13803,7 +13803,7 @@ GameObject:
   - component: {fileID: 5307301429121252661}
   m_Layer: 0
   m_Name: polySurface48
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13928,7 +13928,7 @@ GameObject:
   - component: {fileID: 5315780607461332765}
   m_Layer: 0
   m_Name: polySurface49
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14053,7 +14053,7 @@ GameObject:
   - component: {fileID: 1469229075761532275}
   m_Layer: 0
   m_Name: polySurface42
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14178,7 +14178,7 @@ GameObject:
   - component: {fileID: 6101913423196894729}
   m_Layer: 0
   m_Name: polySurface43
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14303,7 +14303,7 @@ GameObject:
   - component: {fileID: 6755249100948497173}
   m_Layer: 0
   m_Name: polySurface44
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14428,7 +14428,7 @@ GameObject:
   - component: {fileID: 1227430049432219638}
   m_Layer: 0
   m_Name: polySurface45
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14553,7 +14553,7 @@ GameObject:
   - component: {fileID: 8807783188808864440}
   m_Layer: 0
   m_Name: polySurface39
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14678,7 +14678,7 @@ GameObject:
   - component: {fileID: 8233835536918551930}
   m_Layer: 0
   m_Name: polySurface4
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14803,7 +14803,7 @@ GameObject:
   - component: {fileID: 4932006433957770075}
   m_Layer: 0
   m_Name: polySurface40
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14928,7 +14928,7 @@ GameObject:
   - component: {fileID: 2531789770032965231}
   m_Layer: 0
   m_Name: polySurface41
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15053,7 +15053,7 @@ GameObject:
   - component: {fileID: 993984708308946380}
   m_Layer: 0
   m_Name: polySurface35
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15178,7 +15178,7 @@ GameObject:
   - component: {fileID: 3035327977520778264}
   m_Layer: 0
   m_Name: polySurface36
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15303,7 +15303,7 @@ GameObject:
   - component: {fileID: 7155340857594528657}
   m_Layer: 0
   m_Name: polySurface37
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15428,7 +15428,7 @@ GameObject:
   - component: {fileID: 4053225136880871258}
   m_Layer: 0
   m_Name: polySurface38
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15553,7 +15553,7 @@ GameObject:
   - component: {fileID: 8861805868594329660}
   m_Layer: 0
   m_Name: polySurface31
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15678,7 +15678,7 @@ GameObject:
   - component: {fileID: 6317822807031915166}
   m_Layer: 0
   m_Name: polySurface32
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15803,7 +15803,7 @@ GameObject:
   - component: {fileID: 508470973849084909}
   m_Layer: 0
   m_Name: polySurface33
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15928,7 +15928,7 @@ GameObject:
   - component: {fileID: 2493945203521284205}
   m_Layer: 0
   m_Name: polySurface34
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16053,7 +16053,7 @@ GameObject:
   - component: {fileID: 2605516998623707186}
   m_Layer: 0
   m_Name: polySurface250
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16178,7 +16178,7 @@ GameObject:
   - component: {fileID: 5752606189600694471}
   m_Layer: 0
   m_Name: polySurface29
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16303,7 +16303,7 @@ GameObject:
   - component: {fileID: 7834472174894906474}
   m_Layer: 0
   m_Name: polySurface3
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16428,7 +16428,7 @@ GameObject:
   - component: {fileID: 5362073129771192772}
   m_Layer: 0
   m_Name: polySurface30
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16553,7 +16553,7 @@ GameObject:
   - component: {fileID: 1217104959918826666}
   m_Layer: 0
   m_Name: polySurface247
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16678,7 +16678,7 @@ GameObject:
   - component: {fileID: 5404411711916668365}
   m_Layer: 0
   m_Name: polySurface248
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16803,7 +16803,7 @@ GameObject:
   - component: {fileID: 4908982730936549202}
   m_Layer: 0
   m_Name: polySurface249
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16928,7 +16928,7 @@ GameObject:
   - component: {fileID: 2392696209192265891}
   m_Layer: 0
   m_Name: polySurface25
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17053,7 +17053,7 @@ GameObject:
   - component: {fileID: 4989918775897484360}
   m_Layer: 0
   m_Name: polySurface24
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17178,7 +17178,7 @@ GameObject:
   - component: {fileID: 7379995964329734826}
   m_Layer: 0
   m_Name: polySurface240
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17303,7 +17303,7 @@ GameObject:
   - component: {fileID: 4601609045833109828}
   m_Layer: 0
   m_Name: polySurface245
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17428,7 +17428,7 @@ GameObject:
   - component: {fileID: 4780552513788981292}
   m_Layer: 0
   m_Name: polySurface246
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17553,7 +17553,7 @@ GameObject:
   - component: {fileID: 2363396073847480801}
   m_Layer: 0
   m_Name: polySurface236
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17678,7 +17678,7 @@ GameObject:
   - component: {fileID: 8620838639197139392}
   m_Layer: 0
   m_Name: polySurface237
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17803,7 +17803,7 @@ GameObject:
   - component: {fileID: 8106596204965145044}
   m_Layer: 0
   m_Name: polySurface238
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17928,7 +17928,7 @@ GameObject:
   - component: {fileID: 6038380272973171157}
   m_Layer: 0
   m_Name: polySurface239
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18053,7 +18053,7 @@ GameObject:
   - component: {fileID: 561757617336355184}
   m_Layer: 0
   m_Name: polySurface2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18178,7 +18178,7 @@ GameObject:
   - component: {fileID: 5572781180656142618}
   m_Layer: 0
   m_Name: polySurface20
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18303,7 +18303,7 @@ GameObject:
   - component: {fileID: 4124602733598498690}
   m_Layer: 0
   m_Name: polySurface234
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18428,7 +18428,7 @@ GameObject:
   - component: {fileID: 3750036216274631164}
   m_Layer: 0
   m_Name: polySurface235
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18553,7 +18553,7 @@ GameObject:
   - component: {fileID: 7884067886841368588}
   m_Layer: 0
   m_Name: polySurface175
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18678,7 +18678,7 @@ GameObject:
   - component: {fileID: 3384054516572214605}
   m_Layer: 0
   m_Name: polySurface177
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18804,7 +18804,7 @@ GameObject:
   - component: {fileID: 7147791751217695776}
   m_Layer: 0
   m_Name: polySurface178
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18930,7 +18930,7 @@ GameObject:
   - component: {fileID: 211539886327448117}
   m_Layer: 0
   m_Name: polySurface18
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19055,7 +19055,7 @@ GameObject:
   - component: {fileID: 1101932697790690665}
   m_Layer: 0
   m_Name: polySurface171
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19180,7 +19180,7 @@ GameObject:
   - component: {fileID: 7478150020129723522}
   m_Layer: 0
   m_Name: polySurface172
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19305,7 +19305,7 @@ GameObject:
   - component: {fileID: 6860460994162474655}
   m_Layer: 0
   m_Name: polySurface173
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19430,7 +19430,7 @@ GameObject:
   - component: {fileID: 5956326527001873464}
   m_Layer: 0
   m_Name: polySurface174
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19555,7 +19555,7 @@ GameObject:
   - component: {fileID: 3053793508878206526}
   m_Layer: 0
   m_Name: polySurface167
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19681,7 +19681,7 @@ GameObject:
   - component: {fileID: 8834735443983810850}
   m_Layer: 0
   m_Name: polySurface169
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19807,7 +19807,7 @@ GameObject:
   - component: {fileID: 4279079676514947878}
   m_Layer: 0
   m_Name: polySurface17
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19932,7 +19932,7 @@ GameObject:
   - component: {fileID: 5763574676533661398}
   m_Layer: 0
   m_Name: polySurface170
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20057,7 +20057,7 @@ GameObject:
   - component: {fileID: 5706609703469523707}
   m_Layer: 0
   m_Name: polySurface162
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20183,7 +20183,7 @@ GameObject:
   - component: {fileID: 5620707260035085068}
   m_Layer: 0
   m_Name: polySurface163
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20309,7 +20309,7 @@ GameObject:
   - component: {fileID: 7220043704720050169}
   m_Layer: 0
   m_Name: polySurface165
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20435,7 +20435,7 @@ GameObject:
   - component: {fileID: 3670795295431183454}
   m_Layer: 0
   m_Name: polySurface166
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20561,7 +20561,7 @@ GameObject:
   - component: {fileID: 5153631501602481555}
   m_Layer: 0
   m_Name: polySurface159
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20687,7 +20687,7 @@ GameObject:
   - component: {fileID: 453199897435739665}
   m_Layer: 0
   m_Name: polySurface16
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20812,7 +20812,7 @@ GameObject:
   - component: {fileID: 5006939729970659375}
   m_Layer: 0
   m_Name: polySurface160
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20938,7 +20938,7 @@ GameObject:
   - component: {fileID: 8997272358756561535}
   m_Layer: 0
   m_Name: polySurface161
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21064,7 +21064,7 @@ GameObject:
   - component: {fileID: 1648173145930165312}
   m_Layer: 0
   m_Name: polySurface154
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21190,7 +21190,7 @@ GameObject:
   - component: {fileID: 5223573029948190968}
   m_Layer: 0
   m_Name: polySurface155
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21316,7 +21316,7 @@ GameObject:
   - component: {fileID: 5875175791830717532}
   m_Layer: 0
   m_Name: polySurface156
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21442,7 +21442,7 @@ GameObject:
   - component: {fileID: 1661788305623130369}
   m_Layer: 0
   m_Name: polySurface158
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21568,7 +21568,7 @@ GameObject:
   - component: {fileID: 2037606248273321411}
   m_Layer: 0
   m_Name: polySurface97
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21693,7 +21693,7 @@ GameObject:
   - component: {fileID: 4037952520429016393}
   m_Layer: 0
   m_Name: polySurface98
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21818,7 +21818,7 @@ GameObject:
   - component: {fileID: 4950343180885632821}
   m_Layer: 0
   m_Name: polySurface99
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21943,7 +21943,7 @@ GameObject:
   - component: {fileID: 8385468584170787799}
   m_Layer: 0
   m_Name: polySurface93
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22069,7 +22069,7 @@ GameObject:
   - component: {fileID: 9214529787547435151}
   m_Layer: 0
   m_Name: polySurface94
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22195,7 +22195,7 @@ GameObject:
   - component: {fileID: 7642214406494655294}
   m_Layer: 0
   m_Name: polySurface95
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22321,7 +22321,7 @@ GameObject:
   - component: {fileID: 5753202334060206919}
   m_Layer: 0
   m_Name: polySurface96
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22446,7 +22446,7 @@ GameObject:
   - component: {fileID: 6574350236411990874}
   m_Layer: 0
   m_Name: polySurface9
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22571,7 +22571,7 @@ GameObject:
   - component: {fileID: 599885017109384892}
   m_Layer: 0
   m_Name: polySurface90
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22697,7 +22697,7 @@ GameObject:
   - component: {fileID: 82773867633558806}
   m_Layer: 0
   m_Name: polySurface91
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22823,7 +22823,7 @@ GameObject:
   - component: {fileID: 8176430255894668482}
   m_Layer: 0
   m_Name: polySurface92
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22949,7 +22949,7 @@ GameObject:
   - component: {fileID: 7242806324135911808}
   m_Layer: 0
   m_Name: polySurface86
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23075,7 +23075,7 @@ GameObject:
   - component: {fileID: 6222088992201816500}
   m_Layer: 0
   m_Name: polySurface87
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23201,7 +23201,7 @@ GameObject:
   - component: {fileID: 1556703555486513264}
   m_Layer: 0
   m_Name: polySurface88
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23327,7 +23327,7 @@ GameObject:
   - component: {fileID: 5872363713937609517}
   m_Layer: 0
   m_Name: polySurface89
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23453,7 +23453,7 @@ GameObject:
   - component: {fileID: 5737066667719070765}
   m_Layer: 0
   m_Name: polySurface82
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23579,7 +23579,7 @@ GameObject:
   - component: {fileID: 2551554006079264089}
   m_Layer: 0
   m_Name: polySurface83
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23705,7 +23705,7 @@ GameObject:
   - component: {fileID: 3713535174180330160}
   m_Layer: 0
   m_Name: polySurface84
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23831,7 +23831,7 @@ GameObject:
   - component: {fileID: 3559276286032782084}
   m_Layer: 0
   m_Name: polySurface85
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23957,7 +23957,7 @@ GameObject:
   - component: {fileID: 6454994566948955856}
   m_Layer: 0
   m_Name: polySurface79
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24082,7 +24082,7 @@ GameObject:
   - component: {fileID: 1461175751124066235}
   m_Layer: 0
   m_Name: polySurface8
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24207,7 +24207,7 @@ GameObject:
   - component: {fileID: 1645210472493618246}
   m_Layer: 0
   m_Name: polySurface80
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24332,7 +24332,7 @@ GameObject:
   - component: {fileID: 4408484509965222686}
   m_Layer: 0
   m_Name: polySurface81
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24457,7 +24457,7 @@ GameObject:
   - component: {fileID: 6963494134972765558}
   m_Layer: 0
   m_Name: polySurface75
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24582,7 +24582,7 @@ GameObject:
   - component: {fileID: 400916917152425484}
   m_Layer: 0
   m_Name: polySurface76
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24707,7 +24707,7 @@ GameObject:
   - component: {fileID: 2693455519084431545}
   m_Layer: 0
   m_Name: polySurface77
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24832,7 +24832,7 @@ GameObject:
   - component: {fileID: 3350339969054175094}
   m_Layer: 0
   m_Name: polySurface78
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24957,7 +24957,7 @@ GameObject:
   - component: {fileID: 604129787413284439}
   m_Layer: 0
   m_Name: polySurface71
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25082,7 +25082,7 @@ GameObject:
   - component: {fileID: 3467369049430349822}
   m_Layer: 0
   m_Name: polySurface72
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25207,7 +25207,7 @@ GameObject:
   - component: {fileID: 748782617483405367}
   m_Layer: 0
   m_Name: polySurface73
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25332,7 +25332,7 @@ GameObject:
   - component: {fileID: 955265027856804618}
   m_Layer: 0
   m_Name: polySurface74
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25457,7 +25457,7 @@ GameObject:
   - component: {fileID: 932157164810761406}
   m_Layer: 0
   m_Name: polySurface68
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25582,7 +25582,7 @@ GameObject:
   - component: {fileID: 5186876438323332577}
   m_Layer: 0
   m_Name: polySurface69
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25707,7 +25707,7 @@ GameObject:
   - component: {fileID: 2007486291974829774}
   m_Layer: 0
   m_Name: polySurface7
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25832,7 +25832,7 @@ GameObject:
   - component: {fileID: 428214792350227252}
   m_Layer: 0
   m_Name: polySurface70
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25957,7 +25957,7 @@ GameObject:
   - component: {fileID: 8500616627594695887}
   m_Layer: 0
   m_Name: polySurface64
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26082,7 +26082,7 @@ GameObject:
   - component: {fileID: 5353638915992140700}
   m_Layer: 0
   m_Name: polySurface65
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26207,7 +26207,7 @@ GameObject:
   - component: {fileID: 1314833553032928074}
   m_Layer: 0
   m_Name: polySurface66
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26332,7 +26332,7 @@ GameObject:
   - component: {fileID: 5029620868858134700}
   m_Layer: 0
   m_Name: polySurface67
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26457,7 +26457,7 @@ GameObject:
   - component: {fileID: 8243960950369959907}
   m_Layer: 0
   m_Name: polySurface60
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26582,7 +26582,7 @@ GameObject:
   - component: {fileID: 971423378537968139}
   m_Layer: 0
   m_Name: polySurface61
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26707,7 +26707,7 @@ GameObject:
   - component: {fileID: 5615141370097877546}
   m_Layer: 0
   m_Name: polySurface62
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26832,7 +26832,7 @@ GameObject:
   - component: {fileID: 4387727772170332436}
   m_Layer: 0
   m_Name: polySurface63
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26957,7 +26957,7 @@ GameObject:
   - component: {fileID: 3920267476133538602}
   m_Layer: 0
   m_Name: polySurface57
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27082,7 +27082,7 @@ GameObject:
   - component: {fileID: 373645687344629535}
   m_Layer: 0
   m_Name: polySurface58
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27207,7 +27207,7 @@ GameObject:
   - component: {fileID: 7518233251331160788}
   m_Layer: 0
   m_Name: polySurface59
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27332,7 +27332,7 @@ GameObject:
   - component: {fileID: 4712240023219705678}
   m_Layer: 0
   m_Name: polySurface6
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27457,7 +27457,7 @@ GameObject:
   - component: {fileID: 8558852798680633708}
   m_Layer: 0
   m_Name: polySurface53
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27582,7 +27582,7 @@ GameObject:
   - component: {fileID: 5226586170835578536}
   m_Layer: 0
   m_Name: polySurface54
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27707,7 +27707,7 @@ GameObject:
   - component: {fileID: 50795054033972628}
   m_Layer: 0
   m_Name: polySurface55
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27832,7 +27832,7 @@ GameObject:
   - component: {fileID: 3174265998603600860}
   m_Layer: 0
   m_Name: polySurface56
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27957,7 +27957,7 @@ GameObject:
   - component: {fileID: 7821610089568987320}
   m_Layer: 0
   m_Name: polySurface5
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28082,7 +28082,7 @@ GameObject:
   - component: {fileID: 8446919735550735611}
   m_Layer: 0
   m_Name: polySurface50
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28207,7 +28207,7 @@ GameObject:
   - component: {fileID: 687270440236408449}
   m_Layer: 0
   m_Name: polySurface51
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28332,7 +28332,7 @@ GameObject:
   - component: {fileID: 5602545647148719953}
   m_Layer: 0
   m_Name: polySurface52
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

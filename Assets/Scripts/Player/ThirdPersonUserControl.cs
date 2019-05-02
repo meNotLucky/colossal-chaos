@@ -28,7 +28,6 @@ public class ThirdPersonUserControl : MonoBehaviour
     private float h;
     private float v = 1;
     
-    
     private void Start()
     {
         // Center mouse
@@ -42,6 +41,7 @@ public class ThirdPersonUserControl : MonoBehaviour
 
         // get the third person character ( this should never be null due to require component )
         character = GetComponent<ThirdPersonCharacter>();
+
     }
 
     private void Update()

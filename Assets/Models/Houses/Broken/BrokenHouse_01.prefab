@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 7364136329896023095}
   m_Layer: 0
   m_Name: BrokenRoofBeam_01 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 6330052090984015219}
   m_Layer: 0
   m_Name: BrokenRoofBeam_02
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 8858593354688310849}
   m_Layer: 0
   m_Name: BrokenRoofBeam_01
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -719,7 +719,7 @@ GameObject:
   - component: {fileID: 6610670065858167257}
   m_Layer: 0
   m_Name: BrokenSideRock01 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -844,7 +844,7 @@ GameObject:
   - component: {fileID: 1366694280779175719}
   m_Layer: 0
   m_Name: BrokenSideRock01 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -969,7 +969,7 @@ GameObject:
   - component: {fileID: 5479424577019127375}
   m_Layer: 0
   m_Name: BrokenRoofBeam_02 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1094,7 +1094,7 @@ GameObject:
   - component: {fileID: 9065106463592707296}
   m_Layer: 0
   m_Name: BrokenSideRock01
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1219,7 +1219,7 @@ GameObject:
   - component: {fileID: 670132879536568222}
   m_Layer: 0
   m_Name: BrokenSideRock02 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1344,7 +1344,7 @@ GameObject:
   - component: {fileID: 6763308035277590773}
   m_Layer: 0
   m_Name: BrokenSideRock02 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1469,7 +1469,7 @@ GameObject:
   - component: {fileID: 3497091479017018335}
   m_Layer: 0
   m_Name: BrokenSideRock01 3
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1594,7 +1594,7 @@ GameObject:
   - component: {fileID: 2807567333007209745}
   m_Layer: 0
   m_Name: BrokenSideRock02
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1719,7 +1719,7 @@ GameObject:
   - component: {fileID: 1771592212828600697}
   m_Layer: 0
   m_Name: BrokenSideRock03 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1844,7 +1844,7 @@ GameObject:
   - component: {fileID: 4383125835958885035}
   m_Layer: 0
   m_Name: BrokenSideRock03 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1969,7 +1969,7 @@ GameObject:
   - component: {fileID: 8903741067811498816}
   m_Layer: 0
   m_Name: BrokenSideRock02 3
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2094,7 +2094,7 @@ GameObject:
   - component: {fileID: 3381490131308784402}
   m_Layer: 0
   m_Name: BrokenSideRock03
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2219,7 +2219,7 @@ GameObject:
   - component: {fileID: 6597354650884175153}
   m_Layer: 0
   m_Name: BrokenSideRock04 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2344,7 +2344,7 @@ GameObject:
   - component: {fileID: 2813927047112129553}
   m_Layer: 0
   m_Name: BrokenSideRock04 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2469,7 +2469,7 @@ GameObject:
   - component: {fileID: 5755204256402895304}
   m_Layer: 0
   m_Name: BrokenSideRock03 3
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2594,7 +2594,7 @@ GameObject:
   - component: {fileID: 6708546059275659159}
   m_Layer: 0
   m_Name: BrokenSideRock04
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2719,7 +2719,7 @@ GameObject:
   - component: {fileID: 8122233409932014558}
   m_Layer: 0
   m_Name: BrokenSideRock05 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2844,7 +2844,7 @@ GameObject:
   - component: {fileID: 3595673238544797335}
   m_Layer: 0
   m_Name: BrokenSideRock05 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2969,7 +2969,7 @@ GameObject:
   - component: {fileID: 1753886405093005829}
   m_Layer: 0
   m_Name: BrokenSideRock04 3
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3094,7 +3094,7 @@ GameObject:
   - component: {fileID: 3704775482968756840}
   m_Layer: 0
   m_Name: BrokenSideRock05
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3219,7 +3219,7 @@ GameObject:
   - component: {fileID: 1135810827050083252}
   m_Layer: 0
   m_Name: BeamPiece01 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3344,7 +3344,7 @@ GameObject:
   - component: {fileID: 7490298063188424537}
   m_Layer: 0
   m_Name: BeamPiece01 3
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3469,7 +3469,7 @@ GameObject:
   - component: {fileID: 7988383325061476355}
   m_Layer: 0
   m_Name: BeamPiece01 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3594,7 +3594,7 @@ GameObject:
   - component: {fileID: 5930072045797173512}
   m_Layer: 0
   m_Name: BeamPiece02 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3719,7 +3719,7 @@ GameObject:
   - component: {fileID: 1793499227347091022}
   m_Layer: 0
   m_Name: BeamPiece02 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3844,7 +3844,7 @@ GameObject:
   - component: {fileID: 6613249047909807158}
   m_Layer: 0
   m_Name: BeamPiece01 4
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3969,7 +3969,7 @@ GameObject:
   - component: {fileID: 6585869632325592974}
   m_Layer: 0
   m_Name: BeamPiece03 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4094,7 +4094,7 @@ GameObject:
   - component: {fileID: 2358830113075395923}
   m_Layer: 0
   m_Name: BeamPiece02 3
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4219,7 +4219,7 @@ GameObject:
   - component: {fileID: 2453433380874612043}
   m_Layer: 0
   m_Name: BeamPiece02 4
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4344,7 +4344,7 @@ GameObject:
   - component: {fileID: 6332274288816137252}
   m_Layer: 0
   m_Name: BeamPiece03 4
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4469,7 +4469,7 @@ GameObject:
   - component: {fileID: 7534451946926100422}
   m_Layer: 0
   m_Name: BeamPiece03 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4594,7 +4594,7 @@ GameObject:
   - component: {fileID: 1138083617105275162}
   m_Layer: 0
   m_Name: BeamPiece03 3
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4719,7 +4719,7 @@ GameObject:
   - component: {fileID: 6760453590003923320}
   m_Layer: 0
   m_Name: polySurface106
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4845,7 +4845,7 @@ GameObject:
   - component: {fileID: 7000965612681358274}
   m_Layer: 0
   m_Name: polySurface108
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4971,7 +4971,7 @@ GameObject:
   - component: {fileID: 2964565716109173173}
   m_Layer: 0
   m_Name: polySurface108 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5097,7 +5097,7 @@ GameObject:
   - component: {fileID: 6738436705187910554}
   m_Layer: 0
   m_Name: polySurface106 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5223,7 +5223,7 @@ GameObject:
   - component: {fileID: 8696439111637027516}
   m_Layer: 0
   m_Name: polySurface106 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5349,7 +5349,7 @@ GameObject:
   - component: {fileID: 1539456007892668199}
   m_Layer: 0
   m_Name: polySurface110 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5475,7 +5475,7 @@ GameObject:
   - component: {fileID: 7365082893892850702}
   m_Layer: 0
   m_Name: polySurface110 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5601,7 +5601,7 @@ GameObject:
   - component: {fileID: 2231939573015159566}
   m_Layer: 0
   m_Name: polySurface108 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5727,7 +5727,7 @@ GameObject:
   - component: {fileID: 2215404732385763595}
   m_Layer: 0
   m_Name: polySurface110
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5853,7 +5853,7 @@ GameObject:
   - component: {fileID: 7705582036052334729}
   m_Layer: 0
   m_Name: polySurface112 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5979,7 +5979,7 @@ GameObject:
   - component: {fileID: 684497643186659367}
   m_Layer: 0
   m_Name: polySurface115
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6105,7 +6105,7 @@ GameObject:
   - component: {fileID: 7634054632972270650}
   m_Layer: 0
   m_Name: polySurface112
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6231,7 +6231,7 @@ GameObject:
   - component: {fileID: 4242834953000054153}
   m_Layer: 0
   m_Name: polySurface112 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6357,7 +6357,7 @@ GameObject:
   - component: {fileID: 3183842162082826351}
   m_Layer: 0
   m_Name: BrokenSideRock05 3
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6482,7 +6482,7 @@ GameObject:
   - component: {fileID: 6651986675821916801}
   m_Layer: 0
   m_Name: DoorFrame_03
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6607,7 +6607,7 @@ GameObject:
   - component: {fileID: 5955727946714682913}
   m_Layer: 0
   m_Name: DoorFrame_04
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6732,7 +6732,7 @@ GameObject:
   - component: {fileID: 4468723131284766246}
   m_Layer: 0
   m_Name: DoorFrame_01
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6857,7 +6857,7 @@ GameObject:
   - component: {fileID: 7192214918451056376}
   m_Layer: 0
   m_Name: DoorFrame_02
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6982,7 +6982,7 @@ GameObject:
   - component: {fileID: 8675918076380401377}
   m_Layer: 0
   m_Name: DoorPlank_03
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7107,7 +7107,7 @@ GameObject:
   - component: {fileID: 4649561935828433476}
   m_Layer: 0
   m_Name: DoorPlank_04
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7232,7 +7232,7 @@ GameObject:
   - component: {fileID: 1879858504920648608}
   m_Layer: 0
   m_Name: DoorPlank_01
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7358,7 +7358,7 @@ GameObject:
   - component: {fileID: 5220067780867754572}
   m_Layer: 0
   m_Name: DoorPlank_02
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7483,7 +7483,7 @@ GameObject:
   - component: {fileID: 5918100274938482526}
   m_Layer: 0
   m_Name: FramePiece_03
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7608,7 +7608,7 @@ GameObject:
   - component: {fileID: 5026804895122866125}
   m_Layer: 0
   m_Name: FramePiece_04
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7733,7 +7733,7 @@ GameObject:
   - component: {fileID: 6615433655679348613}
   m_Layer: 0
   m_Name: FramePiece_01
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7858,7 +7858,7 @@ GameObject:
   - component: {fileID: 5725836597638669020}
   m_Layer: 0
   m_Name: FramePiece_02
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7983,7 +7983,7 @@ GameObject:
   - component: {fileID: 1729664397277061051}
   m_Layer: 0
   m_Name: FramePiece_05
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8108,7 +8108,7 @@ GameObject:
   - component: {fileID: 4586062784941635488}
   m_Layer: 0
   m_Name: FramePiece_06
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8233,7 +8233,7 @@ GameObject:
   - component: {fileID: 1472281452458895926}
   m_Layer: 0
   m_Name: polySurface138 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8359,7 +8359,7 @@ GameObject:
   - component: {fileID: 5621993833054653757}
   m_Layer: 0
   m_Name: RoofPiece_01
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8485,7 +8485,7 @@ GameObject:
   - component: {fileID: 931665545247176991}
   m_Layer: 0
   m_Name: polySurface138
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8611,7 +8611,7 @@ GameObject:
   - component: {fileID: 29454376920603541}
   m_Layer: 0
   m_Name: polySurface138 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8737,7 +8737,7 @@ GameObject:
   - component: {fileID: 5825905860653180297}
   m_Layer: 0
   m_Name: RoofPiece_02 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8863,7 +8863,7 @@ GameObject:
   - component: {fileID: 1483632028276825586}
   m_Layer: 0
   m_Name: RoofPiece_03
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8989,7 +8989,7 @@ GameObject:
   - component: {fileID: 7877677609383195261}
   m_Layer: 0
   m_Name: RoofPiece_01 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9115,7 +9115,7 @@ GameObject:
   - component: {fileID: 6127014331333462396}
   m_Layer: 0
   m_Name: RoofPiece_02
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9241,7 +9241,7 @@ GameObject:
   - component: {fileID: 7816590592168890001}
   m_Layer: 0
   m_Name: RoofPiece_04 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9367,7 +9367,7 @@ GameObject:
   - component: {fileID: 8238066597245736153}
   m_Layer: 0
   m_Name: RoofPiece_05
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9493,7 +9493,7 @@ GameObject:
   - component: {fileID: 1382156643538122406}
   m_Layer: 0
   m_Name: RoofPiece_03 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9619,7 +9619,7 @@ GameObject:
   - component: {fileID: 9188248334697857416}
   m_Layer: 0
   m_Name: RoofPiece_04
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9745,7 +9745,7 @@ GameObject:
   - component: {fileID: 2878064390421083577}
   m_Layer: 0
   m_Name: RoofPiece_06 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9871,7 +9871,7 @@ GameObject:
   - component: {fileID: 9138487783039503399}
   m_Layer: 0
   m_Name: RoofPiece_07
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9997,7 +9997,7 @@ GameObject:
   - component: {fileID: 2372325946623237980}
   m_Layer: 0
   m_Name: RoofPiece_05 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10123,7 +10123,7 @@ GameObject:
   - component: {fileID: 3065746492335050025}
   m_Layer: 0
   m_Name: RoofPiece_06
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10249,7 +10249,7 @@ GameObject:
   - component: {fileID: 6420378795035586776}
   m_Layer: 0
   m_Name: RoofPiece_08 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10375,7 +10375,7 @@ GameObject:
   - component: {fileID: 4568203349611087681}
   m_Layer: 0
   m_Name: RoofPiece_09
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10501,7 +10501,7 @@ GameObject:
   - component: {fileID: 4475910174964177270}
   m_Layer: 0
   m_Name: RoofPiece_07 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10627,7 +10627,7 @@ GameObject:
   - component: {fileID: 8893597356107993965}
   m_Layer: 0
   m_Name: RoofPiece_08
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10753,7 +10753,7 @@ GameObject:
   - component: {fileID: 4236490696661410662}
   m_Layer: 0
   m_Name: RoofPiece_10 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10879,7 +10879,7 @@ GameObject:
   - component: {fileID: 4536734628050459403}
   m_Layer: 0
   m_Name: RoofPiece_11
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11005,7 +11005,7 @@ GameObject:
   - component: {fileID: 775167172357265960}
   m_Layer: 0
   m_Name: RoofPiece_09 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11131,7 +11131,7 @@ GameObject:
   - component: {fileID: 2565035833797544293}
   m_Layer: 0
   m_Name: RoofPiece_10
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11257,7 +11257,7 @@ GameObject:
   - component: {fileID: 5069547650420602372}
   m_Layer: 0
   m_Name: RoofPiece_12 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11383,7 +11383,7 @@ GameObject:
   - component: {fileID: 4890872219695599762}
   m_Layer: 0
   m_Name: WallPiece01
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11509,7 +11509,7 @@ GameObject:
   - component: {fileID: 4150045182961489499}
   m_Layer: 0
   m_Name: RoofPiece_11 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11635,7 +11635,7 @@ GameObject:
   - component: {fileID: 7809435787423179056}
   m_Layer: 0
   m_Name: RoofPiece_12
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11761,7 +11761,7 @@ GameObject:
   - component: {fileID: 1664504678977056833}
   m_Layer: 0
   m_Name: WallPiece010
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11887,7 +11887,7 @@ GameObject:
   - component: {fileID: 827386057390358404}
   m_Layer: 0
   m_Name: WallPiece011
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12013,7 +12013,7 @@ GameObject:
   - component: {fileID: 3419738153519392929}
   m_Layer: 0
   m_Name: WallPiece01 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12139,7 +12139,7 @@ GameObject:
   - component: {fileID: 9189736860723405090}
   m_Layer: 0
   m_Name: WallPiece01 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12265,7 +12265,7 @@ GameObject:
   - component: {fileID: 3661108298848172438}
   m_Layer: 0
   m_Name: polySurface117
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12391,7 +12391,7 @@ GameObject:
   - component: {fileID: 4177214912748093895}
   m_Layer: 0
   m_Name: polySurface117 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12517,7 +12517,7 @@ GameObject:
   - component: {fileID: 8823923648192628240}
   m_Layer: 0
   m_Name: polySurface115 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12643,7 +12643,7 @@ GameObject:
   - component: {fileID: 8708029221468644097}
   m_Layer: 0
   m_Name: polySurface115 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12769,7 +12769,7 @@ GameObject:
   - component: {fileID: 866589695219296618}
   m_Layer: 0
   m_Name: polySurface119 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12895,7 +12895,7 @@ GameObject:
   - component: {fileID: 2439901861406195393}
   m_Layer: 0
   m_Name: polySurface119 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13021,7 +13021,7 @@ GameObject:
   - component: {fileID: 68957044541435670}
   m_Layer: 0
   m_Name: polySurface117 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13147,7 +13147,7 @@ GameObject:
   - component: {fileID: 4795073342845206306}
   m_Layer: 0
   m_Name: polySurface119
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13273,7 +13273,7 @@ GameObject:
   - component: {fileID: 8096702855629179611}
   m_Layer: 0
   m_Name: polySurface121 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13399,7 +13399,7 @@ GameObject:
   - component: {fileID: 301979792979764238}
   m_Layer: 0
   m_Name: polySurface123
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13525,7 +13525,7 @@ GameObject:
   - component: {fileID: 920294162053175917}
   m_Layer: 0
   m_Name: polySurface121
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13651,7 +13651,7 @@ GameObject:
   - component: {fileID: 9195160620055510352}
   m_Layer: 0
   m_Name: polySurface121 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13777,7 +13777,7 @@ GameObject:
   - component: {fileID: 3555587795387531511}
   m_Layer: 0
   m_Name: polySurface125
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13903,7 +13903,7 @@ GameObject:
   - component: {fileID: 5617536525230710887}
   m_Layer: 0
   m_Name: polySurface125 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14029,7 +14029,7 @@ GameObject:
   - component: {fileID: 1322657310440553160}
   m_Layer: 0
   m_Name: polySurface123 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14155,7 +14155,7 @@ GameObject:
   - component: {fileID: 1880876249210166095}
   m_Layer: 0
   m_Name: polySurface123 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14281,7 +14281,7 @@ GameObject:
   - component: {fileID: 2420488364060001303}
   m_Layer: 0
   m_Name: polySurface127 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14407,7 +14407,7 @@ GameObject:
   - component: {fileID: 7844024999361483674}
   m_Layer: 0
   m_Name: polySurface127 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14533,7 +14533,7 @@ GameObject:
   - component: {fileID: 2756764883188831439}
   m_Layer: 0
   m_Name: polySurface125 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14659,7 +14659,7 @@ GameObject:
   - component: {fileID: 8445331196490603142}
   m_Layer: 0
   m_Name: polySurface127
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14785,7 +14785,7 @@ GameObject:
   - component: {fileID: 6460883279611107146}
   m_Layer: 0
   m_Name: polySurface129 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14911,7 +14911,7 @@ GameObject:
   - component: {fileID: 392836121859511453}
   m_Layer: 0
   m_Name: polySurface133
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15037,7 +15037,7 @@ GameObject:
   - component: {fileID: 6333055051482018928}
   m_Layer: 0
   m_Name: polySurface129
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15163,7 +15163,7 @@ GameObject:
   - component: {fileID: 2642921543241837646}
   m_Layer: 0
   m_Name: polySurface129 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15289,7 +15289,7 @@ GameObject:
   - component: {fileID: 5875196686542859703}
   m_Layer: 0
   m_Name: polySurface135
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15415,7 +15415,7 @@ GameObject:
   - component: {fileID: 92744676780046577}
   m_Layer: 0
   m_Name: polySurface135 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15541,7 +15541,7 @@ GameObject:
   - component: {fileID: 1246975555840321643}
   m_Layer: 0
   m_Name: polySurface133 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15667,7 +15667,7 @@ GameObject:
   - component: {fileID: 2308583624021134923}
   m_Layer: 0
   m_Name: polySurface133 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15793,7 +15793,7 @@ GameObject:
   - component: {fileID: 3083680951622773822}
   m_Layer: 0
   m_Name: polySurface136 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15919,7 +15919,7 @@ GameObject:
   - component: {fileID: 3277689470874341575}
   m_Layer: 0
   m_Name: polySurface136 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16045,7 +16045,7 @@ GameObject:
   - component: {fileID: 645694380656324749}
   m_Layer: 0
   m_Name: polySurface135 2
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16171,7 +16171,7 @@ GameObject:
   - component: {fileID: 471001558823316764}
   m_Layer: 0
   m_Name: polySurface136
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16297,7 +16297,7 @@ GameObject:
   - component: {fileID: 8777378164509252191}
   m_Layer: 0
   m_Name: WallPiece014
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16423,7 +16423,7 @@ GameObject:
   - component: {fileID: 4314267111117615924}
   m_Layer: 0
   m_Name: WallPiece015
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16549,7 +16549,7 @@ GameObject:
   - component: {fileID: 1265234465296669506}
   m_Layer: 0
   m_Name: WallPiece012
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16675,7 +16675,7 @@ GameObject:
   - component: {fileID: 4432829954707254192}
   m_Layer: 0
   m_Name: WallPiece013
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16801,7 +16801,7 @@ GameObject:
   - component: {fileID: 3054040983867001586}
   m_Layer: 0
   m_Name: WallPiece018
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16927,7 +16927,7 @@ GameObject:
   - component: {fileID: 6643624461608693969}
   m_Layer: 0
   m_Name: WallPiece019
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17053,7 +17053,7 @@ GameObject:
   - component: {fileID: 7281719351552846135}
   m_Layer: 0
   m_Name: WallPiece016
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17179,7 +17179,7 @@ GameObject:
   - component: {fileID: 5054100034523318167}
   m_Layer: 0
   m_Name: WallPiece017
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17305,7 +17305,7 @@ GameObject:
   - component: {fileID: 3207040956699646650}
   m_Layer: 0
   m_Name: WallPiece020
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17431,7 +17431,7 @@ GameObject:
   - component: {fileID: 7450670253148627867}
   m_Layer: 0
   m_Name: WallPiece021
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17557,7 +17557,7 @@ GameObject:
   - component: {fileID: 2778020338970705609}
   m_Layer: 0
   m_Name: WallPiece02
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17683,7 +17683,7 @@ GameObject:
   - component: {fileID: 7530740706728494171}
   m_Layer: 0
   m_Name: WallPiece02 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17809,7 +17809,7 @@ GameObject:
   - component: {fileID: 8475039360852674519}
   m_Layer: 0
   m_Name: WallPiece03 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17935,7 +17935,7 @@ GameObject:
   - component: {fileID: 6815940389536998977}
   m_Layer: 0
   m_Name: WallPiece04
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18061,7 +18061,7 @@ GameObject:
   - component: {fileID: 1173399719900609453}
   m_Layer: 0
   m_Name: WallPiece022
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18187,7 +18187,7 @@ GameObject:
   - component: {fileID: 2754143432401630793}
   m_Layer: 0
   m_Name: WallPiece03
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18313,7 +18313,7 @@ GameObject:
   - component: {fileID: 8179445392880002727}
   m_Layer: 0
   m_Name: WallPiece05 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18439,7 +18439,7 @@ GameObject:
   - component: {fileID: 2357466753458235644}
   m_Layer: 0
   m_Name: WallPiece06
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18565,7 +18565,7 @@ GameObject:
   - component: {fileID: 2155948274490276594}
   m_Layer: 0
   m_Name: WallPiece04 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18691,7 +18691,7 @@ GameObject:
   - component: {fileID: 7186098766983405697}
   m_Layer: 0
   m_Name: WallPiece05
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18817,7 +18817,7 @@ GameObject:
   - component: {fileID: 1190700417414537041}
   m_Layer: 0
   m_Name: WallPiece07 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18943,7 +18943,7 @@ GameObject:
   - component: {fileID: 3095151290662814721}
   m_Layer: 0
   m_Name: WallPiece08
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19069,7 +19069,7 @@ GameObject:
   - component: {fileID: 5242216161142945874}
   m_Layer: 0
   m_Name: WallPiece06 1
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19195,7 +19195,7 @@ GameObject:
   - component: {fileID: 3140514335783492605}
   m_Layer: 0
   m_Name: WallPiece07
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19321,7 +19321,7 @@ GameObject:
   - component: {fileID: 6661766695125277978}
   m_Layer: 0
   m_Name: WindowPiece_02
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19446,7 +19446,7 @@ GameObject:
   - component: {fileID: 7096662555781077897}
   m_Layer: 0
   m_Name: WindowPiece_03
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19571,7 +19571,7 @@ GameObject:
   - component: {fileID: 988660362739691448}
   m_Layer: 0
   m_Name: WallPiece09
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19697,7 +19697,7 @@ GameObject:
   - component: {fileID: 2161836845744376916}
   m_Layer: 0
   m_Name: WindowPiece_01
-  m_TagString: Untagged
+  m_TagString: house_piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
