@@ -13769,7 +13769,7 @@ MonoBehaviour:
   - {fileID: 3813319389808079149}
   - {fileID: 3813319389808079151}
   - {fileID: 3813319389808079145}
-  mininumSupports: 3
+  mininumSupports: 2
 --- !u!82 &8451839431789890135
 AudioSource:
   m_ObjectHideFlags: 0

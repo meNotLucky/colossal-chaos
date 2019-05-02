@@ -14634,6 +14634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4926794480538958926}
+  - component: {fileID: 2816488280336880414}
   m_Layer: 0
   m_Name: Church_FBX2
   m_TagString: Untagged
@@ -14657,9 +14658,146 @@ Transform:
   - {fileID: 4926794480538958950}
   - {fileID: 4926794480538958914}
   - {fileID: 2091765060691318864}
+  - {fileID: 2162681840072656019}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &2816488280336880414
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4926794480539312174}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -6.097287, y: 12.541617, z: 7.5578117}
+  m_Size: 25.111956
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.39862448
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4926794480537058946}
+    - renderer: {fileID: 4926794480537058944}
+    - renderer: {fileID: 4926794480537058958}
+    - renderer: {fileID: 4926794480537058956}
+    - renderer: {fileID: 4926794480537058954}
+    - renderer: {fileID: 4926794480537058952}
+    - renderer: {fileID: 4926794480537058966}
+    - renderer: {fileID: 4926794480537058964}
+    - renderer: {fileID: 4926794480537058962}
+    - renderer: {fileID: 4926794480537058960}
+    - renderer: {fileID: 4926794480537058974}
+    - renderer: {fileID: 4926794480537058972}
+    - renderer: {fileID: 4926794480537058970}
+    - renderer: {fileID: 4926794480537058968}
+    - renderer: {fileID: 4926794480537058918}
+    - renderer: {fileID: 4926794480537058916}
+    - renderer: {fileID: 4926794480537058914}
+    - renderer: {fileID: 2091765060693219664}
+    - renderer: {fileID: 2091765060693219668}
+    - renderer: {fileID: 2091765060693219678}
+    - renderer: {fileID: 2091765060693219650}
+    - renderer: {fileID: 2091765060693219656}
+    - renderer: {fileID: 2091765060693219702}
+    - renderer: {fileID: 2091765060693219704}
+    - renderer: {fileID: 2091765060693219708}
+    - renderer: {fileID: 2091765060693219680}
+    - renderer: {fileID: 2091765060693219684}
+    - renderer: {fileID: 2091765060693219688}
+    - renderer: {fileID: 2091765060693219584}
+    - renderer: {fileID: 2091765060693219590}
+    - renderer: {fileID: 2091765060693219588}
+    - renderer: {fileID: 2091765060693219594}
+    - renderer: {fileID: 2091765060693219592}
+    - renderer: {fileID: 2091765060693219598}
+    - renderer: {fileID: 2091765060693219634}
+    - renderer: {fileID: 2091765060693219632}
+    - renderer: {fileID: 2091765060693219638}
+    - renderer: {fileID: 2091765060693219636}
+    - renderer: {fileID: 2091765060693219642}
+    - renderer: {fileID: 2091765060693219640}
+    - renderer: {fileID: 2091765060693219646}
+    - renderer: {fileID: 2091765060693219644}
+    - renderer: {fileID: 2091765060693219618}
+    - renderer: {fileID: 2091765060693219616}
+    - renderer: {fileID: 2091765060693219620}
+    - renderer: {fileID: 2091765060693219626}
+    - renderer: {fileID: 2091765060693219624}
+    - renderer: {fileID: 2091765060693219630}
+    - renderer: {fileID: 2091765060693219628}
+    - renderer: {fileID: 2091765060693221074}
+    - renderer: {fileID: 2091765060693221072}
+    - renderer: {fileID: 2091765060693221078}
+    - renderer: {fileID: 2091765060693221076}
+    - renderer: {fileID: 2091765060693221082}
+    - renderer: {fileID: 2091765060693221080}
+    - renderer: {fileID: 2091765060693221086}
+    - renderer: {fileID: 2091765060693221084}
+    - renderer: {fileID: 2091765060693221058}
+    - renderer: {fileID: 2091765060693221056}
+    - renderer: {fileID: 2091765060693221062}
+    - renderer: {fileID: 2091765060693221060}
+    - renderer: {fileID: 2091765060693221066}
+    - renderer: {fileID: 2091765060693221064}
+    - renderer: {fileID: 2091765060693221070}
+    - renderer: {fileID: 2091765060693221068}
+    - renderer: {fileID: 2091765060693221106}
+    - renderer: {fileID: 2091765060693221104}
+    - renderer: {fileID: 2091765060693221110}
+    - renderer: {fileID: 2091765060693221108}
+    - renderer: {fileID: 2091765060693221114}
+    - renderer: {fileID: 2091765060693221112}
+    - renderer: {fileID: 2091765060693221118}
+    - renderer: {fileID: 2091765060693221116}
+    - renderer: {fileID: 2091765060693221090}
+    - renderer: {fileID: 2091765060693221088}
+    - renderer: {fileID: 2091765060693221094}
+    - renderer: {fileID: 2091765060693221092}
+    - renderer: {fileID: 2091765060693221098}
+    - renderer: {fileID: 2091765060693221096}
+    - renderer: {fileID: 2091765060693221102}
+    - renderer: {fileID: 2091765060693221100}
+    - renderer: {fileID: 2091765060693221010}
+    - renderer: {fileID: 2091765060693221008}
+    - renderer: {fileID: 2091765060693221014}
+    - renderer: {fileID: 2091765060693221018}
+    - renderer: {fileID: 2091765060693221016}
+    - renderer: {fileID: 2091765060693221022}
+    - renderer: {fileID: 2091765060693221020}
+    - renderer: {fileID: 2091765060693220994}
+    - renderer: {fileID: 2091765060693220992}
+    - renderer: {fileID: 2091765060693220998}
+    - renderer: {fileID: 2091765060693220996}
+    - renderer: {fileID: 2091765060693221002}
+    - renderer: {fileID: 2091765060693221000}
+    - renderer: {fileID: 2091765060693221004}
+    - renderer: {fileID: 2091765060693221042}
+    - renderer: {fileID: 2091765060693221040}
+    - renderer: {fileID: 2091765060693221046}
+    - renderer: {fileID: 2091765060693221044}
+    - renderer: {fileID: 2091765060693221050}
+    - renderer: {fileID: 2091765060693221048}
+    - renderer: {fileID: 2091765060693221054}
+    - renderer: {fileID: 2091765060693221052}
+    - renderer: {fileID: 2091765060693221026}
+    - renderer: {fileID: 2091765060693221030}
+    - renderer: {fileID: 2091765060693221028}
+    - renderer: {fileID: 2091765060693221034}
+    - renderer: {fileID: 2091765060693221032}
+    - renderer: {fileID: 2091765060693221038}
+    - renderer: {fileID: 2091765060693221036}
+    - renderer: {fileID: 2091765060693220946}
+    - renderer: {fileID: 2091765060693220944}
+    - renderer: {fileID: 2091765060693220950}
+    - renderer: {fileID: 2091765060693220948}
+  - screenRelativeHeight: 0.14253083
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 8860954198514295221}
+  m_Enabled: 1
 --- !u!1 &4926794480539312176
 GameObject:
   m_ObjectHideFlags: 0
@@ -84511,3 +84649,84 @@ MonoBehaviour:
   collisionTriggered: 0
   triggerChainReaction: 0
   hasConnection: 0
+--- !u!1 &6553022948902242900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2162681840072656019}
+  - component: {fileID: 362198891323681958}
+  - component: {fileID: 8860954198514295221}
+  m_Layer: 0
+  m_Name: Church_LOD(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2162681840072656019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6553022948902242900}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4926794480538958926}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &362198891323681958
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6553022948902242900}
+  m_Mesh: {fileID: 4300000, guid: 1944d6ebf973f84408ebf11013513818, type: 3}
+--- !u!23 &8860954198514295221
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6553022948902242900}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4f2e82bba9d8a7f4184c35b853519d8a, type: 2}
+  - {fileID: 2100000, guid: 4f399854affea29438e8ac33e783a67c, type: 2}
+  - {fileID: 2100000, guid: 1039ccac0b6292045ac3e00911f36568, type: 2}
+  - {fileID: 2100000, guid: f9011e472dc2ce943a67d1828466a944, type: 2}
+  - {fileID: 2100000, guid: 96596cda2a942ef48a37fe465b4928db, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0

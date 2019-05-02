@@ -1328,9 +1328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brokenMesh: {fileID: 5526448859096848009, guid: d92bbb15bf8fbcd44be352e82b25e5e4,
     type: 3}
-  dustPiles:
-  - {fileID: 5505795248402555729, guid: 5fe37d74c5e153b49b66fa2f06ae74ec, type: 3}
-  - {fileID: 944624876120949700, guid: 0e225c8fe781f14448aa99c608bb2427, type: 3}
+  dustPiles: []
 --- !u!1 &3004609096126333886
 GameObject:
   m_ObjectHideFlags: 0
