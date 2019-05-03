@@ -6,7 +6,14 @@ using UnityEngine.AI;
 public class VillagerAI : MonoBehaviour
 {
     NavMeshAgent navMeshAgent;
+
+    [Header("AI Properties")]
     public float timeForNewPath;
+
+    [Header("References")]
+    public GameObject mesh;
+    public GameObject bloodEffect;
+
     private bool inCoroutine;
     Vector3 target;
     NavMeshPath path;
@@ -54,5 +61,16 @@ public class VillagerAI : MonoBehaviour
     {
         if(!inCoroutine)
             StartCoroutine(WaitForNextPath());
+
+        if(bloodEffect.activeSelf && !bloodEffect.GetComponent<ParticleSystem>().isPlaying){
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnCollisionEnter(Collision other) {
+        if(other.gameObject.tag == "barrel"){
+            bloodEffect.SetActive(true);
+            mesh.SetActive(false);
+        }
     }
 }

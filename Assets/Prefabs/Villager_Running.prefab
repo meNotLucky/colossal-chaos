@@ -647,6 +647,7 @@ GameObject:
   - component: {fileID: 2124451648221650474}
   - component: {fileID: 2124451648066054657}
   - component: {fileID: 2124451648066054658}
+  - component: {fileID: 6632400435266100188}
   m_Layer: 0
   m_Name: Villager_Running
   m_TagString: Untagged
@@ -667,6 +668,7 @@ Transform:
   m_Children:
   - {fileID: 2124451648211808718}
   - {fileID: 2124451648211808648}
+  - {fileID: 3554787219248829289}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -724,6 +726,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeForNewPath: 3
+  mesh: {fileID: 2124451648212299176}
+  bloodEffect: {fileID: 2680219845671485811}
+--- !u!136 &6632400435266100188
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124451648212299180}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.9969264
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.9993895, z: 0}
 --- !u!1 &2124451648212299232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,3 +1237,94 @@ Transform:
   m_Father: {fileID: 2124451648211808728}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &7970927639726243143
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2124451648211808652}
+    m_Modifications:
+    - target: {fileID: 5452840774100728884, guid: ab24654cab7b3044da3599c5d09c0e9f,
+        type: 3}
+      propertyPath: m_Name
+      value: Villager_Blood
+      objectReference: {fileID: 0}
+    - target: {fileID: 5452840774100728884, guid: ab24654cab7b3044da3599c5d09c0e9f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902690365251612206, guid: ab24654cab7b3044da3599c5d09c0e9f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902690365251612206, guid: ab24654cab7b3044da3599c5d09c0e9f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.031
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902690365251612206, guid: ab24654cab7b3044da3599c5d09c0e9f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902690365251612206, guid: ab24654cab7b3044da3599c5d09c0e9f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902690365251612206, guid: ab24654cab7b3044da3599c5d09c0e9f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902690365251612206, guid: ab24654cab7b3044da3599c5d09c0e9f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902690365251612206, guid: ab24654cab7b3044da3599c5d09c0e9f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902690365251612206, guid: ab24654cab7b3044da3599c5d09c0e9f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902690365251612206, guid: ab24654cab7b3044da3599c5d09c0e9f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902690365251612206, guid: ab24654cab7b3044da3599c5d09c0e9f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902690365251612206, guid: ab24654cab7b3044da3599c5d09c0e9f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 531389805662607221, guid: ab24654cab7b3044da3599c5d09c0e9f,
+        type: 3}
+      propertyPath: ClampVelocityModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab24654cab7b3044da3599c5d09c0e9f, type: 3}
+--- !u!1 &2680219845671485811 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5452840774100728884, guid: ab24654cab7b3044da3599c5d09c0e9f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7970927639726243143}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3554787219248829289 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6902690365251612206, guid: ab24654cab7b3044da3599c5d09c0e9f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7970927639726243143}
+  m_PrefabAsset: {fileID: 0}
