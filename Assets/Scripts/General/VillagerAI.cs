@@ -59,11 +59,13 @@ public class VillagerAI : MonoBehaviour
 
     void Update()
     {
-        if(!inCoroutine)
-            StartCoroutine(WaitForNextPath());
+        if(mesh.activeSelf){
+            if(!inCoroutine)
+                StartCoroutine(WaitForNextPath());
 
-        if(bloodEffect.activeSelf && !bloodEffect.GetComponent<ParticleSystem>().isPlaying){
-            Destroy(gameObject);
+            if(bloodEffect.activeSelf && !bloodEffect.GetComponent<ParticleSystem>().isPlaying){
+                Destroy(gameObject);
+            }
         }
     }
 
