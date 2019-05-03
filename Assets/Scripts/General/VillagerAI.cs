@@ -12,45 +12,47 @@ public class VillagerAI : MonoBehaviour
     NavMeshPath path;
     bool validPath;
 
-        void Start()
+    void Start()
     {
-        navMeshAgent=GetComponent<NavMeshAgent>();
-        path=new NavMeshPath();
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        path = new NavMeshPath();
     }
 
     Vector3 getNewPos()
     {
-        float x = Random.Range(285,500);
-        float z= Random.Range(450,710);
-        Vector3 pos=new Vector3(x,transform.position.y,z);
+        float x = Random.Range(285, 500);
+        float z = Random.Range(450, 710);
+        Vector3 pos = new Vector3(x, transform.position.y, z);
         return pos;
     }
 
     IEnumerator WaitForNextPath()
     {
-        inCoroutine=true;
+        inCoroutine = true;
         yield return new WaitForSeconds(timeForNewPath);
+        
         GetNewPath();
-        validPath=navMeshAgent.CalculatePath(target,path);
+        validPath = navMeshAgent.CalculatePath(target,path);
+
         while(!validPath)
         {
             yield return new WaitForSeconds(0.01f);
             GetNewPath();
-            validPath=navMeshAgent.CalculatePath(target,path);
-
+            validPath = navMeshAgent.CalculatePath(target, path);
         }
+
         inCoroutine=false;
     }
+
     void GetNewPath()
     {
-        target=getNewPos();
+        target = getNewPos();
         navMeshAgent.SetDestination(target);
     }
+
     void Update()
     {
         if(!inCoroutine)
-        {
             StartCoroutine(WaitForNextPath());
-        }
     }
 }
