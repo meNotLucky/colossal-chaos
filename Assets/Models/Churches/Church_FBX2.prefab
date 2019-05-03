@@ -12267,7 +12267,7 @@ GameObject:
   - component: {fileID: 8184502673038701229}
   m_Layer: 0
   m_Name: Intact_Piece_13
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12377,7 +12377,7 @@ GameObject:
   - component: {fileID: 4608772452142402620}
   m_Layer: 0
   m_Name: Intact_Piece_12
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12487,7 +12487,7 @@ GameObject:
   - component: {fileID: 4965570000257389706}
   m_Layer: 0
   m_Name: Intact_Piece_11
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12597,7 +12597,7 @@ GameObject:
   - component: {fileID: 1075983893909923364}
   m_Layer: 0
   m_Name: Intact_Piece_10
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12818,7 +12818,7 @@ GameObject:
   - component: {fileID: 2334437701493835663}
   m_Layer: 0
   m_Name: Intact_Piece_16
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12928,7 +12928,7 @@ GameObject:
   - component: {fileID: 99073945491230758}
   m_Layer: 0
   m_Name: Intact_Piece_15
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13038,7 +13038,7 @@ GameObject:
   - component: {fileID: 5432074650922013281}
   m_Layer: 0
   m_Name: Intact_Piece_14
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14484,7 +14484,7 @@ GameObject:
   - component: {fileID: 1860197790628010768}
   m_Layer: 0
   m_Name: Intact_Piece_01
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14813,7 +14813,7 @@ GameObject:
   - component: {fileID: 1701816532877973937}
   m_Layer: 0
   m_Name: Intact_Piece_05
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14923,7 +14923,7 @@ GameObject:
   - component: {fileID: 8263668898445430142}
   m_Layer: 0
   m_Name: Intact_Piece_04
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15033,7 +15033,7 @@ GameObject:
   - component: {fileID: 135360975837707488}
   m_Layer: 0
   m_Name: Intact_Piece_03
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15143,7 +15143,7 @@ GameObject:
   - component: {fileID: 9098871221896852826}
   m_Layer: 0
   m_Name: Intact_Piece_02
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15253,7 +15253,7 @@ GameObject:
   - component: {fileID: 6841469584902438763}
   m_Layer: 0
   m_Name: Intact_Piece_09
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15363,7 +15363,7 @@ GameObject:
   - component: {fileID: 3907052249137666175}
   m_Layer: 0
   m_Name: Intact_Piece_08
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15473,7 +15473,7 @@ GameObject:
   - component: {fileID: 586690980336763250}
   m_Layer: 0
   m_Name: Intact_Piece_07
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15583,7 +15583,7 @@ GameObject:
   - component: {fileID: 4225479350550901315}
   m_Layer: 0
   m_Name: Intact_Piece_06
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

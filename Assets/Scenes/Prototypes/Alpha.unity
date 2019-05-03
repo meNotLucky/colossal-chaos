@@ -19132,7 +19132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDestroyedHouses: 25
-  debrieLifeDuration: 60
+  debrieLifeDuration: 5
 --- !u!4 &1315099343
 Transform:
   m_ObjectHideFlags: 0
@@ -26218,12 +26218,12 @@ Transform:
   - {fileID: 1722388067}
   - {fileID: 505027876}
   - {fileID: 1271640931}
-  - {fileID: 1380192671}
   - {fileID: 1491633921}
-  - {fileID: 1864093677}
   - {fileID: 726066741}
   - {fileID: 1590812698}
+  - {fileID: 1380192671}
   - {fileID: 1170609430}
+  - {fileID: 1864093677}
   - {fileID: 1591918550}
   - {fileID: 1302077116}
   - {fileID: 1798104435}
@@ -29962,8 +29962,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1106197057}
-  - {fileID: 2077419620}
   - {fileID: 1788410177}
+  - {fileID: 2077419620}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32147,7 +32147,7 @@ Transform:
   - {fileID: 1802641123}
   - {fileID: 1165467245}
   m_Father: {fileID: 1954996336}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 12.549001, z: 0}
 --- !u!1001 &2081649211
 PrefabInstance:
