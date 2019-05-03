@@ -462,6 +462,7 @@ GameObject:
   - component: {fileID: 328302132}
   - component: {fileID: 328302134}
   - component: {fileID: 328302133}
+  - component: {fileID: 4339926311200732768}
   m_Layer: 0
   m_Name: IntactHouse
   m_TagString: house
@@ -554,6 +555,22 @@ MonoBehaviour:
   brokenMesh: {fileID: 3813319389808079137, guid: b44339466a9945c41a4877078eb6fa1d,
     type: 3}
   dustPiles: []
+--- !u!208 &4339926311200732768
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342175560405190056}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.835, y: 3.465, z: 4.2}
+  m_MoveThreshold: 0.6
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.78, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1342175560405190058
 GameObject:
   m_ObjectHideFlags: 0
