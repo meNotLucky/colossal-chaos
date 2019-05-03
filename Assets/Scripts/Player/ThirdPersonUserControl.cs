@@ -54,8 +54,10 @@ public class ThirdPersonUserControl : MonoBehaviour
         if(!jump)
             jump = Input.GetButtonDown("Jump");
 
-        if(!stop)
-            stop = Input.GetButtonDown("Stop");
+        if(!stop){
+            if(Input.GetKey("x") && Input.GetKey("y"))
+                stop = true;
+        }
 
         h = - (Input.mousePosition.x - (Screen.width / 2)) * (mouseInputSensitivity / sensitivityModifier);
 
