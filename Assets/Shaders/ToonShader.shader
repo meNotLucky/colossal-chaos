@@ -18,7 +18,7 @@
 		[HDR]
 		_SpecularColor("Specular Color", Color) = (0.9,0.9,0.9,1)
 		_Glossiness("Glossiness", Float) = 32
-		_SpecularSmoothing("Specular Modifier", Range(0.005, 0.1)) = 0.01
+		_SpecularSmoothing("Specular Smoothing", Range(0.005, 0.1)) = 0.01
 
 		// Rim lighting
 		[Space]
