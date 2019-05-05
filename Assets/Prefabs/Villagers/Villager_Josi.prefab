@@ -542,7 +542,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f820ca84426a5984293f33efb63b4cf2, type: 3}
+  - {fileID: 2100000, guid: c000c69c3987fc640ac2174a6ef26488, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 2124451648066054658}
   - component: {fileID: 6632400435266100188}
   m_Layer: 0
-  m_Name: Villager_Running
+  m_Name: Villager_Josi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1244,6 +1244,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2124451648211808652}
     m_Modifications:
+    - target: {fileID: 531389805662607221, guid: ab24654cab7b3044da3599c5d09c0e9f,
+        type: 3}
+      propertyPath: ClampVelocityModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5452840774100728884, guid: ab24654cab7b3044da3599c5d09c0e9f,
         type: 3}
       propertyPath: m_Name
@@ -1307,11 +1312,6 @@ PrefabInstance:
     - target: {fileID: 6902690365251612206, guid: ab24654cab7b3044da3599c5d09c0e9f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 531389805662607221, guid: ab24654cab7b3044da3599c5d09c0e9f,
-        type: 3}
-      propertyPath: ClampVelocityModule.enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
