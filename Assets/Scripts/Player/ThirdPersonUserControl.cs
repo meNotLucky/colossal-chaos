@@ -41,7 +41,6 @@ public class ThirdPersonUserControl : MonoBehaviour
 
         // get the third person character ( this should never be null due to require component )
         character = GetComponent<ThirdPersonCharacter>();
-
     }
 
     private void Update()
@@ -111,16 +110,17 @@ public class ThirdPersonUserControl : MonoBehaviour
         if(targets.Count > 0){
             foreach(var target in targets){
                 float targetDist = Vector3.Distance(target.transform.position, transform.position);
-                if(target == targets[0])
-                    Debug.Log(targetDist);
                 if(targetDist < target.GetComponent<AttractionRadius>().GetRange()){
+                    Debug.Log("Close");
                     currenTarget = target;
-                } else {
-                    currenTarget = null;
                 }
             }
-        } else {
-            currenTarget = null;
+            
+            if(currenTarget != null){
+                float currentTargetDistance = Vector3.Distance(currenTarget.transform.position, transform.position);
+                if(currentTargetDistance > currenTarget.GetComponent<AttractionRadius>().GetRange())
+                    currenTarget = null;
+            }
         }
     }
 
