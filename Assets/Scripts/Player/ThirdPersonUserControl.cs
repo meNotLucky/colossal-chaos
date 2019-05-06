@@ -90,6 +90,7 @@ public class ThirdPersonUserControl : MonoBehaviour
             if(currenTarget != null){
                 float distanceToTarget = Vector3.Distance(transform.position, currenTarget.transform.position);
                 transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, (Time.deltaTime * giantPullForce) / (distanceToTarget > distanceToRotate ? distanceToTarget : distanceToRotate));
+                transform.rotation = Quaternion.Euler(0f, transform.rotation.eulerAngles.y, 0f);
                 move = (v * camForward) + (h * cam.right);
             }
             
