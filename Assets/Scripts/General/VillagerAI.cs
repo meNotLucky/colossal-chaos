@@ -62,16 +62,17 @@ public class VillagerAI : MonoBehaviour
         if(mesh.activeSelf){
             if(!inCoroutine)
                 StartCoroutine(WaitForNextPath());
-
-            if(bloodEffect.activeSelf && !bloodEffect.GetComponent<ParticleSystem>().isPlaying){
-                Destroy(gameObject);
-            }
+        }
+        
+        if(bloodEffect.activeSelf && bloodEffect.GetComponent<ParticleSystem>().isStopped){
+            Destroy(gameObject);
         }
     }
 
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.tag == "barrel"){
             bloodEffect.SetActive(true);
+            bloodEffect.GetComponent<ParticleSystem>().Play();
             mesh.SetActive(false);
         }
     }
