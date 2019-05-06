@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 8389265601065134918}
   - component: {fileID: 8389265601066264966}
   m_Layer: 0
-  m_Name: House03_LOD_FBX
+  m_Name: House03_LOD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &8389265601063840614
 Transform:
