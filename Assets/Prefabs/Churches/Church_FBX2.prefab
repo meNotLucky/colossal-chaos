@@ -14635,6 +14635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4926794480538958926}
   - component: {fileID: 2816488280336880414}
+  - component: {fileID: 3076227953853605869}
   m_Layer: 0
   m_Name: Church_FBX2
   m_TagString: Untagged
@@ -14798,6 +14799,21 @@ LODGroup:
     renderers:
     - renderer: {fileID: 8860954198514295221}
   m_Enabled: 0
+--- !u!114 &3076227953853605869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4926794480539312174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 368cda81ecf675847b3d70f4e12882fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 50
+  hitPoints: 5
+  currentHitPoints: 0
 --- !u!1 &4926794480539312176
 GameObject:
   m_ObjectHideFlags: 0

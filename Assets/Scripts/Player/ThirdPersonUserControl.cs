@@ -16,7 +16,8 @@ public class ThirdPersonUserControl : MonoBehaviour
     public float sensitivityModifier;
 
     [Header("Giant AI Data")]
-    public float giantTurnSpeed;
+    public float giantPullForce;
+    public float distanceToRotate;
     public float struggleModifier;
     public float struggleIntensityMax;
     public float struggleIntensityMin;
@@ -87,8 +88,8 @@ public class ThirdPersonUserControl : MonoBehaviour
         if (cam != null){
             
             if(currenTarget != null){
-                transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * giantTurnSpeed);
-                transform.rotation = Quaternion.Euler(new Vector3(0f, transform.rotation.eulerAngles.y, 0f));
+                float distanceToTarget = Vector3.Distance(transform.position, currenTarget.transform.position);
+                transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, (Time.deltaTime * giantPullForce) / (distanceToTarget > distanceToRotate ? distanceToTarget : distanceToRotate));
                 move = (v * camForward) + (h * cam.right);
             }
             
@@ -110,18 +111,22 @@ public class ThirdPersonUserControl : MonoBehaviour
         if(targets.Count > 0){
             foreach(var target in targets){
                 float targetDist = Vector3.Distance(target.transform.position, transform.position);
-                if(targetDist < target.GetComponent<AttractionRadius>().GetRange()){
-                    Debug.Log("Close");
+                if(targetDist < target.GetComponent<AttractionTarget>().GetRange()){
                     currenTarget = target;
                 }
             }
             
             if(currenTarget != null){
                 float currentTargetDistance = Vector3.Distance(currenTarget.transform.position, transform.position);
-                if(currentTargetDistance > currenTarget.GetComponent<AttractionRadius>().GetRange())
+                if(currentTargetDistance > currenTarget.GetComponent<AttractionTarget>().GetRange())
                     currenTarget = null;
             }
         }
+    }
+
+    public void RemoveCurrentTarget() {
+        targets.Remove(currenTarget);
+        currenTarget = null;
     }
 
     IEnumerator SensitivityInterpolator(float startValue, float endValue, float duration)

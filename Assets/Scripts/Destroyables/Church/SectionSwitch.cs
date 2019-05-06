@@ -9,6 +9,8 @@ public class SectionSwitch : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.tag == "barrel"){
             brokenSection.SetActive(true);
+            if(GetComponentInParent<AttractionTarget>() != null)
+                GetComponentInParent<AttractionTarget>().currentHitPoints--;
             foreach(Transform piece in brokenSection.transform)
                 brokenSection.GetComponentInChildren<GravityTriggerController>().triggerChainReaction = true;
             Destroy(gameObject);
