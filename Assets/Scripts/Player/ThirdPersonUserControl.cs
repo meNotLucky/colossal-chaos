@@ -22,7 +22,7 @@ public class ThirdPersonUserControl : MonoBehaviour
     public float struggleIntensityMin;
     private bool sensModified = true;
     public List<GameObject> targets = new List<GameObject>();
-    public GameObject closestTarget;
+    public GameObject currenTarget;
     private Quaternion lookRotation;
 
     private float h;
@@ -79,18 +79,21 @@ public class ThirdPersonUserControl : MonoBehaviour
         }
 
         // Get camera angle to selected target
-        if(closestTarget != null){
-            Vector3 targetDir = (closestTarget.transform.position - transform.position).normalized;
+        if(currenTarget != null){
+            Vector3 targetDir = (currenTarget.transform.position - transform.position).normalized;
             lookRotation = Quaternion.LookRotation(targetDir);
         }
-
+        
         // calculate move direction to pass to character
         if (cam != null){
-            if(closestTarget != null){
+            
+            if(currenTarget != null){
                 transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * giantTurnSpeed);
                 transform.rotation = Quaternion.Euler(new Vector3(0f, transform.rotation.eulerAngles.y, 0f));
                 move = (v * camForward) + (h * cam.right);
-            } else {
+            }
+            
+             else {
                 move = (v * camForward) + (h * cam.right);
             }
         }
@@ -106,17 +109,18 @@ public class ThirdPersonUserControl : MonoBehaviour
 
     private void UpdateTarget() {
         if(targets.Count > 0){
-            closestTarget = targets[0];
-            float currentTargetDist = Vector3.Distance(closestTarget.transform.position, transform.position);
-
             foreach(var target in targets){
                 float targetDist = Vector3.Distance(target.transform.position, transform.position);
-                if(targetDist < currentTargetDist){
-                    closestTarget = target;
+                if(target == targets[0])
+                    Debug.Log(targetDist);
+                if(targetDist < target.GetComponent<AttractionRadius>().GetRange()){
+                    currenTarget = target;
+                } else {
+                    currenTarget = null;
                 }
             }
         } else {
-            closestTarget = null;
+            currenTarget = null;
         }
     }
 
