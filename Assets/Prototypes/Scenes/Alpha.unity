@@ -6683,11 +6683,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9010365964058633225, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: volumeLayer.m_Bits
-      value: 4096
-      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: priority
       value: 0
@@ -6713,6 +6708,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9010365964058633225, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: volumeLayer.m_Bits
+      value: 4096
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698202199001, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
