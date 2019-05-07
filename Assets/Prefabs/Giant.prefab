@@ -1399,9 +1399,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseInputSensitivity: 2.5
+  mouseInputSensitivity: 4
   sensitivityModifier: 1000
-  giantPullForce: 1
+  giantPullForce: 30
+  distanceToRotate: 10
   struggleModifier: 0.7
   struggleIntensityMax: 2
   struggleIntensityMin: 0.5
@@ -1432,6 +1433,9 @@ MonoBehaviour:
   m_GroundCheckDistance: 10
   stopCooldown: 10
   stopDuration: 2
+  sideStepCooldown: 5
+  sideStepPower: 100
+  sideStepDeceleration: 0.5
 --- !u!95 &1073664698209797403
 Animator:
   serializedVersion: 3
@@ -1486,7 +1490,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073664698202482269}
-  m_Material: {fileID: 13400000, guid: 7dee28e8456c5e44fa6f6b68af247109, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.13235609

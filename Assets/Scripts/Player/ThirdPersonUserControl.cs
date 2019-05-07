@@ -10,6 +10,8 @@ public class ThirdPersonUserControl : MonoBehaviour
     private Vector3 move; // the world-relative desired move direction, calculated from the camera and user input.
     private bool jump;
     private bool stop;
+    private bool sideStepLeft;
+    private bool sideStepRight;
 
     [Header("Player Input Data")]
     public float mouseInputSensitivity;
@@ -55,9 +57,17 @@ public class ThirdPersonUserControl : MonoBehaviour
             jump = Input.GetButtonDown("Jump");
 
         if(!stop){
-            if(Input.GetKey("x") && Input.GetKey("y"))
+            if(Input.GetKey(KeyCode.X) && Input.GetKey(KeyCode.Y))
                 stop = true;
         }
+
+        if(!sideStepLeft)
+            if(Input.GetKey(KeyCode.A))
+                sideStepLeft = true;
+
+        if(!sideStepRight && !sideStepLeft)
+            if(Input.GetKey(KeyCode.D))
+                sideStepRight = true;
 
         h = - (Input.mousePosition.x - (Screen.width / 2)) * (mouseInputSensitivity / sensitivityModifier);
 
@@ -86,15 +96,13 @@ public class ThirdPersonUserControl : MonoBehaviour
         
         // calculate move direction to pass to character
         if (cam != null){
-            
             if(currenTarget != null){
                 float distanceToTarget = Vector3.Distance(transform.position, currenTarget.transform.position);
                 transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, (Time.deltaTime * giantPullForce) / (distanceToTarget > distanceToRotate ? distanceToTarget : distanceToRotate));
                 transform.rotation = Quaternion.Euler(0f, transform.rotation.eulerAngles.y, 0f);
                 move = (v * camForward) + (h * cam.right);
             }
-            
-             else {
+            else {
                 move = (v * camForward) + (h * cam.right);
             }
         }
@@ -104,8 +112,8 @@ public class ThirdPersonUserControl : MonoBehaviour
         }
 
         // pass all parameters to the character control script
-        character.Move(move, jump, stop);
-        jump = false; stop = false;
+        character.Move(move, jump, stop, sideStepLeft, sideStepRight);
+        jump = false; stop = false; sideStepLeft = false; sideStepRight = false;
     }
 
     private void UpdateTarget() {
@@ -116,7 +124,6 @@ public class ThirdPersonUserControl : MonoBehaviour
                     currenTarget = target;
                 }
             }
-            
             if(currenTarget != null){
                 float currentTargetDistance = Vector3.Distance(currenTarget.transform.position, transform.position);
                 if(currentTargetDistance > currenTarget.GetComponent<AttractionTarget>().GetRange())

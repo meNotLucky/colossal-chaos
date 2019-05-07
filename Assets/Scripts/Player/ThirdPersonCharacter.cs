@@ -17,12 +17,22 @@ public class ThirdPersonCharacter : MonoBehaviour
 	[SerializeField] float m_GroundCheckDistance = 0.1f;
 
 	[Header("Ability Properties")]
+
 	// Stopping
 	[SerializeField] float stopCooldown;
-	float stopCooldownTimer;
+	private float stopCooldownTimer;
 	[SerializeField] float stopDuration;
-	float stopDurationTimer;
-	bool playerStopped = false;
+	private float stopDurationTimer;
+	private bool playerStopped = false;
+
+	// Side Step
+	[SerializeField] float sideStepCooldown;
+	private float sideStepCooldownTimer;
+	[SerializeField] float sideStepPower;
+	[SerializeField] float sideStepDeceleration;
+	private float currentDeceleration;
+	private bool leftPressed, rightPressed;
+	
 
 	Rigidbody m_Rigidbody;
 	Animator m_Animator;
@@ -32,21 +42,18 @@ public class ThirdPersonCharacter : MonoBehaviour
 	float m_TurnAmount;
 	float m_ForwardAmount;
 	Vector3 m_GroundNormal;
-	float m_MeshHeight;
-	Vector3 m_MeshCenter;
-	MeshCollider m_Mesh;
+
 
 	void Start()
 	{
 		m_Animator = GetComponent<Animator>();
 		m_Rigidbody = GetComponent<Rigidbody>();
-		m_Mesh = GetComponent<MeshCollider>();
 
 		m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 		m_OrigGroundCheckDistance = m_GroundCheckDistance;
 	}
 
-	public void Move(Vector3 move, bool jump, bool stop)
+	public void Move(Vector3 move, bool jump, bool stop, bool sideStepLeft, bool sideStepRight)
 	{
 		// convert the world relative moveInput vector into a local-relative
 		// turn amount and forward amount required to head in the desired
@@ -64,8 +71,9 @@ public class ThirdPersonCharacter : MonoBehaviour
 
 		// control and velocity handling is different when grounded and airborne:
 		if (m_IsGrounded){
-			HandleGroundedMovement(jump, stop);
-			HandleStopping();
+			HandleGroundedMovement(jump);
+			HandleStopping(stop);
+			HandleSideStep(sideStepLeft, sideStepRight);
 		}
 		else {
 			HandleAirborneMovement();
@@ -121,8 +129,14 @@ public class ThirdPersonCharacter : MonoBehaviour
 		m_GroundCheckDistance = m_Rigidbody.velocity.y < 0 ? m_OrigGroundCheckDistance : 0.01f;
 	}
 
-	void HandleStopping()
+	void HandleStopping(bool stop)
 	{
+		// Check stop conditions
+		if(stop && stopCooldownTimer <= 0){
+			stopCooldownTimer = stopCooldown;
+			stopDurationTimer = stopDuration;
+		}
+
 		if(stopCooldownTimer > 0)
 			stopCooldownTimer -= Time.deltaTime;
 		else
@@ -141,7 +155,41 @@ public class ThirdPersonCharacter : MonoBehaviour
 		}
 	}
 
-	void HandleGroundedMovement(bool jump, bool stop)
+	void HandleSideStep(bool left, bool right)
+	{
+		if(currentDeceleration > 0){
+			currentDeceleration -= Time.deltaTime;
+			var localVelocity = transform.InverseTransformDirection(m_Rigidbody.velocity);
+			if(leftPressed)
+				m_Rigidbody.AddRelativeForce(Vector3.left * sideStepPower * currentDeceleration, ForceMode.VelocityChange);
+			else if(rightPressed)
+				m_Rigidbody.AddRelativeForce(Vector3.right * sideStepPower * currentDeceleration, ForceMode.VelocityChange);
+			m_Rigidbody.velocity = transform.TransformDirection(localVelocity);
+
+			if(currentDeceleration <= 0){
+				currentDeceleration = 0;
+				leftPressed = false;
+				rightPressed = false;
+			}
+		}
+
+		if((left || right) && sideStepCooldownTimer <= 0){
+			sideStepCooldownTimer = sideStepCooldown;
+			currentDeceleration = sideStepDeceleration;
+			if(right)
+				rightPressed = true;
+			else if(left){
+				leftPressed = true;
+			}
+		}
+
+		if(sideStepCooldownTimer > 0)
+			sideStepCooldownTimer -= Time.deltaTime;
+		else
+			sideStepCooldownTimer = 0;
+	}
+
+	void HandleGroundedMovement(bool jump)
 	{
 		// Check jump conditions
 		if (jump && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Grounded"))
@@ -151,12 +199,6 @@ public class ThirdPersonCharacter : MonoBehaviour
 			m_IsGrounded = false;
 			m_Animator.applyRootMotion = false;
 			m_GroundCheckDistance = 0.1f;
-		}
-
-		// Check stop conditions
-		if(stop && stopCooldownTimer <= 0){
-			stopCooldownTimer = stopCooldown;
-			stopDurationTimer = stopDuration;
 		}
 	}
 

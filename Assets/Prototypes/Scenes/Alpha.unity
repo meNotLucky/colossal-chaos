@@ -6704,7 +6704,7 @@ PrefabInstance:
     - target: {fileID: 1073664698202199001, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 289.4
+      value: 291.5
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698202199001, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
@@ -6714,7 +6714,7 @@ PrefabInstance:
     - target: {fileID: 1073664698202199001, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 698
+      value: 452.7
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698202199001, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
@@ -6799,17 +6799,17 @@ PrefabInstance:
     - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: mouseInputSensitivity
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: giantPullForce
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: distanceToRotate
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1073664698207997243, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
@@ -6945,6 +6945,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: sideStepPower
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: sideStepCooldown
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: sideStepSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: sideStepDeceleration
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4018235627c8ff443ae4285db06911d6, type: 3}
