@@ -53,19 +53,19 @@ public class ThirdPersonUserControl : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
 
         // Read inputs
-        if(!jump)
-            jump = Input.GetButtonDown("Jump");
+        // if(!jump)
+        //     jump = Input.GetButtonDown("Jump");
 
-        if(!stop){
+        if(!stop && !sideStepLeft && !sideStepRight){
             if(Input.GetKey(KeyCode.X) && Input.GetKey(KeyCode.Y))
                 stop = true;
         }
 
-        if(!sideStepLeft)
+        if(!sideStepLeft && !stop)
             if(Input.GetKey(KeyCode.A))
                 sideStepLeft = true;
 
-        if(!sideStepRight && !sideStepLeft)
+        if(!sideStepRight && !sideStepLeft && !stop)
             if(Input.GetKey(KeyCode.D))
                 sideStepRight = true;
 
