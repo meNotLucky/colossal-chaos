@@ -10,9 +10,7 @@ public class Settings : MonoBehaviour
     [Header("Performance Settings")]
     public float debrieLifeDuration;
 
-    
-
-    private void Update(){
+    private void Awake(){
         GlobalSettings.maxDestroyedHouses = maxDestroyedHouses;
         GlobalSettings.debrieLifeDuration = debrieLifeDuration;
     }

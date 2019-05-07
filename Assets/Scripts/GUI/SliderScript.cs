@@ -6,28 +6,11 @@ using UnityEngine.UI;
 
 public class SliderScript : MonoBehaviour
 {
-    private int numberOfHouses;
-    private int destroyedHouses = 0;
-
-    void Start()
-    {
-        numberOfHouses = GameObject.FindGameObjectsWithTag("house").Length;
+    public void SetMinMaxValue(float min, float max){
+        GetComponent<Slider>().minValue = min;
+        GetComponent<Slider>().maxValue = max;
     }
 
-    void Update()
-    {
-        GetComponent<Slider>().minValue = 0;
-        GetComponent<Slider>().maxValue = GlobalSettings.maxDestroyedHouses;
-        destroyedHouses = numberOfHouses - GameObject.FindGameObjectsWithTag("house").Length;
-
-        GetComponent<Slider>().value = destroyedHouses;
-
-        if(destroyedHouses >= GlobalSettings.maxDestroyedHouses)
-        {
-            if(FindObjectOfType<DeathScreen>() != null)
-                FindObjectOfType<DeathScreen>().EndGame();
-        }  
-        
-    }
+    public void SetValue(float pValue) { GetComponent<Slider>().value = pValue; }
     
 }

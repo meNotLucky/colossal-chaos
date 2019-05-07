@@ -2,10 +2,13 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-//[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Animator))]
 public class ThirdPersonCharacter : MonoBehaviour
 {
+	[Header("References")]
+	[SerializeField] Animator m_GiantAnimator;
+
 	[Header("Giant Properties")]
 	[SerializeField] float m_MovingTurnSpeed = 360;
 	[SerializeField] float m_StationaryTurnSpeed = 180;
@@ -16,24 +19,24 @@ public class ThirdPersonCharacter : MonoBehaviour
 	[SerializeField] float m_AnimSpeedMultiplier = 1f;
 	[SerializeField] float m_GroundCheckDistance = 0.1f;
 
-	[Header("Ability Properties")]
-
-	// Stopping
+	[Header("Stopping Properties")]
 	[SerializeField] float stopCooldown;
 	private float stopCooldownTimer;
 	[SerializeField] float stopDuration;
 	private float stopDurationTimer;
 	private bool playerStopped = false;
 
-	// Side Step
+	[Header("Side Step Properties")]
 	[SerializeField] float sideStepCooldown;
 	private float sideStepCooldownTimer;
 	[SerializeField] float sideStepPower;
 	[SerializeField] float sideStepDeceleration;
 	private float currentDeceleration;
 	private bool leftPressed, rightPressed;
+	[SerializeField] float delayForAnimation;
+	private float delayTimer;
+	[SerializeField][Range(0.0f, 1.0f)] float sideStepForwardSpeed;
 	
-
 	Rigidbody m_Rigidbody;
 	Animator m_Animator;
 	bool m_IsGrounded;
@@ -135,6 +138,8 @@ public class ThirdPersonCharacter : MonoBehaviour
 		if(stop && stopCooldownTimer <= 0){
 			stopCooldownTimer = stopCooldown;
 			stopDurationTimer = stopDuration;
+
+			m_GiantAnimator.SetBool("Stopped", true);
 		}
 
 		if(stopCooldownTimer > 0)
@@ -152,34 +157,52 @@ public class ThirdPersonCharacter : MonoBehaviour
 			stopDurationTimer = 0;
 			playerStopped = false;
 			StartCoroutine(MoveSpeedInterpolator(m_ForwardAmount, 1, stopDuration / 2));
+			m_GiantAnimator.SetBool("Stopped", false);
 		}
 	}
 
 	void HandleSideStep(bool left, bool right)
 	{
 		if(currentDeceleration > 0){
-			currentDeceleration -= Time.deltaTime;
-			var localVelocity = transform.InverseTransformDirection(m_Rigidbody.velocity);
-			if(leftPressed)
-				m_Rigidbody.AddRelativeForce(Vector3.left * sideStepPower * currentDeceleration, ForceMode.VelocityChange);
-			else if(rightPressed)
-				m_Rigidbody.AddRelativeForce(Vector3.right * sideStepPower * currentDeceleration, ForceMode.VelocityChange);
-			m_Rigidbody.velocity = transform.TransformDirection(localVelocity);
+			delayTimer -= Time.deltaTime;
+			m_ForwardAmount = sideStepForwardSpeed;
 
-			if(currentDeceleration <= 0){
-				currentDeceleration = 0;
-				leftPressed = false;
-				rightPressed = false;
+			if(delayTimer <= 0){
+				currentDeceleration -= Time.deltaTime;
+				if(leftPressed)
+					m_Rigidbody.AddRelativeForce(Vector3.left * sideStepPower * currentDeceleration, ForceMode.VelocityChange);
+				else if(rightPressed)
+					m_Rigidbody.AddRelativeForce(Vector3.right * sideStepPower * currentDeceleration, ForceMode.VelocityChange);
+
+				if(!m_GiantAnimator.GetCurrentAnimatorStateInfo(0).IsName("Walking")){
+					m_GiantAnimator.SetBool("SideStepLeft", false);
+					m_GiantAnimator.SetBool("SideStepRight", false);
+				}
+
+				if(currentDeceleration <= 0){
+					currentDeceleration = 0;
+					delayTimer = 0;
+
+					leftPressed = false;
+					rightPressed = false;
+
+					m_ForwardAmount = 1;
+				}
 			}
 		}
 
 		if((left || right) && sideStepCooldownTimer <= 0){
 			sideStepCooldownTimer = sideStepCooldown;
 			currentDeceleration = sideStepDeceleration;
-			if(right)
+			delayTimer = delayForAnimation;
+
+			if(right){
 				rightPressed = true;
+				m_GiantAnimator.SetBool("SideStepRight", true);
+			}
 			else if(left){
 				leftPressed = true;
+				m_GiantAnimator.SetBool("SideStepLeft", true);
 			}
 		}
 

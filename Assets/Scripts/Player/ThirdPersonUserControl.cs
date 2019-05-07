@@ -122,6 +122,7 @@ public class ThirdPersonUserControl : MonoBehaviour
                 float targetDist = Vector3.Distance(target.transform.position, transform.position);
                 if(targetDist < target.GetComponent<AttractionTarget>().GetRange()){
                     currenTarget = target;
+                    Debug.Log(currenTarget);
                 }
             }
             if(currenTarget != null){
