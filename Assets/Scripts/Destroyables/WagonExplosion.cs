@@ -7,9 +7,10 @@ public class WagonExplosion : MonoBehaviour
     [Header("Properties")]
     public float range;
     public float explosionForce;
+    public GameObject particleFX;
 
     Animator anim;
-    [SerializeField] bool exploading = false;
+    bool exploading = false;
 
     void Start()
     {
@@ -30,6 +31,8 @@ public class WagonExplosion : MonoBehaviour
     private void Explode(){
         
         exploading = true;
+
+        particleFX.SetActive(true);
 
         Collider[] hitObjects = Physics.OverlapSphere(transform.position, range);
         foreach (var item in hitObjects)
