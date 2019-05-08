@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(ThirdPersonCharacter))]
 public class ThirdPersonUserControl : MonoBehaviour
 {
+    public GameObject AttractionPopUp;
     private ThirdPersonCharacter character; // A reference to the ThirdPersonCharacter on the object
     private Transform cam; // A reference to the main camera in the scenes transform
     private Vector3 move; // the world-relative desired move direction, calculated from the camera and user input.
@@ -30,6 +31,7 @@ public class ThirdPersonUserControl : MonoBehaviour
 
     private float h;
     private float v = 1;
+
     
     private void Start()
     {
@@ -121,6 +123,7 @@ public class ThirdPersonUserControl : MonoBehaviour
             foreach(var target in targets){
                 float targetDist = Vector3.Distance(target.transform.position, transform.position);
                 if(targetDist < target.GetComponent<AttractionTarget>().GetRange()){
+                    ActivatePopUp(AttractionPopUp);
                     currenTarget = target;
                     Debug.Log(currenTarget);
                 }
@@ -128,7 +131,11 @@ public class ThirdPersonUserControl : MonoBehaviour
             if(currenTarget != null){
                 float currentTargetDistance = Vector3.Distance(currenTarget.transform.position, transform.position);
                 if(currentTargetDistance > currenTarget.GetComponent<AttractionTarget>().GetRange())
+                {
+                    DeactivatePopUp(AttractionPopUp);
                     currenTarget = null;
+                }
+                    
             }
         }
     }
@@ -150,4 +157,13 @@ public class ThirdPersonUserControl : MonoBehaviour
         mouseInputSensitivity = mouseInputSensitivity + struggleModifier;
         sensModified = true;
     }
+    public void ActivatePopUp(GameObject game)
+    {
+        game.SetActive(true);    
+    }
+    public void DeactivatePopUp(GameObject game)
+    {
+        game.SetActive(false);    
+    }
 }
+
