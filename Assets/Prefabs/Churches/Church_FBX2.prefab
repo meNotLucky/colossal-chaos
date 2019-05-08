@@ -14812,7 +14812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 50
-  hitPoints: 5
+  hitPoints: 10
   currentHitPoints: 0
 --- !u!1 &4926794480539312176
 GameObject:
