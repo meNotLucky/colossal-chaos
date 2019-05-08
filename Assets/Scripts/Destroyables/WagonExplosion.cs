@@ -33,6 +33,7 @@ public class WagonExplosion : MonoBehaviour
         exploading = true;
 
         particleFX.SetActive(true);
+        GetComponent<AudioSource>().Play();
 
         Collider[] hitObjects = Physics.OverlapSphere(transform.position, range);
         foreach (var item in hitObjects)
