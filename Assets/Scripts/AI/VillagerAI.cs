@@ -69,11 +69,15 @@ public class VillagerAI : MonoBehaviour
         }
     }
 
+    public void Die(){
+        bloodEffect.SetActive(true);
+        bloodEffect.GetComponent<ParticleSystem>().Play();
+        mesh.SetActive(false);
+    }
+
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.tag == "barrel"){
-            bloodEffect.SetActive(true);
-            bloodEffect.GetComponent<ParticleSystem>().Play();
-            mesh.SetActive(false);
+            Die();
         }
     }
 }

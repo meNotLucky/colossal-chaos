@@ -9,6 +9,7 @@ TagManager:
   - floor
   - house
   - DeathCube
+  - Villager
   layers:
   - Default
   - TransparentFX
