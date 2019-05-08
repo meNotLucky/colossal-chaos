@@ -17,6 +17,7 @@ public class ThirdPersonUserControl : MonoBehaviour
     [Header("Player Input Data")]
     public float mouseInputSensitivity;
     public float sensitivityModifier;
+    public float mouseCenterOffset;
 
     [Header("Giant AI Data")]
     public float giantPullForce;
@@ -35,6 +36,9 @@ public class ThirdPersonUserControl : MonoBehaviour
     
     private void Start()
     {
+        // Put this here cause I don't know where else to put it right now
+        FindObjectOfType<PopUpController>().ActivatePopUp("Start", 6);
+
         // Center mouse
         Cursor.lockState = CursorLockMode.Locked;
 
@@ -71,16 +75,15 @@ public class ThirdPersonUserControl : MonoBehaviour
             if(Input.GetKey(KeyCode.D))
                 sideStepRight = true;
 
-        h = - (Input.mousePosition.x - (Screen.width / 2)) * (mouseInputSensitivity / sensitivityModifier);
+        h = - (Input.mousePosition.x - ((Screen.width / 2)) + mouseCenterOffset) * (mouseInputSensitivity / sensitivityModifier);
 
+        // Targettting system
+        UpdateTarget();
     }
 
     private void FixedUpdate()
     {
         Vector3 camForward = Vector3.Scale(cam.forward, new Vector3(1, 0, 1)).normalized;
-
-        // Targettting system
-        UpdateTarget();
 
         // Struggle Simulation
         if(sensModified){
@@ -122,20 +125,28 @@ public class ThirdPersonUserControl : MonoBehaviour
         if(targets.Count > 0){
             foreach(var target in targets){
                 float targetDist = Vector3.Distance(target.transform.position, transform.position);
-                if(targetDist < target.GetComponent<AttractionTarget>().GetRange()){
-                    ActivatePopUp(AttractionPopUp);
+                if(targetDist < target.GetComponent<AttractionTarget>().GetRange())
                     currenTarget = target;
-                    Debug.Log(currenTarget);
-                }
             }
             if(currenTarget != null){
+                Vector3 targetDir = currenTarget.transform.position - transform.position;
+                Vector3 forward = transform.forward;
+                float angle = Vector3.SignedAngle(targetDir, forward, Vector3.up);
+
+                if(angle < 0){
+                    FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchLeft");
+                    FindObjectOfType<PopUpController>().ActivatePopUp("ChurchRight", 0);
+                } else {
+                    FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchRight");
+                    FindObjectOfType<PopUpController>().ActivatePopUp("ChurchLeft", 0);
+                }
                 float currentTargetDistance = Vector3.Distance(currenTarget.transform.position, transform.position);
                 if(currentTargetDistance > currenTarget.GetComponent<AttractionTarget>().GetRange())
-                {
-                    DeactivatePopUp(AttractionPopUp);
-                    currenTarget = null;
-                }
-                    
+                    currenTarget = null;                    
+            }
+            if(currenTarget == null){
+                FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchRight");
+                FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchLeft");
             }
         }
     }
@@ -156,14 +167,6 @@ public class ThirdPersonUserControl : MonoBehaviour
         }
         mouseInputSensitivity = mouseInputSensitivity + struggleModifier;
         sensModified = true;
-    }
-    public void ActivatePopUp(GameObject game)
-    {
-        game.SetActive(true);    
-    }
-    public void DeactivatePopUp(GameObject game)
-    {
-        game.SetActive(false);    
     }
 }
 
