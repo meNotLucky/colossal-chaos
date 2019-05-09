@@ -7,7 +7,7 @@ TerrainLayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: RockyT05
-  m_DiffuseTexture: {fileID: 2800000, guid: b8e2b796eba7ee342bb2077be182bf2c, type: 3}
+  m_DiffuseTexture: {fileID: 2800000, guid: 545769150cb66e84cab9f66ee5a6001d, type: 3}
   m_NormalMapTexture: {fileID: 2800000, guid: 3c58fb50e9cd8db4babb7e86eb4e3663, type: 3}
   m_MaskMapTexture: {fileID: 0}
   m_TileSize: {x: 7, y: 7}
