@@ -30,12 +30,15 @@ public class ThirdPersonUserControl : MonoBehaviour
     public GameObject currenTarget;
     private Quaternion lookRotation;
 
+    private SoundEffectManager soundEffect;
+
     private float h;
     private float v = 1;
 
     
     private void Start()
     {
+      
         // Put this here cause I don't know where else to put it right now
         FindObjectOfType<PopUpController>().ActivatePopUp("Start", 6);
 
@@ -58,6 +61,8 @@ public class ThirdPersonUserControl : MonoBehaviour
         if(Input.GetAxisRaw("Mouse X") != 0)
             Cursor.lockState = CursorLockMode.None;
 
+            
+
         // Read inputs
         // if(!jump)
         //     jump = Input.GetButtonDown("Jump");
@@ -68,12 +73,16 @@ public class ThirdPersonUserControl : MonoBehaviour
         }
 
         if(!sideStepLeft && !stop)
-            if(Input.GetKey(KeyCode.A))
+            if(Input.GetKey(KeyCode.A)){
+                GetComponent<SoundEffectManager>().PlaySound("GiantGrowl1");
                 sideStepLeft = true;
+            }
 
         if(!sideStepRight && !sideStepLeft && !stop)
-            if(Input.GetKey(KeyCode.D))
+            if(Input.GetKey(KeyCode.D)){
+                GetComponent<SoundEffectManager>().PlaySound("GiantGrowl2");
                 sideStepRight = true;
+            }
 
         h = - (Input.mousePosition.x - ((Screen.width / 2)) + mouseCenterOffset) * (mouseInputSensitivity / sensitivityModifier);
 

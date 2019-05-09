@@ -6168,7 +6168,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448785970}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243288632148992492, guid: a763d4633badb4b4eb62614540f425a1,
     type: 2}
@@ -6961,6 +6961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 341549681994308826, guid: 4018235627c8ff443ae4285db06911d6, type: 3}
+    - {fileID: 5875832173361326252, guid: 4018235627c8ff443ae4285db06911d6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4018235627c8ff443ae4285db06911d6, type: 3}
 --- !u!4 &481210488 stripped
 Transform:
