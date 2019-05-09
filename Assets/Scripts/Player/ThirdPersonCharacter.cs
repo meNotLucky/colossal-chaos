@@ -94,17 +94,10 @@ public class ThirdPersonCharacter : MonoBehaviour
 			m_Animator.SetFloat("Jump", m_Rigidbody.velocity.y);
 		}
 
-		// the anim speed multiplier allows the overall speed of walking/running to be tweaked in the inspector,
-		// which affects the movement speed because of the root motion.
-		if (m_IsGrounded && move.magnitude > 0)
-		{
+		if(!m_Animator.GetBool("Stopped") && !m_Animator.GetBool("SideStepLeft") && !m_Animator.GetBool("SideStepRight"))
 			m_Animator.speed = m_ForwardAmount;
-		}
 		else
-		{
-			// don't use that while airborne
 			m_Animator.speed = 1;
-		}
 	}
 
 	void HandleAirborneMovement()
@@ -209,7 +202,7 @@ public class ThirdPersonCharacter : MonoBehaviour
 		}
 
 		// Get and apply random speed
-		if(!m_Animator.GetBool("Stopped")){
+		if(!m_Animator.GetBool("Stopped") && !m_Animator.GetBool("SideStepLeft") && !m_Animator.GetBool("SideStepRight")){
 			float newSpeed = Random.Range(m_MoveSpeedMultiplier - m_RandomSpeedOffset, m_MoveSpeedMultiplier + m_RandomSpeedOffset);
 			float timeToChange = Random.Range(m_MinTimeToSpeedChange, m_MaxTimeToSpeedChange);
 			if(!m_NewForwardGotten){
