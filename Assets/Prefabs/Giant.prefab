@@ -1426,7 +1426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MoveSpeedMultiplier: 1.5
-  m_RandomSpeedOffset: 1
+  m_RandomSpeedOffset: 0.8
   m_MinTimeToSpeedChange: 1
   m_MaxTimeToSpeedChange: 3
   m_MovingTurnSpeed: 360
