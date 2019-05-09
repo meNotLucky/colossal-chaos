@@ -14,7 +14,7 @@ public class AttractionTarget : MonoBehaviour
 
     private void Update() {
         if(currentHitPoints <= 0){
-            FindObjectOfType<ThirdPersonUserControl>().RemoveCurrentTarget();
+            FindObjectOfType<GiantUserInput>().RemoveCurrentTarget();
             Destroy(this);
         }
     }
