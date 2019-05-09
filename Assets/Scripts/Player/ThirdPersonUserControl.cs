@@ -74,13 +74,11 @@ public class ThirdPersonUserControl : MonoBehaviour
 
         if(!sideStepLeft && !stop)
             if(Input.GetKey(KeyCode.A)){
-                GetComponent<SoundEffectManager>().PlaySound("GiantGrowl1");
                 sideStepLeft = true;
             }
 
         if(!sideStepRight && !sideStepLeft && !stop)
             if(Input.GetKey(KeyCode.D)){
-                GetComponent<SoundEffectManager>().PlaySound("GiantGrowl2");
                 sideStepRight = true;
             }
 

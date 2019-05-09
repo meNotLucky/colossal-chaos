@@ -6668,6 +6668,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7421520721443347621, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: clips.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7421520721443347621, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: clips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c1ca18399fa2154d8fc6b656882acc5, type: 3}
+    - target: {fileID: 7421520721443347621, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: clips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4fc4aaa6b1dee7f49a55613069d4dd71, type: 3}
     - target: {fileID: 0}
       propertyPath: priority
       value: 0
@@ -6959,9 +6974,13 @@ PrefabInstance:
       propertyPath: m_RenderingPath
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 4831386986024000698, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 341549681994308826, guid: 4018235627c8ff443ae4285db06911d6, type: 3}
-    - {fileID: 5875832173361326252, guid: 4018235627c8ff443ae4285db06911d6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4018235627c8ff443ae4285db06911d6, type: 3}
 --- !u!4 &481210488 stripped
 Transform:

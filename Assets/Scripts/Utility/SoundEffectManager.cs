@@ -16,10 +16,11 @@ public class SoundEffectManager : MonoBehaviour
     {
         foreach(AudioClip clip in clips)
         {
-            
+          
             if(clip.name == clipToPlay)
-            audioSrc.PlayOneShot(clip);  
+            audioSrc.PlayOneShot(clip);   
             
+
         }
     }
 }
