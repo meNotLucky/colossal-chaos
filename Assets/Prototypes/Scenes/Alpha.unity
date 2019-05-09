@@ -6668,21 +6668,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7421520721443347621, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: clips.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7421520721443347621, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: clips.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 2c1ca18399fa2154d8fc6b656882acc5, type: 3}
-    - target: {fileID: 7421520721443347621, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: clips.Array.data[3]
-      value: 
-      objectReference: {fileID: 8300000, guid: 4fc4aaa6b1dee7f49a55613069d4dd71, type: 3}
     - target: {fileID: 0}
       propertyPath: priority
       value: 0
@@ -6804,21 +6789,6 @@ PrefabInstance:
       propertyPath: AttractionPopUp
       value: 
       objectReference: {fileID: 1988341493}
-    - target: {fileID: 1073664698209797403, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: aa747bdb5c8f46940af86a1b8db0631d, type: 2}
-    - target: {fileID: 1073664698209797403, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_WarningMessage
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1073664698209797403, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1073664699203377486, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6874,11 +6844,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6866862429342403912, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_RelativeForce.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8707903814057258828, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: m_Name
@@ -6914,26 +6879,6 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5514847908921630431, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.17680734
-      objectReference: {fileID: 0}
-    - target: {fileID: 5514847908921630431, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5514847908921630431, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.67493343
-      objectReference: {fileID: 0}
-    - target: {fileID: 5514847908921630431, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5166011578411157253, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: m_IsActive
@@ -6954,11 +6899,6 @@ PrefabInstance:
       propertyPath: m_MaxDampingSpeed
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_RandomSpeedOffset
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7036602886614691250, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6973,11 +6913,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RenderingPath
       value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4831386986024000698, guid: 4018235627c8ff443ae4285db06911d6,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 341549681994308826, guid: 4018235627c8ff443ae4285db06911d6, type: 3}

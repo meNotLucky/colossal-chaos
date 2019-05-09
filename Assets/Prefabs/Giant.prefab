@@ -1361,7 +1361,6 @@ GameObject:
   - component: {fileID: 1073664698208038175}
   - component: {fileID: 1073664698209797403}
   - component: {fileID: 1073664698205659661}
-  - component: {fileID: 6866862429342403912}
   - component: {fileID: 5514847908921630431}
   - component: {fileID: 4831386986024000698}
   - component: {fileID: 7421520721443347621}
@@ -1428,7 +1427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MoveSpeedMultiplier: 1.5
-  m_RandomSpeedOffset: 0.5
+  m_RandomSpeedOffset: 1
   m_MinTimeToSpeedChange: 0.5
   m_MaxTimeToSpeedChange: 2
   m_MovingTurnSpeed: 360
@@ -1457,7 +1456,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: aa747bdb5c8f46940af86a1b8db0631d, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -1479,18 +1478,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!75 &6866862429342403912
-ConstantForce:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073664698202482269}
-  m_Enabled: 1
-  m_Force: {x: 0, y: -10000, z: 0}
-  m_RelativeForce: {x: 0, y: -10000, z: 0}
-  m_Torque: {x: 0, y: 0, z: 0}
-  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!136 &5514847908921630431
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1514,9 +1501,9 @@ AudioSource:
   m_GameObject: {fileID: 1073664698202482269}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: a763d4633badb4b4eb62614540f425a1,
+  OutputAudioMixerGroup: {fileID: 243863563855438526, guid: a763d4633badb4b4eb62614540f425a1,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: e0e4f5a5837e2704f814639b04d342c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.21
   m_Pitch: 1
@@ -1617,8 +1604,8 @@ MonoBehaviour:
   clips:
   - {fileID: 8300000, guid: e538d196d9bf98945a9bc202ddb725f4, type: 3}
   - {fileID: 8300000, guid: 915faea5437dabc41b380dcc61b0d59a, type: 3}
-  - {fileID: 8300000, guid: 4fc4aaa6b1dee7f49a55613069d4dd71, type: 3}
   - {fileID: 8300000, guid: 2c1ca18399fa2154d8fc6b656882acc5, type: 3}
+  - {fileID: 8300000, guid: 4fc4aaa6b1dee7f49a55613069d4dd71, type: 3}
 --- !u!1 &1073664699203377489
 GameObject:
   m_ObjectHideFlags: 0

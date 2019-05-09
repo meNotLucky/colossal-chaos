@@ -5,7 +5,6 @@ using UnityEngine;
 [RequireComponent(typeof(ThirdPersonCharacter))]
 public class ThirdPersonUserControl : MonoBehaviour
 {
-    public GameObject AttractionPopUp;
     private ThirdPersonCharacter character; // A reference to the ThirdPersonCharacter on the object
     private Transform cam; // A reference to the main camera in the scenes transform
     private Vector3 move; // the world-relative desired move direction, calculated from the camera and user input.
