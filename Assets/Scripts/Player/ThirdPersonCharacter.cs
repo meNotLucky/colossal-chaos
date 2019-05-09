@@ -6,36 +6,35 @@ using System.Collections.Generic;
 [RequireComponent(typeof(Animator))]
 public class ThirdPersonCharacter : MonoBehaviour
 {
-	[Header("References")]
-	[SerializeField] Animator m_GiantAnimator;
-
 	[Header("Giant Properties")]
+	[SerializeField] float m_MoveSpeedMultiplier = 1f;
+	[SerializeField] float m_RandomSpeedOffset = 0.5f;
+	[SerializeField] float m_MinTimeToSpeedChange = 0.5f;
+	[SerializeField] float m_MaxTimeToSpeedChange = 2.0f;
 	[SerializeField] float m_MovingTurnSpeed = 360;
 	[SerializeField] float m_StationaryTurnSpeed = 180;
 	[SerializeField] float m_JumpPower = 12f;
 	[Range(1f, 4f)][SerializeField] float m_GravityMultiplier = 2f;
 	[SerializeField] float m_RunCycleLegOffset = 0.2f; //specific to the character in sample assets, will need to be modified to work with others
-	[SerializeField] float m_MoveSpeedMultiplier = 1f;
-	[SerializeField] float m_AnimSpeedMultiplier = 1f;
 	[SerializeField] float m_GroundCheckDistance = 0.1f;
 
 	[Header("Stopping Properties")]
-	[SerializeField] float stopCooldown;
+	[SerializeField] float stopCooldown = 5.0f;
+	[SerializeField] float stopDuration = 2.0f;
 	private float stopCooldownTimer;
-	[SerializeField] float stopDuration;
 	private float stopDurationTimer;
 	private bool playerStopped = false;
 
 	[Header("Side Step Properties")]
-	[SerializeField] float sideStepCooldown;
+	[SerializeField] float sideStepCooldown = 2.0f;
+	[SerializeField] float sideStepPower = 50.0f;
+	[SerializeField] float sideStepDeceleration = 0.7f;
+	[SerializeField] float delayForAnimation = 0.2f;
+	[SerializeField][Range(0.0f, 1.0f)] float sideStepForwardSpeed = 0.7f;
 	private float sideStepCooldownTimer;
-	[SerializeField] float sideStepPower;
-	[SerializeField] float sideStepDeceleration;
 	private float currentDeceleration;
 	private bool leftPressed, rightPressed;
-	[SerializeField] float delayForAnimation;
 	private float delayTimer;
-	[SerializeField][Range(0.0f, 1.0f)] float sideStepForwardSpeed;
 	
 	Rigidbody m_Rigidbody;
 	Animator m_Animator;
@@ -44,6 +43,7 @@ public class ThirdPersonCharacter : MonoBehaviour
 	const float k_Half = 0.5f;
 	float m_TurnAmount;
 	float m_ForwardAmount;
+	bool m_NewForwardGotten;
 	Vector3 m_GroundNormal;
 
 
@@ -66,15 +66,12 @@ public class ThirdPersonCharacter : MonoBehaviour
 		CheckGroundStatus();
 		move = Vector3.ProjectOnPlane(move, m_GroundNormal);
 		m_TurnAmount = Mathf.Atan2(move.x, move.z);
-		
-		if(stopCooldownTimer <= 0)
-			m_ForwardAmount = move.z;
 
 		ApplyExtraTurnRotation();
 
 		// control and velocity handling is different when grounded and airborne:
 		if (m_IsGrounded){
-			HandleGroundedMovement(jump);
+			HandleGroundedMovement(move,jump);
 			HandleStopping(stop);
 			HandleSideStep(sideStepLeft, sideStepRight);
 		}
@@ -90,7 +87,6 @@ public class ThirdPersonCharacter : MonoBehaviour
 	{
 		// update the animator parameters
 		m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
-		m_Animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
 		m_Animator.SetBool("OnGround", m_IsGrounded);
 		
 		if (!m_IsGrounded)
@@ -98,23 +94,11 @@ public class ThirdPersonCharacter : MonoBehaviour
 			m_Animator.SetFloat("Jump", m_Rigidbody.velocity.y);
 		}
 
-		// calculate which leg is behind, so as to leave that leg trailing in the jump animation
-		// (This code is reliant on the specific run cycle offset in our animations,
-		// and assumes one leg passes the other at the normalized clip times of 0.0 and 0.5)
-		float runCycle =
-			Mathf.Repeat(
-				m_Animator.GetCurrentAnimatorStateInfo(0).normalizedTime + m_RunCycleLegOffset, 1);
-		float jumpLeg = (runCycle < k_Half ? 1 : -1) * m_ForwardAmount;
-		if (m_IsGrounded)
-		{
-			m_Animator.SetFloat("JumpLeg", jumpLeg);
-		}
-
 		// the anim speed multiplier allows the overall speed of walking/running to be tweaked in the inspector,
 		// which affects the movement speed because of the root motion.
 		if (m_IsGrounded && move.magnitude > 0)
 		{
-			m_Animator.speed = m_AnimSpeedMultiplier;
+			m_Animator.speed = m_ForwardAmount;
 		}
 		else
 		{
@@ -139,7 +123,7 @@ public class ThirdPersonCharacter : MonoBehaviour
 			stopCooldownTimer = stopCooldown;
 			stopDurationTimer = stopDuration;
 
-			m_GiantAnimator.SetBool("Stopped", true);
+			m_Animator.SetBool("Stopped", true);
 		}
 
 		if(stopCooldownTimer > 0)
@@ -153,11 +137,11 @@ public class ThirdPersonCharacter : MonoBehaviour
 				playerStopped = true;
 				StartCoroutine(MoveSpeedInterpolator(m_ForwardAmount, 0, stopDuration / 2));
 			}
-		} else if(stopDurationTimer < 0) {
+		} else if(stopDurationTimer < 0 && m_Animator.GetBool("Stopped")) {
 			stopDurationTimer = 0;
 			playerStopped = false;
 			StartCoroutine(MoveSpeedInterpolator(m_ForwardAmount, 1, stopDuration / 2));
-			m_GiantAnimator.SetBool("Stopped", false);
+			m_Animator.SetBool("Stopped", false);
 		}
 	}
 
@@ -174,9 +158,9 @@ public class ThirdPersonCharacter : MonoBehaviour
 				else if(rightPressed)
 					m_Rigidbody.AddRelativeForce(Vector3.right * sideStepPower * currentDeceleration, ForceMode.VelocityChange);
 
-				if(!m_GiantAnimator.GetCurrentAnimatorStateInfo(0).IsName("Walking")){
-					m_GiantAnimator.SetBool("SideStepLeft", false);
-					m_GiantAnimator.SetBool("SideStepRight", false);
+				if(!m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")){
+					m_Animator.SetBool("SideStepLeft", false);
+					m_Animator.SetBool("SideStepRight", false);
 				}
 
 				if(currentDeceleration <= 0){
@@ -198,11 +182,11 @@ public class ThirdPersonCharacter : MonoBehaviour
 
 			if(right){
 				rightPressed = true;
-				m_GiantAnimator.SetBool("SideStepRight", true);
+				m_Animator.SetBool("SideStepRight", true);
 			}
 			else if(left){
 				leftPressed = true;
-				m_GiantAnimator.SetBool("SideStepLeft", true);
+				m_Animator.SetBool("SideStepLeft", true);
 			}
 		}
 
@@ -212,7 +196,7 @@ public class ThirdPersonCharacter : MonoBehaviour
 			sideStepCooldownTimer = 0;
 	}
 
-	void HandleGroundedMovement(bool jump)
+	void HandleGroundedMovement(Vector3 move, bool jump)
 	{
 		// Check jump conditions
 		if (jump && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Grounded"))
@@ -223,6 +207,20 @@ public class ThirdPersonCharacter : MonoBehaviour
 			m_Animator.applyRootMotion = false;
 			m_GroundCheckDistance = 0.1f;
 		}
+
+		// Get and apply random speed
+		if(!m_Animator.GetBool("Stopped")){
+			float newSpeed = Random.Range(m_MoveSpeedMultiplier - m_RandomSpeedOffset, m_MoveSpeedMultiplier + m_RandomSpeedOffset);
+			float timeToChange = Random.Range(m_MinTimeToSpeedChange, m_MaxTimeToSpeedChange);
+			if(!m_NewForwardGotten){
+				m_NewForwardGotten = true;
+				StartCoroutine(MoveSpeedInterpolator(m_ForwardAmount, newSpeed, timeToChange));
+			}
+		}
+
+		Vector3 localVelocity = transform.InverseTransformDirection(m_Rigidbody.velocity);
+		localVelocity = ((move / 10) * m_MoveSpeedMultiplier * m_ForwardAmount) / Time.deltaTime;
+		m_Rigidbody.velocity = transform.TransformDirection(localVelocity);
 	}
 
 	void ApplyExtraTurnRotation()
@@ -230,20 +228,6 @@ public class ThirdPersonCharacter : MonoBehaviour
 		// help the character turn faster (this is in addition to root rotation in the animation)
 		float turnSpeed = Mathf.Lerp(m_StationaryTurnSpeed, m_MovingTurnSpeed, m_ForwardAmount);
 		transform.Rotate(0, m_TurnAmount * turnSpeed * Time.deltaTime, 0);
-	}
-
-	public void OnAnimatorMove()
-	{
-		// we implement this function to override the default root motion.
-		// this allows us to modify the positional speed before it's applied.
-		if (m_IsGrounded && Time.deltaTime > 0)
-		{
-			Vector3 v = (m_Animator.deltaPosition * m_MoveSpeedMultiplier) / Time.deltaTime;
-
-			// we preserve the existing y part of the current velocity.
-			v.y = m_Rigidbody.velocity.y;
-			m_Rigidbody.velocity = v;
-		}
 	}
 
 	void CheckGroundStatus()
@@ -274,5 +258,6 @@ public class ThirdPersonCharacter : MonoBehaviour
             yield return null;
         }
         m_ForwardAmount = endValue;
+		m_NewForwardGotten = false;
     }
 }

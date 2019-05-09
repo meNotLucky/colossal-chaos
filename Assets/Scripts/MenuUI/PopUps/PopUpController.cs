@@ -12,7 +12,7 @@ public class PopUpController : MonoBehaviour
     }
 
     [Header("Properties")]
-    [SerializeField] PopUpClass[] popUps;
+    [SerializeField] PopUpClass[] popUps = new PopUpClass[0];
 
     public void ActivatePopUp(string name, float timeToHide){
         if(timeToHide > 0)

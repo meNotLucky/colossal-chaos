@@ -50,7 +50,6 @@ public class WagonExplosion : MonoBehaviour
                 if(item.GetComponent<Rigidbody>() != null){
                     item.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, transform.position, range);
                 }
-                EndExplosion();
             }
         }
     }
