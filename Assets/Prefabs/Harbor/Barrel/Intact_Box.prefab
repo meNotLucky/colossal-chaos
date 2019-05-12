@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4927518234001849457}
   - component: {fileID: 4927518233998982229}
   - component: {fileID: 4927518234000080533}
+  - component: {fileID: 8602476328897232810}
+  - component: {fileID: 4853889573335243771}
   m_Layer: 0
   m_Name: Intact_Box
   m_TagString: Untagged
@@ -77,3 +79,32 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8602476328897232810
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4927518234002268241}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300008, guid: d2d667087c0a2ab4987937223c92ac1c, type: 3}
+--- !u!114 &4853889573335243771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4927518234002268241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e20667b663b5664cb7419bb78fc51e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brokenMesh: {fileID: 223280739910966338, guid: 39f887bee64ee71488d0e7e165e9c2cd,
+    type: 3}
+  dustPiles: []
