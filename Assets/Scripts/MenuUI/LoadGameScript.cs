@@ -23,7 +23,7 @@ public class LoadGameScript : MonoBehaviour
         while(!operation.isDone){
             float progress = Mathf.Clamp01(operation.progress / .9f);
             slider.value = progress;
-            progressionText.text = progress * 100 + "%";
+            progressionText.text = Mathf.Round(progress * 100) + "%";
 
             yield return null;
         }
