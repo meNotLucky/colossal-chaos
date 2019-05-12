@@ -215,7 +215,6 @@ public class GiantController : MonoBehaviour
 			float newSpeed = Random.Range(m_MoveSpeedMultiplier - m_RandomSpeedOffset, m_MoveSpeedMultiplier + m_RandomSpeedOffset);
 			float timeToChange = Random.Range(m_MinTimeToSpeedChange, m_MaxTimeToSpeedChange);
 			if(!m_NewForwardGotten){
-				Debug.Log(newSpeed);
 				m_NewForwardGotten = true;
 				coroutine = MoveSpeedInterpolator(m_ForwardAmount, newSpeed, timeToChange);
 				StartCoroutine(coroutine);

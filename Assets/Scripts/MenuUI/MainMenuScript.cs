@@ -6,87 +6,60 @@ using UnityEngine.UI;
 
 public class MainMenuScript : MonoBehaviour
 {
-  
-  public UnityEngine.UI.Button myButton;
-  public UnityEngine.UI.Button quitButton;
-  public Slider PlaySlider;
-  public float timeToChange=1f;
-  public float mouseHeldTimer=0f;
-  public float redC=0.1f;
-  public float timer=0.1f;
-  public float colortimer;
+
+	public UnityEngine.UI.Button myButton;
+	public Slider PlaySlider;
+	public float timeToChange = 1f;
+	public float mouseHeldTimer = 0f;
+	public float timer = 0.1f;
+	public float colortimer;
 
 void Start()
 {
-  Cursor.lockState = CursorLockMode.Locked;
-  Time.timeScale=1f;
+	Cursor.lockState = CursorLockMode.Locked;
+	Time.timeScale = 1f;
 }
-  void Update()
-  {
-    
-    if(Input.GetAxisRaw("Mouse X")!=0)
-  {
-    Cursor.lockState=CursorLockMode.None;
-  }
+	void Update()
+	{
 
-    //the red color is a test for the PlayButton.
-    Vector3 mousePos=Input.mousePosition;
-    if(mousePos.x>Screen.width/2+Screen.width/8)
-    {
-         mouseHeldTimer +=Time.deltaTime;
-        //myButton.Select();
-        if(redC<=1)
-        {
-          redC+=colortimer/60;
-          
-        }
-        
-        
-      if(PlaySlider.value<=1f){
-        PlaySlider.value+=timer/60;
-      }
+	if(Input.GetAxisRaw("Mouse X")!=0)
+	{
+		Cursor.lockState = CursorLockMode.None;
+	}
 
-      if(PlaySlider.value>=1)
-      {
-        PlayGame();
-      }
-        if(mouseHeldTimer>timeToChange)
-        {
-           //PlayGame();
-           
-           
-        }
-        
-    }
-    else
-    {
-      if(redC>=0.4f)
-      {
-        redC-=colortimer/60;
-      }
-      if(PlaySlider.value>=0)
-      {
-        PlaySlider.value-=timer/60;
-      }
+		//the red color is a test for the PlayButton.
+		Vector3 mousePos = Input.mousePosition;
+		if(mousePos.x > (Screen.width / 2) + (Screen.width / 8))
+		{
+			mouseHeldTimer += Time.deltaTime;
+			//myButton.Select();
 
-      mouseHeldTimer=0f;
 
-    }
-   
-      ColorBlock colors=myButton.colors;
-      colors.normalColor=new Color(redC,0,0);
-      myButton.colors=colors;
-      
-    
-  }
-  public void PlayGame()
-  {
-      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
-  }
-  public void QuitGame()
-  {
-      Debug.Log("Quit!");
-      Application.Quit();
-  }
- 
+			if(PlaySlider.value < 1f){
+				PlaySlider.value += timer / 60;
+			}
+
+			if(PlaySlider.value >= 1){
+				GetComponent<LoadGameScript>().LoadGame();
+				Destroy(this);
+			}
+		}
+		else
+		{
+
+			if(PlaySlider.value >= 0)
+				PlaySlider.value -= timer / 60;
+
+			mouseHeldTimer = 0f;
+		}
+
+			ColorBlock colors = myButton.colors;
+			myButton.colors = colors;
+	}
+
+	public void QuitGame()
+	{
+			Debug.Log("Quit!");
+			Application.Quit();
+	}
 }
