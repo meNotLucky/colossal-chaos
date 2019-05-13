@@ -7,4 +7,5 @@ public static class GlobalSettings
 {
     public static float maxDestroyedHouses;
     public static float debrieLifeDuration;
+    public static int numberOfSavedHighScores;
 }

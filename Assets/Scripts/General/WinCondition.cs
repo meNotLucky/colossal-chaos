@@ -43,4 +43,8 @@ public class WinCondition : MonoBehaviour
             FindObjectOfType<PauseMenuScript>().enabled = false;
         }
     }
+
+    public void ExitToMainMenu(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
 }

@@ -33230,12 +33230,12 @@ PrefabInstance:
     - target: {fileID: 6743793889243844824, guid: ec70efe0bf1f2bb4f95a0ce9e74a5a9d,
         type: 3}
       propertyPath: m_isInputParsingRequired
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6743793889243844824, guid: ec70efe0bf1f2bb4f95a0ce9e74a5a9d,
         type: 3}
       propertyPath: m_havePropertiesChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2812765530078857869, guid: ec70efe0bf1f2bb4f95a0ce9e74a5a9d,
         type: 3}

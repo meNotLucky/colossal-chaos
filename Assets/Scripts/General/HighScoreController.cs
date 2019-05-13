@@ -11,16 +11,18 @@ public class HighScoreController : MonoBehaviour
     public TextMeshProUGUI playerName;
     public TextMeshProUGUI scoreTextPlaying;
     public TextMeshProUGUI scoreTextWinScreen;
-
-    [Header("High Score List Properties")]
-    public int numberOfHighScores;
     
     [Header("High Score Values")]
     [SerializeField] int currentScore;
 
     private void Start() {
+        
         // Activated for debuging
         // ResetHighScores();
+
+        if(PlayerPrefsX.GetIntArray("HighScores") == null){
+            ResetHighScores();
+        }
     }
 
     private void Update() {
@@ -30,54 +32,44 @@ public class HighScoreController : MonoBehaviour
     }
 
     public void SaveScore() {
-        if(PlayerPrefsX.GetIntArray("HighScores") != null){
-            if(PlayerPrefsX.GetIntArray("HighScores").Length <= 0)
-            {            
-                Debug.Log("New Save");
 
-                int[] highScores = new int[numberOfHighScores];
-                highScores[0] = currentScore;
+        if(playerName.text.Length <= 1)
+            return;
 
-                string[] highScoreNames = new string[numberOfHighScores];
-                highScoreNames[0] = playerName.text;
+        if(PlayerPrefsX.GetIntArray("HighScores") == null){
+            ResetHighScores();
+        }
 
-                PlayerPrefsX.SetIntArray("HighScores", highScores);
-                PlayerPrefsX.SetStringArray("HighScoreNames", highScoreNames);
-            }
-            else
-            {
-                Debug.Log("Overwrite Save");
+        int[] highScores = PlayerPrefsX.GetIntArray("HighScores");
+        List<int> highScoreList = new List<int>(highScores);
 
-                int[] highScores = PlayerPrefsX.GetIntArray("HighScores");
-                List<int> highScoreList = new List<int>(highScores);
+        string[] highScoreNames = PlayerPrefsX.GetStringArray("HighScoreNames");
+        List<string> highScoreNameList = new List<string>(highScoreNames);
 
-                string[] highScoreNames = PlayerPrefsX.GetStringArray("HighScoreNames");
-                List<string> highScoreNameList = new List<string>(highScoreNames);
-
-                foreach(int score in highScoreList){
-                    if(currentScore >= score){
-                        int index = highScoreList.IndexOf(score);
-                        highScoreList.Insert(index, currentScore);
-                        highScoreNameList.Insert(index, playerName.text);
-                        highScoreList.RemoveAt(highScoreList.Count - 1);
-                        highScoreNameList.RemoveAt(highScoreNameList.Count - 1);
-                        break;
-                    }
-                }
-
-                highScores = highScoreList.ToArray();
-                highScoreNames = highScoreNameList.ToArray();
-                PlayerPrefsX.SetIntArray("HighScores", highScores);
-                PlayerPrefsX.SetStringArray("HighScoreNames", highScoreNames);
+        foreach(int score in highScoreList){
+            if(currentScore >= score){
+                int index = highScoreList.IndexOf(score);
+                highScoreList.Insert(index, currentScore);
+                highScoreNameList.Insert(index, playerName.text);
+                highScoreList.RemoveAt(highScoreList.Count - 1);
+                highScoreNameList.RemoveAt(highScoreNameList.Count - 1);
+                break;
             }
         }
+
+        highScores = highScoreList.ToArray();
+        highScoreNames = highScoreNameList.ToArray();
+        PlayerPrefsX.SetIntArray("HighScores", highScores);
+        PlayerPrefsX.SetStringArray("HighScoreNames", highScoreNames);
+
+        Debug.Log("Saved");
     }
 
-    public void ResetHighScores(){
-        int[] highScores = new int[numberOfHighScores];
-        string[] highScoreNames = new string[numberOfHighScores];
+    public static void ResetHighScores(){
+        int[] highScores = new int[GlobalSettings.numberOfSavedHighScores];
+        string[] highScoreNames = new string[GlobalSettings.numberOfSavedHighScores];
 
-        for (int i = 0; i < numberOfHighScores; i++)
+        for (int i = 0; i < GlobalSettings.numberOfSavedHighScores; i++)
         {
             highScores[i] = 0;
             highScoreNames[i] = "NaN";
