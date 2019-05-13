@@ -27,5 +27,4 @@ public class LooseCondition : MonoBehaviour
         }  
         
     }
-    
 }

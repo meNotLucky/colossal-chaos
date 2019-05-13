@@ -140,19 +140,25 @@ public class GiantUserInput : MonoBehaviour
                 float angle = Vector3.SignedAngle(targetDir, forward, Vector3.up);
 
                 if(angle < 0){
-                    FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchLeft");
-                    FindObjectOfType<PopUpController>().ActivatePopUp("ChurchRight", 0);
+                    if(FindObjectOfType<PopUpController>() != null){
+                        FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchLeft");
+                        FindObjectOfType<PopUpController>().ActivatePopUp("ChurchRight", 0);
+                    }
                 } else {
-                    FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchRight");
-                    FindObjectOfType<PopUpController>().ActivatePopUp("ChurchLeft", 0);
+                    if(FindObjectOfType<PopUpController>() != null){
+                        FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchRight");
+                        FindObjectOfType<PopUpController>().ActivatePopUp("ChurchLeft", 0);
+                    }
                 }
                 float currentTargetDistance = Vector3.Distance(currenTarget.transform.position, transform.position);
                 if(currentTargetDistance > currenTarget.GetComponent<AttractionTarget>().GetRange())
                     currenTarget = null;                    
             }
             if(currenTarget == null){
-                FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchRight");
-                FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchLeft");
+                if(FindObjectOfType<PopUpController>() != null){
+                    FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchRight");
+                    FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchLeft");
+                }
             }
         }
     }
