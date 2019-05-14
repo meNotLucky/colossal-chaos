@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 9199103370621891511}
   - component: {fileID: 592582977168217814}
   m_Layer: 0
-  m_Name: Intacthouse_03
+  m_Name: Intact_Large_03
   m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -146,11 +146,11 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: c8a598184271d0141b1b0b886933f566, type: 2}
-  - {fileID: 2100000, guid: ebc184ad2e8a19c4abbecc3583280d62, type: 2}
+  - {fileID: 2100000, guid: fcf4965c55657c841b88c562f3e64015, type: 2}
   - {fileID: 2100000, guid: a3d3d0a0cfa7cea4885e6fd962e82bb1, type: 2}
-  - {fileID: 2100000, guid: 49b2010a2239bec44979a70930ceeb3f, type: 2}
-  - {fileID: 2100000, guid: 931b5ddd610ae3848b402adf4758b4a6, type: 2}
   - {fileID: 2100000, guid: 71d430e5b1292f84782dae5e2ffdda9d, type: 2}
+  - {fileID: 2100000, guid: e1de3fddd17c0124c912df2ca6115ff9, type: 2}
+  - {fileID: 2100000, guid: fcf4965c55657c841b88c562f3e64015, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
