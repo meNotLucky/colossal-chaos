@@ -1402,7 +1402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseInputSensitivity: 4
   sensitivityModifier: 1000
-  mouseCenterOffset: 1
+  mouseCenterOffset: 2
   giantPullForce: 20
   distanceToRotate: 20
   struggleModifier: 0.7

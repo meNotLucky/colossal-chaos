@@ -23,11 +23,12 @@ public class NameSelectionController : MonoBehaviour
             userName += selector.alphabet[selector.currentlySelected];
         }
         
-        selectors[activeSelectorIndex].isActiveSelector = true;
-
         if(activeSelectorIndex > selectors.Length - 1){
+            activeSelectorIndex = selectors.Length - 1;
             FindObjectOfType<HighScoreController>().SaveScore(userName);
             FindObjectOfType<WinCondition>().ExitToMainMenu();
         }
+
+        selectors[activeSelectorIndex].isActiveSelector = true;
     }
 }

@@ -31,7 +31,7 @@ public class GiantUserInput : MonoBehaviour
 
     private SoundEffectManager soundEffect;
 
-    public float h;
+    [HideInInspector] public float h;
     private float v = 1;
 
     

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.UI;
 using TMPro;
 
 [System.Serializable]
@@ -20,6 +21,22 @@ public class LetterSelection : MonoBehaviour
     private void Start(){
         UpdateLetters(0);
         StartCoroutine(LetterScroll(1, scrollSpeed));
+    }
+
+    private void Update() {
+        foreach (var img in GetComponentsInChildren<Image>()){
+            img.enabled = false;
+            if(img.gameObject.GetComponentInChildren<TextMeshProUGUI>() != null)
+                img.gameObject.GetComponentInChildren<TextMeshProUGUI>().enabled = false;
+        }
+
+        if(isActiveSelector){
+            foreach (var img in GetComponentsInChildren<Image>()){
+                img.enabled = true;
+                if(img.gameObject.GetComponentInChildren<TextMeshProUGUI>() != null)
+                    img.gameObject.GetComponentInChildren<TextMeshProUGUI>().enabled = true;
+            }
+        }
     }
 
     private void UpdateLetters(int direction){
