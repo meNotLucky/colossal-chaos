@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6188690424002536116}
   m_Layer: 0
   m_Name: Intact_Barrel
-  m_TagString: Untagged
+  m_TagString: DestroyableClutter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

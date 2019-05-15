@@ -26,7 +26,7 @@ public class GiantUserInput : MonoBehaviour
     public float struggleIntensityMin;
     private bool sensModified = true;
     public List<AttractionTarget> targets;
-    public GameObject currenTarget;
+    public GameObject currentTarget;
     private Quaternion lookRotation;
 
     private SoundEffectManager soundEffect;
@@ -37,6 +37,7 @@ public class GiantUserInput : MonoBehaviour
     
     private void Start()
     {
+        // Get targets
         targets = new List<AttractionTarget>(FindObjectsOfType<AttractionTarget>());
       
         // Put this here cause I don't know where else to put it right now
@@ -101,15 +102,15 @@ public class GiantUserInput : MonoBehaviour
         }
 
         // Get camera angle to selected target
-        if(currenTarget != null){
-            Vector3 targetDir = (currenTarget.transform.position - transform.position).normalized;
+        if(currentTarget != null){
+            Vector3 targetDir = (currentTarget.transform.position - transform.position).normalized;
             lookRotation = Quaternion.LookRotation(targetDir);
         }
         
         // calculate move direction to pass to character
         if (cam != null){
-            if(currenTarget != null){
-                float distanceToTarget = Vector3.Distance(transform.position, currenTarget.transform.position);
+            if(currentTarget != null){
+                float distanceToTarget = Vector3.Distance(transform.position, currentTarget.transform.position);
                 transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, (Time.deltaTime * giantPullForce) / (distanceToTarget > distanceToRotate ? distanceToTarget : distanceToRotate));
                 transform.rotation = Quaternion.Euler(0f, transform.rotation.eulerAngles.y, 0f);
                 move = (v * camForward) + (h * cam.right);
@@ -134,10 +135,10 @@ public class GiantUserInput : MonoBehaviour
             foreach(var target in targets){
                 float targetDist = Vector3.Distance(target.transform.position, transform.position);
                 if(targetDist < target.GetComponent<AttractionTarget>().GetRange())
-                    currenTarget = target.gameObject;
+                    currentTarget = target.gameObject;
             }
-            if(currenTarget != null){
-                Vector3 targetDir = currenTarget.transform.position - transform.position;
+            if(currentTarget != null){
+                Vector3 targetDir = currentTarget.transform.position - transform.position;
                 Vector3 forward = transform.forward;
                 float angle = Vector3.SignedAngle(targetDir, forward, Vector3.up);
 
@@ -152,11 +153,11 @@ public class GiantUserInput : MonoBehaviour
                         FindObjectOfType<PopUpController>().ActivatePopUp("ChurchLeft", 0);
                     }
                 }
-                float currentTargetDistance = Vector3.Distance(currenTarget.transform.position, transform.position);
-                if(currentTargetDistance > currenTarget.GetComponent<AttractionTarget>().GetRange())
-                    currenTarget = null;                    
+                float currentTargetDistance = Vector3.Distance(currentTarget.transform.position, transform.position);
+                if(currentTargetDistance > currentTarget.GetComponent<AttractionTarget>().GetRange())
+                    currentTarget = null;                    
             }
-            if(currenTarget == null){
+            if(currentTarget == null){
                 if(FindObjectOfType<PopUpController>() != null){
                     FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchRight");
                     FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchLeft");
@@ -166,8 +167,8 @@ public class GiantUserInput : MonoBehaviour
     }
 
     public void RemoveCurrentTarget() {
-        targets.Remove(currenTarget.GetComponent<AttractionTarget>());
-        currenTarget = null;
+        targets.Remove(currentTarget.GetComponent<AttractionTarget>());
+        currentTarget = null;
     }
 
     IEnumerator SensitivityInterpolator(float startValue, float endValue, float duration)

@@ -41,7 +41,10 @@ public class WagonExplosion : MonoBehaviour
             if(item.gameObject.tag == "Villager"){
                 item.GetComponent<VillagerAI>().Die();
             }
-            if(item.gameObject.tag == "house"){
+            if(item.gameObject.tag == "Landmark"){
+                item.GetComponent<SectionSwitch>().SwitchSection();
+            }
+            if(item.gameObject.tag == "house" || item.gameObject.tag == "DestroyableClutter"){
                 item.GetComponent<BreakSwitch>().Switch();
             }
             if(item.gameObject.tag == "house_piece"){

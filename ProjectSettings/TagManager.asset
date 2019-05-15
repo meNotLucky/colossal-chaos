@@ -10,6 +10,8 @@ TagManager:
   - house
   - DeathCube
   - Villager
+  - Landmark
+  - DestroyableClutter
   layers:
   - Default
   - TransparentFX

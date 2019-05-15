@@ -7,6 +7,7 @@ public class LooseCondition : MonoBehaviour
     public GameObject slider;
     [HideInInspector] public int numberOfHouses;
     [HideInInspector] public int destroyedHouses = 0;
+    [HideInInspector] public int landmarkDestructionPoints = 0;
 
     void Start()
     {
@@ -18,7 +19,7 @@ public class LooseCondition : MonoBehaviour
         slider.GetComponent<SliderScript>().SetMinMaxValue(0, GlobalSettings.maxDestroyedHouses);
         destroyedHouses = numberOfHouses - GameObject.FindGameObjectsWithTag("house").Length;
 
-        slider.GetComponent<SliderScript>().SetValue(destroyedHouses);
+        slider.GetComponent<SliderScript>().SetValue(destroyedHouses + landmarkDestructionPoints);
 
         if(destroyedHouses >= GlobalSettings.maxDestroyedHouses)
         {
