@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 8181566248913806720}
   - component: {fileID: 8181566248914609568}
   - component: {fileID: 8181566248915576672}
+  - component: {fileID: 795680961995522277}
+  - component: {fileID: 8889534690789767005}
   m_Layer: 0
-  m_Name: BigBoatHouse_FBX
-  m_TagString: Untagged
+  m_Name: BigBoatHouse
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,3 +82,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &795680961995522277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8181566248913648032}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.823372, y: 9.422158, z: 15.012787}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8889534690789767005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8181566248913648032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e20667b663b5664cb7419bb78fc51e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brokenMesh: {fileID: 4314692170219104460, guid: 2ad29cd6433c1294686bcc3019824c48,
+    type: 3}
+  dustPiles: []
