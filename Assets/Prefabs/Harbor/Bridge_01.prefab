@@ -194,8 +194,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4952216288631065629}
+  - component: {fileID: 5585790668918095442}
   m_Layer: 0
-  m_Name: Bridge_01_FBX
+  m_Name: Bridge_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -217,6 +218,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &5585790668918095442
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4952216288631296061}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.011978149, y: 1, z: -0.2767334}
+  m_Size: 8.42197
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.12773478
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4952216288633491193}
+  - screenRelativeHeight: 0.018290125
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4952216288633491195}
+  m_Enabled: 1
 --- !u!1 &4952216288631296063
 GameObject:
   m_ObjectHideFlags: 0

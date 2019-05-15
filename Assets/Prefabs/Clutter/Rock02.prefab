@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 7018954836688894577}
   - component: {fileID: 7018954836690188881}
   - component: {fileID: 7018954836691187857}
+  - component: {fileID: 129969365550006515}
   m_Layer: 0
-  m_Name: Rock02_FBX
+  m_Name: Rock02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,3 +78,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!205 &129969365550006515
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7018954836689184337}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.024885297, y: 0.8285832, z: -0.11065674}
+  m_Size: 3.3632054
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.028812122
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7018954836691187857}
+  m_Enabled: 1
