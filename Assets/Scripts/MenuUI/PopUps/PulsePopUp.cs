@@ -14,7 +14,5 @@ public class PulsePopUp : MonoBehaviour
     {
         float t = Mathf.Sin(Time.realtimeSinceStartup * speed);
         GetComponent<Image>().color = Color.Lerp(startColor, endColor,t);
-        GetComponentInChildren<TextMeshProUGUI>().color = Color.Lerp(startColor, endColor, t);
-
     }
 }
