@@ -25,7 +25,7 @@ public class GiantUserInput : MonoBehaviour
     public float struggleIntensityMax;
     public float struggleIntensityMin;
     private bool sensModified = true;
-    public List<GameObject> targets = new List<GameObject>();
+    public List<AttractionTarget> targets;
     public GameObject currenTarget;
     private Quaternion lookRotation;
 
@@ -37,6 +37,7 @@ public class GiantUserInput : MonoBehaviour
     
     private void Start()
     {
+        targets = new List<AttractionTarget>(FindObjectsOfType<AttractionTarget>());
       
         // Put this here cause I don't know where else to put it right now
         FindObjectOfType<PopUpController>().ActivatePopUp("Start", 6);
@@ -128,11 +129,12 @@ public class GiantUserInput : MonoBehaviour
     }
 
     private void UpdateTarget() {
+
         if(targets.Count > 0){
             foreach(var target in targets){
                 float targetDist = Vector3.Distance(target.transform.position, transform.position);
                 if(targetDist < target.GetComponent<AttractionTarget>().GetRange())
-                    currenTarget = target;
+                    currenTarget = target.gameObject;
             }
             if(currenTarget != null){
                 Vector3 targetDir = currenTarget.transform.position - transform.position;
@@ -164,7 +166,7 @@ public class GiantUserInput : MonoBehaviour
     }
 
     public void RemoveCurrentTarget() {
-        targets.Remove(currenTarget);
+        targets.Remove(currenTarget.GetComponent<AttractionTarget>());
         currenTarget = null;
     }
 
