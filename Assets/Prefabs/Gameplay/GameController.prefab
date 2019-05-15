@@ -2407,7 +2407,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3261065559450728924}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243288632148992492, guid: a763d4633badb4b4eb62614540f425a1,
     type: 2}
@@ -4762,6 +4762,7 @@ MonoBehaviour:
   slider: {fileID: 5724710190858239640}
   numberOfHouses: 0
   destroyedHouses: 0
+  landmarkDestructionPoints: 0
 --- !u!114 &6027675792995916993
 MonoBehaviour:
   m_ObjectHideFlags: 0
