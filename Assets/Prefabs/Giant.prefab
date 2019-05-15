@@ -1413,6 +1413,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   currenTarget: {fileID: 0}
+  h: 0
 --- !u!114 &1073664698208038175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1434,7 +1435,7 @@ MonoBehaviour:
   m_JumpPower: 10
   m_GravityMultiplier: 2
   m_RunCycleLegOffset: 0.2
-  m_GroundCheckDistance: 10
+  m_GroundCheckDistance: 1
   stopCooldown: 4
   stopDuration: 2
   sideStepCooldown: 2

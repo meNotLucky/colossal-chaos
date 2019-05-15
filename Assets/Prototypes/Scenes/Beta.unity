@@ -8440,6 +8440,11 @@ PrefabInstance:
       propertyPath: m_MaxDampingSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1073664698208038175, guid: 4018235627c8ff443ae4285db06911d6,
+        type: 3}
+      propertyPath: m_GroundCheckDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7036602886614691250, guid: 4018235627c8ff443ae4285db06911d6,
         type: 3}
       propertyPath: m_LocalPosition.x

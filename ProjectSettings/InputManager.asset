@@ -58,7 +58,7 @@ InputManager:
     descriptiveName: Make the giant dash to the left.
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: backspace
+    positiveButton: a
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -74,7 +74,7 @@ InputManager:
     descriptiveName: Make the giant dash to the Right.
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: return
+    positiveButton: d
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000

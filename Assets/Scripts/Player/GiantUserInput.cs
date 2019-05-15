@@ -31,7 +31,7 @@ public class GiantUserInput : MonoBehaviour
 
     private SoundEffectManager soundEffect;
 
-    private float h;
+    public float h;
     private float v = 1;
 
     
@@ -72,12 +72,12 @@ public class GiantUserInput : MonoBehaviour
         }
 
         if(!sideStepLeft && !stop)
-            if(Input.GetKey(KeyCode.A)){
+            if(Input.GetButton("SideStep Left")){
                 sideStepLeft = true;
             }
 
         if(!sideStepRight && !sideStepLeft && !stop)
-            if(Input.GetKey(KeyCode.D)){
+            if(Input.GetButton("SideStep Right")){
                 sideStepRight = true;
             }
 
