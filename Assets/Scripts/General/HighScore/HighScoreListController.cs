@@ -7,7 +7,7 @@ using TMPro;
 public class HighScoreListController : MonoBehaviour
 {
     public TextMeshProUGUI highScoreListText;
-
+ 
     private void Start() {
 
         if(PlayerPrefsX.GetIntArray("HighScores") == null){

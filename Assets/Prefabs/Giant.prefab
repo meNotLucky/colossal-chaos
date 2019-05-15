@@ -1408,10 +1408,7 @@ MonoBehaviour:
   struggleModifier: 0.7
   struggleIntensityMax: 2
   struggleIntensityMin: 0.5
-  targets:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  targets: []
   currenTarget: {fileID: 0}
   h: 0
 --- !u!114 &1073664698208038175
@@ -1435,7 +1432,7 @@ MonoBehaviour:
   m_JumpPower: 10
   m_GravityMultiplier: 2
   m_RunCycleLegOffset: 0.2
-  m_GroundCheckDistance: 1
+  m_GroundCheckDistance: 2
   stopCooldown: 4
   stopDuration: 2
   sideStepCooldown: 2
