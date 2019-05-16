@@ -818,7 +818,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0eeab949291576641813d8bfe7507aa4, type: 2}
-  - {fileID: 2100000, guid: a193a5c6c9e6e944fb4abf57424bf966, type: 2}
+  - {fileID: 2100000, guid: 931b5ddd610ae3848b402adf4758b4a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -896,7 +896,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0eeab949291576641813d8bfe7507aa4, type: 2}
-  - {fileID: 2100000, guid: a193a5c6c9e6e944fb4abf57424bf966, type: 2}
+  - {fileID: 2100000, guid: 931b5ddd610ae3848b402adf4758b4a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1327,7 +1327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e20667b663b5664cb7419bb78fc51e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brokenMesh: {fileID: 5526448859096848009, guid: d92bbb15bf8fbcd44be352e82b25e5e4,
+  brokenMesh: {fileID: 3813319389808079137, guid: b44339466a9945c41a4877078eb6fa1d,
     type: 3}
   dustPiles: []
 --- !u!208 &4580380580840625668
@@ -1761,7 +1761,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 5b13c011e56a9de48b6afa9c7a3ad41e, type: 2}
-  - {fileID: 2100000, guid: a193a5c6c9e6e944fb4abf57424bf966, type: 2}
+  - {fileID: 2100000, guid: 931b5ddd610ae3848b402adf4758b4a6, type: 2}
   - {fileID: 2100000, guid: ed9162acae49ee041a62231699e689e0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0

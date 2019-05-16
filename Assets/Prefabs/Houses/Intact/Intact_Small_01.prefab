@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e20667b663b5664cb7419bb78fc51e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brokenMesh: {fileID: 3813319389808079137, guid: b44339466a9945c41a4877078eb6fa1d,
+  brokenMesh: {fileID: 5526448859096848009, guid: d92bbb15bf8fbcd44be352e82b25e5e4,
     type: 3}
   dustPiles: []
 --- !u!208 &4339926311200732768

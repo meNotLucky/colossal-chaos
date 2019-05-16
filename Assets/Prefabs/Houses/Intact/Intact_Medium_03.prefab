@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e20667b663b5664cb7419bb78fc51e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brokenMesh: {fileID: 3435385701147744315, guid: 20bda1e67f992aa45967c5ae77ff9a19,
+  brokenMesh: {fileID: 3435385701147744315, guid: 06a44c6c4b9389b4fbe678e8ab382ae2,
     type: 3}
   dustPiles: []
 --- !u!205 &4172045103325738430
