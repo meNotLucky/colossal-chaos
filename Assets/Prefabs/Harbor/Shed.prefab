@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 4672050687436657909}
   - component: {fileID: 4672050687437788725}
   m_Layer: 0
-  m_Name: Shed_FBX
+  m_Name: Shed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4672050687440082133
 Transform:
