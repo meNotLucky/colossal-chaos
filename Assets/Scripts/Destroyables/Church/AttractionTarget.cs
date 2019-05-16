@@ -20,7 +20,10 @@ public class AttractionTarget : MonoBehaviour
     private void Update() {
         if(currentHitPoints <= 0){
             FindObjectOfType<LooseCondition>().landmarkDestructionPoints += loosePointsOnDestruction;
-            FindObjectOfType<GiantUserInput>().RemoveCurrentTarget();
+            if(FindObjectOfType<GiantUserInputV2>() != null)
+                FindObjectOfType<GiantUserInputV2>().RemoveCurrentTarget();
+            else if(FindObjectOfType<GiantUserInput>() != null)
+                FindObjectOfType<GiantUserInput>().RemoveCurrentTarget();
             Destroy(this);
         }
     }

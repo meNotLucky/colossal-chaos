@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: a29801bf6a8227245809aa3a2f6d6c28
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: The Bough
+  fontNames:
+  - The Bough
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1f6e3d1a78f6a0c4fbf191d6dab0ec51, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

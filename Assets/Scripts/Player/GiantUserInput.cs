@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(GiantController))]
 public class GiantUserInput : MonoBehaviour
 {
     private GiantController character; // A reference to the ThirdPersonCharacter on the object

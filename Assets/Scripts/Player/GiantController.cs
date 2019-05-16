@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-[RequireComponent(typeof(Rigidbody))]
+//[RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Animator))]
 public class GiantController : MonoBehaviour
 {
@@ -19,8 +19,11 @@ public class GiantController : MonoBehaviour
 	[SerializeField] float m_StationaryTurnSpeed = 180;
 	[SerializeField] float m_JumpPower = 12f;
 	[Range(1f, 4f)][SerializeField] float m_GravityMultiplier = 2f;
-	[SerializeField] float m_RunCycleLegOffset = 0.2f; //specific to the character in sample assets, will need to be modified to work with others
-	[SerializeField] float m_GroundCheckDistance = 0.1f;
+	[SerializeField] float m_GroundCheckDistance = 0.5f;
+	[SerializeField] float m_GroundCheckPadding = 0.05f;
+	[SerializeField] float m_MaxGroundAngle = 150;
+	[SerializeField] LayerMask ground;
+
 
 	[Header("Stopping Properties")]
 	[SerializeField] float stopCooldown = 5.0f;
@@ -43,12 +46,13 @@ public class GiantController : MonoBehaviour
 	Rigidbody m_Rigidbody;
 	Animator m_Animator;
 	bool m_IsGrounded;
-	float m_OrigGroundCheckDistance;
 	const float k_Half = 0.5f;
 	float m_TurnAmount;
 	float m_ForwardAmount;
 	bool m_NewForwardGotten;
 	Vector3 m_GroundNormal;
+	float m_GroundAngle;
+	RaycastHit hitInfo;
 
 	private IEnumerator coroutine;
 
@@ -59,20 +63,24 @@ public class GiantController : MonoBehaviour
 		m_Rigidbody = GetComponent<Rigidbody>();
 
 		m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
-		m_OrigGroundCheckDistance = m_GroundCheckDistance;
 	}
 
 	public void Move(Vector3 move, bool jump, bool stop, bool sideStepLeft, bool sideStepRight)
 	{
+		// if(m_GroundAngle >= m_MaxGroundAngle)
+        //     return;
+
 		// convert the world relative moveInput vector into a local-relative
 		// turn amount and forward amount required to head in the desired
 		// direction.
 		if (move.magnitude > 1f) move.Normalize();
 		move = transform.InverseTransformDirection(move);
-		CheckGroundStatus();
 		move = Vector3.ProjectOnPlane(move, m_GroundNormal);
 		m_TurnAmount = Mathf.Atan2(move.x, move.z);
-
+		
+		CalculateGroundAngle();
+		CheckGround();
+		ApplyGravity();
 		ApplyExtraTurnRotation();
 
 		// control and velocity handling is different when grounded and airborne:
@@ -80,9 +88,6 @@ public class GiantController : MonoBehaviour
 			HandleGroundedMovement(move,jump);
 			HandleStopping(stop);
 			HandleSideStep(sideStepLeft, sideStepRight);
-		}
-		else {
-			HandleAirborneMovement();
 		}
 
 		// send input and other state parameters to the animator
@@ -104,15 +109,6 @@ public class GiantController : MonoBehaviour
 			m_Animator.speed = m_ForwardAmount;
 		else
 			m_Animator.speed = 1;
-	}
-
-	void HandleAirborneMovement()
-	{
-		// apply extra gravity from multiplier:
-		Vector3 extraGravityForce = (Physics.gravity * m_GravityMultiplier) - Physics.gravity;
-		m_Rigidbody.AddForce(extraGravityForce);
-
-		m_GroundCheckDistance = m_Rigidbody.velocity.y < 0 ? m_OrigGroundCheckDistance : 0.01f;
 	}
 
 	void HandleStopping(bool stop)
@@ -233,23 +229,31 @@ public class GiantController : MonoBehaviour
 		transform.Rotate(0, m_TurnAmount * turnSpeed * Time.deltaTime, 0);
 	}
 
-	void CheckGroundStatus()
-	{
-		RaycastHit hitInfo;
+	private void CalculateGroundAngle () {
+        if(!m_IsGrounded){
+            m_GroundAngle = 90;
+            return;
+        }
 
-		if (Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, out hitInfo, m_GroundCheckDistance))
-		{
-			m_GroundNormal = hitInfo.normal;
-			m_IsGrounded = true;
-			m_Animator.applyRootMotion = true;
-		}
-		else
-		{
-			m_IsGrounded = false;
-			m_GroundNormal = Vector3.up;
-			m_Animator.applyRootMotion = false;
-		}
-	}
+        m_GroundAngle = Vector3.Angle(hitInfo.normal, transform.forward);
+    }
+
+    private void CheckGround () {
+        if(Physics.Raycast(transform.position, -Vector3.up, out hitInfo, m_GroundCheckDistance + m_GroundCheckPadding, ground)){
+            if(Vector3.Distance(transform.position, hitInfo.point) < m_GroundCheckDistance){
+                transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.up * m_GroundCheckDistance, 5 * Time.deltaTime);
+            }
+            m_IsGrounded = true;
+        } else {
+            m_IsGrounded = false;
+        }
+    }
+
+	private void ApplyGravity () {
+        if(!m_IsGrounded){
+            transform.position += Physics.gravity * Time.deltaTime;
+        }
+    }
 
 	IEnumerator MoveSpeedInterpolator(float startValue, float endValue, float duration)
     {
