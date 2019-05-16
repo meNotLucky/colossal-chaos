@@ -124,6 +124,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Intact_Box (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4927518234002268241, guid: c430f1cf068a88f43a92fa668776374a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927518234002268241, guid: c430f1cf068a88f43a92fa668776374a,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4927518234001849457, guid: c430f1cf068a88f43a92fa668776374a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -199,6 +209,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Intact_Box (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4927518234002268241, guid: c430f1cf068a88f43a92fa668776374a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927518234002268241, guid: c430f1cf068a88f43a92fa668776374a,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4927518234001849457, guid: c430f1cf068a88f43a92fa668776374a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -273,6 +293,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Intact_Box (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927518234002268241, guid: c430f1cf068a88f43a92fa668776374a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927518234002268241, guid: c430f1cf068a88f43a92fa668776374a,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4927518234001849457, guid: c430f1cf068a88f43a92fa668776374a,
         type: 3}
@@ -498,6 +528,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Intact_Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927518234002268241, guid: c430f1cf068a88f43a92fa668776374a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927518234002268241, guid: c430f1cf068a88f43a92fa668776374a,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4927518234001849457, guid: c430f1cf068a88f43a92fa668776374a,
         type: 3}

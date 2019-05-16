@@ -46,6 +46,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Intact_Barrel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1173631656067024364, guid: 938d558a6f15904498b2d2a6c4503a81,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173631656067024364, guid: 938d558a6f15904498b2d2a6c4503a81,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1173631656066603468, guid: 938d558a6f15904498b2d2a6c4503a81,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -120,6 +130,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Intact_Barrel (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173631656067024364, guid: 938d558a6f15904498b2d2a6c4503a81,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173631656067024364, guid: 938d558a6f15904498b2d2a6c4503a81,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1173631656066603468, guid: 938d558a6f15904498b2d2a6c4503a81,
         type: 3}
@@ -196,6 +216,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Intact_Barrel (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1173631656067024364, guid: 938d558a6f15904498b2d2a6c4503a81,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1173631656066603468, guid: 938d558a6f15904498b2d2a6c4503a81,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -270,6 +295,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Intact_Barrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173631656067024364, guid: 938d558a6f15904498b2d2a6c4503a81,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173631656067024364, guid: 938d558a6f15904498b2d2a6c4503a81,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1173631656066603468, guid: 938d558a6f15904498b2d2a6c4503a81,
         type: 3}
