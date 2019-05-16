@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 9199103370621891511}
   - component: {fileID: 592582977168217814}
   m_Layer: 0
-  m_Name: Intacthouse_03
+  m_Name: Intact_Large_02
   m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -213,7 +213,7 @@ LODGroup:
   m_AnimateCrossFading: 1
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.09658993
+  - screenRelativeHeight: 0.06863735
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 5439634309431985064}
