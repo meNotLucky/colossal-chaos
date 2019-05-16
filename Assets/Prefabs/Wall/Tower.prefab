@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2571409362902828387}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: LOD_1 1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,9 +40,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2571409362902828393}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: LOD_0 1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,9 +73,9 @@ GameObject:
   - component: {fileID: 2571409362902828397}
   - component: {fileID: 2571409362901501261}
   - component: {fileID: 2571409362900404109}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BigTower_LOD
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -150,9 +150,9 @@ GameObject:
   - component: {fileID: 2571409362902828399}
   - component: {fileID: 2571409362901501263}
   - component: {fileID: 2571409362900404111}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BigTower
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -227,9 +227,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2571409362902828409}
   - component: {fileID: 7188301317957219129}
-  m_Layer: 0
+  - component: {fileID: 1513725458707788943}
+  m_Layer: 13
   m_Name: Tower
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -273,3 +274,17 @@ LODGroup:
     renderers:
     - renderer: {fileID: 2571409362900404109}
   m_Enabled: 1
+--- !u!136 &1513725458707788943
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2571409362902341977}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 3.464275
+  m_Height: 23.05855
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.02676487, z: 0.006646633}

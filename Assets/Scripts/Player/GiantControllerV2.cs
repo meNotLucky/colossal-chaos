@@ -192,7 +192,7 @@ public class GiantControllerV2 : MonoBehaviour
 
     private void ApplyMovement() {
         if(groundAngle >= maxGroundAngle)
-            return;
+            return;        
         transform.position += forward * speed * forwardAmount * Time.deltaTime;
     }
 

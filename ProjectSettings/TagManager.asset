@@ -12,6 +12,7 @@ TagManager:
   - Villager
   - Landmark
   - DestroyableClutter
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -21,12 +22,12 @@ TagManager:
   - UI
   - 
   - 
-  - GiantGroundCollider
+  - GiantWallCollider
   - GiantHouseCollider
   - Ground
   - Villager
   - PostProcessing
-  - 
+  - Wall
   - 
   - 
   - 

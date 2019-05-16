@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6263195293919712615}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: LOD_0
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,9 +40,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6263195293919712617}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: LOD_1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,9 +73,9 @@ GameObject:
   - component: {fileID: 6263195293919712625}
   - component: {fileID: 6263195293916845383}
   - component: {fileID: 6263195293917812615}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Saddle 1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -149,9 +149,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6263195293919712627}
   - component: {fileID: 7026040047132358350}
-  m_Layer: 0
+  - component: {fileID: 1950137198330493111}
+  m_Layer: 13
   m_Name: Saddle
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -195,6 +196,19 @@ LODGroup:
     renderers:
     - renderer: {fileID: 6263195293917812613}
   m_Enabled: 1
+--- !u!65 &1950137198330493111
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6263195293919742291}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.5634654, y: 5.712631, z: 4.0295477}
+  m_Center: {x: -0.01294601, y: 0.05178833, z: -0.0129470825}
 --- !u!1 &6263195293919742295
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,9 +220,9 @@ GameObject:
   - component: {fileID: 6263195293919712631}
   - component: {fileID: 6263195293916845381}
   - component: {fileID: 6263195293917812613}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Saddle_LOD
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
