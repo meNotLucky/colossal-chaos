@@ -122,7 +122,7 @@ public class GiantUserInputV2 : MonoBehaviour
         if(targets.Count > 0){
             foreach(var target in targets){
                 float targetDist = Vector3.Distance(target.transform.position, transform.position);
-                if(targetDist < target.GetComponent<AttractionTarget>().GetRange())
+                if(targetDist < target.GetComponent<AttractionTarget>().GetRange() + 10)
                     currentTarget = target.gameObject;
             }
             if(currentTarget != null){

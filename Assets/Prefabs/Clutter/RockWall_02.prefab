@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 736726831650434323}
   - component: {fileID: 736726831651401683}
   - component: {fileID: 5860177452823313794}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: RockWall_02
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295

@@ -64,6 +64,10 @@ public class GiantControllerV2 : MonoBehaviour
         input.x = h;
         input.y = move ? 1 : 0;
 
+        HandleRandomSpeed();
+        HandleStopping(stop);
+        HandleSideStep(sideStepLeft, sideStepRight);
+
         CalculateDirection();
         CalculateForward();
         CalculateGroundAngle();
@@ -72,10 +76,6 @@ public class GiantControllerV2 : MonoBehaviour
 
         if(Mathf.Abs(input.x) < 1 && Mathf.Abs(input.y) < 1)
             return;
-        
-        HandleRandomSpeed();
-        HandleStopping(stop);
-        HandleSideStep(sideStepLeft, sideStepRight);
 
         ApplyRotation();
         ApplyMovement();
@@ -127,59 +127,61 @@ public class GiantControllerV2 : MonoBehaviour
 
     void HandleSideStep(bool left, bool right)
 	{
-		if(currentDeceleration > 0){
-			delayTimer -= Time.deltaTime;
-			StopCoroutine(coroutine);
-			newForwardGotten = false;
-			forwardAmount = sideStepForwardSpeed;
+        if(grounded && groundAngle <= maxGroundAngle){
+            if(currentDeceleration > 0){
+                delayTimer -= Time.deltaTime;
+                StopCoroutine(coroutine);
+                newForwardGotten = false;
+                forwardAmount = sideStepForwardSpeed;
 
-            Vector3 side = Vector3.Cross(transform.forward, hitInfo.normal);
+                Vector3 side = Vector3.Cross(transform.forward, hitInfo.normal);
 
-			if(delayTimer <= 0){
-				currentDeceleration -= Time.deltaTime;
-				if(leftPressed){
-                    transform.localPosition += side * sideStepPower * currentDeceleration;
+                if(delayTimer <= 0){
+                    currentDeceleration -= Time.deltaTime;
+                    if(leftPressed){
+                        transform.localPosition += side * sideStepPower * currentDeceleration;
+                    }
+                    else if(rightPressed){
+                        transform.localPosition -= side * sideStepPower * currentDeceleration;
+                    }
+
+                    if(!animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")){
+                        animator.SetBool("SideStepLeft", false);
+                        animator.SetBool("SideStepRight", false);
+                    }
+
+                    if(currentDeceleration <= 0){
+                        currentDeceleration = 0;
+                        delayTimer = 0;
+
+                        leftPressed = false;
+                        rightPressed = false;
+
+                        forwardAmount = 1;
+                    }
                 }
-				else if(rightPressed){
-                    transform.localPosition -= side * sideStepPower * currentDeceleration;
+            }
+
+            if((left || right) && sideStepCooldownTimer <= 0){
+                sideStepCooldownTimer = sideStepCooldown;
+                currentDeceleration = sideStepDeceleration;
+                delayTimer = delayForAnimation;
+
+                if(right){
+                    rightPressed = true;
+                    animator.SetBool("SideStepRight", true);
                 }
+                else if(left){
+                    leftPressed = true;
+                    animator.SetBool("SideStepLeft", true);
+                }
+            }
 
-				if(!animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")){
-					animator.SetBool("SideStepLeft", false);
-					animator.SetBool("SideStepRight", false);
-				}
-
-				if(currentDeceleration <= 0){
-					currentDeceleration = 0;
-					delayTimer = 0;
-
-					leftPressed = false;
-					rightPressed = false;
-
-					forwardAmount = 1;
-				}
-			}
-		}
-
-		if((left || right) && sideStepCooldownTimer <= 0){
-			sideStepCooldownTimer = sideStepCooldown;
-			currentDeceleration = sideStepDeceleration;
-			delayTimer = delayForAnimation;
-
-			if(right){
-				rightPressed = true;
-				animator.SetBool("SideStepRight", true);
-			}
-			else if(left){
-				leftPressed = true;
-				animator.SetBool("SideStepLeft", true);
-			}
-		}
-
-		if(sideStepCooldownTimer > 0)
-			sideStepCooldownTimer -= Time.deltaTime;
-		else
-			sideStepCooldownTimer = 0;
+            if(sideStepCooldownTimer > 0)
+                sideStepCooldownTimer -= Time.deltaTime;
+            else
+                sideStepCooldownTimer = 0;
+        }
 	}
 
     private void CalculateDirection() {
@@ -219,9 +221,8 @@ public class GiantControllerV2 : MonoBehaviour
 
     private void CheckGround () {
         if(Physics.Raycast(transform.position, -Vector3.up, out hitInfo, height + heightPadding, ground)){
-            if(Vector3.Distance(transform.position, hitInfo.point) < height){
+            if(Vector3.Distance(transform.position, hitInfo.point) < height)
                 transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.up * height, 5 * Time.deltaTime);
-            }
             grounded = true;
         } else {
             grounded = false;

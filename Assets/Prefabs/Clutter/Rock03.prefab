@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4218014020146881986}
   - component: {fileID: 4218014020145882882}
   - component: {fileID: 1842178440007624329}
-  m_Layer: 0
+  - component: {fileID: 7291922729156842970}
+  m_Layer: 13
   m_Name: Rock03
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -97,3 +98,17 @@ LODGroup:
     renderers:
     - renderer: {fileID: 4218014020145882882}
   m_Enabled: 1
+--- !u!64 &7291922729156842970
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4218014020143888834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 98217b61a1569fe4c9dc53d56d1a33dd, type: 3}
