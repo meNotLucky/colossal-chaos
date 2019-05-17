@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6347900799900878146}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: LOD_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6347900799900878148}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: LOD_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 6347900799904302442}
   - component: {fileID: 6347900799700876500}
   - component: {fileID: 6347900799700876498}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Flag01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 6347900799904302444}
   - component: {fileID: 6347900799903303596}
   - component: {fileID: 7474194884480582013}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BigShip_LOD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,9 +372,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6347900799900878154}
   - component: {fileID: 6347900801138272025}
-  m_Layer: 0
+  - component: {fileID: 8662190652802066631}
+  m_Layer: 13
   m_Name: BigShip
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -419,6 +420,19 @@ LODGroup:
     renderers:
     - renderer: {fileID: 6347900799903303596}
   m_Enabled: 1
+--- !u!65 &8662190652802066631
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6347900799901047146}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.226746, y: 19.262934, z: 35.2276}
+  m_Center: {x: 4.630371, y: 7.26896, z: 6.026764}
 --- !u!1 &6347900799901047148
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,7 +444,7 @@ GameObject:
   - component: {fileID: 6347900799900878156}
   - component: {fileID: 6347900799904302446}
   - component: {fileID: 6347900799903303598}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BigShip 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -507,7 +521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6347900799900878158}
   - component: {fileID: 1776411767817813324}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BigShip
   m_TagString: Untagged
   m_Icon: {fileID: 0}

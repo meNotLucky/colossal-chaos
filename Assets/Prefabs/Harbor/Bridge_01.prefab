@@ -42,6 +42,8 @@ GameObject:
   - component: {fileID: 4952216288631065625}
   - component: {fileID: 4952216288634489913}
   - component: {fileID: 4952216288633491193}
+  - component: {fileID: 1355040297150357606}
+  - component: {fileID: 6405341417868999030}
   m_Layer: 0
   m_Name: bridge
   m_TagString: Untagged
@@ -108,6 +110,34 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1355040297150357606
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4952216288631296057}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1000524, y: 2.3111143, z: 8.42197}
+  m_Center: {x: 0.000000059604645, y: -0.000000059604645, z: -0.00000023841858}
+--- !u!114 &6405341417868999030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4952216288631296057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e20667b663b5664cb7419bb78fc51e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brokenMesh: {fileID: 2786198758941336657, guid: 91c7b3068b13c93459f642bfe8dd8bb1,
+    type: 3}
+  dustPiles: []
 --- !u!1 &4952216288631296059
 GameObject:
   m_ObjectHideFlags: 0
