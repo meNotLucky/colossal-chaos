@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 368cda81ecf675847b3d70f4e12882fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 36.49
+  range: 46.9
   hitPoints: 5
-  loosePointsOnDestruction: 0
+  loosePointsOnDestruction: 5
   currentHitPoints: 0
