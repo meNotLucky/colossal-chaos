@@ -11,44 +11,45 @@ public class MainMenuScript : MonoBehaviour
 	public UnityEngine.UI.Button myButton;
 	public Slider PlaySlider;
 	public Animator animator;
+	public ParticleSystem particle;
 	public PostProcessProfile profile;
 	public float timeToChange = 1f;
+	public float bloomStartValue;
+	public float bloomIntensityIncrease;
 	private float mouseHeldTimer = 0f;
 	private float timer = 0.1f;
 	private float colortimer;
-	private float originalBloomValue;
 
 void Start()
 {
 	Cursor.lockState = CursorLockMode.Locked;
+	Cursor.visible = true;
+
 	Time.timeScale = 1f;
 
 	if(profile != null){
-		originalBloomValue = profile.GetSetting<Bloom>().intensity.value;
+		profile.GetSetting<Bloom>().intensity.value = bloomStartValue;
 	}
 }
-	void Update()
+	void FixedUpdate()
 	{
 
-	if(Input.GetAxisRaw("Mouse X") != 0)
-	{
-		Cursor.lockState = CursorLockMode.None;
-	}
+		if(Input.GetAxisRaw("Mouse X") != 0)
+			Cursor.lockState = CursorLockMode.None;
 
 		//the red color is a test for the PlayButton.
 		Vector3 mousePos = Input.mousePosition;
-		if(mousePos.x > (Screen.width / 2) + (Screen.width / 8))
+		if(mousePos.x < (Screen.width / 2) - 20f)
 		{
 			mouseHeldTimer += Time.deltaTime;
 			//myButton.Select();
 
-			if(animator != null){
+			if(animator != null)
 				animator.SetBool("Hover", true);
-			}
-
-			if(profile != null){
-				profile.GetSetting<Bloom>().intensity.value *= 1.012f;
-			}
+			if(profile != null)
+				profile.GetSetting<Bloom>().intensity.value *= bloomIntensityIncrease;
+			if(particle != null)
+				particle.gameObject.SetActive(true);
 
 			if(PlaySlider.value < 1f){
 				PlaySlider.value += timer / 60;
@@ -56,7 +57,7 @@ void Start()
 
 			if(mouseHeldTimer >= timeToChange){
 				if(profile != null){
-					profile.GetSetting<Bloom>().intensity.value = originalBloomValue;
+					profile.GetSetting<Bloom>().intensity.value = bloomStartValue;
 				}
 				GetComponent<LoadGameScript>().LoadGame();
 				Destroy(this);
@@ -64,13 +65,12 @@ void Start()
 		}
 		else
 		{
-			if(animator != null){
+			if(animator != null)
 				animator.SetBool("Hover", false);
-			}
-
-			if(profile != null){
-				profile.GetSetting<Bloom>().intensity.value = originalBloomValue;
-			}
+			if(profile != null)
+				profile.GetSetting<Bloom>().intensity.value = bloomStartValue;
+			if(particle != null)
+				particle.gameObject.SetActive(false);
 
 			if(PlaySlider.value >= 0)
 				PlaySlider.value -= timer / 60;

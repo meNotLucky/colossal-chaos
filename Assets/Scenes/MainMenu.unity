@@ -5977,8 +5977,11 @@ MonoBehaviour:
   myButton: {fileID: 198132032}
   PlaySlider: {fileID: 1429937189}
   animator: {fileID: 787889711}
+  particle: {fileID: 262636383}
   profile: {fileID: 11400000, guid: 175d9f41f47089d42bb27d47d93b2101, type: 2}
   timeToChange: 3.5
+  bloomStartValue: 0.1
+  bloomIntensityIncrease: 1.04
 --- !u!1 &1291416564
 GameObject:
   m_ObjectHideFlags: 0

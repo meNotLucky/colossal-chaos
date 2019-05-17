@@ -42,7 +42,7 @@ public class GiantUserInputV2 : MonoBehaviour
         FindObjectOfType<PopUpController>().ActivatePopUp("Start", 6);
 
         // Center mouse
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
 
         // get the transform of the main camera
         if (Camera.main != null)
@@ -57,12 +57,8 @@ public class GiantUserInputV2 : MonoBehaviour
     private void Update()
     {
         // Release mouse when moved
-        if(Input.GetAxisRaw("Mouse X") != 0)
-            Cursor.lockState = CursorLockMode.None;
-
-        // Read inputs
-        // if(!jump)
-        //     jump = Input.GetButtonDown("Jump");
+        //if(Input.GetAxisRaw("Mouse X") != 0)
+            //Cursor.lockState = CursorLockMode.None;
 
         if(!stop && !sideStepLeft && !sideStepRight){
             if(Input.GetKey(KeyCode.X) && Input.GetKey(KeyCode.Y))
