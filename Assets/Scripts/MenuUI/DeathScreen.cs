@@ -7,44 +7,44 @@ using UnityEngine.UI;
 public class DeathScreen : MonoBehaviour
 {
     public GameObject deathMenuScreen;
-    bool gameOver=false;
+    bool gameOver = false;
     public Slider ExitToMainMenuSlider;
-    public float SliderSpeed=0.1f;
+    public float SliderSpeed = 0.1f;
 
     void Update()
     {
-        if(gameOver==true)
+        if(gameOver == true)
         {
             Vector3 mousePos=Input.mousePosition;
-            if(mousePos.x<Screen.width/2-Screen.width/10)
+            if(mousePos.x<Screen.width / 2 - Screen.width / 10)
             {
-                ExitToMainMenuSlider.value+=SliderSpeed/60;
+                ExitToMainMenuSlider.value += SliderSpeed / 60;
             
-                if(ExitToMainMenuSlider.value>=ExitToMainMenuSlider.maxValue)
+                if(ExitToMainMenuSlider.value >= ExitToMainMenuSlider.maxValue)
                 {
                 ExitToMainMenu();
                 }
             }
-            else if(mousePos.x>Screen.width/2-Screen.width/8)
+            else if(mousePos.x > (Screen.width / 2) - (Screen.width / 8))
             {
-                ExitToMainMenuSlider.value-=SliderSpeed/60;
+                ExitToMainMenuSlider.value -= SliderSpeed / 60;
             }
         }
         
     }
     public void EndGame()
     {
-        if(gameOver==false)
+        if(gameOver == false)
         {
-            gameOver=true;
+            gameOver = true;
             deathMenuScreen.SetActive(true);
-            Time.timeScale=0f;
+            Time.timeScale = 0f;
         }
     }
     public void ExitToMainMenu()
     {
         Time.timeScale = 1f;
-         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-1);
+         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
          
     }
     
