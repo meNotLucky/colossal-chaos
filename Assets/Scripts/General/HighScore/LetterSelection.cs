@@ -72,7 +72,12 @@ public class LetterSelection : MonoBehaviour
 
         while(true){
             if(isActiveSelector){
-                float h = FindObjectOfType<GiantUserInput>().h;
+                float h = 0;
+                if(FindObjectOfType<GiantUserInput>() != null)
+                    h = FindObjectOfType<GiantUserInput>().h;
+                if(FindObjectOfType<GiantUserInputV2>() != null)
+                    h = FindObjectOfType<GiantUserInputV2>().h;
+                
 
                 if(h > -0.2f)
                     UpdateLetters(1);
