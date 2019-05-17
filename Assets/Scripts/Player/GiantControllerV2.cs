@@ -51,11 +51,13 @@ public class GiantControllerV2 : MonoBehaviour
     bool grounded;
 
     Animator animator;
+    Rigidbody ridigbody;
     IEnumerator coroutine;
 
     private void Start() {
         cam = Camera.main.transform;
         animator = GetComponent<Animator>();
+        ridigbody = GetComponent<Rigidbody>();
     }
 
     public void Move(float h, bool move, bool stop, bool sideStepLeft, bool sideStepRight) {
@@ -73,6 +75,7 @@ public class GiantControllerV2 : MonoBehaviour
         
         HandleRandomSpeed();
         HandleStopping(stop);
+        HandleSideStep(sideStepLeft, sideStepRight);
 
         ApplyRotation();
         ApplyMovement();
@@ -130,15 +133,15 @@ public class GiantControllerV2 : MonoBehaviour
 			newForwardGotten = false;
 			forwardAmount = sideStepForwardSpeed;
 
+            Vector3 side = Vector3.Cross(transform.forward, hitInfo.normal);
+
 			if(delayTimer <= 0){
 				currentDeceleration -= Time.deltaTime;
 				if(leftPressed){
-					//m_Rigidbody.AddRelativeForce(Vector3.left * sideStepPower * currentDeceleration, ForceMode.VelocityChange);
-                    //transform.localPosition = Vector3.left * sideStepPower * currentDeceleration;
+                    transform.localPosition += side * sideStepPower * currentDeceleration;
                 }
 				else if(rightPressed){
-					//m_Rigidbody.AddRelativeForce(Vector3.right * sideStepPower * currentDeceleration, ForceMode.VelocityChange);
-
+                    transform.localPosition -= side * sideStepPower * currentDeceleration;
                 }
 
 				if(!animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")){
