@@ -1499,7 +1499,7 @@ MonoBehaviour:
   stopCooldown: 5
   stopDuration: 2
   sideStepCooldown: 2
-  sideStepPower: 5
+  sideStepPower: 2
   sideStepDeceleration: 0.7
   delayForAnimation: 0.2
   sideStepForwardSpeed: 0.7
