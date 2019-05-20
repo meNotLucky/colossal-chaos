@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 736726831650434323}
   - component: {fileID: 736726831651401683}
   - component: {fileID: 5860177452823313794}
+  - component: {fileID: 7406924965797736866}
   m_Layer: 13
   m_Name: RockWall_02
   m_TagString: Wall
@@ -91,3 +92,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 13.227817, y: 9.117743, z: 4.844935}
   m_Center: {x: 3.4364562, y: 4.0340457, z: -0.24139597}
+--- !u!205 &7406924965797736866
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736726831653597459}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 3.0216703, y: 4.034046, z: -0.2583251}
+  m_Size: 15.7416725
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.019082073
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 736726831651401683}
+  m_Enabled: 1
