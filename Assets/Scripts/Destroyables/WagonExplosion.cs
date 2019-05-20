@@ -8,6 +8,7 @@ public class WagonExplosion : MonoBehaviour
     public float range;
     public float explosionForce;
     public GameObject particleFX;
+    private bool alreadyexploaded=false;
 
     Animator anim;
     bool exploading = false;
@@ -34,12 +35,12 @@ public class WagonExplosion : MonoBehaviour
 
         particleFX.SetActive(true);
         GetComponent<AudioSource>().Play();
-
         Collider[] hitObjects = Physics.OverlapSphere(transform.position, range);
         foreach (var item in hitObjects)
         {
-            if(item.gameObject.tag == "Villager"){
+            if(item.gameObject.tag == "Villager" && alreadyexploaded == false){
                 item.GetComponent<VillagerAI>().Die();
+                alreadyexploaded=true;
             }
             if(item.gameObject.tag == "Landmark"){
                 item.GetComponent<SectionSwitch>().SwitchSection();
@@ -54,8 +55,8 @@ public class WagonExplosion : MonoBehaviour
                     item.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, transform.position, range);
                 }
             }
-        }
-    }
+        }     
+}
 
     private void EndExplosion(){
         exploading = false;
