@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SoundEffectManager : MonoBehaviour
 {
-    public List<AudioClip> clips;
+    public AudioClip rightSideStep;
+    public AudioClip leftSideStep;
+    public AudioClip Steps;
 
     AudioSource audioSrc;
     
@@ -12,15 +14,22 @@ public class SoundEffectManager : MonoBehaviour
     {
         audioSrc=GetComponent<AudioSource>();
     }
-    public void PlaySound(string clipToPlay)
+    public void PlaySound(int clipToPlay)
     {
-        foreach(AudioClip clip in clips)
-        {
-          
-            if(clip.name == clipToPlay)
-            audioSrc.PlayOneShot(clip);   
-            
-
-        }
+            if(clipToPlay == 1)
+            {
+            audioSrc.PlayOneShot(leftSideStep);  
+            audioSrc.panStereo =- 1;
+            }
+            else if(clipToPlay == 2)
+            {
+            audioSrc.PlayOneShot(rightSideStep);  
+            audioSrc.panStereo =- 1;
+            }
+            else if(clipToPlay == 3)
+            {
+            audioSrc.PlayOneShot(Steps);
+            }
+               
     }
 }
