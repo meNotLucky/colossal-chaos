@@ -124,8 +124,6 @@ public class GiantUserInputV2 : MonoBehaviour
         if(targets.Count > 0){
             if(currentTarget != null){
                 
-                Debug.Log("Running");
-
                 Vector3 targetDir = currentTarget.transform.position - transform.position;
                 Vector3 forward = transform.forward;
                 float angle = Vector3.SignedAngle(targetDir, forward, Vector3.up);
