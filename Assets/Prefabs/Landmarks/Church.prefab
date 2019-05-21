@@ -14732,7 +14732,7 @@ GameObject:
   - component: {fileID: 2816488280336880414}
   - component: {fileID: 3076227953853605869}
   m_Layer: 0
-  m_Name: Church_FBX2
+  m_Name: Church
   m_TagString: Landmark
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14905,6 +14905,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 50
   hitPoints: 6
+  mask:
+    serializedVersion: 2
+    m_Bits: 256
   loosePointsOnDestruction: 10
   currentHitPoints: 0
 --- !u!1 &4926794480539312176

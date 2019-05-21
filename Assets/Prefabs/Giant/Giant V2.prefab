@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1230557599746122677}
   - component: {fileID: 1230557599746122676}
   - component: {fileID: 1230557599746122679}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -838,7 +838,7 @@ GameObject:
   - component: {fileID: 1230557600770148340}
   - component: {fileID: 1230557600770148338}
   - component: {fileID: 1230557600770148341}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1631,11 +1631,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2991ccf1975d3f24da77fc964c2e25b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clips:
-  - {fileID: 8300000, guid: e538d196d9bf98945a9bc202ddb725f4, type: 3}
-  - {fileID: 8300000, guid: 915faea5437dabc41b380dcc61b0d59a, type: 3}
-  - {fileID: 8300000, guid: 2c1ca18399fa2154d8fc6b656882acc5, type: 3}
-  - {fileID: 8300000, guid: 4fc4aaa6b1dee7f49a55613069d4dd71, type: 3}
+  rightSideStep: {fileID: 0}
+  leftSideStep: {fileID: 0}
+  Steps: {fileID: 0}
 --- !u!136 &5594635268393895803
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1706,7 +1704,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1230557601292363793}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}

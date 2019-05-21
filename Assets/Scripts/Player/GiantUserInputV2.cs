@@ -113,15 +113,17 @@ public class GiantUserInputV2 : MonoBehaviour
         stop = false; sideStepLeft = false; sideStepRight = false;
     }
 
+    public void SetTarget(GameObject target){
+        currentTarget = target;
+    }
+
     private void UpdateTarget() {
 
         if(targets.Count > 0){
-            foreach(var target in targets){
-                float targetDist = Vector3.Distance(target.transform.position, transform.position);
-                if(targetDist < target.GetComponent<AttractionTarget>().GetRange() + 10)
-                    currentTarget = target.gameObject;
-            }
             if(currentTarget != null){
+                
+                Debug.Log("Running");
+
                 Vector3 targetDir = currentTarget.transform.position - transform.position;
                 Vector3 forward = transform.forward;
                 float angle = Vector3.SignedAngle(targetDir, forward, Vector3.up);
@@ -151,8 +153,10 @@ public class GiantUserInputV2 : MonoBehaviour
     }
 
     public void RemoveCurrentTarget() {
-        targets.Remove(currentTarget.GetComponent<AttractionTarget>());
-        currentTarget = null;
+        if(currentTarget != null){
+            targets.Remove(currentTarget.GetComponent<AttractionTarget>());
+            currentTarget = null;
+        }
     }
 
     IEnumerator SensitivityInterpolator(float startValue, float endValue, float duration)

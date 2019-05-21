@@ -48,6 +48,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 33.67
   hitPoints: 1
+  mask:
+    serializedVersion: 2
+    m_Bits: 256
   loosePointsOnDestruction: 5
   currentHitPoints: 0
 --- !u!1 &3575587212280821061
