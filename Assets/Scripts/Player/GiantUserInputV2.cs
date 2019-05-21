@@ -79,21 +79,12 @@ public class GiantUserInputV2 : MonoBehaviour
 
         h = - (Input.mousePosition.x - ((Screen.width / 2)) + mouseCenterOffset) * (mouseInputSensitivity / sensitivityModifier);
 
-        // Update Targettting system
+        // Targettting system
         UpdateTarget();
-
-        // Update Camera
-        UpdateCamera();
     }
 
     private void FixedUpdate()
     {
-        // pass all parameters to the character control script
-        character.Move(h, move, stop, sideStepLeft, sideStepRight);
-        stop = false; sideStepLeft = false; sideStepRight = false;
-    }
-
-    private void UpdateCamera(){
         Vector3 camForward = Vector3.Scale(cam.forward, new Vector3(1, 0, 1)).normalized;
 
         // Struggle Simulation
@@ -118,6 +109,10 @@ public class GiantUserInputV2 : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0f, transform.rotation.eulerAngles.y, 0f);
             }
         }
+
+        // pass all parameters to the character control script
+        character.Move(h, move, stop, sideStepLeft, sideStepRight);
+        stop = false; sideStepLeft = false; sideStepRight = false;
     }
 
     public void SetTarget(GameObject target){
