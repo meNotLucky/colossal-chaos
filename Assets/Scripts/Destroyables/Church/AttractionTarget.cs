@@ -14,8 +14,13 @@ public class AttractionTarget : MonoBehaviour
 
     [HideInInspector] public int currentHitPoints;
 
+    private GiantUserInputV2 giantUserInputV2;
+    private LooseCondition looseCondition;
+
     private void Start() {
         currentHitPoints = hitPoints;
+        giantUserInputV2 = FindObjectOfType<GiantUserInputV2>();
+        looseCondition = FindObjectOfType<LooseCondition>();
     }
 
     private void Update() {
@@ -31,11 +36,9 @@ public class AttractionTarget : MonoBehaviour
             }
         }
         else if(currentHitPoints <= 0){
-            FindObjectOfType<LooseCondition>().landmarkDestructionPoints += loosePointsOnDestruction;
-            if(FindObjectOfType<GiantUserInputV2>() != null)
-                FindObjectOfType<GiantUserInputV2>().RemoveCurrentTarget();
-            else if(FindObjectOfType<GiantUserInput>() != null)
-                FindObjectOfType<GiantUserInput>().RemoveCurrentTarget();
+            looseCondition.landmarkDestructionPoints += loosePointsOnDestruction;
+            if(giantUserInputV2 != null)
+                giantUserInputV2.RemoveCurrentTarget();
             Destroy(this);
         }
     }

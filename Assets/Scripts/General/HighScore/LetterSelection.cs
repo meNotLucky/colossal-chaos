@@ -17,10 +17,12 @@ public class LetterSelection : MonoBehaviour
 
     private bool scrolling = false;
     private Coroutine coroutine;
+    private GiantUserInputV2 giantUserInputV2;
 
     private void Start(){
         UpdateLetters(0);
         StartCoroutine(LetterScroll(1, scrollSpeed));
+        giantUserInputV2 = FindObjectOfType<GiantUserInputV2>();
     }
 
     private void Update() {
@@ -73,10 +75,8 @@ public class LetterSelection : MonoBehaviour
         while(true){
             if(isActiveSelector){
                 float h = 0;
-                if(FindObjectOfType<GiantUserInput>() != null)
-                    h = FindObjectOfType<GiantUserInput>().h;
-                if(FindObjectOfType<GiantUserInputV2>() != null)
-                    h = FindObjectOfType<GiantUserInputV2>().h;
+                if(giantUserInputV2 != null)
+                    h = giantUserInputV2.h;
                 
 
                 if(h > -0.2f)

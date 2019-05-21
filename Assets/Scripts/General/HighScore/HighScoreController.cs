@@ -14,10 +14,14 @@ public class HighScoreController : MonoBehaviour
     [Header("High Score Values")]
     [SerializeField] int currentScore;
 
+    private LooseCondition looseCondition;
+
     private void Start() {
         
         // Activated for debuging
         // ResetHighScores();
+
+        looseCondition = FindObjectOfType<LooseCondition>();
 
         if(PlayerPrefsX.GetIntArray("HighScores") == null){
             ResetHighScores();
@@ -25,7 +29,7 @@ public class HighScoreController : MonoBehaviour
     }
 
     private void Update() {
-        currentScore = startScore - FindObjectOfType<LooseCondition>().destroyedHouses;
+        currentScore = startScore - looseCondition.destroyedHouses;
         scoreTextPlaying.text = "Score: " + currentScore;
         scoreTextWinScreen.text = "Final Score: " + currentScore;
     }

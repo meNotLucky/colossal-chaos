@@ -28,7 +28,7 @@ public class GiantUserInputV2 : MonoBehaviour
     public GameObject currentTarget;
     private Quaternion lookRotation;
 
-    private SoundEffectManager soundEffect;
+    private PopUpController popUpController;
 
     [HideInInspector] public float h;
 
@@ -37,9 +37,11 @@ public class GiantUserInputV2 : MonoBehaviour
     {
         // Get targets
         targets = new List<AttractionTarget>(FindObjectsOfType<AttractionTarget>());
+
+        popUpController = FindObjectOfType<PopUpController>();
       
         // Put this here cause I don't know where else to put it right now
-        FindObjectOfType<PopUpController>().ActivatePopUp("Start", 6);
+        popUpController.ActivatePopUp("Start", 6);
 
         // Center mouse
         //Cursor.lockState = CursorLockMode.Locked;
@@ -129,14 +131,14 @@ public class GiantUserInputV2 : MonoBehaviour
                 float angle = Vector3.SignedAngle(targetDir, forward, Vector3.up);
 
                 if(angle < 0){
-                    if(FindObjectOfType<PopUpController>() != null){
-                        FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchLeft");
-                        FindObjectOfType<PopUpController>().ActivatePopUp("ChurchRight", 0);
+                    if(popUpController != null){
+                        popUpController.DeactivatePopUp("ChurchLeft");
+                        popUpController.ActivatePopUp("ChurchRight", 0);
                     }
                 } else {
-                    if(FindObjectOfType<PopUpController>() != null){
-                        FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchRight");
-                        FindObjectOfType<PopUpController>().ActivatePopUp("ChurchLeft", 0);
+                    if(popUpController != null){
+                        popUpController.DeactivatePopUp("ChurchRight");
+                        popUpController.ActivatePopUp("ChurchLeft", 0);
                     }
                 }
                 float currentTargetDistance = Vector3.Distance(currentTarget.transform.position, transform.position);
@@ -144,9 +146,9 @@ public class GiantUserInputV2 : MonoBehaviour
                     currentTarget = null;                    
             }
             if(currentTarget == null){
-                if(FindObjectOfType<PopUpController>() != null){
-                    FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchRight");
-                    FindObjectOfType<PopUpController>().DeactivatePopUp("ChurchLeft");
+                if(popUpController != null){
+                    popUpController.DeactivatePopUp("ChurchRight");
+                    popUpController.DeactivatePopUp("ChurchLeft");
                 }
             }
         }
