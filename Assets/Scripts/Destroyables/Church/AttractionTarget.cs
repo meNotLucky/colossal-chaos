@@ -23,11 +23,11 @@ public class AttractionTarget : MonoBehaviour
         giantUserInputV2 = FindObjectOfType<GiantUserInputV2>();
         looseCondition = FindObjectOfType<LooseCondition>();
         billboard = GetComponentInChildren<BillboardFacing>();
+
+        billboard.gameObject.SetActive(false);
     }
 
     private void Update() {
-
-        billboard.gameObject.SetActive(false);
 
         if(currentHitPoints > 0){
             Collider[] hitObjects = Physics.OverlapSphere(transform.position, range, mask);
@@ -38,6 +38,8 @@ public class AttractionTarget : MonoBehaviour
                         billboard.gameObject.SetActive(true);
                     }
                 }
+            } else {
+                billboard.gameObject.SetActive(false);
             }
         }
         else if(currentHitPoints <= 0){

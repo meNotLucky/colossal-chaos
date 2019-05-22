@@ -84760,6 +84760,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Warning
       objectReference: {fileID: 0}
+    - target: {fileID: 1400429324454397762, guid: a27af87d19cd41e449d1b07e70cfbc68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8955497252283236059, guid: a27af87d19cd41e449d1b07e70cfbc68,
         type: 3}
       propertyPath: m_LocalPosition.x
