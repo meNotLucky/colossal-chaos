@@ -39,9 +39,6 @@ public class GiantUserInputV2 : MonoBehaviour
         targets = new List<AttractionTarget>(FindObjectsOfType<AttractionTarget>());
 
         popUpController = FindObjectOfType<PopUpController>();
-      
-        // Put this here cause I don't know where else to put it right now
-        popUpController.ActivatePopUp("Start", 6);
 
         // Center mouse
         //Cursor.lockState = CursorLockMode.Locked;

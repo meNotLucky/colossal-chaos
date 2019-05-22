@@ -8,6 +8,7 @@ public class LevelStartScript : MonoBehaviour
     private Camera paningCamera;
     private Animator cameraAnimator;
     private GiantControllerV2 giant;
+    private PopUpController popUps;
 
     bool isPlaying;
 
@@ -15,6 +16,7 @@ public class LevelStartScript : MonoBehaviour
         paningCamera = GetComponent<Camera>();
         cameraAnimator = GetComponent<Animator>();
         giant = FindObjectOfType<GiantControllerV2>();
+        popUps = FindObjectOfType<PopUpController>();
 
         if(playStartAnimation){
             cameraAnimator.SetBool("IsStarting", true);
@@ -27,6 +29,14 @@ public class LevelStartScript : MonoBehaviour
     private void Update() {
         if(isPlaying)
             giant.HandleStartPan(true);            
+    }
+
+    public void ActivatePopUp(string popUp){
+        popUps.ActivatePopUp(popUp, 0);
+    }
+
+    public void DeactivatePopUp(string popUp){
+        popUps.DeactivatePopUp(popUp);
     }
 
     public void PanFinished(){

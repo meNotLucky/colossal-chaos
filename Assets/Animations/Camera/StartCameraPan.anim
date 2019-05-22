@@ -817,6 +817,48 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 1.45
+    functionName: ActivatePopUp
+    data: CameraPan_1.0
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 8.774445
+    functionName: DeactivatePopUp
+    data: CameraPan_1.0
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 11.048889
+    functionName: ActivatePopUp
+    data: CameraPan_1.5
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 18.057777
+    functionName: DeactivatePopUp
+    data: CameraPan_1.5
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 20.253334
+    functionName: ActivatePopUp
+    data: CameraPan_2.0
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 32.22222
+    functionName: DeactivatePopUp
+    data: CameraPan_2.0
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 60.40222
     functionName: PanFinished
     data: 
