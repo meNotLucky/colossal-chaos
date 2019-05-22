@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class LevelStartScript : MonoBehaviour
 {
+    public bool playStartAnimation = true;
     private Camera paningCamera;
     private Animator cameraAnimator;
     private GiantControllerV2 giant;
 
-    bool isPlaying = true;
+    bool isPlaying;
 
     void Start() {
         paningCamera = GetComponent<Camera>();
         cameraAnimator = GetComponent<Animator>();
         giant = FindObjectOfType<GiantControllerV2>();
-        cameraAnimator.SetBool("IsStarting", true);
+
+        if(playStartAnimation){
+            cameraAnimator.SetBool("IsStarting", true);
+            isPlaying = true;
+        } else {
+            PanFinished();
+        }
     }
 
     private void Update() {
