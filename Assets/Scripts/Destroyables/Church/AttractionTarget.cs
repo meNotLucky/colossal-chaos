@@ -16,14 +16,18 @@ public class AttractionTarget : MonoBehaviour
 
     private GiantUserInputV2 giantUserInputV2;
     private LooseCondition looseCondition;
+    private BillboardFacing billboard;
 
     private void Start() {
         currentHitPoints = hitPoints;
         giantUserInputV2 = FindObjectOfType<GiantUserInputV2>();
         looseCondition = FindObjectOfType<LooseCondition>();
+        billboard = GetComponentInChildren<BillboardFacing>();
     }
 
     private void Update() {
+
+        billboard.gameObject.SetActive(false);
 
         if(currentHitPoints > 0){
             Collider[] hitObjects = Physics.OverlapSphere(transform.position, range, mask);
@@ -31,6 +35,7 @@ public class AttractionTarget : MonoBehaviour
                 foreach (var item in hitObjects){
                     if(item.gameObject.tag == "barrel"){
                         item.GetComponent<GiantUserInputV2>().SetTarget(gameObject);
+                        billboard.gameObject.SetActive(true);
                     }
                 }
             }
@@ -39,6 +44,7 @@ public class AttractionTarget : MonoBehaviour
             looseCondition.landmarkDestructionPoints += loosePointsOnDestruction;
             if(giantUserInputV2 != null)
                 giantUserInputV2.RemoveCurrentTarget();
+            billboard.gameObject.SetActive(false);
             Destroy(this);
         }
     }
