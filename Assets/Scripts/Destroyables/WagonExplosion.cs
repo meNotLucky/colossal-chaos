@@ -56,7 +56,7 @@ public class WagonExplosion : MonoBehaviour
                 }
             }
         }     
-}
+    }
 
     private void EndExplosion(){
         exploading = false;
