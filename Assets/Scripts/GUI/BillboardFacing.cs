@@ -10,15 +10,16 @@ public class BillboardFacing : MonoBehaviour
     [Header("Properties")]
     public bool animateSize;
     [ConditionalField("animateSize")] public float sizeAnimationSpeed = 3.0f;
-    [ConditionalField("animateSize")] public float sizeModifier = 0.6f;
 
     public bool animateUpDown;
     [ConditionalField("animateUpDown")] public float upDownAnimationSpeed = 3.0f;
 
+    private float scale;
     private float posY;
 
     void Start()
     {
+        scale = transform.localScale.x;
         posY = transform.localPosition.y;
     }
 
@@ -30,8 +31,7 @@ public class BillboardFacing : MonoBehaviour
         if(animateSize){
             float val = Mathf.Sin(Time.realtimeSinceStartup * sizeAnimationSpeed);
             if(val < 0){ val *= -1; }
-            val += sizeModifier;
-            transform.localScale = new Vector3(val, val, val);
+            transform.localScale = new Vector3(scale + val, scale + val, scale + val);
         }
 
         if(animateUpDown){
