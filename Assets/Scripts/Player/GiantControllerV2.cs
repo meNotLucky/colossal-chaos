@@ -54,6 +54,8 @@ public class GiantControllerV2 : MonoBehaviour
     Rigidbody ridigbody;
     IEnumerator coroutine;
 
+    bool startPanFinished = false;
+
     private void Start() {
         cam = Camera.main.transform;
         animator = GetComponent<Animator>();
@@ -61,6 +63,7 @@ public class GiantControllerV2 : MonoBehaviour
     }
 
     public void Move(float h, bool move, bool stop, bool sideStepLeft, bool sideStepRight) {
+        
         input.x = h;
         input.y = move ? 1 : 0;
 
@@ -71,16 +74,31 @@ public class GiantControllerV2 : MonoBehaviour
         CalculateDirection();
         CalculateForward();
         CalculateGroundAngle();
+        
         CheckGround();
         ApplyGravity();
 
         if(Mathf.Abs(input.x) < 1 && Mathf.Abs(input.y) < 1)
             return;
-
-        ApplyRotation();
-        ApplyMovement();
+        
+        if(startPanFinished){
+            ApplyRotation();
+            ApplyMovement();
+        }
 
         UpdateAnimator();
+    }
+
+    public void HandleStartPan(bool isPlaying){
+        if(isPlaying){
+            animator.SetBool("Stopped", true);
+            forwardAmount = 0;
+            startPanFinished = false;
+        } else {
+            animator.SetBool("Stopped", false);
+            StartCoroutine(MoveSpeedInterpolator(0, 1, 0.5f));
+            startPanFinished = true;
+        }
     }
 
     void HandleRandomSpeed(){
