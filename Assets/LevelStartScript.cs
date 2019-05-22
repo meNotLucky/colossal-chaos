@@ -10,7 +10,7 @@ public class LevelStartScript : MonoBehaviour
     private GiantControllerV2 giant;
     private PopUpController popUps;
 
-    bool isPlaying;
+    bool isPlaying = false;
 
     void Start() {
         paningCamera = GetComponent<Camera>();
@@ -28,7 +28,7 @@ public class LevelStartScript : MonoBehaviour
 
     private void Update() {
         if(isPlaying)
-            giant.HandleStartPan(true);            
+            giant.HandleStartPan(true);
     }
 
     public void ActivatePopUp(string popUp){

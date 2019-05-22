@@ -55,6 +55,7 @@ public class GiantControllerV2 : MonoBehaviour
     IEnumerator coroutine;
 
     bool startPanFinished = false;
+    bool animationResetAfterPan = false;
 
     private void Start() {
         cam = Camera.main.transform;
@@ -86,6 +87,11 @@ public class GiantControllerV2 : MonoBehaviour
             ApplyMovement();
         }
 
+        if (animationResetAfterPan){
+            animator.SetBool("Stopped", false);
+            animationResetAfterPan = false;
+        }
+
         UpdateAnimator();
     }
 
@@ -95,13 +101,13 @@ public class GiantControllerV2 : MonoBehaviour
             forwardAmount = 0;
             startPanFinished = false;
         } else {
-            animator.SetBool("Stopped", false);
+            animationResetAfterPan = true;
             StartCoroutine(MoveSpeedInterpolator(0, 1, 0.5f));
             startPanFinished = true;
         }
     }
 
-    void HandleRandomSpeed(){
+    private void HandleRandomSpeed(){
         if(!animator.GetBool("Stopped") && !animator.GetBool("SideStepLeft") && !animator.GetBool("SideStepRight")){
 			float newSpeed = Random.Range(speedMultiplier - randomSpeedOffset, speedMultiplier + randomSpeedOffset);
 			float timeToChange = Random.Range(minTimeToSpeedChange, maxTimeToSpeedChange);
@@ -113,7 +119,7 @@ public class GiantControllerV2 : MonoBehaviour
 		}
     }
 
-    void HandleStopping(bool stop)
+    private void HandleStopping(bool stop)
 	{
 		// Check stop conditions
 		if(stop && stopCooldownTimer <= 0){
@@ -143,7 +149,7 @@ public class GiantControllerV2 : MonoBehaviour
 		}
 	}
 
-    void HandleSideStep(bool left, bool right)
+    private void HandleSideStep(bool left, bool right)
 	{
         if(grounded && groundAngle <= maxGroundAngle){
             if(currentDeceleration > 0){
@@ -253,7 +259,7 @@ public class GiantControllerV2 : MonoBehaviour
         }
     }
 
-    void UpdateAnimator()
+    private void UpdateAnimator()
 	{
 		// update the animator parameters
 		animator.SetFloat("Forward", forwardAmount, 0.1f, Time.deltaTime);
@@ -263,7 +269,7 @@ public class GiantControllerV2 : MonoBehaviour
 			animator.speed = forwardAmount;
 		else
 			animator.speed = 1;
-	}
+    }
 
     IEnumerator MoveSpeedInterpolator(float startValue, float endValue, float duration)
     {
