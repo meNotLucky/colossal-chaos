@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1230557599746122678}
   - component: {fileID: 1230557599746122677}
+  - component: {fileID: 2377416691557804379}
   - component: {fileID: 1230557599746122676}
   - component: {fileID: 1230557599746122679}
   m_Layer: 0
@@ -75,6 +76,25 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!95 &2377416691557804379
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230557599746122681}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!81 &1230557599746122676
 AudioListener:
   m_ObjectHideFlags: 0
