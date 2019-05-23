@@ -18,11 +18,10 @@ public class GiantController : MonoBehaviour
 	[SerializeField] float m_MovingTurnSpeed = 360;
 	[SerializeField] float m_StationaryTurnSpeed = 180;
 	[SerializeField] float m_JumpPower = 12f;
-	[Range(1f, 4f)][SerializeField] float m_GravityMultiplier = 2f;
+	//[Range(1f, 4f)][SerializeField] float m_GravityMultiplier = 2f;
 	[SerializeField] float m_GroundCheckDistance = 0.5f;
 	[SerializeField] float m_GroundCheckPadding = 0.05f;
-	[SerializeField] float m_MaxGroundAngle = 150;
-	[SerializeField] LayerMask ground;
+	[SerializeField] LayerMask ground = 8;
 
 
 	[Header("Stopping Properties")]
@@ -50,7 +49,7 @@ public class GiantController : MonoBehaviour
 	float m_TurnAmount;
 	float m_ForwardAmount;
 	bool m_NewForwardGotten;
-	Vector3 m_GroundNormal;
+	Vector3 m_GroundNormal = new Vector3();
 	float m_GroundAngle;
 	RaycastHit hitInfo;
 

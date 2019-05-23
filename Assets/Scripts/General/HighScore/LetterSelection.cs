@@ -15,7 +15,6 @@ public class LetterSelection : MonoBehaviour
     [HideInInspector] public char[] alphabet = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','X','Y'};
     [HideInInspector] public int currentlySelected = 0;
 
-    private bool scrolling = false;
     private Coroutine coroutine;
     private GiantUserInputV2 giantUserInputV2;
 

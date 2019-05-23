@@ -9,7 +9,7 @@ public class WinCondition : MonoBehaviour
     public GameObject WinScreenUI;
     public GameObject GUI;
     
-    private bool ended = false;
+    //private bool ended = false;
     public float SliderSpeed = 0.1f;
     public Slider MainMenuSlider;
     
@@ -35,7 +35,7 @@ public class WinCondition : MonoBehaviour
     private void OnCollisionEnter(Collision other){
         if(other.gameObject.tag == "barrel")  
         {
-            ended = true;
+            //ended = true;
             Time.timeScale = 0f;
             WinScreenUI.SetActive(true);
             GUI.SetActive(false);
