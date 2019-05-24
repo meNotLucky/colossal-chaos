@@ -97,7 +97,6 @@ GameObject:
   - component: {fileID: 1408325855728078469}
   - component: {fileID: 6514017849283682714}
   - component: {fileID: 9199103370621891511}
-  - component: {fileID: 592582977168217814}
   m_Layer: 0
   m_Name: Intact_Large_02
   m_TagString: house
@@ -222,19 +221,3 @@ LODGroup:
     renderers:
     - renderer: {fileID: 4979427484946529004}
   m_Enabled: 1
---- !u!208 &592582977168217814
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5439634309429992804}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 6.49, y: 6.28, z: 6.345}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: -2.56, y: 6.2700005, z: -0.335}
-  m_TimeToStationary: 0.5
