@@ -462,10 +462,7 @@ GameObject:
   - component: {fileID: 328302132}
   - component: {fileID: 328302134}
   - component: {fileID: 328302133}
-<<<<<<< Updated upstream
   - component: {fileID: 4339926311200732768}
-=======
->>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Intact_Small_01
   m_TagString: house
@@ -558,7 +555,6 @@ MonoBehaviour:
   brokenMesh: {fileID: 5526448859096848009, guid: d92bbb15bf8fbcd44be352e82b25e5e4,
     type: 3}
   dustPiles: []
-<<<<<<< Updated upstream
 --- !u!208 &4339926311200732768
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -575,8 +571,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 1.78, z: 0}
   m_TimeToStationary: 0.5
-=======
->>>>>>> Stashed changes
 --- !u!1 &1342175560405190058
 GameObject:
   m_ObjectHideFlags: 0
