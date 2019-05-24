@@ -8,12 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 6a3c75d4202dd6d468296f86c42c9adf
-  - enabled: 0
-    path: Assets/Prototypes/Scenes/Iteration 1.unity
-    guid: d7de7bb3666e4a346b11dd60b70bf88f
-  - enabled: 0
-    path: Assets/Prototypes/Scenes/Alpha.unity
-    guid: 5fe5d3f789f2ac641893fb6e7e0c7e04
+  - enabled: 1
+    path: Assets/Scenes/Tutorials.unity
+    guid: 420aae7afa699d147b30312571fea34d
   - enabled: 1
     path: Assets/Prototypes/Scenes/Beta.unity
     guid: 06b7b9c88a1fbae4aaf3ec2c5c38a801

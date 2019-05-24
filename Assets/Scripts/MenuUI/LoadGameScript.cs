@@ -18,7 +18,7 @@ public class LoadGameScript : MonoBehaviour
     
     IEnumerator LoadGameProcess(){
 
-        AsyncOperation operation = SceneManager.LoadSceneAsync(1);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
 
         while(!operation.isDone){
             float progress = Mathf.Clamp01(operation.progress / .9f);
