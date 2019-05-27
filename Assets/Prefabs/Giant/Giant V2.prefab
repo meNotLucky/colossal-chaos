@@ -1575,7 +1575,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 166
   DopplerLevel: 1
   MinDistance: 3.9953003
   MaxDistance: 500
@@ -1665,9 +1665,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2991ccf1975d3f24da77fc964c2e25b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightSideStep: {fileID: 0}
-  leftSideStep: {fileID: 0}
-  Steps: {fileID: 0}
+  rightSideStep: {fileID: 8300000, guid: 915faea5437dabc41b380dcc61b0d59a, type: 3}
+  leftSideStep: {fileID: 8300000, guid: e538d196d9bf98945a9bc202ddb725f4, type: 3}
+  Steps: {fileID: 8300000, guid: 337c411183c7f354ba804af155fc60d9, type: 3}
 --- !u!136 &5594635268393895803
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1679,9 +1679,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5572052
-  m_Height: 3.422301
+  m_Height: 3.434786
   m_Direction: 1
-  m_Center: {x: 0.057205223, y: 1.8712194, z: 0}
+  m_Center: {x: 0.057205226, y: -1.65841, z: -1.3547244e-10}
 --- !u!54 &6223426456112471697
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1692,12 +1692,12 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 112
-  m_CollisionDetection: 0
+  m_IsKinematic: 1
+  m_Interpolate: 2
+  m_Constraints: 116
+  m_CollisionDetection: 3
 --- !u!1 &1230557601277023884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,7 +1739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1230557601292363793}
   m_Layer: 0
-  m_Name: Colliders
+  m_Name: House Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

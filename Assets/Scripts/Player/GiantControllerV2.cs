@@ -50,9 +50,11 @@ public class GiantControllerV2 : MonoBehaviour
     Vector3 forward;
     RaycastHit hitInfo;
     bool grounded;
+    bool wallHit;
+    float wallHitTimer;
 
     Animator animator;
-    Rigidbody ridigbody;
+    Rigidbody rigidbody;
     IEnumerator coroutine;
 
     bool startPanFinished = false;
@@ -61,7 +63,7 @@ public class GiantControllerV2 : MonoBehaviour
     private void Start() {
         cam = Camera.main.transform;
         animator = GetComponent<Animator>();
-        ridigbody = GetComponent<Rigidbody>();
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     public void Move(float h, bool move, bool stop, bool sideStepLeft, bool sideStepRight) {
@@ -82,6 +84,14 @@ public class GiantControllerV2 : MonoBehaviour
 
         if(Mathf.Abs(input.x) < 1 && Mathf.Abs(input.y) < 1)
             return;
+
+        if(wallHit){
+            rigidbody.isKinematic = false;
+            rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
+        } else {
+            rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
+            rigidbody.isKinematic = true;
+        }
         
         if(startPanFinished){
             ApplyRotation();
@@ -122,10 +132,9 @@ public class GiantControllerV2 : MonoBehaviour
 
     private void HandleStopping(bool stop)
 	{
-
 		// Check stop conditions
 		if(stop && stopCooldownTimer <= 0){
-            cannotSideStep=true;
+            cannotSideStep = true;
 			stopCooldownTimer = stopCooldown;
 			stopDurationTimer = stopDuration;
 
@@ -155,7 +164,7 @@ public class GiantControllerV2 : MonoBehaviour
 
     private void HandleSideStep(bool left, bool right)
 	{
-        if(grounded && groundAngle <= maxGroundAngle && cannotSideStep==false){
+        if(grounded && groundAngle <= maxGroundAngle && cannotSideStep == false && !wallHit){
             if(currentDeceleration > 0){
                 delayTimer -= Time.deltaTime;
                 StopCoroutine(coroutine);
@@ -273,7 +282,7 @@ public class GiantControllerV2 : MonoBehaviour
 			
             {
             animator.speed = forwardAmount;
-            cannotSideStep=false;
+            cannotSideStep = false;
             }
 		else
 			animator.speed = 1;
@@ -290,5 +299,15 @@ public class GiantControllerV2 : MonoBehaviour
         }
         forwardAmount = endValue;
 		newForwardGotten = false;
+    }
+
+    private void OnCollisionEnter(Collision other) {
+        if(other.gameObject.tag == "Wall")
+            wallHit = true;
+    }
+
+    private void OnCollisionExit(Collision other) {
+        if(other.gameObject.tag == "Wall")
+            wallHit = false;
     }
 }
