@@ -25,6 +25,7 @@ public class GiantControllerV2 : MonoBehaviour
 	private float stopCooldownTimer;
 	private float stopDurationTimer;
 	private bool playerStopped = false;
+    private bool cannotSideStep;
 
     [Header("Side Step Properties")]
 	public float sideStepCooldown = 2.0f;
@@ -121,8 +122,10 @@ public class GiantControllerV2 : MonoBehaviour
 
     private void HandleStopping(bool stop)
 	{
+
 		// Check stop conditions
 		if(stop && stopCooldownTimer <= 0){
+            cannotSideStep=true;
 			stopCooldownTimer = stopCooldown;
 			stopDurationTimer = stopDuration;
 
@@ -142,6 +145,7 @@ public class GiantControllerV2 : MonoBehaviour
 				StartCoroutine(MoveSpeedInterpolator(forwardAmount, 0, stopDuration / 2));
 			}
 		} else if(stopDurationTimer < 0 && animator.GetBool("Stopped")) {
+            
 			stopDurationTimer = 0;
 			playerStopped = false;
 			StartCoroutine(MoveSpeedInterpolator(forwardAmount, 1, stopDuration / 2));
@@ -151,7 +155,7 @@ public class GiantControllerV2 : MonoBehaviour
 
     private void HandleSideStep(bool left, bool right)
 	{
-        if(grounded && groundAngle <= maxGroundAngle){
+        if(grounded && groundAngle <= maxGroundAngle && cannotSideStep==false){
             if(currentDeceleration > 0){
                 delayTimer -= Time.deltaTime;
                 StopCoroutine(coroutine);
@@ -266,7 +270,11 @@ public class GiantControllerV2 : MonoBehaviour
 		animator.SetBool("OnGround", grounded);
 
 		if(!animator.GetBool("Stopped") && !animator.GetBool("SideStepLeft") && !animator.GetBool("SideStepRight") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
-			animator.speed = forwardAmount;
+			
+            {
+            animator.speed = forwardAmount;
+            cannotSideStep=false;
+            }
 		else
 			animator.speed = 1;
     }
