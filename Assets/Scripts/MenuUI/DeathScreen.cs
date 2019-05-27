@@ -16,7 +16,7 @@ public class DeathScreen : MonoBehaviour
         if(gameOver == true)
         {
             Vector3 mousePos=Input.mousePosition;
-            if(mousePos.x<Screen.width / 2 - Screen.width / 10)
+            if(mousePos.x<Screen.width / 2 - 40f)
             {
                 ExitToMainMenuSlider.value += SliderSpeed / 60;
             
@@ -44,7 +44,7 @@ public class DeathScreen : MonoBehaviour
     public void ExitToMainMenu()
     {
         Time.timeScale = 1f;
-         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
          
     }
     

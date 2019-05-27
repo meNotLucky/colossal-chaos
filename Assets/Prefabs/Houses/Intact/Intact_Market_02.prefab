@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 3237284506692382128}
   - component: {fileID: 3866885300125871243}
   m_Layer: 0
-  m_Name: Intact_Market_01
-  m_TagString: Untagged
+  m_Name: Intact_Market_02
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,9 +59,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0e9ffddeef5427a42b981260200fbb17, type: 2}
-  - {fileID: 2100000, guid: 4d572e02fd9336b44b6b8851e59972e6, type: 2}
-  - {fileID: 2100000, guid: 931b5ddd610ae3848b402adf4758b4a6, type: 2}
+  - {fileID: 2100000, guid: 5b13c011e56a9de48b6afa9c7a3ad41e, type: 2}
+  - {fileID: 2100000, guid: 61c3a123338b0fa479e0eda09003b9b4, type: 2}
+  - {fileID: 2100000, guid: d0d333cca0aea6043b140ce135820450, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e20667b663b5664cb7419bb78fc51e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brokenMesh: {fileID: 3430157114581483228, guid: f37db0e14b1d752439556f86c395eb5c,
+  brokenMesh: {fileID: 3430157114581483228, guid: 9beab1b6af0d828408126dd3ff67e481,
     type: 3}
   dustPiles: []
 --- !u!65 &3866885300125871243
