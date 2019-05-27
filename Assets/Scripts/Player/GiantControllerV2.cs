@@ -181,20 +181,9 @@ public class GiantControllerV2 : MonoBehaviour
                     else if(rightPressed){
                         transform.localPosition -= side * sideStepPower * currentDeceleration;
                     }
-
                     if(!animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")){
                         animator.SetBool("SideStepLeft", false);
                         animator.SetBool("SideStepRight", false);
-                    }
-
-                    if(currentDeceleration <= 0){
-                        currentDeceleration = 0;
-                        delayTimer = 0;
-
-                        leftPressed = false;
-                        rightPressed = false;
-
-                        forwardAmount = 1;
                     }
                 }
             }
@@ -218,6 +207,19 @@ public class GiantControllerV2 : MonoBehaviour
                 sideStepCooldownTimer -= Time.deltaTime;
             else
                 sideStepCooldownTimer = 0;
+        }
+
+        if(currentDeceleration <= 0 || wallHit){
+            currentDeceleration = 0;
+            delayTimer = 0;
+
+            animator.SetBool("SideStepLeft", false);
+            animator.SetBool("SideStepRight", false);
+
+            leftPressed = false;
+            rightPressed = false;
+
+            forwardAmount = 1;
         }
 	}
 
@@ -267,7 +269,7 @@ public class GiantControllerV2 : MonoBehaviour
     }
 
     private void ApplyGravity () {
-        if(!grounded){
+        if(!grounded && !leftPressed && !rightPressed && !wallHit){
             transform.position += Physics.gravity * Time.deltaTime;
         }
     }
