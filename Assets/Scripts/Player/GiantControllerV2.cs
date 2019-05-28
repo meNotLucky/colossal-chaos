@@ -159,8 +159,8 @@ public class GiantControllerV2 : MonoBehaviour
                 forwardAmount = maxSpeedMultiplier;
             }
 		} else {
-            if(coroutine != null)
-                StopCoroutine(coroutine);
+            // if(coroutine != null)
+            //     StopCoroutine(coroutine);
         }
     }
 
@@ -201,7 +201,8 @@ public class GiantControllerV2 : MonoBehaviour
         if(grounded && groundAngle <= maxGroundAngle && !cannotSideStep && !wallHit){
             if(currentDeceleration > 0){
                 delayTimer -= Time.deltaTime;
-                StopCoroutine(coroutine);
+                if(coroutine != null)
+                    StopCoroutine(coroutine);
                 newForwardGotten = false;
                 forwardAmount = sideStepForwardSpeed;
 
