@@ -2,22 +2,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using MyBox;
+
 public class GiantControllerV2 : MonoBehaviour
 {
     [Header("Giant Properties")]
     public float speed = 5f;
     public float speedMultiplier = 1f;
-    [Tooltip("What range the speed can change between (If Move Speed Multipl. is 1.5 and Random Speed Offset is 0.5, min speed will be 1 and max speed will be 2)")]
-    public float randomSpeedOffset = 0.5f;
-	[Tooltip("The minimum amount of time between the random speed changes")]
-	public float minTimeToSpeedChange = 0.5f;
-	[Tooltip("The maximum amount of time between the random speed changes")]
-    public float maxTimeToSpeedChange = 2.0f;
     public float turnSpeed = 10;
     public float height = 0.5f;
     public float heightPadding = 0.05f;
     public LayerMask ground;
     public float maxGroundAngle = 120;
+
+    [Header("Random Speed Increase")]
+    [Tooltip("Change the speed of the giant randomly")]
+    public bool doRandomSpeed = false;
+    [Tooltip("What range the speed can change between (If Move Speed Multipl. is 1.5 and Random Speed Offset is 0.5, min speed will be 1 and max speed will be 2)")]
+    [ConditionalField("doRandomSpeed")] public float randomSpeedOffset = 0.5f;
+	[Tooltip("The minimum amount of time between the random speed changes")]
+    [ConditionalField("doRandomSpeed")] public float minTimeToSpeedChange = 0.5f;
+	[Tooltip("The maximum amount of time between the random speed changes")]
+    [ConditionalField("doRandomSpeed")] public float maxTimeToSpeedChange = 2.0f;
+
+    [Header("Constant Speed Increase")]
+    [Tooltip("Increase the speed of the giant constantly")]
+    public bool doConstantSpeed = false;
+    [Tooltip("How fast should the speed increase")]
+    [ConditionalField("doConstantSpeed")] public float timeToMaxSpeed;
+    [Tooltip("The max speed of the giant")]
+    [ConditionalField("doConstantSpeed")] public float maxSpeedMultiplier;
 
     [Header("Stopping Properties")]
 	public float stopCooldown = 5.0f;
@@ -71,7 +85,11 @@ public class GiantControllerV2 : MonoBehaviour
         input.x = h;
         input.y = move ? 1 : 0;
 
-        HandleRandomSpeed();
+        if(doRandomSpeed)
+            HandleRandomSpeed();
+        if(doConstantSpeed)
+            HandleConstantSpeed();
+
         HandleStopping(stop);
         HandleSideStep(sideStepLeft, sideStepRight);
 
@@ -107,26 +125,37 @@ public class GiantControllerV2 : MonoBehaviour
     }
 
     public void HandleStartPan(bool isPlaying){
-        if(isPlaying){
+        if(isPlaying) {
             animator.SetBool("Stopped", true);
             forwardAmount = 0;
             startPanFinished = false;
+            cannotSideStep = true;
         } else {
             animationResetAfterPan = true;
-            StartCoroutine(MoveSpeedInterpolator(0, 1, 0.5f));
             startPanFinished = true;
         }
     }
 
     private void HandleRandomSpeed(){
-        if(!animator.GetBool("Stopped") && !animator.GetBool("SideStepLeft") && !animator.GetBool("SideStepRight")){
+        if(!animator.GetBool("Stopped") && !animator.GetBool("SideStepLeft") && !animator.GetBool("SideStepRight") && startPanFinished){
 			float newSpeed = Random.Range(speedMultiplier - randomSpeedOffset, speedMultiplier + randomSpeedOffset);
 			float timeToChange = Random.Range(minTimeToSpeedChange, maxTimeToSpeedChange);
-			if(!newForwardGotten){
+			if(!newForwardGotten) {
 				newForwardGotten = true;
 				coroutine = MoveSpeedInterpolator(forwardAmount, newSpeed, timeToChange);
 				StartCoroutine(coroutine);
 			}
+		}
+    }
+
+    private void HandleConstantSpeed(){
+        if(!animator.GetBool("Stopped") && !animator.GetBool("SideStepLeft") && !animator.GetBool("SideStepRight") && startPanFinished){
+            if(forwardAmount < maxSpeedMultiplier){
+                coroutine = MoveSpeedInterpolator(forwardAmount, maxSpeedMultiplier, timeToMaxSpeed);
+                StartCoroutine(coroutine);
+            } else {
+                forwardAmount = maxSpeedMultiplier;
+            }
 		}
     }
 
@@ -153,8 +182,7 @@ public class GiantControllerV2 : MonoBehaviour
 				StopCoroutine(coroutine);
 				StartCoroutine(MoveSpeedInterpolator(forwardAmount, 0, stopDuration / 2));
 			}
-		} else if(stopDurationTimer < 0 && animator.GetBool("Stopped")) {
-            
+		} else if(stopDurationTimer < 0 && animator.GetBool("Stopped")){
 			stopDurationTimer = 0;
 			playerStopped = false;
 			StartCoroutine(MoveSpeedInterpolator(forwardAmount, 1, stopDuration / 2));
@@ -282,12 +310,10 @@ public class GiantControllerV2 : MonoBehaviour
 		animator.SetFloat("Forward", forwardAmount, 0.1f, Time.deltaTime);
 		animator.SetBool("OnGround", grounded);
 
-		if(!animator.GetBool("Stopped") && !animator.GetBool("SideStepLeft") && !animator.GetBool("SideStepRight") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
-			
-            {
+		if(!animator.GetBool("Stopped") && !animator.GetBool("SideStepLeft") && !animator.GetBool("SideStepRight") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Idle")){
             animator.speed = forwardAmount;
             cannotSideStep = false;
-            }
+        }
 		else
 			animator.speed = 1;
     }

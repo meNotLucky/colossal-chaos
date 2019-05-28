@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using MyBox;
+
 public class GiantUserInputV2 : MonoBehaviour
 {
     private GiantControllerV2 character; // A reference to the ThirdPersonCharacter on the object
@@ -25,6 +27,14 @@ public class GiantUserInputV2 : MonoBehaviour
     public float struggleIntensityMin;
     private bool sensModified = true;
     public List<AttractionTarget> targets;
+    #if UNITY_EDITOR
+    [ButtonMethod]
+    private string GetTargets(){
+        targets = new List<AttractionTarget>(FindObjectsOfType<AttractionTarget>());
+        return targets.Count + " targets found on scene, cached";
+    }
+    #endif
+
     public GameObject currentTarget;
     private Quaternion lookRotation;
 

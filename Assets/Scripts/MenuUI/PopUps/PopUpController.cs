@@ -30,8 +30,7 @@ public class PopUpController : MonoBehaviour
     }
 
     public void DeactivatePopUp(string name){
-        foreach (var popUp in popUps)
-        {
+        foreach (var popUp in popUps) {
             if(popUp.name == name){
                 popUp.popUpObject.SetActive(false);
                 return;
@@ -39,6 +38,11 @@ public class PopUpController : MonoBehaviour
         }
 
         Debug.LogError("No PopUp with that name seems to exist! Check Menus/PopUps -> PopUps");
+    }
+
+    public void DeactivateAllPopUps(){
+        foreach (var popUp in popUps)
+            popUp.popUpObject.SetActive(false);
     }
 
     private IEnumerator HideAfterTime(string name, float time) {

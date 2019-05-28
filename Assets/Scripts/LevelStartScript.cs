@@ -11,12 +11,19 @@ public class LevelStartScript : MonoBehaviour
     private PopUpController popUps;
 
     bool isPlaying = false;
+    private Vector3 originalCamPosition;
+    private Vector3 originalCamRotation;
 
     void Start() {
         paningCamera = GetComponent<Camera>();
         cameraAnimator = GetComponent<Animator>();
         giant = FindObjectOfType<GiantControllerV2>();
         popUps = FindObjectOfType<PopUpController>();
+        
+        cameraAnimator.enabled = true;
+
+        originalCamPosition = paningCamera.transform.localPosition;
+        originalCamRotation = paningCamera.transform.localEulerAngles;
 
         if(playStartAnimation){
             cameraAnimator.SetBool("IsStarting", true);
@@ -29,6 +36,14 @@ public class LevelStartScript : MonoBehaviour
     private void Update() {
         if(isPlaying)
             giant.HandleStartPan(true);
+        
+        if(Input.GetButtonDown("SideStep Right") && isPlaying){
+            cameraAnimator.enabled = false;
+            paningCamera.transform.localPosition = originalCamPosition;
+            paningCamera.transform.localEulerAngles = originalCamRotation;
+            popUps.DeactivateAllPopUps();
+            PanFinished();
+        }
     }
 
     public void ActivatePopUp(string popUp){

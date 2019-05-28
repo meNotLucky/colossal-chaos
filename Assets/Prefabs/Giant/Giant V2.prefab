@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1230557599746122681}
   m_LocalRotation: {x: 0.24988154, y: 0, z: 0, w: 0.96827644}
-  m_LocalPosition: {x: 0, y: 4.15, z: -3.15}
+  m_LocalPosition: {x: -0, y: 2.05, z: -4.31}
   m_LocalScale: {x: 2.6608484, y: 2.6608474, z: 2.6608484}
   m_Children: []
   m_Father: {fileID: 1230557601242559351}
@@ -1520,9 +1520,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   speedMultiplier: 1.5
-  randomSpeedOffset: 0.5
-  minTimeToSpeedChange: 1
-  maxTimeToSpeedChange: 3
   turnSpeed: 5
   height: 5
   heightPadding: 10
@@ -1530,6 +1527,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   maxGroundAngle: 150
+  doRandomSpeed: 0
+  randomSpeedOffset: 0.5
+  minTimeToSpeedChange: 1
+  maxTimeToSpeedChange: 3
+  doConstantSpeed: 1
+  timeToMaxSpeed: 10
+  maxSpeedMultiplier: 2
   stopCooldown: 5
   stopDuration: 2
   sideStepCooldown: 2
