@@ -153,10 +153,11 @@ public class GiantControllerV2 : MonoBehaviour
             if(forwardAmount < maxSpeedMultiplier){
                 coroutine = MoveSpeedInterpolator(forwardAmount, maxSpeedMultiplier, timeToMaxSpeed);
                 StartCoroutine(coroutine);
-            } else {
-                forwardAmount = maxSpeedMultiplier;
             }
-		}
+		} else {
+            if(coroutine != null)
+                StopCoroutine(coroutine);
+        }
     }
 
     private void HandleStopping(bool stop)
@@ -192,7 +193,7 @@ public class GiantControllerV2 : MonoBehaviour
 
     private void HandleSideStep(bool left, bool right)
 	{
-        if(grounded && groundAngle <= maxGroundAngle && cannotSideStep == false && !wallHit){
+        if(grounded && groundAngle <= maxGroundAngle && !cannotSideStep && !wallHit){
             if(currentDeceleration > 0){
                 delayTimer -= Time.deltaTime;
                 StopCoroutine(coroutine);
@@ -266,8 +267,12 @@ public class GiantControllerV2 : MonoBehaviour
 
     private void ApplyMovement() {
         if(groundAngle >= maxGroundAngle)
-            return;        
-        transform.position += forward * speed * forwardAmount * Time.deltaTime;
+            return;
+
+        if(!wallHit)
+            transform.position += forward * speed * forwardAmount * Time.deltaTime;
+        else if(wallHit)
+            rigidbody.velocity = forward * speed * forwardAmount * Time.deltaTime;
     }
 
     private void CalculateForward () {
