@@ -208,6 +208,10 @@ public class GiantControllerV2 : MonoBehaviour
             else
                 sideStepCooldownTimer = 0;
         }
+        else {
+            delayTimer = 0;
+            currentDeceleration = 0;
+        }
 
         if(currentDeceleration <= 0 || wallHit){
             currentDeceleration = 0;
@@ -218,8 +222,6 @@ public class GiantControllerV2 : MonoBehaviour
 
             leftPressed = false;
             rightPressed = false;
-
-            forwardAmount = 1;
         }
 	}
 

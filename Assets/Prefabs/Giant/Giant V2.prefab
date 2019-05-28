@@ -1520,9 +1520,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   speedMultiplier: 1.5
-  randomSpeedOffset: 2
-  minTimeToSpeedChange: 0.5
-  maxTimeToSpeedChange: 2
+  randomSpeedOffset: 0.5
+  minTimeToSpeedChange: 1
+  maxTimeToSpeedChange: 3
   turnSpeed: 5
   height: 5
   heightPadding: 10
