@@ -29,11 +29,12 @@ public class GiantControllerV2 : MonoBehaviour
     [Tooltip("Increase the speed of the giant constantly")]
     public bool doConstantSpeed = false;
     [Tooltip("How fast should the speed increase")]
-    [ConditionalField("doConstantSpeed")] public float timeToMaxSpeed;
+    [ConditionalField("doConstantSpeed")] public float speedIncreaseMultiplier;
     [Tooltip("The max speed of the giant")]
     [ConditionalField("doConstantSpeed")] public float maxSpeedMultiplier;
 
     [Header("Stopping Properties")]
+    public float stopSpeed = 0.2f;
 	public float stopCooldown = 5.0f;
 	public float stopDuration = 2.0f;
 	private float stopCooldownTimer;
@@ -151,8 +152,11 @@ public class GiantControllerV2 : MonoBehaviour
     private void HandleConstantSpeed(){
         if(!animator.GetBool("Stopped") && !animator.GetBool("SideStepLeft") && !animator.GetBool("SideStepRight") && startPanFinished){
             if(forwardAmount < maxSpeedMultiplier){
-                coroutine = MoveSpeedInterpolator(forwardAmount, maxSpeedMultiplier, timeToMaxSpeed);
-                StartCoroutine(coroutine);
+                // coroutine = MoveSpeedInterpolator(forwardAmount, maxSpeedMultiplier, speedIncreaseMultiplier);
+                // StartCoroutine(coroutine);
+                forwardAmount += speedIncreaseMultiplier;
+            } else {
+                forwardAmount = maxSpeedMultiplier;
             }
 		} else {
             if(coroutine != null)
@@ -180,13 +184,14 @@ public class GiantControllerV2 : MonoBehaviour
 			stopDurationTimer -= Time.deltaTime;
 			if(!playerStopped){
 				playerStopped = true;
-				StopCoroutine(coroutine);
-				StartCoroutine(MoveSpeedInterpolator(forwardAmount, 0, stopDuration / 2));
+                if(coroutine != null)
+				    StopCoroutine(coroutine);
+				StartCoroutine(MoveSpeedInterpolator(forwardAmount, stopSpeed, 1.0f));
 			}
 		} else if(stopDurationTimer < 0 && animator.GetBool("Stopped")){
 			stopDurationTimer = 0;
 			playerStopped = false;
-			StartCoroutine(MoveSpeedInterpolator(forwardAmount, 1, stopDuration / 2));
+			//StartCoroutine(MoveSpeedInterpolator(forwardAmount, 1, stopDuration / 2));
 			animator.SetBool("Stopped", false);
 		}
 	}
@@ -272,7 +277,7 @@ public class GiantControllerV2 : MonoBehaviour
         if(!wallHit)
             transform.position += forward * speed * forwardAmount * Time.deltaTime;
         else if(wallHit)
-            rigidbody.velocity = forward * speed * forwardAmount * Time.deltaTime;
+            rigidbody.velocity = forward * (speed * 10.0f) * forwardAmount * Time.deltaTime;
     }
 
     private void CalculateForward () {
@@ -315,9 +320,10 @@ public class GiantControllerV2 : MonoBehaviour
 		animator.SetFloat("Forward", forwardAmount, 0.1f, Time.deltaTime);
 		animator.SetBool("OnGround", grounded);
 
-		if(!animator.GetBool("Stopped") && !animator.GetBool("SideStepLeft") && !animator.GetBool("SideStepRight") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Idle")){
+		if(!animator.GetBool("SideStepLeft") && !animator.GetBool("SideStepRight") && !animator.GetCurrentAnimatorStateInfo(0).IsName("Idle")){
             animator.speed = forwardAmount;
-            cannotSideStep = false;
+            if(!animator.GetBool("Stopped"))
+                cannotSideStep = false;
         }
 		else
 			animator.speed = 1;
