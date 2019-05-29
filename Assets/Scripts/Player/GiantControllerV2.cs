@@ -109,10 +109,10 @@ public class GiantControllerV2 : MonoBehaviour
             rigidbody.isKinematic = false;
             rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
         } else {
-            if(wallHitTimer < 1.0f){
+            if(wallHitTimer < 0.7f){
                 wallHitTimer += Time.deltaTime;
             } else {
-                wallHitTimer = 1.0f;
+                wallHitTimer = 0.7f;
                 rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
                 rigidbody.isKinematic = true;
             }
@@ -158,8 +158,8 @@ public class GiantControllerV2 : MonoBehaviour
     private void HandleConstantSpeed(){
         if(!animator.GetBool("Stopped") && !animator.GetBool("SideStepLeft") && !animator.GetBool("SideStepRight") && startPanFinished){
             if(forwardAmount < maxSpeedMultiplier){
-                // coroutine = MoveSpeedInterpolator(forwardAmount, maxSpeedMultiplier, speedIncreaseMultiplier);
-                // StartCoroutine(coroutine);
+                if(forwardAmount == 0)
+                    forwardAmount = 0.5f;
                 forwardAmount += speedIncreaseMultiplier;
             } else {
                 forwardAmount = maxSpeedMultiplier;
@@ -282,11 +282,9 @@ public class GiantControllerV2 : MonoBehaviour
             return;
 
         if(!wallHit){
-            Debug.Log("transform");
             transform.position += forward * speed * forwardAmount * Time.deltaTime;
         }
         else if(wallHit){
-            Debug.Log("rigidbody");
             rigidbody.velocity = forward * (speed * 10.0f) * forwardAmount * Time.deltaTime;
         }
     }

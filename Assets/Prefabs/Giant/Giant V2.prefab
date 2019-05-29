@@ -1532,8 +1532,8 @@ MonoBehaviour:
   minTimeToSpeedChange: 1
   maxTimeToSpeedChange: 3
   doConstantSpeed: 1
-  speedIncreaseMultiplier: 0.005
-  maxSpeedMultiplier: 2
+  speedIncreaseMultiplier: 0.003
+  maxSpeedMultiplier: 1.8
   stopSpeed: 1
   stopCooldown: 15
   stopDuration: 10
