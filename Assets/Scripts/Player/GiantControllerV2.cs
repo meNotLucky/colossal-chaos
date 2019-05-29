@@ -105,11 +105,17 @@ public class GiantControllerV2 : MonoBehaviour
             return;
 
         if(wallHit){
+            wallHitTimer = 0;
             rigidbody.isKinematic = false;
             rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
         } else {
-            rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
-            rigidbody.isKinematic = true;
+            if(wallHitTimer < 1.0f){
+                wallHitTimer += Time.deltaTime;
+            } else {
+                wallHitTimer = 1.0f;
+                rigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
+                rigidbody.isKinematic = true;
+            }
         }
         
         if(startPanFinished){
@@ -275,10 +281,14 @@ public class GiantControllerV2 : MonoBehaviour
         if(groundAngle >= maxGroundAngle)
             return;
 
-        if(!wallHit)
+        if(!wallHit){
+            Debug.Log("transform");
             transform.position += forward * speed * forwardAmount * Time.deltaTime;
-        else if(wallHit)
+        }
+        else if(wallHit){
+            Debug.Log("rigidbody");
             rigidbody.velocity = forward * (speed * 10.0f) * forwardAmount * Time.deltaTime;
+        }
     }
 
     private void CalculateForward () {
