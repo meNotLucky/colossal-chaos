@@ -354,6 +354,8 @@ public class GiantControllerV2 : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.tag == "Wall")
             wallHit = true;
+        if(other.gameObject.tag == "RagdollActivator")
+            GetComponentInChildren<RagdollController>().ActivateRagdoll();
     }
 
     private void OnCollisionExit(Collision other) {

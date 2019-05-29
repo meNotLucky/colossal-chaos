@@ -13,6 +13,7 @@ TagManager:
   - Landmark
   - DestroyableClutter
   - Wall
+  - RagdollActivator
   layers:
   - Default
   - TransparentFX
