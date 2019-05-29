@@ -10,7 +10,7 @@ public class HighScoreListController : MonoBehaviour
  
     private void Start() {
 
-        if(PlayerPrefsX.GetIntArray("HighScores") == null){
+        if(PlayerPrefsX.GetFloatArray("HighScores") == null){
             HighScoreController.ResetHighScores();
         }
     }
@@ -22,16 +22,16 @@ public class HighScoreListController : MonoBehaviour
             Debug.Log("High Score Cleared");
         }
 
-        if(PlayerPrefsX.GetIntArray("HighScores") != null){
-            if(PlayerPrefsX.GetIntArray("HighScores").Length > 0){
+        if(PlayerPrefsX.GetFloatArray("HighScores") != null){
+            if(PlayerPrefsX.GetFloatArray("HighScores").Length > 0){
                 string list = "";
 
-                int[] highScores = PlayerPrefsX.GetIntArray("HighScores");
+                float[] highScores = PlayerPrefsX.GetFloatArray("HighScores");
                 string[] highScoreNames = PlayerPrefsX.GetStringArray("HighScoreNames");
 
                 for (int i = 0; i < highScores.Length; i++)
                 {
-                    list += highScoreNames[i] + ": " + highScores[i] + "\n";
+                    list += highScoreNames[i] + ": " + ScoreTimer.ConvertScoreToTimeString(highScores[i]) + "\n";
                 }
 
                 highScoreListText.text = list;

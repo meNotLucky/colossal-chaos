@@ -7,31 +7,28 @@ using TMPro;
 public class HighScoreController : MonoBehaviour
 {
     [Header("High Score Properties")]
-    public int startScore;
-    public TextMeshProUGUI scoreTextPlaying;
     public TextMeshProUGUI scoreTextWinScreen;
     
     [Header("High Score Values")]
-    [SerializeField] int currentScore;
+    [SerializeField] float currentScore;
 
-    private LooseCondition looseCondition;
+    private ScoreTimer scoreTime;
 
     private void Start() {
         
         // Activated for debuging
         // ResetHighScores();
 
-        looseCondition = FindObjectOfType<LooseCondition>();
+        scoreTime = FindObjectOfType<ScoreTimer>();
 
-        if(PlayerPrefsX.GetIntArray("HighScores") == null){
+        if(PlayerPrefsX.GetFloatArray("HighScores") == null){
             ResetHighScores();
         }
     }
 
     private void Update() {
-        currentScore = startScore - looseCondition.destroyedHouses;
-        scoreTextPlaying.text = "Score: " + currentScore;
-        scoreTextWinScreen.text = "Final Score: " + currentScore;
+        currentScore = scoreTime.totalScore;
+        scoreTextWinScreen.text = "Final Score: " + ScoreTimer.ConvertScoreToTimeString(currentScore);
     }
 
     public void SaveScore(string name) {
@@ -39,12 +36,12 @@ public class HighScoreController : MonoBehaviour
         if(name.Length <= 1)
             return;
 
-        if(PlayerPrefsX.GetIntArray("HighScores") == null){
+        if(PlayerPrefsX.GetFloatArray("HighScores") == null){
             ResetHighScores();
         }
 
-        int[] highScores = PlayerPrefsX.GetIntArray("HighScores");
-        List<int> highScoreList = new List<int>(highScores);
+        float[] highScores = PlayerPrefsX.GetFloatArray("HighScores");
+        List<float> highScoreList = new List<float>(highScores);
 
         string[] highScoreNames = PlayerPrefsX.GetStringArray("HighScoreNames");
         List<string> highScoreNameList = new List<string>(highScoreNames);
@@ -62,23 +59,23 @@ public class HighScoreController : MonoBehaviour
 
         highScores = highScoreList.ToArray();
         highScoreNames = highScoreNameList.ToArray();
-        PlayerPrefsX.SetIntArray("HighScores", highScores);
+        PlayerPrefsX.SetFloatArray("HighScores", highScores);
         PlayerPrefsX.SetStringArray("HighScoreNames", highScoreNames);
 
         Debug.Log("Saved");
     }
 
     public static void ResetHighScores(){
-        int[] highScores = new int[GlobalSettings.numberOfSavedHighScores];
+        float[] highScores = new float[GlobalSettings.numberOfSavedHighScores];
         string[] highScoreNames = new string[GlobalSettings.numberOfSavedHighScores];
 
         for (int i = 0; i < GlobalSettings.numberOfSavedHighScores; i++)
         {
             highScores[i] = 0;
-            highScoreNames[i] = "NaN";
+            highScoreNames[i] = "N/A";
         }
 
-        PlayerPrefsX.SetIntArray("HighScores", highScores);
+        PlayerPrefsX.SetFloatArray("HighScores", highScores);
         PlayerPrefsX.SetStringArray("HighScoreNames", highScoreNames);
     }
 }

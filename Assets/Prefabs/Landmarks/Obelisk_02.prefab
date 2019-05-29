@@ -1509,6 +1509,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 910555166868192794}
+  - component: {fileID: 4356625349750099764}
   m_Layer: 0
   m_Name: Broken_OBE_02
   m_TagString: Untagged
@@ -1548,6 +1549,21 @@ Transform:
   m_Father: {fileID: 7706056354643275659}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4356625349750099764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910555166868283962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ee0bb7fe327f0468b27413e882fb9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  supportStructures:
+  - {fileID: 910555166868283986}
+  mininumSupports: 1
 --- !u!1 &910555166868283964
 GameObject:
   m_ObjectHideFlags: 0
@@ -2414,7 +2430,7 @@ GameObject:
   - component: {fileID: 7706056354643275659}
   - component: {fileID: 7836942290757021811}
   m_Layer: 0
-  m_Name: Intact_OBE_02
+  m_Name: Obelisk_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

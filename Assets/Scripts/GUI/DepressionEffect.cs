@@ -24,7 +24,7 @@ public class DepressionEffect : MonoBehaviour
 
     void Update()
     {
-        color.saturation.value = 0 - GetComponent<LooseCondition>().destroyedHouses;
+        color.saturation.value = 0 - GetComponent<ScoreTimer>().destroyedHouses;
 
         if(color.saturation.value > 0)
             color.saturation.value = 0;

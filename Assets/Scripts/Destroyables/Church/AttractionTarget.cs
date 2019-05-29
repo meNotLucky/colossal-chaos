@@ -15,16 +15,20 @@ public class AttractionTarget : MonoBehaviour
     [HideInInspector] public int currentHitPoints;
 
     private GiantUserInputV2 giantUserInputV2;
-    private LooseCondition looseCondition;
+    private ScoreTimer scoreTime;
     private BillboardFacing billboard;
 
     private void Start() {
         currentHitPoints = hitPoints;
         giantUserInputV2 = FindObjectOfType<GiantUserInputV2>();
-        looseCondition = FindObjectOfType<LooseCondition>();
+        scoreTime = FindObjectOfType<ScoreTimer>();
         billboard = GetComponentInChildren<BillboardFacing>();
 
         billboard.gameObject.SetActive(false);
+
+        if(!enabled){
+            billboard.gameObject.SetActive(false);
+        }
     }
 
     private void Update() {
@@ -43,7 +47,7 @@ public class AttractionTarget : MonoBehaviour
             }
         }
         else if(currentHitPoints <= 0){
-            looseCondition.landmarkDestructionPoints += loosePointsOnDestruction;
+            scoreTime.landmarkDestructionPoints += loosePointsOnDestruction;
             if(giantUserInputV2 != null)
                 giantUserInputV2.RemoveCurrentTarget();
             billboard.gameObject.SetActive(false);
