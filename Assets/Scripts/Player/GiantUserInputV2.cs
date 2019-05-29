@@ -84,7 +84,7 @@ public class GiantUserInputV2 : MonoBehaviour
                 sideStepRight = true;
             }
 
-        h = - (Input.mousePosition.x - ((Screen.width / 2)) + mouseCenterOffset) * (mouseInputSensitivity / sensitivityModifier);
+        h = - (Input.mousePosition.x - (Screen.width / 2) + mouseCenterOffset) * (mouseInputSensitivity / sensitivityModifier);
 
         // Targettting system
         UpdateTarget();

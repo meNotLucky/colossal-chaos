@@ -6,7 +6,7 @@ using UnityEngine.Video;
 
 public class TutorialController : MonoBehaviour
 {
-    public VideoPlayer[] players;
+    public GameObject[] players;
     private int currentPlayer = 0;
     bool endReached = false;
     private LoadGameScript loadGameScript;
@@ -16,32 +16,45 @@ public class TutorialController : MonoBehaviour
         loadGameScript = FindObjectOfType<LoadGameScript>();
 
         foreach (var video in players){
-            video.isLooping = true;
+            video.GetComponent<VideoPlayer>().isLooping = true;
         }
     }
 
     void Update()
     {
         if(!endReached){
-            if(Input.GetButtonDown("SideStep Right")){
-                currentPlayer++;
-                if(currentPlayer > players.Length -1){
-                    currentPlayer = 0;
-                    endReached = true;
-                    loadGameScript.LoadGame();
-                }
+
+            if(Input.mousePosition.x > (Screen.width / 2) + 50.0f || Input.mousePosition.x < (Screen.width / 2) - 50.0f){
+                if(currentPlayer == 0)
+                    currentPlayer++;
             }
 
-            if(!players[currentPlayer].gameObject.activeSelf){
-                players[currentPlayer].gameObject.SetActive(true);
+            if(Input.GetButton("SideStep Right") && Input.GetButton("SideStep Left")){
+                if(currentPlayer == 1)
+                    currentPlayer++;
+            }
+
+            if(Input.GetKey(KeyCode.X) && Input.GetKey(KeyCode.Y)){
+                if(currentPlayer == 2)
+                    currentPlayer++;
+            }
+
+            if(currentPlayer > players.Length -1){
+                currentPlayer = 0;
+                endReached = true;
+                loadGameScript.LoadGame();
             }
 
             foreach (var video in players){
                 if(video != players[currentPlayer]){
-                    if(video.gameObject.activeSelf){
-                        video.gameObject.SetActive(false);
+                    if(video.activeSelf){
+                        video.SetActive(false);
                     }
                 }
+            }
+
+            if(!players[currentPlayer].activeSelf){
+                players[currentPlayer].SetActive(true);
             }
         }
     }
