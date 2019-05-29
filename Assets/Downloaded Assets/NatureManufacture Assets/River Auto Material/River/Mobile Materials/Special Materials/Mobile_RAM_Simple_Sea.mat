@@ -49,7 +49,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Foam:
         m_Texture: {fileID: 2800000, guid: 5d15a98fc0e7b4b4cb50bf0fd6279ee3, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Scale: {x: 2.69, y: 2.05}
         m_Offset: {x: 0, y: 0}
     - _Noise:
         m_Texture: {fileID: 2800000, guid: cdec882b86a6f9b46b4c79d6a9891f1c, type: 3}
@@ -176,14 +176,14 @@ Material:
     - _FoamSpeed: 0.3
     - _FoamTiling: 2
     - _Foamfalloff: -4
-    - _GlobalTiling: 1
+    - _GlobalTiling: 0.4
     - _GlossyReflections: 1
     - _MaskClipValue: 0.5
     - _NormalScale: 0.3
     - _Occlusion: 0.48
     - _Reflection: 0.66
     - _ReflectionPower: 0.083
-    - _ShalowDepth: 0.7
+    - _ShalowDepth: 1.1
     - _ShalowFalloff: -1.14
     - _SlowCascadeAngle: 0.001
     - _SlowCascadeFalloff: 80
@@ -215,8 +215,8 @@ Material:
     - _UVVDirection1UDirection0: 1
     - _Udirection: 0
     - _Vdirection: 0
-    - _WaterDeepTranslucencyPower: 0.1
-    - _WaterDepth: 0.09
+    - _WaterDeepTranslucencyPower: 0.61
+    - _WaterDepth: 0.061
     - _WaterFallOfBorder: 9.32
     - _WaterFalloff: 0.143
     - _WaterFalloffBorder: 8.46
@@ -238,21 +238,21 @@ Material:
     - _test: 0.35
     m_Colors:
     - _BigCascadeColor: {r: 6, g: 6, b: 6, a: 0}
-    - _BigCascadeMainSpeed: {r: 0, g: 0.5, b: 0, a: 0}
+    - _BigCascadeMainSpeed: {r: 0, g: 0.1, b: 0, a: 0}
     - _BigCascadeMixSpeed: {r: 0.01, g: 0.1, b: 0, a: 0}
     - _CascadeColor: {r: 20, g: 20, b: 20, a: 0}
     - _Color0: {r: 0, g: 0.6749488, b: 0.8088235, a: 0}
     - _Color1: {r: 0, g: 0.048731543, b: 0.22794023, a: 0}
     - _DeepColor: {r: 0.05708845, g: 0.095184885, b: 0.23528743, a: 0}
-    - _FoamColor: {r: 6, g: 6, b: 6, a: 0}
-    - _FoamSpeed: {r: -0.001, g: 0.018, b: 0, a: 0}
-    - _NoiseSpeed: {r: 0.2, g: -0.5, b: 0, a: 0}
+    - _FoamColor: {r: 1.07, g: 6, b: 6, a: 0}
+    - _FoamSpeed: {r: -0.001, g: 0.01, b: 0, a: 0}
+    - _NoiseSpeed: {r: 0.2, g: -0.16, b: 0, a: 0}
     - _NoiseTiling: {r: 1, g: 1, b: 0, a: 0}
     - _ShalowColor: {r: 0.13435338, g: 0.52205884, b: 0.40975904, a: 0}
     - _SlowCascadeColor: {r: 20, g: 20, b: 20, a: 0}
     - _SmallCascadeColor: {r: 6, g: 6, b: 6, a: 0}
-    - _SmallCascadeMainSpeed: {r: 0, g: 0.16, b: 0, a: 0}
+    - _SmallCascadeMainSpeed: {r: 0, g: 0.1, b: 0, a: 0}
     - _SmallCascadeMixSpeed: {r: 0.02, g: 0.07, b: 0, a: 0}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
     - _WaterMainSpeed: {r: 0.01, g: 0, b: 0, a: 0}
-    - _WaterMixSpeed: {r: -0.007, g: 0.02, b: 0, a: 0}
+    - _WaterMixSpeed: {r: -0.007, g: 0.1, b: 0, a: 0}

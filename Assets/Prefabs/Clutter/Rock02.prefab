@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7018954836690188881}
   - component: {fileID: 7018954836691187857}
   - component: {fileID: 129969365550006515}
-  - component: {fileID: 5349914963728321861}
+  - component: {fileID: 1618049211148406014}
   m_Layer: 13
   m_Name: Rock02
   m_TagString: Wall
@@ -98,8 +98,8 @@ LODGroup:
     renderers:
     - renderer: {fileID: 7018954836691187857}
   m_Enabled: 1
---- !u!64 &5349914963728321861
-MeshCollider:
+--- !u!65 &1618049211148406014
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108,7 +108,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: dfff075f382788c4c9fe8c948d54c3bd, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 3.3632057, y: 1.8267446, z: 1.6783143}
+  m_Center: {x: 0.024885355, y: 0.82858324, z: -0.11065676}
