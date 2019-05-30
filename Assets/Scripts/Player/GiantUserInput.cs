@@ -68,17 +68,17 @@ public class GiantUserInput : MonoBehaviour
         //     jump = Input.GetButtonDown("Jump");
 
         if(!stop && !sideStepLeft && !sideStepRight){
-            if(Input.GetKey(KeyCode.X) && Input.GetKey(KeyCode.Y))
+            if(Input.GetButton("Right Eye") && Input.GetButton("Left Eye"))
                 stop = true;
         }
 
         if(!sideStepLeft && !stop)
-            if(Input.GetButton("SideStep Left")){
+            if(Input.GetButton("Left Ear")){
                 sideStepLeft = true;
             }
 
         if(!sideStepRight && !sideStepLeft && !stop)
-            if(Input.GetButton("SideStep Right")){
+            if(Input.GetButton("Right Ear")){
                 sideStepRight = true;
             }
 

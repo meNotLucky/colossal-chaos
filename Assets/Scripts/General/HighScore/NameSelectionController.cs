@@ -9,9 +9,9 @@ public class NameSelectionController : MonoBehaviour
     string userName;
 
     private void Update() {
-        if(Input.GetButtonDown("SideStep Right"))
+        if(Input.GetButtonDown("Right Ear"))
             activeSelectorIndex++;
-        if(Input.GetButtonDown("SideStep Left"))
+        if(Input.GetButtonDown("Left Ear"))
             activeSelectorIndex--;
 
         if(activeSelectorIndex < 0)

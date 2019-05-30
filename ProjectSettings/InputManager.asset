@@ -54,8 +54,24 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
-    m_Name: SideStep Left
+    m_Name: Left Ear
     descriptiveName: Make the giant dash to the left.
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: a
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0.001
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 0
+  - serializedVersion: 3
+    m_Name: Right Ear
+    descriptiveName: Make the giant dash to the Right.
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: d
@@ -70,11 +86,27 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
-    m_Name: SideStep Right
+    m_Name: Left Eye
     descriptiveName: Make the giant dash to the Right.
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: a
+    positiveButton: x
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0.001
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 0
+  - serializedVersion: 3
+    m_Name: Right Eye
+    descriptiveName: Make the giant dash to the Right.
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: y
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000

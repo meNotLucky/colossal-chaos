@@ -43,7 +43,7 @@ public class CameraPanScript : MonoBehaviour
         if(isPlaying)
             giant.HandleStartPan(true);
         
-        if(Input.GetButtonDown("SideStep Right") && isPlaying)
+        if(Input.GetButtonDown("Right Ear") && isPlaying)
             PanFinished();
     }
 

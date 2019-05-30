@@ -29,12 +29,12 @@ public class TutorialController : MonoBehaviour
                     currentPlayer++;
             }
 
-            if(Input.GetButton("SideStep Right") && Input.GetButton("SideStep Left")){
+            if(Input.GetButton("Right Ear") && Input.GetButton("Left Ear")){
                 if(currentPlayer == 1)
                     currentPlayer++;
             }
 
-            if(Input.GetKey(KeyCode.X) && Input.GetKey(KeyCode.Y)){
+            if(Input.GetButton("Right Eye") && Input.GetButton("Left Eye")){
                 if(currentPlayer == 2)
                     currentPlayer++;
             }
