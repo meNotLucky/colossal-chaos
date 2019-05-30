@@ -23,11 +23,9 @@ public class RagdollController : MonoBehaviour
     {
         giantRigidbody.isKinematic = false;
         giantRigidbody.useGravity = true;
-        giantRigidbody.constraints = RigidbodyConstraints.None;
-        giantRigidbody.AddExplosionForce(10f, transform.position, 10f);
         giantAnimator.enabled = false;
-        giantController.enabled = false;
-        giantInput.enabled = false;
+        //giantController.enabled = false;
+        giantInput.rotate = false;
 
         foreach (var body in rigidbodies)
         {

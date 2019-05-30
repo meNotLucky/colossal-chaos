@@ -1859,6 +1859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move: 1
+  rotate: 1
   mouseInputSensitivity: 4
   sensitivityModifier: 1000
   mouseCenterOffset: 2.5

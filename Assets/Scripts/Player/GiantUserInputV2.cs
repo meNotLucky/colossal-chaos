@@ -15,6 +15,7 @@ public class GiantUserInputV2 : MonoBehaviour
 
     [Header("Player Input Data")]
     public bool move;
+    public bool rotate;
     public float mouseInputSensitivity;
     public float sensitivityModifier;
     public float mouseCenterOffset;
@@ -84,7 +85,10 @@ public class GiantUserInputV2 : MonoBehaviour
                 sideStepRight = true;
             }
 
-        h = - (Input.mousePosition.x - (Screen.width / 2) + mouseCenterOffset) * (mouseInputSensitivity / sensitivityModifier);
+        if(rotate)
+            h = - (Input.mousePosition.x - (Screen.width / 2) + mouseCenterOffset) * (mouseInputSensitivity / sensitivityModifier);
+        else
+            h = 0;
 
         // Targettting system
         UpdateTarget();
