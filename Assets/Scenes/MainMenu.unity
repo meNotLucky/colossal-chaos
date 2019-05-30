@@ -6671,37 +6671,21 @@ PrefabInstance:
     - target: {fileID: 8299590644814826400, guid: e3515208caf27d84eb1bb93d704c0a9e,
         type: 3}
       propertyPath: m_havePropertiesChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8299590644814826400, guid: e3515208caf27d84eb1bb93d704c0a9e,
         type: 3}
       propertyPath: m_isInputParsingRequired
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9060844559545398810, guid: e3515208caf27d84eb1bb93d704c0a9e,
         type: 3}
       propertyPath: m_havePropertiesChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9060844559545398810, guid: e3515208caf27d84eb1bb93d704c0a9e,
         type: 3}
       propertyPath: m_isInputParsingRequired
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9060844559545398810, guid: e3515208caf27d84eb1bb93d704c0a9e,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 21471799030854324, guid: 1189f96a87fd27646a1611c634f0009f,
-        type: 2}
-    - target: {fileID: 9060844559545398810, guid: e3515208caf27d84eb1bb93d704c0a9e,
-        type: 3}
-      propertyPath: m_fontStyle
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2841442539612415380, guid: e3515208caf27d84eb1bb93d704c0a9e,
-        type: 3}
-      propertyPath: orthographic
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

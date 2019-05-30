@@ -2925,3 +2925,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   giantAnimator: {fileID: 1230557601242559348}
   giantRigidbody: {fileID: 6223426456112471697}
+  giantController: {fileID: 1230557601242559355}
+  giantInput: {fileID: 1230557601242559349}

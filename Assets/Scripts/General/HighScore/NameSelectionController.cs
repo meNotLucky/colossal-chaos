@@ -16,17 +16,18 @@ public class NameSelectionController : MonoBehaviour
 
         if(activeSelectorIndex < 0)
             activeSelectorIndex = 0;
-
+        
         userName = "";
         foreach (var selector in selectors){
             selector.isActiveSelector = false;
             userName += selector.alphabet[selector.currentlySelected];
         }
-        
+
         if(activeSelectorIndex > selectors.Length - 1){
-            activeSelectorIndex = selectors.Length - 1;
+            activeSelectorIndex = 0;
             FindObjectOfType<HighScoreController>().SaveScore(userName);
             FindObjectOfType<WinCondition>().ExitToMainMenu();
+            return;
         }
 
         selectors[activeSelectorIndex].isActiveSelector = true;

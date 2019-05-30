@@ -31,7 +31,7 @@ public class HighScoreController : MonoBehaviour
         scoreTextWinScreen.text = "Final Score: " + ScoreTimer.ConvertScoreToTimeString(currentScore);
     }
 
-    public void SaveScore(string name) {
+    public void SaveScore(string name){
 
         if(name.Length <= 1)
             return;
@@ -46,16 +46,25 @@ public class HighScoreController : MonoBehaviour
         string[] highScoreNames = PlayerPrefsX.GetStringArray("HighScoreNames");
         List<string> highScoreNameList = new List<string>(highScoreNames);
 
-        foreach(int score in highScoreList){
+        int index = 0;
+        bool leaderboardReady = false;
+        foreach(float score in highScoreList){
             if(currentScore >= score){
-                int index = highScoreList.IndexOf(score);
-                highScoreList.Insert(index, currentScore);
-                highScoreNameList.Insert(index, name);
-                highScoreList.RemoveAt(highScoreList.Count - 1);
-                highScoreNameList.RemoveAt(highScoreNameList.Count - 1);
+                index = highScoreList.IndexOf(score);
+                leaderboardReady = true;
                 break;
             }
         }
+
+        if(!leaderboardReady){
+            Debug.Log("Score wasn't big enough for leaderboards!");
+            return;
+        }
+
+        highScoreList.Insert(index, currentScore);
+        highScoreNameList.Insert(index, name);
+        highScoreList.RemoveAt(highScoreList.Count - 1);
+        highScoreNameList.RemoveAt(highScoreNameList.Count - 1);
 
         highScores = highScoreList.ToArray();
         highScoreNames = highScoreNameList.ToArray();
