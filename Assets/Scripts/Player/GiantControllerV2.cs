@@ -207,10 +207,10 @@ public class GiantControllerV2 : MonoBehaviour
         if(grounded && groundAngle <= maxGroundAngle && !cannotSideStep && !wallHit){
             if(currentDeceleration > 0){
                 delayTimer -= Time.deltaTime;
-                if(coroutine != null)
-                    StopCoroutine(coroutine);
-                newForwardGotten = false;
-                forwardAmount = sideStepForwardSpeed;
+                // if(coroutine != null)
+                //     StopCoroutine(coroutine);
+                // newForwardGotten = false;
+                // forwardAmount = sideStepForwardSpeed;
 
                 Vector3 side = Vector3.Cross(transform.forward, hitInfo.normal);
 
