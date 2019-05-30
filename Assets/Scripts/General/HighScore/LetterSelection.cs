@@ -16,12 +16,10 @@ public class LetterSelection : MonoBehaviour
     [HideInInspector] public int currentlySelected = 0;
 
     private Coroutine coroutine;
-    private GiantUserInputV2 giantUserInputV2;
 
     private void Start(){
         UpdateLetters(0);
         StartCoroutine(LetterScroll(1, scrollSpeed));
-        giantUserInputV2 = FindObjectOfType<GiantUserInputV2>();
     }
 
     private void Update() {
@@ -72,15 +70,10 @@ public class LetterSelection : MonoBehaviour
     IEnumerator LetterScroll(int direction, float speed){
 
         while(true){
-            if(isActiveSelector){
-                float h = 0;
-                if(giantUserInputV2 != null)
-                    h = giantUserInputV2.h;
-                
-
-                if(h > -0.2f)
+            if(isActiveSelector){                
+                if(Input.mousePosition.x > (Screen.width / 2) + 100.0f)
                     UpdateLetters(1);
-                if(h < 0.2f)
+                if(Input.mousePosition.x < (Screen.width / 2) - 100.0f)
                     UpdateLetters(-1);
             }
             
