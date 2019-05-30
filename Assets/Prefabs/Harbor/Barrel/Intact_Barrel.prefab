@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1173631656069028648}
   - component: {fileID: 7923101386339360482}
   - component: {fileID: 6188690424002536116}
+  - component: {fileID: 245798730566263378}
   m_Layer: 0
   m_Name: Intact_Barrel
   m_TagString: DestroyableClutter
@@ -108,3 +109,22 @@ MonoBehaviour:
   brokenMesh: {fileID: 3557017762780962252, guid: a0c12a7e2121e3141ae59bfcd837bfa7,
     type: 3}
   dustPiles: []
+--- !u!205 &245798730566263378
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173631656067024364}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.049515486, y: 1.5084978, z: 0.00000011920929}
+  m_Size: 3.0169957
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.011124732
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 1173631656069028648}
+  m_Enabled: 1
