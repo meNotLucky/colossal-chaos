@@ -17,7 +17,7 @@ public class GiantUserInputV2 : MonoBehaviour
     public bool move;
     public bool rotate;
     public float mouseInputSensitivity;
-    public float sensitivityModifier;
+    [ReadOnly] public float sensitivityModifier;
     public float mouseCenterOffset;
 
     [Header("Giant AI Data")]

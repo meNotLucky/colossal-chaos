@@ -8,11 +8,11 @@ public class GiantControllerV2 : MonoBehaviour
 {
     [Header("Giant Properties")]
     public float speed = 5f;
-    public float speedMultiplier = 1f;
-    public float turnSpeed = 10;
-    public float height = 0.5f;
-    public float heightPadding = 0.05f;
-    public LayerMask ground;
+    [ReadOnly] public float speedMultiplier = 1f;
+    [ReadOnly] public float turnSpeed = 10;
+    [ReadOnly] public float height = 0.5f;
+    [ReadOnly] public float heightPadding = 0.05f;
+    [ReadOnly] public LayerMask ground;
     public float maxGroundAngle = 120;
 
     [Header("Random Speed Increase")]
@@ -204,7 +204,7 @@ public class GiantControllerV2 : MonoBehaviour
 
     private void HandleSideStep(bool left, bool right)
 	{
-        if(grounded && groundAngle <= maxGroundAngle && !cannotSideStep && !wallHit){
+        if(grounded && groundAngle <= maxGroundAngle && !cannotSideStep){
             if(currentDeceleration > 0){
                 delayTimer -= Time.deltaTime;
                 // if(coroutine != null)
@@ -254,7 +254,7 @@ public class GiantControllerV2 : MonoBehaviour
             currentDeceleration = 0;
         }
 
-        if(currentDeceleration <= 0 || wallHit){
+        if(currentDeceleration <= 0){
             currentDeceleration = 0;
             delayTimer = 0;
 
@@ -285,7 +285,7 @@ public class GiantControllerV2 : MonoBehaviour
             transform.position += forward * speed * forwardAmount * Time.deltaTime;
         }
         else if(wallHit){
-            rigidbody.velocity = forward * (speed * 10.0f) * forwardAmount * Time.deltaTime;
+            rigidbody.velocity = forward * (speed * 20.0f) * forwardAmount * Time.deltaTime;
         }
     }
 

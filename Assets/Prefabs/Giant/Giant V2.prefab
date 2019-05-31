@@ -1863,7 +1863,7 @@ MonoBehaviour:
   mouseInputSensitivity: 4
   sensitivityModifier: 1000
   mouseCenterOffset: 2.5
-  giantPullForce: 20
+  giantPullForce: 15
   distanceToRotate: 20
   struggleModifier: 0.7
   struggleIntensityMax: 2
@@ -1903,7 +1903,7 @@ MonoBehaviour:
   stopCooldown: 15
   stopDuration: 10
   sideStepCooldown: 2
-  sideStepPower: 2
+  sideStepPower: 1.5
   sideStepDeceleration: 0.7
   delayForAnimation: 0.2
   sideStepForwardSpeed: 0.7
