@@ -33,7 +33,7 @@ public class CameraPanScript : MonoBehaviour
             cameraAnimator.SetBool("IsStarting", true);
             isPlaying = true;
             scoreTime.timerStart = false;
-            QualitySettings.lodBias = 20;
+            QualitySettings.lodBias = 10;
         } else {
             PanFinished();
         }
