@@ -7,6 +7,7 @@ public class Settings : MonoBehaviour
     [Header("Gameplay Settings")]
     public float startTime = 100;
     public int numberOfSavedHighScores = 10;
+    public bool showCursor = false;
 
     [Header("Performance Settings")]
     public float debrieLifeDuration = 5;
@@ -15,5 +16,7 @@ public class Settings : MonoBehaviour
         GlobalSettings.startTime = startTime;
         GlobalSettings.debrieLifeDuration = debrieLifeDuration;
         GlobalSettings.numberOfSavedHighScores = numberOfSavedHighScores;
+
+        Cursor.visible = showCursor;
     }
 }
