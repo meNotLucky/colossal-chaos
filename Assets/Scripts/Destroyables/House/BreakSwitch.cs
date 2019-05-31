@@ -8,9 +8,11 @@ public class BreakSwitch : MonoBehaviour
     public GameObject[] dustPiles;
 
     private TextFlash flash;
+    private VoiceLineController lineController;
 
     private void Start() {
-        flash = FindObjectOfType<TextFlash>();        
+        flash = FindObjectOfType<TextFlash>();
+        lineController = FindObjectOfType<VoiceLineController>();
     }
     
     private void OnCollisionEnter(Collision other) {
@@ -24,6 +26,9 @@ public class BreakSwitch : MonoBehaviour
 
         if(flash != null)
             flash.Flash();
+        
+        if(lineController != null && gameObject.tag != "DestroyableClutter")
+            lineController.PlayRandomSetLine("HouseBreaking");
 
         if(dustPiles.Length > 0){
             int index = Random.Range(0, dustPiles.Length);

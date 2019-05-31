@@ -12,23 +12,23 @@ public class SoundEffectManager : MonoBehaviour
     
     void Start()
     {
-        audioSrc=GetComponent<AudioSource>();
+        audioSrc = GetComponent<AudioSource>();
     }
     public void PlaySound(int clipToPlay)
     {
             if(clipToPlay == 1)
             {
-            audioSrc.PlayOneShot(leftSideStep);  
-            audioSrc.panStereo =- 1;
+                audioSrc.PlayOneShot(leftSideStep);  
+                audioSrc.panStereo =- 1;
             }
             else if(clipToPlay == 2)
             {
-            audioSrc.PlayOneShot(rightSideStep);  
-            audioSrc.panStereo =- 1;
+                audioSrc.PlayOneShot(rightSideStep);  
+                audioSrc.panStereo =- 1;
             }
             else if(clipToPlay == 3)
             {
-            audioSrc.PlayOneShot(Steps);
+                audioSrc.PlayOneShot(Steps);
             }
                
     }

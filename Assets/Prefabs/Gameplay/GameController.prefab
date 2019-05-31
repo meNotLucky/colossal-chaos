@@ -5121,6 +5121,8 @@ GameObject:
   - component: {fileID: 6027675792995916995}
   - component: {fileID: 6027675792995916993}
   - component: {fileID: 7609661915719689472}
+  - component: {fileID: 4438713540472051368}
+  - component: {fileID: 2175623299575970565}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -5208,6 +5210,149 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreTextWinScreen: {fileID: 2293841622124740497}
   currentScore: 0
+--- !u!114 &4438713540472051368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6027675792995917020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78037ef330a1b4147a685fbd5124e251, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voiceLineSets:
+  - name: HouseBreaking
+    clips:
+    - {fileID: 8300000, guid: 3fe6c63c4edcd5240b54327eed300d56, type: 3}
+    - {fileID: 8300000, guid: 8ad4623132b8e5346aa5fac75f809b0e, type: 3}
+    - {fileID: 8300000, guid: 7bc155dc5cc48a749bb8c4bfccb3315f, type: 3}
+    - {fileID: 8300000, guid: 97490f91c12f5d849984b9c86bb3408f, type: 3}
+    - {fileID: 8300000, guid: 6fa5e0571049a7740b2d7099e75ab731, type: 3}
+    - {fileID: 8300000, guid: d78dff5eed8de01439080460e348f7b8, type: 3}
+    - {fileID: 8300000, guid: c2299c7c752254b47ba506582f2e7e92, type: 3}
+    - {fileID: 8300000, guid: fed314bd0e4fdcb43b61976184e4a34b, type: 3}
+    - {fileID: 8300000, guid: cfc022190dd17044580165f25d066087, type: 3}
+    - {fileID: 8300000, guid: 3784e548dca4b3845a5e778cc610e25e, type: 3}
+    - {fileID: 8300000, guid: 050290e4e39343a4ba2d58c911479a94, type: 3}
+    - {fileID: 8300000, guid: 984fb0632804b9746b86a476b38903a8, type: 3}
+    - {fileID: 8300000, guid: 302012242ee96fa4b9f2658f7c7f8a13, type: 3}
+    - {fileID: 8300000, guid: 390f21f75eda2954387118637f0c974b, type: 3}
+    - {fileID: 8300000, guid: 8ab1ce15ec5933a4ba56474cc396b73a, type: 3}
+    - {fileID: 8300000, guid: 146e557a8777f6143954050e4a16a985, type: 3}
+    - {fileID: 8300000, guid: 93fecd14263ed934a845ba371b6e65b0, type: 3}
+    - {fileID: 8300000, guid: 087e952a6e5c8bb40853b8267b927456, type: 3}
+    - {fileID: 8300000, guid: 0cbb817ca799ddd4189e0cefa1073b83, type: 3}
+    - {fileID: 8300000, guid: 3761607dfc2276349bb72c770a508d7d, type: 3}
+    - {fileID: 8300000, guid: 28e7e56c6c4c2284881d04ef902a725b, type: 3}
+    - {fileID: 8300000, guid: 34fa30a68ce67e44a8342544609cd08a, type: 3}
+    - {fileID: 8300000, guid: 17683dbe0af7a4342aa93b6d69e706b9, type: 3}
+    - {fileID: 8300000, guid: 9789bdc469630384d972245c10790c1d, type: 3}
+    - {fileID: 8300000, guid: 33472979d4ff55942ac451e193735693, type: 3}
+    - {fileID: 8300000, guid: 0c010b8c23949354b94bfbad411f25c4, type: 3}
+    - {fileID: 8300000, guid: 680befa4e696f534ea626b95d47b6bd4, type: 3}
+    - {fileID: 8300000, guid: 3846ca9161e311c479ca74960a7d9891, type: 3}
+  - name: ChurchBreaking
+    clips:
+    - {fileID: 8300000, guid: de617c4bef39b6245854a51538df23bf, type: 3}
+--- !u!82 &2175623299575970565
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6027675792995917020}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243092466952063332, guid: a763d4633badb4b4eb62614540f425a1,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6027675793200944602
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7646297691416104105}
   m_Layer: 0
   m_Name: Fence
-  m_TagString: Untagged
+  m_TagString: DestroyableClutter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
