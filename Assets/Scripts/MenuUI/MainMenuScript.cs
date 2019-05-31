@@ -23,7 +23,6 @@ public class MainMenuScript : MonoBehaviour
 void Start()
 {
 	Cursor.lockState = CursorLockMode.Locked;
-	Cursor.visible = true;
 
 	Time.timeScale = 1f;
 
@@ -59,8 +58,7 @@ void Start()
 				if(profile != null){
 					profile.GetSetting<Bloom>().intensity.value = bloomStartValue;
 				}
-				GetComponent<LoadGameScript>().LoadGame();
-				Destroy(this);
+				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 			}
 		}
 		else

@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class ScoreTimer : MonoBehaviour
 {
     public GameObject slider;
     public TextMeshProUGUI text;
+    public GameObject looseScreen;
     private float startTime;
     private float timeSinceLevelLoad;
 
@@ -43,6 +45,14 @@ public class ScoreTimer : MonoBehaviour
             {
                 if(FindObjectOfType<DeathScreen>() != null)
                     FindObjectOfType<DeathScreen>().EndGame();
+            }
+        }
+
+        if(totalScore < 0){
+            Time.timeScale = 0;
+            looseScreen.SetActive(true);
+            if(Input.GetButtonDown("Right Ear")){
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
             }
         }
     }

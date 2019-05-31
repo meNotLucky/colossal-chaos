@@ -45,4 +45,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTime: 300
   numberOfSavedHighScores: 10
+  showCursor: 0
   debrieLifeDuration: 2
