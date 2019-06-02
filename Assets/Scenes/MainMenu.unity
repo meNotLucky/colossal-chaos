@@ -6360,17 +6360,17 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Turn the head right to start the game
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1189f96a87fd27646a1611c634f0009f, type: 2}
-  m_sharedMaterial: {fileID: 21471799030854324, guid: 1189f96a87fd27646a1611c634f0009f,
+  m_fontAsset: {fileID: 11400000, guid: 3772e48fcc295ec46a87997fb5621177, type: 2}
+  m_sharedMaterial: {fileID: 21720599483304916, guid: 3772e48fcc295ec46a87997fb5621177,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4289655807
-  m_fontColor: {r: 1, g: 0.9541505, b: 0.6839622, a: 1}
-  m_enableVertexGradient: 1
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
   m_colorMode: 2
   m_fontColorGradient:
     topLeft: {r: 0.5566038, g: 0.4766903, b: 0, a: 1}
@@ -6393,7 +6393,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 9
   m_textAlignment: 258
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
