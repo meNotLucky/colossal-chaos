@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 1817517920204366884}
   m_Layer: 0
   m_Name: Bridge_02
-  m_TagString: Untagged
+  m_TagString: DestroyableClutter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

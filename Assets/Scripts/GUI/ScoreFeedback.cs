@@ -21,6 +21,7 @@ public class ScoreFeedback : MonoBehaviour
     
     TextMeshProUGUI tmp;
     Coroutine coroutine;
+    List<GameObject> floatNumbers = new List<GameObject>();
     
 
     void Start()
@@ -41,6 +42,18 @@ public class ScoreFeedback : MonoBehaviour
                 StopCoroutine(coroutine);
             tmp.color = startColor;
         }
+
+        for(int i = 0; i < floatNumbers.Count; i++)
+        {
+            GameObject number = floatNumbers[i];
+            if(number.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Finished")){
+                floatNumbers.Remove(number);
+                Destroy(number);
+                i--;
+            }
+        }
+
+        
     }
 
     public void InitializeFeedback(int removedTime)
@@ -48,6 +61,9 @@ public class ScoreFeedback : MonoBehaviour
         GameObject floatNumber = Instantiate(floatObject, transform);
         floatNumber.SetActive(true);
         floatNumber.GetComponent<TextMeshProUGUI>().text = "-" + removedTime.ToString() + "s";
+        floatNumber.GetComponent<Animator>().SetBool("Finished", true);
+
+        floatNumbers.Add(floatNumber);
 
         if(flashFinished){
             timesFlashed = 0;

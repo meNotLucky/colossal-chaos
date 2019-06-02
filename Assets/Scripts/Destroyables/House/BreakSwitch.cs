@@ -24,7 +24,7 @@ public class BreakSwitch : MonoBehaviour
     public void Switch(){
         Instantiate(brokenMesh, transform.position, transform.rotation);
 
-        if(scoreFeed != null)
+        if(scoreFeed != null && gameObject.tag != "DestroyableClutter")
             scoreFeed.InitializeFeedback(1);
         
         if(lineController != null && gameObject.tag != "DestroyableClutter")
