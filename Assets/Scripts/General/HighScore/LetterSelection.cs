@@ -12,7 +12,7 @@ public class LetterSelection : MonoBehaviour
     public float scrollSpeed;
     public bool isActiveSelector = false;
 
-    [HideInInspector] public char[] alphabet = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','X','Y'};
+    [HideInInspector] public char[] alphabet = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
     [HideInInspector] public int currentlySelected = 0;
 
     private Coroutine coroutine;

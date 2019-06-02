@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using TMPro;
+using MyBox;
 
 public class HighScoreController : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class HighScoreController : MonoBehaviour
     public TextMeshProUGUI scoreTextWinScreen;
     
     [Header("High Score Values")]
-    [SerializeField] float currentScore;
+    [ReadOnly][SerializeField] float currentScore;
 
     private ScoreTimer scoreTime;
 

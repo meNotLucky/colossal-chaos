@@ -7,11 +7,11 @@ public class BreakSwitch : MonoBehaviour
     public GameObject brokenMesh;
     public GameObject[] dustPiles;
 
-    private TextFlash flash;
+    private ScoreFeedback scoreFeed;
     private VoiceLineController lineController;
 
     private void Start() {
-        flash = FindObjectOfType<TextFlash>();
+        scoreFeed = FindObjectOfType<ScoreFeedback>();
         lineController = FindObjectOfType<VoiceLineController>();
     }
     
@@ -24,8 +24,8 @@ public class BreakSwitch : MonoBehaviour
     public void Switch(){
         Instantiate(brokenMesh, transform.position, transform.rotation);
 
-        if(flash != null)
-            flash.Flash();
+        if(scoreFeed != null)
+            scoreFeed.InitializeFeedback(1);
         
         if(lineController != null && gameObject.tag != "DestroyableClutter")
             lineController.PlayRandomSetLine("HouseBreaking");

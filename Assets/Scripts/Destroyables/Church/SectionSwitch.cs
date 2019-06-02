@@ -6,11 +6,11 @@ public class SectionSwitch : MonoBehaviour
 {
     public GameObject brokenSection;
 
-    private TextFlash flash;
+    private ScoreFeedback scoreFeed;
     private VoiceLineController voiceLine;
 
     private void Start() {
-        flash = FindObjectOfType<TextFlash>();
+        scoreFeed = FindObjectOfType<ScoreFeedback>();
         voiceLine = FindObjectOfType<VoiceLineController>();     
     }
     
@@ -24,8 +24,8 @@ public class SectionSwitch : MonoBehaviour
         brokenSection.SetActive(true);
         if(GetComponentInParent<AttractionTarget>() != null)
             GetComponentInParent<AttractionTarget>().currentHitPoints--;
-        if(flash != null)
-            flash.Flash();
+        if(scoreFeed != null)
+            scoreFeed.InitializeFeedback(GetComponentInParent<AttractionTarget>().loosePointsOnDestruction);
         if(voiceLine != null){
             if(GetComponent<MeshRenderer>() !=  null){
                 foreach (var material in GetComponent<MeshRenderer>().materials){

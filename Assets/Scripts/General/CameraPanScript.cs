@@ -43,7 +43,7 @@ public class CameraPanScript : MonoBehaviour
         if(isPlaying)
             giant.HandleStartPan(true);
         
-        if(Input.GetButtonDown("Right Ear") && isPlaying)
+        if(Input.GetButton("Right Ear") && Input.GetButton("Left Ear") && isPlaying)
             PanFinished();
     }
 
