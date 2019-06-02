@@ -8,6 +8,7 @@ public class RagdollController : MonoBehaviour
     public Rigidbody giantRigidbody;
     public GiantControllerV2 giantController;
     public GiantUserInputV2 giantInput;
+    public GameObject Konfetti;
     Rigidbody[] rigidbodies;
 
     private void Start() {
@@ -21,6 +22,7 @@ public class RagdollController : MonoBehaviour
 
     public void ActivateRagdoll()
     {
+        Instantiate(Konfetti, transform.position, Konfetti.transform.rotation);
         giantRigidbody.isKinematic = false;
         giantRigidbody.useGravity = true;
         giantAnimator.enabled = false;
