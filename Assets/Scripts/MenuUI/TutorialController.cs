@@ -24,7 +24,7 @@ public class TutorialController : MonoBehaviour
     {
         if(!endReached){
 
-            if(Input.mousePosition.x > (Screen.width / 2) + 100.0f || Input.mousePosition.x < (Screen.width / 2) - 100.0f){
+            if(Input.mousePosition.x < (Screen.width / 2) - 100.0f){
                 if(currentPlayer == 0)
                     currentPlayer++;
             }

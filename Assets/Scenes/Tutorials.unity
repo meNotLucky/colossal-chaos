@@ -413,6 +413,80 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3515208caf27d84eb1bb93d704c0a9e, type: 3}
+--- !u!1 &442672447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 442672448}
+  - component: {fileID: 442672450}
+  - component: {fileID: 442672449}
+  m_Layer: 0
+  m_Name: TMP SubMeshUI [TheBough-Regular SDF Material + LiberationSans SDF Atlas]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &442672448
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442672447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1781445544}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &442672449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442672447}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_spriteAsset: {fileID: 0}
+  m_material: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
+  m_isDefaultMaterial: 0
+  m_padding: 0
+  m_canvasRenderer: {fileID: 442672450}
+  m_TextComponent: {fileID: 1781445545}
+  m_materialReferenceIndex: 1
+--- !u!222 &442672450
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442672447}
+  m_CullTransparentMesh: 0
 --- !u!1 &585832063
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,7 +1010,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 4.361
+  m_padding: 0
   m_canvasRenderer: {fileID: 1014813820}
   m_TextComponent: {fileID: 1595281846}
   m_materialReferenceIndex: 1
@@ -1071,7 +1145,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Turning the head steers the giant
+  m_text: 'Turn the head to <color="red"><size=150%><b>steer</b><size=100%><color="white">
+    the giant
 
 
 
@@ -1086,8 +1161,7 @@ MonoBehaviour:
 
 
 
-
-    Turn the head in any direction to continue'
+    Turn the head left to continue'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3772e48fcc295ec46a87997fb5621177, type: 2}
   m_sharedMaterial: {fileID: 21720599483304916, guid: 3772e48fcc295ec46a87997fb5621177,
@@ -1157,12 +1231,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1444198332}
-    characterCount: 90
+    characterCount: 76
     spriteCount: 0
-    spaceCount: 27
-    wordCount: 14
+    spaceCount: 25
+    wordCount: 13
     linkCount: 0
-    lineCount: 16
+    lineCount: 15
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -1249,8 +1323,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'cover (press) the giant in both eyes to slow him down
-
+  m_text: 'press both eyes of the giant to <color="red"><size=150%><b>slow</b><size=100%><color="white">
+    him down
 
 
 
@@ -1335,14 +1409,14 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1595281846}
-    characterCount: 95
+    characterCount: 86
     spriteCount: 0
-    spaceCount: 29
-    wordCount: 16
+    spaceCount: 27
+    wordCount: 15
     linkCount: 0
-    lineCount: 16
+    lineCount: 15
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -1556,7 +1630,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 442672448}
   m_Father: {fileID: 1284618540}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1585,8 +1660,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'poking the giant in the ear makes the giant dash
-
+  m_text: 'poking the giant in the ear makes the giant <color="red"><size=150%><b>dash</b><size=100%><color="white">
 
 
 
@@ -1671,12 +1745,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1781445545}
-    characterCount: 102
+    characterCount: 101
     spriteCount: 0
-    spaceCount: 31
+    spaceCount: 30
     wordCount: 18
     linkCount: 0
-    lineCount: 16
+    lineCount: 15
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -1688,7 +1762,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 442672449}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
