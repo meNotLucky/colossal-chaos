@@ -65,6 +65,7 @@ public class GiantControllerV2 : MonoBehaviour
     Vector3 forward;
     RaycastHit hitInfo;
     bool grounded;
+    [HideInInspector] public bool ragdolling = false;
     bool wallHit;
     float wallHitTimer;
 
@@ -174,7 +175,7 @@ public class GiantControllerV2 : MonoBehaviour
 	{
 		// Check stop conditions
 		if(stop && stopCooldownTimer <= 0){
-            cannotSideStep = true;
+            //cannotSideStep = true;
 			stopCooldownTimer = stopCooldown;
 			stopDurationTimer = stopDuration;
 
@@ -204,7 +205,7 @@ public class GiantControllerV2 : MonoBehaviour
 
     private void HandleSideStep(bool left, bool right)
 	{
-        if(grounded && groundAngle <= maxGroundAngle && !cannotSideStep){
+        if(!cannotSideStep){
             if(currentDeceleration > 0){
                 delayTimer -= Time.deltaTime;
                 // if(coroutine != null)
@@ -212,15 +213,15 @@ public class GiantControllerV2 : MonoBehaviour
                 // newForwardGotten = false;
                 // forwardAmount = sideStepForwardSpeed;
 
-                Vector3 side = Vector3.Cross(transform.forward, hitInfo.normal);
+               // Vector3 side = Vector3.Cross(transform.forward, hitInfo.normal);
 
                 if(delayTimer <= 0){
                     currentDeceleration -= Time.deltaTime;
                     if(leftPressed){
-                        transform.localPosition += side * sideStepPower * currentDeceleration;
+                        transform.localPosition -= transform.right * sideStepPower * currentDeceleration;
                     }
                     else if(rightPressed){
-                        transform.localPosition -= side * sideStepPower * currentDeceleration;
+                        transform.localPosition += transform.right * sideStepPower * currentDeceleration;
                     }
                     if(!animator.GetCurrentAnimatorStateInfo(0).IsName("Walking")){
                         animator.SetBool("SideStepLeft", false);
@@ -318,9 +319,18 @@ public class GiantControllerV2 : MonoBehaviour
     }
 
     private void ApplyGravity () {
-        if(!grounded && !leftPressed && !rightPressed && !wallHit){
+        // if(!grounded){
+        //     transform.position += Physics.gravity * Time.deltaTime;
+        // }
+
+        if(ragdolling){
             transform.position += Physics.gravity * Time.deltaTime;
+            return;
         }
+
+        Vector3 pos = transform.position;
+        pos.y = Terrain.activeTerrain.SampleHeight(transform.position);
+        transform.position = pos;
     }
 
     private void UpdateAnimator()

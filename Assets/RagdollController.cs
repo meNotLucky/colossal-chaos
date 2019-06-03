@@ -27,6 +27,7 @@ public class RagdollController : MonoBehaviour
         giantRigidbody.useGravity = true;
         giantAnimator.enabled = false;
         //giantController.enabled = false;
+        giantController.ragdolling = true;
         giantInput.rotate = false;
 
         foreach (var body in rigidbodies)
