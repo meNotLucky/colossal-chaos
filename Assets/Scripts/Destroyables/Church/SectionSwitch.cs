@@ -8,10 +8,12 @@ public class SectionSwitch : MonoBehaviour
 
     private ScoreFeedback scoreFeed;
     private VoiceLineController voiceLine;
+    private int loosePoints;
 
     private void Start() {
         scoreFeed = FindObjectOfType<ScoreFeedback>();
-        voiceLine = FindObjectOfType<VoiceLineController>();     
+        voiceLine = FindObjectOfType<VoiceLineController>();
+        loosePoints = GetComponentInParent<AttractionTarget>().loosePointsOnDestruction;
     }
     
     private void OnCollisionEnter(Collision other) {
@@ -25,7 +27,7 @@ public class SectionSwitch : MonoBehaviour
         if(GetComponentInParent<AttractionTarget>() != null)
             GetComponentInParent<AttractionTarget>().currentHitPoints--;
         if(scoreFeed != null)
-            scoreFeed.InitializeFeedback(GetComponentInParent<AttractionTarget>().loosePointsOnDestruction);
+            scoreFeed.InitializeFeedback(loosePoints);
         if(voiceLine != null){
             if(GetComponent<MeshRenderer>() !=  null){
                 foreach (var material in GetComponent<MeshRenderer>().materials){
