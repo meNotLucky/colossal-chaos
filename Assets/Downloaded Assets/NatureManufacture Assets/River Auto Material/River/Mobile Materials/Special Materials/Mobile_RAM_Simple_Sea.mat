@@ -176,7 +176,7 @@ Material:
     - _FoamSpeed: 0.3
     - _FoamTiling: 2
     - _Foamfalloff: -4
-    - _GlobalTiling: 0.4
+    - _GlobalTiling: 0.05
     - _GlossyReflections: 1
     - _MaskClipValue: 0.5
     - _NormalScale: 0.3
