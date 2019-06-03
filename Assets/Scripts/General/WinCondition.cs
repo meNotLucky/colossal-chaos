@@ -7,35 +7,35 @@ using UnityEngine.SceneManagement;
 public class WinCondition : MonoBehaviour
 {
     public GameObject WinScreenUI;
+    public GameObject HighScoreUI;
     public GameObject GUI;
-    
-    //private bool ended = false;
-    public float SliderSpeed = 0.1f;
-    public Slider MainMenuSlider;
-    
-    void Update()
-    {
-        // if(ended == true)
-        // {
-        //     Vector3 mousePos = Input.mousePosition;
-        //     if(mousePos.x < (Screen.width / 2) - (Screen.width / 10))
-        //     {
-        //         MainMenuSlider.value += SliderSpeed / 60;
-            
-        //         if(MainMenuSlider.value >= MainMenuSlider.maxValue)
-        //         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-        //     }
-        //     else if(mousePos.x > (Screen.width / 2) - (Screen.width / 8))
-        //     {
-        //         MainMenuSlider.value -= SliderSpeed / 60;
-        //     }
-        // }
-        
+    public GameObject continueText;
+
+    private ScoreTimer scoreTimer;
+
+    private void Start() {
+        scoreTimer = FindObjectOfType<ScoreTimer>();
     }
+    
+    private void Update() {
+        if(WinScreenUI.activeSelf && !HighScoreUI.activeSelf){
+            if(Input.GetButtonDown("Right Ear")){
+                float[] savedScores = PlayerPrefsX.GetFloatArray("HighScores");
+                foreach (var score in savedScores){
+                    if(score < scoreTimer.totalScore){
+                        HighScoreUI.SetActive(true);
+                        continueText.SetActive(false);
+                        return;
+                    }
+                }
+
+                ExitToMainMenu();
+            }
+        }
+    }
+    
     private void OnCollisionEnter(Collision other){
-        if(other.gameObject.tag == "barrel")  
-        {
-            //ended = true;
+        if(other.gameObject.tag == "barrel"){
             Time.timeScale = 0f;
             WinScreenUI.SetActive(true);
             GUI.SetActive(false);

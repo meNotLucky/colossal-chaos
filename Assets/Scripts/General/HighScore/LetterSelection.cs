@@ -4,15 +4,16 @@ using UnityEngine;
 
 using UnityEngine.UI;
 using TMPro;
+using MyBox;
 
 [System.Serializable]
 public class LetterSelection : MonoBehaviour
 {
     public TextMeshProUGUI[] displayLetters;
-    public float scrollSpeed;
+    public float scrollSpeed = 2;
     public bool isActiveSelector = false;
 
-    [HideInInspector] public char[] alphabet = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+    private char[] alphabet = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
     [HideInInspector] public int currentlySelected = 0;
 
     private Coroutine coroutine;
@@ -20,6 +21,10 @@ public class LetterSelection : MonoBehaviour
     private void Start(){
         UpdateLetters(0);
         StartCoroutine(LetterScroll(1, scrollSpeed));
+    }
+
+    public char[] GetAlphabet(){
+        return alphabet;
     }
 
     private void Update() {

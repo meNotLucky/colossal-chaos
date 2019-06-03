@@ -20,7 +20,7 @@ public class NameSelectionController : MonoBehaviour
         userName = "";
         foreach (var selector in selectors){
             selector.isActiveSelector = false;
-            userName += selector.alphabet[selector.currentlySelected];
+            userName += selector.GetAlphabet()[selector.currentlySelected];
         }
 
         if(activeSelectorIndex > selectors.Length - 1){
