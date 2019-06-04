@@ -256,16 +256,20 @@ public class GiantControllerV2 : MonoBehaviour
         }
 
         if(currentDeceleration <= 0){
-            currentDeceleration = 0;
-            delayTimer = 0;
-
-            animator.SetBool("SideStepLeft", false);
-            animator.SetBool("SideStepRight", false);
-
-            leftPressed = false;
-            rightPressed = false;
+            CancelSideStep();
         }
 	}
+
+    private void CancelSideStep(){
+        currentDeceleration = 0;
+        delayTimer = 0;
+
+        animator.SetBool("SideStepLeft", false);
+        animator.SetBool("SideStepRight", false);
+
+        leftPressed = false;
+        rightPressed = false;
+    }
 
     private void CalculateDirection() {
         angle = Mathf.Atan2(input.x, input.y);
@@ -362,8 +366,11 @@ public class GiantControllerV2 : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision other) {
-        if(other.gameObject.tag == "Wall")
+        if(other.gameObject.tag == "Wall"){
             wallHit = true;
+            CancelSideStep();
+        }
+
         if(other.gameObject.tag == "RagdollActivator")
             GetComponentInChildren<RagdollController>().ActivateRagdoll();
     }
